@@ -1,0 +1,881 @@
+@charset "UTF-8";
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/* line 2, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/neat/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/neat/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/extends/_button.scss */
+button, input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/extends/_button.scss */
+  button:hover, input[type="submit"]:hover {
+    background-color: #2c5999;
+    color: white; }
+  /* line 18, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/extends/_button.scss */
+  button:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 15, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 22, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 26, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 30, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 34, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 38, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 50, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477DCA;
+  text-decoration: none; }
+  /* line 55, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 59, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 65, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 74, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+img, picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 79, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 86, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 90, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_typography.scss */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 1, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 10, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+input, label, select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+textarea, input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 42, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+  textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 46, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+  textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 53, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 57, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 62, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 67, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 72, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_tables.scss */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 22, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 2, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* line 20, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 2, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/base/_buttons.scss */
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+* {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+/* line 9, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+body {
+  position: relative; }
+
+/* line 13, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.header-button {
+  background: #333;
+  position: fixed;
+  top: 4em; }
+  /* line 18, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  .header-button.active {
+    opacity: 1;
+    left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  @media screen and (max-width: 767px)  {
+    .header-button {
+      top: 0; } }
+
+/* line 34, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+a.contact-me {
+  position: fixed;
+  right: 2em;
+  top: 2em;
+  border-radius: 8px;
+  padding: .35em 1em;
+  border: 1px solid #EF5734;
+  color: #EF5734;
+  line-height: 1.6; }
+
+/* line 44, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+a.contact-me:hover {
+  color: white;
+  background-color: #EF5734; }
+
+/* line 49, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+a.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 1em;
+  color: white; }
+
+/* line 58, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.full-window {
+  height: 100vh;
+  background: #00ACED;
+  background: #FFCC2F;
+  display: table;
+  width: 100%; }
+
+/* line 65, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.content {
+  padding: 14em 0; }
+
+/* line 68, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.front-message {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 20%; }
+  /* line 75, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  .front-message h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: .5em; }
+    /* line 81, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    .front-message h2 span {
+      color: #EF5734; }
+  /* line 86, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  .front-message p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em; }
+  @media screen and (max-width: 767px)  {
+    .front-message {
+      padding: 0 5%; } }
+
+/* line 98, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.sidebar {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  left: 0;
+  background: #00ACED;
+  opacity: 0;
+  -webkit-transition: opacity 0.75s ease 0s, z-index 0s ease 1s;
+  -moz-transition: opacity 0.75s ease 0s, z-index 0s ease 1s;
+  -ms-transition: opacity 0.75s ease 0s, z-index 0s ease 1s;
+  -o-transition: opacity 0.75s ease 0s, z-index 0s ease 1s;
+  transition: opacity 0.75s ease 0s, z-index 0s ease 1s;
+  z-index: -1; }
+  /* line 114, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  .sidebar.active {
+    opacity: 0.95;
+    z-index: 999;
+    -webkit-transition: opacity 0.5s ease 0s;
+    -moz-transition: opacity 0.5s ease 0s;
+    -ms-transition: opacity 0.5s ease 0s;
+    -o-transition: opacity 0.5s ease 0s;
+    transition: opacity 0.5s ease 0s; }
+
+@-moz-keyframes spinningH {
+  /* line 129, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  from {
+    -moz-transform: rotateX(0deg) rotateY(0deg); }
+
+  /* line 132, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  to {
+    -moz-transform: rotateX(360deg) rotateY(360deg); } }
+
+@-webkit-keyframes spinningH {
+  /* line 138, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  from {
+    -webkit-transform: rotateX(0deg) rotateY(0deg); }
+
+  /* line 141, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg); } }
+
+@-o-keyframes spinningH {
+  /* line 147, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  from {
+    -o-transform: rotateX(0deg) rotateY(0deg); }
+
+  /* line 150, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  to {
+    -o-transform: rotateX(360deg) rotateY(360deg); } }
+
+@-ms-keyframes spinningH {
+  /* line 156, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  from {
+    -ms-transform: rotateX(0deg) rotateY(0deg); }
+
+  /* line 159, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  to {
+    -ms-transform: rotateX(360deg) rotateY(360deg); } }
+
+@keyframes spinningH {
+  /* line 165, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  from {
+    transform: rotateX(0deg) rotateY(0deg); }
+
+  /* line 168, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  to {
+    transform: rotateX(360deg) rotateY(360deg); } }
+
+/* line 173, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%; }
+
+/* line 188, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.animate {
+  -webkit-animation: spinningH 6s infinite linear;
+  -moz-animation: spinningH 6s infinite linear;
+  -o-animation: spinningH 6s infinite linear;
+  -ms-animation: spinningH 6s infinite linear;
+  animation: spinningH 6s infinite linear; }
+
+/* line 196, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  -webkit-transition: -webkit-transform 2s linear;
+  -moz-transition: -moz-transform 2s linear;
+  -o-transition: -o-transform 2s linear;
+  -ms-transition: -ms-transform 2s linear;
+  transition: transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+/* line 215, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube > div {
+  position: absolute;
+  height: 360px;
+  width: 360px;
+  padding: 20px;
+  opacity: 0.9;
+  background-position: center center; }
+
+/* line 224, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(1) {
+  -webkit-transform: translateZ(200px);
+  -moz-transform: translateZ(200px);
+  -o-transform: translateZ(200px);
+  -ms-transform: translateZ(200px);
+  transform: translateZ(200px);
+  background-color: #2E272F;
+  background-repeat: no-repeat; }
+
+/* line 234, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(2) {
+  -webkit-transform: rotateY(90deg) translateZ(200px);
+  -moz-transform: rotateY(90deg) translateZ(200px);
+  -o-transform: rotateY(90deg) translateZ(200px);
+  -ms-transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(90deg) translateZ(200px);
+  background-color: #2D3A4D;
+  background-repeat: no-repeat; }
+
+/* line 244, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(3) {
+  -webkit-transform: rotateY(180deg) translateZ(200px);
+  -moz-transform: rotateY(180deg) translateZ(200px);
+  -o-transform: rotateY(180deg) translateZ(200px);
+  -ms-transform: rotateY(180deg) translateZ(200px);
+  transform: rotateY(180deg) translateZ(200px);
+  background-color: #2D1C12;
+  background-repeat: no-repeat; }
+
+/* line 254, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(4) {
+  -webkit-transform: rotateY(-90deg) translateZ(200px);
+  -moz-transform: rotateY(-90deg) translateZ(200px);
+  -o-transform: rotateY(-90deg) translateZ(200px);
+  -ms-transform: rotateY(-90deg) translateZ(200px);
+  transform: rotateY(-90deg) translateZ(200px);
+  background-color: #693C1F;
+  background-repeat: no-repeat; }
+
+/* line 264, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(5) {
+  -webkit-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  -moz-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  -o-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  -ms-transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+  background-color: #955122;
+  background-repeat: no-repeat; }
+
+/* line 274, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+#cube div:nth-child(6) {
+  -webkit-transform: rotateX(90deg) translateZ(200px);
+  -moz-transform: rotateX(90deg) translateZ(200px);
+  -o-transform: rotateX(90deg) translateZ(200px);
+  -ms-transform: rotateX(90deg) translateZ(200px);
+  transform: rotateX(90deg) translateZ(200px);
+  background-color: #E34C26;
+  background-repeat: no-repeat;
+  text-align: center; }
+
+/* line 286, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.fade {
+  opacity: 0;
+  transform: translateX(2000px);
+  transition: transform .5s ease-in; }
+
+/* line 291, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+.fade.on {
+  opacity: 1;
+  transform: translateY(0); }
+
+/* line 297, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+header.navigation {
+  background-color: #333;
+  border-bottom: 1px solid #1a1a1a;
+  min-height: 60px;
+  width: 100%;
+  z-index: 999; }
+  /* line 324, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    /* line 15, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_clearfix.scss */
+    header.navigation .navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 331, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    /* line 337, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: 0.8em 0; }
+  /* line 345, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    float: right;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    /* line 360, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
+      color: white; }
+  /* line 367, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation nav {
+    float: none;
+    min-height: 60px;
+    z-index: 9999999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation nav {
+        float: left; } }
+  /* line 377, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation ul.navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    /* line 387, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation ul.navigation-menu.show {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul.navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  /* line 400, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation ul li.nav-link {
+    background: #333;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        text-decoration: none;
+        width: auto; } }
+    /* line 418, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation ul li.nav-link a {
+      color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      font-weight: 400;
+      text-decoration: none; }
+      @media screen and (min-width: 53.75em) {
+        header.navigation ul li.nav-link a {
+          padding-right: 1em; } }
+      /* line 429, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+      header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
+        color: white; }
+  /* line 435, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .active-nav-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3px; }
+  /* line 442, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 449, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 453, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 457, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 461, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      content: '\25BE';
+      color: rgba(255, 255, 255, 0.7); }
+  /* line 468, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 472, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more a {
+      padding-right: 0.8em; }
+    /* line 476, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        header.navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 484, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+      header.navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 493, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation li.more:focus > .submenu, header.navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation li.more {
+        padding-right: 0.8em;
+        position: relative; } }
+  /* line 503, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 520, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        header.navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 527, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+          header.navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 532, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+          header.navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: 0.7em; } }
+      /* line 539, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+      header.navigation ul.submenu li a {
+        background-color: #2b2b2b;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          header.navigation ul.submenu li a {
+            background-color: #333;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
+  /* line 557, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .navigation-tools {
+    background: #505050;
+    clear: both;
+    display: block;
+    height: 60px;
+    padding-left: 0.5em;
+    padding-right: 1em; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .navigation-tools {
+        background: transparent;
+        clear: none;
+        float: right; } }
+  /* line 572, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .sign-up {
+    background-color: #477DCA;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-decoration: none;
+    background-clip: padding-box;
+    display: inline;
+    float: right;
+    font-size: 0.8em;
+    margin-top: 1em;
+    padding: 0.75em 1em;
+    text-transform: uppercase; }
+    /* line 352, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+    header.navigation .sign-up:hover:not(:disabled) {
+      background-color: #578ad4;
+      cursor: pointer; }
+    /* line 364, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+    header.navigation .sign-up:active:not(:disabled), header.navigation .sign-up:focus:not(:disabled) {
+      background-color: #3c71bb;
+      cursor: pointer; }
+    /* line 51, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+    header.navigation .sign-up:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+  /* line 584, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+  header.navigation .search-bar {
+    float: left;
+    padding: 0.85em 0.6em 0.7em 0.6em;
+    width: 60%; }
+    /* line 593, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+    header.navigation .search-bar form {
+      position: relative; }
+      /* line 596, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+      header.navigation .search-bar form input[type=search] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #404040;
+        border-radius: 6px;
+        border: 1px solid #262626;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9em;
+        font-style: italic;
+        margin: 0;
+        padding: 0.5em 0.8em;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          header.navigation .search-bar form input[type=search] {
+            width: 100%; } }
+      /* line 613, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+      header.navigation .search-bar form button[type=submit] {
+        background-color: #404040;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        background-color: #404040;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: bold;
+        padding: 7px 18px;
+        text-decoration: none;
+        background-clip: padding-box;
+        bottom: 0.3em;
+        left: auto;
+        outline: none;
+        padding: 0 9px;
+        position: absolute;
+        right: 0.3em;
+        top: 0.3em; }
+        /* line 352, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+        header.navigation .search-bar form button[type=submit]:hover:not(:disabled) {
+          background-color: #4d4d4d;
+          cursor: pointer; }
+        /* line 364, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+        header.navigation .search-bar form button[type=submit]:active:not(:disabled), header.navigation .search-bar form button[type=submit]:focus:not(:disabled) {
+          background-color: #333333;
+          cursor: pointer; }
+        /* line 352, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+        header.navigation .search-bar form button[type=submit]:hover:not(:disabled) {
+          background-color: #504949;
+          cursor: pointer; }
+        /* line 364, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+        header.navigation .search-bar form button[type=submit]:active:not(:disabled), header.navigation .search-bar form button[type=submit]:focus:not(:disabled) {
+          background-color: #313535;
+          cursor: pointer; }
+        /* line 51, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/bourbon/addons/_button.scss */
+        header.navigation .search-bar form button[type=submit]:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        /* line 623, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+        header.navigation .search-bar form button[type=submit] img {
+          height: 12px;
+          opacity: 0.7;
+          padding: 1px; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .search-bar {
+        display: inline-block;
+        position: relative;
+        width: 16em; }
+        /* line 636, /Users/kylekangford/Dropbox/sites/everhood.co/src/scss/_style.scss */
+        header.navigation .search-bar input {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block; } }
+
+/*# sourceMappingURL=application.css.map */
