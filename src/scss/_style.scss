@@ -34,6 +34,9 @@ h4, h5 {
   font-family:$sans-serif-2;
   font-weight:400;
 }
+p .icon {
+  font-size:.875em;
+}
 
 //Layout
 .window {
@@ -58,9 +61,10 @@ h4, h5 {
     line-height:1;
   }
 }
+$wrap-padding:14em;
 .wrap {
   @include outer-container;
-  padding:16em 0;
+  padding:$wrap-padding 0;
   .head & {
     padding:16em 0 8em 0;
   }
@@ -74,14 +78,22 @@ h4, h5 {
     display: table-cell;
     vertical-align:middle;
   }
+  &.collapse {
+    padding:0;
+  }
 }
 .squeeze {
   @include span-columns(8);
   @include shift(2);
 }
-.left, .right{
+
+
+.left, .right {
   width:50%;
   float:left;
+  .split-panel & {
+    padding: 7em 10% 7em 10%;
+  }
 }
 
 // Page Header
@@ -182,6 +194,16 @@ nav {
   }
 }
 
+// Hint
+.hint {
+  display: block;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  bottom: 20px;
+}
+
 // Message
 .message {
   display: table-cell;
@@ -190,6 +212,11 @@ nav {
   height:100%;
   width:100%;
   padding:0 5%;
+  .collapse & {
+    padding-top:$wrap-padding;
+    max-width:none;
+    margin:0 auto;
+  }
   h2 {
     font-size: 4.75em;
     line-height: 1;
@@ -209,6 +236,13 @@ nav {
   .end {
     font-size:2em;
   }
+}
+
+// Split Panel
+.split-panel {
+  text-align:center;
+  background-color:#555;
+
 }
 
 // Bullets
@@ -268,22 +302,27 @@ button {
   padding: .35em 1em;
   line-height: 1.6;
   font-size: 1rem;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid white;
+  -webkit-box-shadow: inset 0 -2px white;
+  box-shadow: inset 0 -2px white;
+  &:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top:1px;
+  }
   &.primary-menu-btn {
+    background-color: $primary-color;
     $text-color:white;
+    color: $text-color;
     position:absolute;
     top:2em;
     right:2em;
-    color: $text-color;
-    background-color: $primary-color;
-    border: 1px solid $primary-color;
     z-index:99999;
-    &:hover {
-      border: 1px solid $text-color;
-      background:$text-color;
-      color:$primary-color;
-    }
   }
 }
+
 
 // Credits
 .credits {
@@ -313,6 +352,22 @@ button {
     position: relative;
     text-transform: uppercase;
     top: 14px;
+  }
+}
+.line-behind-icon {
+  border-bottom: 1px solid #cdcdcd;
+  text-align: center;
+  width: 30%;
+  min-width: 200px;
+  margin: 0 auto 4.5em auto;
+  span {
+    background: #f4f4f4;
+    color: #cdcdcd;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0 12px;
+    position: relative;
+    top: 19px;
   }
 }
 
@@ -381,6 +436,7 @@ button {
   $cube-translate-z : 12px;
   $cube-translate-z : 140px;
   $cube-border-color : white;
+  $cube-border-size: 10px;
   $cube-color-1:#00ffcf;
   $cube-color-2:#cf00ff;
   $cube-color-3:#002fff;
@@ -402,7 +458,7 @@ button {
 
   &:hover {
     & > div {
-      border: 2px solid $cube-border-color;
+      border: $cube-border-size solid $cube-border-color;
     }
   }
   > div {
@@ -411,7 +467,7 @@ button {
     width: $cube-translate-z * 2;
     opacity: .8;
     background-position:center center;
-    border: 5px solid $cube-border-color;
+    border: $cube-border-size solid $cube-border-color;
     background-color:$secondary-color;
   }
   div:nth-child(1) {

@@ -30,7 +30,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/work.html">Work</a></li>
           <li><a href="/process.html">Process</a></li>
-          <li><a href="/papers.html">Papers</a></li>
+          <li><a href="/papers.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -51,7 +51,6 @@
         </div>
       </div>
     </div>
-    <span class="icon icon-chevron-down"></span>
   </section>
 
   <section class="panel">
@@ -59,8 +58,10 @@
       <div class="message">
         <!-- 1 Grettings My Name is Kyle Langford -->
         <h2>Kyle Langford</h2>
-        <p>Greetings! Everhood is my portfolio site. It's like the personification of my creative identity or I... just liked the name. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself the ways of the WWW. I specialize in front-end development but I am a Soup to Nuts guy, working on all phases of a web project. Anything I can't do, I find someone smarter then me to do it. <em>Pro-tip:</em> Find smart people, kidnap them!</p>
-        <span class="end icon-bike"></span>
+        <div class="line-behind-icon">
+          <span class="end icon-cube"></span>
+        </div>
+        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end development but I am a Soup to Nuts guy, working on all phases of a web project. Anything I can't do, I find someone smarter then me to do it. <small>Pro-tip:</small> Find smart people, kidnap them!</p>
       </div>
     </div>
   </section>
@@ -70,7 +71,7 @@
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
         <h2>Creative <span class="wp-rotate">+</span> Tech =<span class="span-tada"> #$*!YEA!!</span></h2>
-        <p>What does that mean!? Dunno... but arn't you pumped! Technology and content are two sides of the same coin, especially when talking about digital. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and better execution of your product.</p>
+        <p>Technology and content are two sides of the same coin. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and a better execution of your product.</p>
       </div>
 
       <ul class="bullets">
@@ -96,7 +97,7 @@
         </li>
         <li class="bullet">
           <div class="bullet-icon bullet-icon-3">
-            <span class="icon-cube"></span>
+            <span class="icon-layout"></span>
           </div>
           <div class="bullet-content">
             <!-- 1.2.3 UI/UX Designer -->
@@ -123,20 +124,31 @@
       <div class="message">
         <!-- 1.3 Drupal Experience -->
         <h2>Drupal Experience</h2>
-        <p>For about 5 years I have worked with drupal starting in version 6 and working on everything from brochure sites to large publishing sites to multi-site platforms. I can handle everything a Drupal project can throw at you except some of the more advanced back-end programming. I am a front-end developer/designer by trade but work but frequently find myself writing php and meddling in stuff way outside my comfort zone.</p>
-        <span class="end icon-drupal"></span>
+        <div class="line-behind-icon">
+          <span class="end icon-drupal"></span>
+        </div>
+        <p>I have 5 years experience developing in drupal starting from version 6 and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
     </div>
     </div>
   </section>
 
   <section class="panel">
-    <div class="wrap">
+    <div class="wrap collapse">
       <div class="message">
         <!-- 1.4 What I've done: Work Experience. -->
         <h2>Work</h2>
-        <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also  </p>
-        <h3 class="left"><a href="/work.html">SAMPLES</a></h3>
-        <h3 class="right"><a href="/process.html">PROCESS</a></h3>
+        <div class="line-behind-icon">
+          <span class="end icon-lamp"></span>
+        </div>
+        <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also..  </p>
+      </div>
+    </div>
+    <div class="split-panel">
+      <div class="left">
+        <h3><a href="/work.html">SAMPLES</a></h3>
+      </div>
+      <div class="right">
+        <h3><a href="/process.html">PROCESS</a></h3>
       </div>
     </div>
   </section>
@@ -146,7 +158,10 @@
       <div class="message">
         <!-- sectioned: Raskyl -->
         <h2>Raskyl <span>Collective</span></h2>
-        <p>A Fledling Agency. This is the baby, the hail mary, the getting humpty bumpty up in here shit. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design, genius.</p>
+        <div class="line-behind-icon">
+          <span class="end icon-bolt"></span>
+        </div>
+        <p>A Fledling Agency. This is the baby, the getting humpty bumpty up in here shit. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
         <button href="http://www.raskyl.com">The Dopeshit</button>
       </div>
     </div>
@@ -163,10 +178,15 @@
     <span class="icon icon-twitter"></span>
   </footer>
 
+  <!-- add with js, add bounce animation on complete remove -->
+
+  <span class="hint icon-chevron-down"></span>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="dist/js/jquery-1.11.2.min.js"><\/script>')
   </script>
+
 
   <script src="dist/js/scripts.min.js"></script>
 

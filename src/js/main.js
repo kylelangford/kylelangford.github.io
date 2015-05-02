@@ -26,7 +26,7 @@ var waypoints = $('.wp-rotate').waypoint(function() {
   $('.span-tada').addClass('animated tada');
   $('.span-tada').fadeIn();
   }, {
-  offset: '25%'
+  offset: '4%'
 })
 
 
