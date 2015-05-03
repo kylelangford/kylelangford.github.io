@@ -1,8 +1,8 @@
-<?php include 'inc/head-inc.php' ?>
+<?php include 'inc/head-inc.php'; ?>
 
 <!-- Outline -->
 <body>
-  <?php include 'inc/nav-inc.php' ?>
+  <?php include 'inc/nav-inc.php'; ?>
 
   <section class="panel welcome window">
     <div class="wrap">
@@ -131,4 +131,4 @@
 
   <span class="hint icon-chevron-down animated infinite bounce"></span>
 
-  <?php include 'inc/foot-inc.php' ?>
+  <?php include 'inc/foot-inc.php'; ?>
