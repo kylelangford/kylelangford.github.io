@@ -417,6 +417,15 @@ button, input[type="submit"] {
  * http://everhood.com
  * Copyright 2014–2015 Kyle Langford
  * MIT License */
+body {
+  opacity: 0;
+  background-color: #09f; }
+  body.tween {
+    opacity: 1;
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    transition: all .8s ease-in; }
+
 p {
   font-family: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
   font-size: 1.15em;

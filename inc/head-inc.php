@@ -14,4 +14,5 @@
   <link rel="stylesheet" href="dist/css/normalize.min.css">
   <link rel="stylesheet" href="dist/css/styles.css">
   <script src="dist/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <noscript><style type="text/css"> body { opacity:1; } </style></noscript>
 </head>

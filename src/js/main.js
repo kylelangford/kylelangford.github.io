@@ -6,11 +6,9 @@ $(".mast-head").headroom( {
   }
 });
 
-// (function () {
-//   $('.panel').each( function() {
-//     $(this).delay( 200 ).fadeIn( 400 );
-//   });
-// })();
+(function () {
+  $("body").addClass( "tween" );
+})();
 
 // Menu Trigger
 (function () {

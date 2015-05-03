@@ -21,6 +21,17 @@ $cube-color-2: #cf00ff;
 $cube-color-3: #002fff;
 $button-edge: shade( $primary-color, 50%);
 $wrap-padding: 14em;
+
+// Fade In Page
+body {
+  opacity:0;
+  background-color:$primary-color;
+  &.tween {
+    opacity:1;
+    @include transition(all .8s ease-in);
+  }
+}
+
 // Typography
 p {
   font-family: $serif;
@@ -54,6 +65,7 @@ svg {
   height: 100vh;
   display: table;
 }
+
 .panel {
   width: 100vw;
   background-color: $panel-even-color;
