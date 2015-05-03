@@ -6,7 +6,11 @@ module.exports = function(grunt) {
     uglify:{
       build: {
         files: {
-          'dist/js/scripts.min.js': ['src/js/vendor/headroom.js', 'src/js/vendor/jquery.headroom.js', 'src/js/vendor/jquery.waypoints.js','src/js/main.js']
+          'dist/js/scripts.min.js': [ 'src/js/vendor/headroom.js',
+                                      'src/js/vendor/jquery.headroom.js',
+                                      'src/js/vendor/jquery.waypoints.js',
+                                      'src/js/main.js'
+                                    ]
         }
       },
       dev: {
@@ -17,7 +21,11 @@ module.exports = function(grunt) {
           preserveComments: 'all'
         },
         files: {
-          'dist/js/scripts.min.js': ['src/js/vendor/headroom.js', 'src/js/vendor/jquery.headroom.js', 'src/js/vendor/jquery.waypoints.js','src/js/main.js']
+          'dist/js/scripts.min.js': [ 'src/js/vendor/headroom.js',
+                                      'src/js/vendor/jquery.headroom.js',
+                                      'src/js/vendor/jquery.waypoints.js',
+                                      'src/js/main.js'
+                                    ]
         }
       }
     },

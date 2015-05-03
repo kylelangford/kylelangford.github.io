@@ -1,46 +1,14 @@
-<!Doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Everhood | Kyle Langford</title>
-  <meta name="description" content="My name is Kyle Langford, and this is my web design and development portfolio.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Load -->
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Raleway:700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="dist/css/normalize.min.css">
-  <link rel="stylesheet" href="dist/css/styles.css">
-  <script src="dist/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
+<?php include 'inc/head-inc.php' ?>
 
 <!-- Outline -->
 <body>
-  <header class="mast-head">
-    <!-- 1. Everhood -->
-    <h1><a class="site-logo" href="/">
-      Everhood<span>.</span></a></h1>
-    <button class="primary-menu-btn">MENU</button>
-    <!-- Sectioned: Nav -->
-    <nav class="primary">
-      <div class="wrap">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/process.html">Process</a></li>
-          <li><a href="/papers.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <?php include 'inc/nav-inc.php' ?>
 
-  <section class="welcome-panel window">
+  <section class="panel welcome window">
     <div class="wrap">
       <div class="left">
         <!-- 1.1 Web UI -->
-        <h2>Web<br/>UI</h2>
+        <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2>
       </div>
       <div class="right">
         <div id="container">
@@ -52,31 +20,28 @@
       </div>
     </div>
   </section>
-
-  <section class="panel">
+  <section class="panel close-hint">
     <div class="wrap">
       <div class="message">
         <!-- 1 Grettings My Name is Kyle Langford -->
         <h2>Kyle Langford</h2>
         <div class="line-behind-icon">
-          <span class="end icon-cube"></span>
+          <span class="icon-cube"></span>
         </div>
-        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end development but I am a Soup to Nuts guy, working on all phases of a web project. Anything I can't do, I find someone smarter then me to do it. <small>Pro-tip:</small> Find smart people, kidnap them!</p>
+        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project. Anything I can't do, I find someone smarter then me to do it. <small>Pro-tip:</small> Find smart people, kidnap them!</p>
       </div>
     </div>
   </section>
-
   <section class="panel">
     <div class="wrap">
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
-        <h2>Creative <span class="wp-rotate">+</span> Tech =<span class="span-tada"> #$*!YEA!!</span></h2>
+        <h2>Creative <span class="wp-rotate">+</span> Tech<span class="span-tada"> #$*!YEA!!</span></h2>
         <p>Technology and content are two sides of the same coin. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and a better execution of your product.</p>
       </div>
-
       <ul class="bullets">
         <li class="bullet">
-          <div class="bullet-icon bullet-icon-1">
+          <div class="bullet-icon">
             <span class="icon-bulb"></span>
           </div>
           <div class="bullet-content">
@@ -86,7 +51,7 @@
           </div>
         </li>
         <li class="bullet">
-          <div class="bullet-icon bullet-icon-2">
+          <div class="bullet-icon">
             <span class="icon-file-settings"></span>
           </div>
           <div class="bullet-content">
@@ -96,7 +61,7 @@
           </div>
         </li>
         <li class="bullet">
-          <div class="bullet-icon bullet-icon-3">
+          <div class="bullet-icon">
             <span class="icon-layout"></span>
           </div>
           <div class="bullet-content">
@@ -106,7 +71,7 @@
           </div>
         </li>
         <li class="bullet">
-          <div class="bullet-icon bullet-icon-4">
+          <div class="bullet-icon">
             <span class="icon-code"></span>
           </div>
           <div class="bullet-content">
@@ -118,89 +83,52 @@
       </ul>
     </div>
   </section>
-
   <section class="panel">
     <div class="wrap">
       <div class="message">
         <!-- 1.3 Drupal Experience -->
         <h2>Drupal Experience</h2>
         <div class="line-behind-icon">
-          <span class="end icon-drupal"></span>
+          <span class="icon-drupal"></span>
         </div>
         <p>I have 5 years experience developing in drupal starting from version 6 and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
     </div>
     </div>
   </section>
-
   <section class="panel">
     <div class="wrap collapse">
       <div class="message">
         <!-- 1.4 What I've done: Work Experience. -->
         <h2>Work</h2>
         <div class="line-behind-icon">
-          <span class="end icon-lamp"></span>
+          <span class="icon-lamp"></span>
         </div>
         <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also..  </p>
       </div>
     </div>
     <div class="split-panel">
       <div class="left">
-        <h3><a href="/work.html">SAMPLES</a></h3>
+        <h3><a href="/work.php">SAMPLES</a></h3>
       </div>
       <div class="right">
-        <h3><a href="/process.html">PROCESS</a></h3>
+        <h3><a href="/process.php">PROCESS</a></h3>
       </div>
     </div>
   </section>
-
   <aside class="panel">
     <div class="wrap">
       <div class="message">
         <!-- sectioned: Raskyl -->
         <h2>Raskyl <span>Collective</span></h2>
         <div class="line-behind-icon">
-          <span class="end icon-bolt"></span>
+          <span class="icon-bolt"></span>
         </div>
-        <p>A Fledling Agency. This is the baby, the getting humpty bumpty up in here shit. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
+        <p>A Fledling Agency. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
         <button href="http://www.raskyl.com">The Dopeshit</button>
       </div>
     </div>
   </aside>
 
-  <footer class="credits panel">
-    <div class="line-behind-text">
-      <!-- 1.5 Credits: Copyright -->
-      <h2><a href="/colophon.html">CREDITS</a></h2>
-    </div>
+  <span class="hint icon-chevron-down animated infinite bounce"></span>
 
-    <p class="copy"><span class="icon icon-copyright"></span> Kyle Langford 2015</p>
-    <span class="icon icon-github"></span>
-    <span class="icon icon-twitter"></span>
-  </footer>
-
-  <!-- add with js, add bounce animation on complete remove -->
-
-  <span class="hint icon-chevron-down"></span>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="dist/js/jquery-1.11.2.min.js"><\/script>')
-  </script>
-
-
-  <script src="dist/js/scripts.min.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!--
-  <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script>
-  -->
-</body>
-
-</html>
+  <?php include 'inc/foot-inc.php' ?>

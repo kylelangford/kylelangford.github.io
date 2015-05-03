@@ -1,68 +1,71 @@
-// Menu Trigger
-$(function(){
-  $('.primary-menu-btn').on('click touchstart',function (e) {
-    $('nav.primary').toggleClass('overlay');
-    e.preventDefault();
-  });
 
+// Headroom
+$(".mast-head").headroom( {
+  onTop : function() {
+    $('.hint').show();
+  }
 });
 
-// Waypoints.js
-var waypoints = $('.fade').waypoint(function() {
-  $('.fade').addClass('on');
-}, {
-  offset: '50%'
-})
+// (function () {
+//   $('.panel').each( function() {
+//     $(this).delay( 200 ).fadeIn( 400 );
+//   });
+// })();
 
+// Menu Trigger
+(function () {
+  $('.primary-menu-btn').on('click touchstart',function (e) {
+    $('nav.primary').toggleClass('overlay');
+    $(this).toggleClass('active')
+    e.preventDefault();
+  });
+})();
+
+// Logo Swap
+$('.site-logo').hover(
+  function() {
+    var $this = $(this); // caching $(this)
+    $this.data('Everhood', $this.text());
+    $this.text("Kyle Langford");
+  },
+  function() {
+    var $this = $(this); // caching $(this)
+    $this.text($this.data('Everhood'));
+  }
+);
+
+//
 // Waypoints.js
+//
+var waypoints = $('.close-hint').waypoint(function() {
+  $('.hint').hide();
+}, {
+  offset: '75%'
+});
 var waypoints = $('.wp-rotate').waypoint(function() {
   $('.wp-rotate').addClass('on');
 }, {
-  offset: '50%'
-})
+  offset: '75%'
+});
 $('.span-tada').hide();
-// Waypoints.js
 var waypoints = $('.wp-rotate').waypoint(function() {
   $('.span-tada').addClass('animated tada');
   $('.span-tada').fadeIn();
   }, {
-  offset: '4%'
-})
+  offset: '50%'
+});
 
-
-
-
-$(".mast-head").headroom();
-
-// Scroll to Link
-$(function() {
-  var lastScrollTop = 0, delta = 100;
-  $(window).scroll( function (event){
-    var st = $(this).scrollTop();
-    if(Math.abs(lastScrollTop - st) <= delta)
-      return;
-    if (st > lastScrollTop){
-      // downscroll code
-      // console.log('scroll down');
-
-      // cube scroll function
-
-    } else {
-      // upscroll code
-      // console.log('scroll up');
-
-      // cube scroll funtion
-    }
-    lastScrollTop = st;
-  });
-
+// Scroll To
+(function () {
   $.mark = {
     jump: function (options) {
       var defaults = {
-        selector: '.scroll-on-page-link'
+        selector: 'a.scroll-on-page-link'
       };
-      if (typeof options == 'string') defaults.selector = options;
-      var options = $.extend(defaults, options);
+      if (typeof options == 'string') {
+        defaults.selector = options;
+      }
+      options = $.extend(defaults, options);
       return $(options.selector).click(function (e) {
         var jumpobj = $(this);
         var target = jumpobj.attr('href');
@@ -70,25 +73,32 @@ $(function() {
         var offset = $(target).offset().top;
         $('html,body').animate({
           scrollTop: offset
-        }, thespeed, 'swing')
+        }, thespeed, 'swing');
         e.preventDefault();
-      })
+      });
     }
   };
 
   $.mark.jump();
 
-});
+})();
 
-// Logo Swap
-$('.site-logo').hover(
-    function() {
-        var $this = $(this); // caching $(this)
-        $this.data('Everhood', $this.text());
-        $this.text("Kyle Langford");
-    },
-    function() {
-        var $this = $(this); // caching $(this)
-        $this.text($this.data('Everhood'));
-    }
-);
+// Preload Elements
+window.onload = function() {
+	setTimeout(function() {
+		// XHR to request a JS and a CSS
+		// var xhr = new XMLHttpRequest();
+		// xhr.open('GET', 'http://domain.tld/preload.js');
+		// xhr.send('');
+    // xhr = new XMLHttpRequest();
+		// xhr.open('GET', 'http://domain.tld/preload.css');
+		// xhr.send('');
+		// preload image
+		new Image().src = "img/danklin2012.jpg";
+		new Image().src = "img/p-ballyribbon.jpg";
+		new Image().src = "img/p-brunello.jpg";
+		new Image().src = "img/p-imaginatik.jpg";
+		new Image().src = "img/p-ma-ena.jpg";
+		new Image().src = "img/p-orchard.jpg";
+	}, 1000);
+};

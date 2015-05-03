@@ -1,47 +1,8 @@
-<!Doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<?php include 'inc/head-inc.php' ?>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Process | Everhood</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Raleway:700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="dist/css/normalize.min.css">
-  <link rel="stylesheet" href="dist/css/styles.css">
-  <script src="dist/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
 <!-- Outline -->
-
-<body>
-  <header class="mast-head">
-    <!-- 1. Everhood -->
-    <h1><a class="site-logo" href="/">
-      Everhood<span>.</span></a></h1>
-    <button class="primary-menu-btn">MENU</button>
-    <!-- Sectioned: Nav -->
-    <nav class="primary">
-      <div class="wrap">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/process.html">Process</a></li>
-          <li><a href="/papers.html">Papers</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- I feel like this section needs to be rewritten, should the content be in na article tag? -->
+<body id="scroll-link-1">
+  <?php include 'inc/nav-inc.php' ?>
 
   <article>
     <header class="panel head">
@@ -124,37 +85,14 @@
             <p>Not done yet. Time test and make sure we are as good for launch as possible. I always say the work never ends and once the site goes live it will slowly mature like a fine wine then ultimately be crushed in a blackhole created from the gravity of its own weight.</p>
 
             <hr>
+
             <p class="author">Kyle Langford</p>
+
+            <a href="#scroll-link-1" class="scroll-on-page-link">Going up?</a>
+
         </div>
       </div>
     </div>
   </article>
 
-  <footer class="credits panel">
-    <div class="line-behind-text">
-      <h2><a href="/colophon.html">CREDITS</a></h2>
-    </div>
-    <p style="color:#f4f4f4;">&copy; Kyle Langford 2015</p>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="dist/js/jquery-1.11.2.min.js"><\/script>')
-  </script>
-
-  <script src="dist/js/scripts.min.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!--
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        -->
-</body>
-
-</html>
+  <?php include 'inc/foot-inc.php' ?>

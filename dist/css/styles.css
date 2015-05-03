@@ -1,4 +1,203 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?idcc1p');
+  src: url('../fonts/icomoon.eot?#iefixidcc1p') format('embedded-opentype'), url('../fonts/icomoon.woff?idcc1p') format('woff'), url('../fonts/icomoon.ttf?idcc1p') format('truetype'), url('../fonts/icomoon.svg?idcc1p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-envelope-o:before {
+  content: "\f003"; }
+
+.icon-heart:before {
+  content: "\f004"; }
+
+.icon-star:before {
+  content: "\f005"; }
+
+.icon-star-o:before {
+  content: "\f006"; }
+
+.icon-check:before {
+  content: "\f00c"; }
+
+.icon-close:before {
+  content: "\f00d"; }
+
+.icon-remove:before {
+  content: "\f00d"; }
+
+.icon-times:before {
+  content: "\f00d"; }
+
+.icon-repeat:before {
+  content: "\f01e"; }
+
+.icon-rotate-right:before {
+  content: "\f01e"; }
+
+.icon-plus:before {
+  content: "\f067"; }
+
+.icon-minus:before {
+  content: "\f068"; }
+
+.icon-asterisk:before {
+  content: "\f069"; }
+
+.icon-chevron-up:before {
+  content: "\f077"; }
+
+.icon-chevron-down:before {
+  content: "\f078"; }
+
+.icon-heart-o:before {
+  content: "\f08a"; }
+
+.icon-lemon-o:before {
+  content: "\f094"; }
+
+.icon-twitter:before {
+  content: "\f099"; }
+
+.icon-square:before {
+  content: "\f0c8"; }
+
+.icon-sitemap:before {
+  content: "\f0e8"; }
+
+.icon-github:before {
+  content: "\f113"; }
+
+.icon-terminal:before {
+  content: "\f120"; }
+
+.icon-code:before {
+  content: "\f121"; }
+
+.icon-rocket:before {
+  content: "\f135"; }
+
+.icon-ellipsis-h:before {
+  content: "\f141"; }
+
+.icon-ellipsis-v:before {
+  content: "\f142"; }
+
+.icon-check-square:before {
+  content: "\f14a"; }
+
+.icon-bug:before {
+  content: "\f188"; }
+
+.icon-drupal:before {
+  content: "\f1a9"; }
+
+.icon-cube:before {
+  content: "\f1b2"; }
+
+.icon-cubes:before {
+  content: "\f1b3"; }
+
+.icon-codepen:before {
+  content: "\f1cb"; }
+
+.icon-wechat:before {
+  content: "\f1d7"; }
+
+.icon-weixin:before {
+  content: "\f1d7"; }
+
+.icon-paper-plane:before {
+  content: "\f1d8"; }
+
+.icon-send:before {
+  content: "\f1d8"; }
+
+.icon-paper-plane-o:before {
+  content: "\f1d9"; }
+
+.icon-send-o:before {
+  content: "\f1d9"; }
+
+.icon-bomb:before {
+  content: "\f1e2"; }
+
+.icon-copyright:before {
+  content: "\f1f9"; }
+
+.icon-bicycle:before {
+  content: "\f206"; }
+
+.icon-mug:before {
+  content: "\e600"; }
+
+.icon-stack:before {
+  content: "\e611"; }
+
+.icon-spaceinvaders:before {
+  content: "\e601"; }
+
+.icon-lamp:before {
+  content: "\e602"; }
+
+.icon-layout:before {
+  content: "\e603"; }
+
+.icon-bike:before {
+  content: "\e612"; }
+
+.icon-ruler:before {
+  content: "\e604"; }
+
+.icon-heart2:before {
+  content: "\e605"; }
+
+.icon-bulb:before {
+  content: "\e606"; }
+
+.icon-phone:before {
+  content: "\e607"; }
+
+.icon-data:before {
+  content: "\e608"; }
+
+.icon-lab:before {
+  content: "\e609"; }
+
+.icon-food:before {
+  content: "\e60a"; }
+
+.icon-file-settings:before {
+  content: "\e60b"; }
+
+.icon-share:before {
+  content: "\e60c"; }
+
+.icon-mapmarker:before {
+  content: "\e60d"; }
+
+.icon-support:before {
+  content: "\e60e"; }
+
+.icon-bolt:before {
+  content: "\e60f"; }
+
+.icon-pill:before {
+  content: "\e610"; }
+
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
@@ -237,7 +436,10 @@ h4, h5 {
   font-weight: 400; }
 
 p .icon {
-  font-size: .875em; }
+  font-size: 0.875em; }
+
+svg {
+  padding: 4em; }
 
 .window {
   width: 100vw;
@@ -252,15 +454,16 @@ p .icon {
     display: table;
     clear: both; }
   .panel:nth-child(odd) {
-    background-color: #F4F4F4; }
-
-.welcome-panel {
-  background: #FFCC2F; }
-  .welcome-panel h2 {
-    font-size: 12em;
-    margin-bottom: 0px;
-    text-align: right;
-    line-height: 1; }
+    background-color: #f4f4f4; }
+  .panel.welcome {
+    background: #ffcc2f; }
+    .panel.welcome h2 {
+      font-size: 12em;
+      margin-bottom: 0;
+      text-align: right;
+      line-height: .95; }
+      .panel.welcome h2 .kern {
+        letter-spacing: -12px; }
 
 .wrap {
   max-width: 68em;
@@ -272,7 +475,7 @@ p .icon {
     display: table;
     clear: both; }
   .head .wrap {
-    padding: 16em 0 8em 0; }
+    padding: 16em 0 8em; }
   article .wrap {
     padding: 8em 0; }
   .wrap .left, .wrap .right {
@@ -301,7 +504,7 @@ p .icon {
   width: 50%;
   float: left; }
   .split-panel .left, .split-panel .right {
-    padding: 7em 10% 7em 10%; }
+    padding: 7em 10%; }
 
 .mast-head {
   position: fixed;
@@ -310,7 +513,7 @@ p .icon {
   font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
   .mast-head h1 {
     display: inline;
-    margin: 0px; }
+    margin: 0; }
 
 .site-logo {
   position: absolute;
@@ -357,7 +560,7 @@ nav.primary {
   width: 100%;
   height: 100%;
   opacity: 0;
-  padding-right: .6em;
+  padding-right: 0.6em;
   z-index: -1;
   display: none;
   -webkit-transition: opacity 0.5s ease-in;
@@ -365,11 +568,11 @@ nav.primary {
   transition: opacity 0.5s ease-in; }
   nav.primary.overlay {
     display: table;
-    opacity: 0.95;
+    opacity: 1;
     z-index: 999; }
     nav.primary.overlay .wrap {
       display: table-cell;
-      padding: 0px;
+      padding: 0;
       vertical-align: middle; }
   nav.primary ul {
     width: 50vw;
@@ -400,17 +603,15 @@ nav.primary {
   .message h2 {
     font-size: 4.75em;
     line-height: 1;
-    margin-bottom: .35em; }
+    margin-bottom: 0.35em; }
     .message h2 span {
-      color: #FFCC2F; }
+      color: #ffcc2f; }
   .message h3 {
     margin-bottom: 1em; }
   .message p {
     font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 1.75em; }
-  .message .end {
-    font-size: 2em; }
 
 .split-panel {
   text-align: center;
@@ -437,7 +638,7 @@ nav.primary {
     flex-grow: 1;
     -ms-flex-positive: 1; }
   .bullets .bullet-icon {
-    background: #FFCC2F;
+    background: #ffcc2f;
     border-radius: 50%;
     float: left;
     height: 72px;
@@ -454,8 +655,8 @@ nav.primary {
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block;
     font-weight: 800;
-    margin: 0 0 0.5833333333em 0;
-    padding-top: .35em; }
+    margin: 0;
+    padding-top: 0.35em; }
   .bullets li {
     list-style: none; }
   .bullets img {
@@ -463,15 +664,15 @@ nav.primary {
 
 button {
   border-radius: 8px;
-  padding: .35em 1em;
+  padding: 0.35em 1em;
   line-height: 1.6;
   font-size: 1rem;
   outline: none;
   border: 0;
-  border-bottom: 3px solid white;
-  -webkit-box-shadow: inset 0 -2px white;
-  box-shadow: inset 0 -2px white; }
-  button:active {
+  border-bottom: 3px solid #004c7f;
+  -webkit-box-shadow: inset 0 -2px #004c7f;
+  box-shadow: inset 0 -2px #004c7f; }
+  button.active {
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-top: 1px; }
@@ -482,6 +683,9 @@ button {
     top: 2em;
     right: 2em;
     z-index: 99999; }
+    button.primary-menu-btn.active {
+      background-color: white;
+      color: #09f; }
 
 .credits {
   text-align: center;
@@ -496,10 +700,10 @@ button {
   text-align: center;
   width: 30%;
   min-width: 200px;
-  margin: 0 auto 4.5em auto; }
+  margin: 0 auto 4.5em; }
   .line-behind-text h2 {
     background: #333;
-    color: #F4F4F4;
+    color: #f4f4f4;
     display: inline-block;
     font-size: 1em;
     padding: 0 10px;
@@ -512,23 +716,22 @@ button {
   text-align: center;
   width: 30%;
   min-width: 200px;
-  margin: 0 auto 4.5em auto; }
+  margin: 0 auto 4.5em; }
   .line-behind-icon span {
     background: #f4f4f4;
     color: #cdcdcd;
     display: inline-block;
-    font-size: 1em;
+    font-size: 2em;
     padding: 0 12px;
     position: relative;
     top: 19px; }
-
-svg {
-  padding: 4em; }
+  .panel:nth-child(even) .line-behind-icon span {
+    background: white; }
 
 .article h4 {
-  margin: 3em 0 .5em 0; }
+  margin: 3em 0 0.5em; }
 .article h5 {
-  margin: 1em 0 .5em 0; }
+  margin: 1em 0 0.5em; }
 
 p.type {
   border-bottom: 1px solid;
@@ -549,9 +752,9 @@ p.date {
   font-size: 1em; }
 
 code {
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 4.5px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   font-size: 0.8em;
   font-style: normal;
   padding: 0.1em 0.4em;
@@ -564,12 +767,17 @@ code {
 
 p.author {
   font-family: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
-  font-size: .875em; }
+  font-size: 0.875em; }
 
+/*
+  Based on: http://cssdeck.com/labs/simple-css3-3d-cube
+  Author: http://kushagra.me/
+*/
 #container {
   display: inline-block;
   padding-top: 50px;
   width: 100%;
+  z-index: 9999;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
@@ -581,7 +789,7 @@ p.author {
   position: relative;
   height: 280px;
   width: 280px;
-  margin: 0px auto;
+  margin: 0 auto;
   cursor: pointer;
   z-index: 9999;
   -webkit-transition: -webkit-transform 2s linear;
@@ -598,10 +806,10 @@ p.author {
     position: absolute;
     height: 280px;
     width: 280px;
-    opacity: .8;
+    opacity: 0.8;
     background-position: center center;
     border: 10px solid white;
-    background-color: #FFCC2F; }
+    background-color: #ffcc2f; }
   #cube div:nth-child(1) {
     -webkit-transform: translateZ(140px);
     -moz-transform: translateZ(140px);
@@ -697,11 +905,10 @@ p.author {
     -o-transform: rotate(135deg);
     transform: rotate(135deg); }
 
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
+/*
+  Animate.css - http://daneden.me/animate
+  Licensed under the MIT license - http://opensource.org/licenses/MIT
+  Copyright (c) 2015 Daniel Eden
 */
 .animated {
   -webkit-animation-duration: 1s;
@@ -712,6 +919,76 @@ Copyright (c) 2015 Daniel Eden
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0.1; }
+
+  100% {
+    opacity: 1; }
+
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0.1; }
+
+  100% {
+    opacity: 1; }
+
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom; }
 
 @-webkit-keyframes tada {
   0% {
@@ -758,202 +1035,3 @@ Copyright (c) 2015 Daniel Eden
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?idcc1p');
-  src: url('../fonts/icomoon.eot?#iefixidcc1p') format('embedded-opentype'), url('../fonts/icomoon.woff?idcc1p') format('woff'), url('../fonts/icomoon.ttf?idcc1p') format('truetype'), url('../fonts/icomoon.svg?idcc1p#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-envelope-o:before {
-  content: "\f003"; }
-
-.icon-heart:before {
-  content: "\f004"; }
-
-.icon-star:before {
-  content: "\f005"; }
-
-.icon-star-o:before {
-  content: "\f006"; }
-
-.icon-check:before {
-  content: "\f00c"; }
-
-.icon-close:before {
-  content: "\f00d"; }
-
-.icon-remove:before {
-  content: "\f00d"; }
-
-.icon-times:before {
-  content: "\f00d"; }
-
-.icon-repeat:before {
-  content: "\f01e"; }
-
-.icon-rotate-right:before {
-  content: "\f01e"; }
-
-.icon-plus:before {
-  content: "\f067"; }
-
-.icon-minus:before {
-  content: "\f068"; }
-
-.icon-asterisk:before {
-  content: "\f069"; }
-
-.icon-chevron-up:before {
-  content: "\f077"; }
-
-.icon-chevron-down:before {
-  content: "\f078"; }
-
-.icon-heart-o:before {
-  content: "\f08a"; }
-
-.icon-lemon-o:before {
-  content: "\f094"; }
-
-.icon-twitter:before {
-  content: "\f099"; }
-
-.icon-square:before {
-  content: "\f0c8"; }
-
-.icon-sitemap:before {
-  content: "\f0e8"; }
-
-.icon-github:before {
-  content: "\f113"; }
-
-.icon-terminal:before {
-  content: "\f120"; }
-
-.icon-code:before {
-  content: "\f121"; }
-
-.icon-rocket:before {
-  content: "\f135"; }
-
-.icon-ellipsis-h:before {
-  content: "\f141"; }
-
-.icon-ellipsis-v:before {
-  content: "\f142"; }
-
-.icon-check-square:before {
-  content: "\f14a"; }
-
-.icon-bug:before {
-  content: "\f188"; }
-
-.icon-drupal:before {
-  content: "\f1a9"; }
-
-.icon-cube:before {
-  content: "\f1b2"; }
-
-.icon-cubes:before {
-  content: "\f1b3"; }
-
-.icon-codepen:before {
-  content: "\f1cb"; }
-
-.icon-wechat:before {
-  content: "\f1d7"; }
-
-.icon-weixin:before {
-  content: "\f1d7"; }
-
-.icon-paper-plane:before {
-  content: "\f1d8"; }
-
-.icon-send:before {
-  content: "\f1d8"; }
-
-.icon-paper-plane-o:before {
-  content: "\f1d9"; }
-
-.icon-send-o:before {
-  content: "\f1d9"; }
-
-.icon-bomb:before {
-  content: "\f1e2"; }
-
-.icon-copyright:before {
-  content: "\f1f9"; }
-
-.icon-bicycle:before {
-  content: "\f206"; }
-
-.icon-mug:before {
-  content: "\e600"; }
-
-.icon-stack:before {
-  content: "\e611"; }
-
-.icon-spaceinvaders:before {
-  content: "\e601"; }
-
-.icon-lamp:before {
-  content: "\e602"; }
-
-.icon-layout:before {
-  content: "\e603"; }
-
-.icon-bike:before {
-  content: "\e612"; }
-
-.icon-ruler:before {
-  content: "\e604"; }
-
-.icon-heart2:before {
-  content: "\e605"; }
-
-.icon-bulb:before {
-  content: "\e606"; }
-
-.icon-phone:before {
-  content: "\e607"; }
-
-.icon-data:before {
-  content: "\e608"; }
-
-.icon-lab:before {
-  content: "\e609"; }
-
-.icon-food:before {
-  content: "\e60a"; }
-
-.icon-file-settings:before {
-  content: "\e60b"; }
-
-.icon-share:before {
-  content: "\e60c"; }
-
-.icon-mapmarker:before {
-  content: "\e60d"; }
-
-.icon-support:before {
-  content: "\e60e"; }
-
-.icon-bolt:before {
-  content: "\e60f"; }
-
-.icon-pill:before {
-  content: "\e610"; }
