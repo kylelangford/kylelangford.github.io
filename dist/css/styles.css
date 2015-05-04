@@ -656,7 +656,7 @@ svg {
       font-size: 6em;
       text-align: center;
       line-height: .85; }
-    @media screen and (min-width: 768px)  {
+    @media screen and (min-width: 767px)  {
       .panel.welcome h2 {
         font-size: 12em;
         margin-bottom: 0;
@@ -674,7 +674,7 @@ svg {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 768px)  {
+  @media screen and (max-width: 767px)  {
     .wrap {
       padding: 6em 0; } }
   .head .wrap {
@@ -683,7 +683,7 @@ svg {
     padding: 8em 0; }
   .wrap .left, .wrap .right {
     width: 100%; }
-    @media screen and (min-width: 768px)  {
+    @media screen and (min-width: 767px)  {
       .wrap .left, .wrap .right {
         float: left;
         display: block;
@@ -705,6 +705,15 @@ svg {
   margin-left: 17.0596085997%; }
   .squeeze:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 767px)  {
+    .squeeze {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
+      .squeeze:last-child {
+        margin-right: 0; } }
 
 .left, .right {
   width: 50%;
@@ -784,7 +793,7 @@ nav.primary {
     width: 50vw;
     text-align: right;
     font-size: 3em; }
-    @media screen and (max-width: 768px)  {
+    @media screen and (max-width: 767px)  {
       nav.primary ul {
         width: 100vw;
         text-align: center; } }
@@ -814,7 +823,7 @@ nav.primary {
     font-size: 4.75em;
     line-height: 1;
     margin-bottom: 0.35em; }
-    @media screen and (max-width: 768px)  {
+    @media screen and (max-width: 767px)  {
       .message h2 {
         font-size: 2.75em; } }
     .message h2 span {
@@ -825,7 +834,7 @@ nav.primary {
     font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 1.75rem; }
-    @media screen and (max-width: 768px)  {
+    @media screen and (max-width: 767px)  {
       .message p {
         font-size: 1.25em; } }
 
@@ -834,16 +843,25 @@ nav.primary {
   background-color: #555; }
 
 .bullets {
+  margin-bottom: 1.5;
+  overflow: auto;
+  padding: 0;
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 65.8807828007%;
-  margin-left: 17.0596085997%;
-  margin-bottom: 1.5;
-  overflow: auto;
-  padding: 0; }
+  margin-left: 17.0596085997%; }
   .bullets:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 767px)  {
+    .bullets {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
+      .bullets:last-child {
+        margin-right: 0; } }
   .bullets .bullet {
     -webkit-flex-basis: 20em;
     -moz-flex-basis: 20em;
@@ -863,7 +881,7 @@ nav.primary {
     text-align: center;
     line-height: 75px;
     color: white; }
-    @media screen and (max-width: 768px)  {
+    @media screen and (max-width: 767px)  {
       .bullets .bullet-icon {
         float: none;
         margin: 0px auto; } }
@@ -871,7 +889,7 @@ nav.primary {
     margin-left: 6em;
     margin-top: 2em;
     margin-bottom: 2em; }
-    @media screen and (max-width: 768px)  {
+    @media screen and (max-width: 767px)  {
       .bullets .bullet-content {
         margin-left: 0; } }
   .bullets h3 {
@@ -1006,7 +1024,7 @@ p.author {
   -webkit-perspective-origin: 50% 50%;
   -moz-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     #container {
       display: inline-block; } }
 

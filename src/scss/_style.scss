@@ -22,7 +22,7 @@ $cube-color-3: #002fff;
 $button-edge: shade( $primary-color, 50%);
 $wrap-padding: 14em;
 $small: 640;
-$medium: 768px;
+$medium: 767px;
 $large: 1024px;
 
 body {
@@ -138,6 +138,10 @@ svg {
 .squeeze {
   @include span-columns(8);
   @include shift(2);
+  @include media(max-width $medium) {
+    @include span-columns(10);
+    @include shift(1);
+  }
 }
 .left,
 .right {
@@ -298,11 +302,16 @@ nav {
   $dark-gray: $base-font-color !default;
   $base-font-color: $dark-gray !default;
   $icon-bullet-size: 3.5em;
-  @include span-columns(8);
-  @include shift(2);
   margin-bottom: $base-line-height;
   overflow: auto;
   padding: 0;
+  @include span-columns(8);
+  @include shift(2);
+  @include media(max-width $medium) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
   .bullet {
     @include flex-basis(20em);
     @include flex-grow(1);
