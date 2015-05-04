@@ -206,6 +206,7 @@ p.copy {
 }
 .headroom--pinned {
   background-color: rgba(21,21,21,.2);
+  transform: translateY(0%);
   .site-logo {
     color: white;
   }
@@ -216,6 +217,10 @@ p.copy {
     }
   }
 }
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 // Navigation
 nav {
   &.primary {

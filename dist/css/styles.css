@@ -767,13 +767,17 @@ p.copy {
   background-color: transparent; }
 
 .headroom--pinned {
-  background-color: rgba(21, 21, 21, 0.2); }
+  background-color: rgba(21, 21, 21, 0.2);
+  transform: translateY(0%); }
   .headroom--pinned .site-logo {
     color: white; }
   .headroom--pinned.headroom--top {
     background-color: transparent; }
     .headroom--pinned.headroom--top .site-logo {
       color: #333; }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
 
 nav.primary {
   background: #09f;
