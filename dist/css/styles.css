@@ -594,34 +594,23 @@ button, input[type="submit"] {
  * http://everhood.com
  * Copyright 2014–2015 Kyle Langford
  * MIT License */
-html {
-  background-color: #333; }
-
 body {
-  background-color: white; }
-  body .panel {
-    opacity: 0;
-    -webkit-transition: all .8s ease-in;
-    -moz-transition: all .8s ease-in;
-    transition: all .8s ease-in; }
+  background-color: #09f;
+  opacity: 0; }
   body .mast-head h1 {
     -webkit-transition: all .25s ease .8s;
     -moz-transition: all .25s ease .8s;
     transition: all .25s ease .8s;
     position: relative;
     left: -200px; }
-  body .mast-head button {
-    -webkit-transition: all .25s ease .8s;
-    -moz-transition: all .25s ease .8s;
-    transition: all .25s ease .8s;
-    opacity: 0; }
-  body.tween .panel {
-    opacity: 1; }
-  body.tween .mast-head h1 {
-    left: 0px;
-    opacity: 1; }
-  body.tween .mast-head button {
-    opacity: 1; }
+  body.tween {
+    opacity: 1;
+    -webkit-transition: all .8s ease-in;
+    -moz-transition: all .8s ease-in;
+    transition: all .8s ease-in; }
+    body.tween .mast-head h1 {
+      left: 0px;
+      opacity: 1; }
 
 p {
   font-family: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;

@@ -22,37 +22,22 @@ $cube-color-3: #002fff;
 $button-edge: shade( $primary-color, 50%);
 $wrap-padding: 14em;
 
-// Fade In Page
-html {
-  background-color:#333;
-}
 body {
-  background-color:white;
-  .panel {
-    opacity:0;
-    @include transition(all .8s ease-in);
-  }
+  background-color:$primary-color;
+  opacity:0;
   .mast-head {
     h1 {
      @include transition(all .25s ease .8s);
      position:relative;
      left:-200px;
    }
-   button {
-     @include transition(all .25s ease .8s);
-     opacity:0;
-   }
   }
   &.tween {
-    .panel {
-      opacity:1;
-    }
+    opacity:1;
+    @include transition(all .8s ease-in);
     .mast-head {
       h1 {
         left:0px;
-        opacity:1;
-      }
-      button{
         opacity:1;
       }
     }
