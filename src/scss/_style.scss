@@ -21,6 +21,9 @@ $cube-color-2: #cf00ff;
 $cube-color-3: #002fff;
 $button-edge: shade( $primary-color, 50%);
 $wrap-padding: 14em;
+$small: 640;
+$medium: 768px;
+$large: 1024px;
 
 body {
   background-color:$primary-color;
@@ -88,12 +91,18 @@ svg {
   &.welcome {
     background: $secondary-color;
     h2 {
-      font-size: 12em;
-      margin-bottom: 0;
-      text-align: right;
-      line-height: .95;
-      .kern {
-        letter-spacing:-12px;
+      font-size: 8em;
+      text-align: center;
+    }
+    @include media(min-width $medium) {
+      h2 {
+        font-size: 12em;
+        margin-bottom: 0;
+        text-align: right;
+        line-height: .95;
+        .kern {
+          letter-spacing:-12px;
+        }
       }
     }
   }
@@ -109,7 +118,10 @@ svg {
   }
   .left,
   .right {
-    @include span-columns(6);
+    width:100%;
+    @include media(min-width $medium) {
+      @include span-columns(6);
+    }
   }
   .window & {
     display: table-cell;
@@ -215,10 +227,12 @@ nav {
       width: 50vw;
       text-align: right;
       font-size: 3em;
-      li {
-        a {
-          color: white;
-        }
+      @include media(max-width $medium) {
+        width: 100vw;
+        text-align: center;
+      }
+      a {
+        color: white;
       }
     }
   }
@@ -240,6 +254,9 @@ nav {
   height: 100%;
   width: 100%;
   padding: 0 5%;
+  @include media(max-width $medium) {
+    font-size: .5em;
+  }
   .collapse & {
     padding-top: $wrap-padding;
     max-width: none;
@@ -259,7 +276,7 @@ nav {
   p {
     font-family: $sans-serif-2;
     font-weight: 400;
-    font-size: 1.75em;
+    font-size: 1.25rem;
   }
 }
 // Split Panel
@@ -352,7 +369,7 @@ button {
     color: white;
   }
   &.panel {
-    background-color: #999;
+    background-color: #333;
   }
 }
 // Line Behind Text
@@ -366,7 +383,7 @@ button {
     background: $heading-font-color;
     color: $off-white-color;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0 10px;
     position: relative;
     text-transform: uppercase;
@@ -384,7 +401,7 @@ button {
     background: $panel-odd-color;
     color: #cdcdcd;
     display: inline-block;
-    font-size: 2em;
+    font-size: 2rem;
     padding: 0 12px;
     position: relative;
     top: 19px;
@@ -447,12 +464,15 @@ p.author {
 */
 // Cube
 #container {
-  display: inline-block;
+  display: none;
   padding-top: 50px;
   width: 100%;
   z-index: 9999;
   @include perspective(1000px);
   @include perspective-origin(50% 50%);
+  @include media($medium) {
+     display: inline-block;
+  }
 }
 #cube {
   $cube-translate-z: 12px;

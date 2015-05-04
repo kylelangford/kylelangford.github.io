@@ -653,12 +653,16 @@ svg {
   .panel.welcome {
     background: #ffcc2f; }
     .panel.welcome h2 {
-      font-size: 12em;
-      margin-bottom: 0;
-      text-align: right;
-      line-height: .95; }
-      .panel.welcome h2 .kern {
-        letter-spacing: -12px; }
+      font-size: 8em;
+      text-align: center; }
+    @media screen and (min-width: 768px)  {
+      .panel.welcome h2 {
+        font-size: 12em;
+        margin-bottom: 0;
+        text-align: right;
+        line-height: .95; }
+        .panel.welcome h2 .kern {
+          letter-spacing: -12px; } }
 
 .wrap {
   max-width: 68em;
@@ -674,12 +678,15 @@ svg {
   article .wrap {
     padding: 8em 0; }
   .wrap .left, .wrap .right {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 48.821174201%; }
-    .wrap .left:last-child, .wrap .right:last-child {
-      margin-right: 0; }
+    width: 100%; }
+    @media screen and (min-width: 768px)  {
+      .wrap .left, .wrap .right {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%; }
+        .wrap .left:last-child, .wrap .right:last-child {
+          margin-right: 0; } }
   .window .wrap {
     display: table-cell;
     vertical-align: middle; }
@@ -773,7 +780,11 @@ nav.primary {
     width: 50vw;
     text-align: right;
     font-size: 3em; }
-    nav.primary ul li a {
+    @media screen and (max-width: 768px)  {
+      nav.primary ul {
+        width: 100vw;
+        text-align: center; } }
+    nav.primary ul a {
       color: white; }
 
 .hint {
@@ -791,6 +802,9 @@ nav.primary {
   height: 100%;
   width: 100%;
   padding: 0 5%; }
+  @media screen and (max-width: 768px)  {
+    .message {
+      font-size: .5em; } }
   .collapse .message {
     padding-top: 14em;
     max-width: none;
@@ -806,7 +820,7 @@ nav.primary {
   .message p {
     font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 1.75em; }
+    font-size: 1.25rem; }
 
 .split-panel {
   text-align: center;
@@ -888,7 +902,7 @@ button {
   .credits a {
     color: white; }
   .credits.panel {
-    background-color: #999; }
+    background-color: #333; }
 
 .line-behind-text {
   border-bottom: 1px solid white;
@@ -900,7 +914,7 @@ button {
     background: #333;
     color: #f4f4f4;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0 10px;
     position: relative;
     text-transform: uppercase;
@@ -916,7 +930,7 @@ button {
     background: #f4f4f4;
     color: #cdcdcd;
     display: inline-block;
-    font-size: 2em;
+    font-size: 2rem;
     padding: 0 12px;
     position: relative;
     top: 19px; }
@@ -969,7 +983,7 @@ p.author {
   Author: http://kushagra.me/
 */
 #container {
-  display: inline-block;
+  display: none;
   padding-top: 50px;
   width: 100%;
   z-index: 9999;
@@ -979,6 +993,9 @@ p.author {
   -webkit-perspective-origin: 50% 50%;
   -moz-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%; }
+  @media screen and (min-width: 768px) {
+    #container {
+      display: inline-block; } }
 
 #cube {
   position: relative;
