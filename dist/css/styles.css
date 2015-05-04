@@ -599,26 +599,29 @@ html {
 
 body {
   background-color: white; }
-  body .panel, body .mast-head {
-    opacity: 0; }
-    body .panel h1, body .mast-head h1 {
-      position: relative;
-      left: -200px; }
-  body.tween .panel {
-    opacity: 1;
+  body .panel {
+    opacity: 0;
     -webkit-transition: all .8s ease-in;
     -moz-transition: all .8s ease-in;
     transition: all .8s ease-in; }
-  body.tween .mast-head {
-    opacity: 1;
-    -webkit-transition: all .35s ease .8s;
-    -moz-transition: all .35s ease .8s;
-    transition: all .35s ease .8s; }
-    body.tween .mast-head h1 {
-      -webkit-transition: all .25s ease .8s;
-      -moz-transition: all .25s ease .8s;
-      transition: all .25s ease .8s;
-      left: 0px; }
+  body .mast-head h1 {
+    -webkit-transition: all .25s ease .8s;
+    -moz-transition: all .25s ease .8s;
+    transition: all .25s ease .8s;
+    position: relative;
+    left: -200px; }
+  body .mast-head button {
+    -webkit-transition: all .25s ease .8s;
+    -moz-transition: all .25s ease .8s;
+    transition: all .25s ease .8s;
+    opacity: 0; }
+  body.tween .panel {
+    opacity: 1; }
+  body.tween .mast-head h1 {
+    left: 0px;
+    opacity: 1; }
+  body.tween .mast-head button {
+    opacity: 1; }
 
 p {
   font-family: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
