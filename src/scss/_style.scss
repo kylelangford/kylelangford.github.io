@@ -91,8 +91,9 @@ svg {
   &.welcome {
     background: $secondary-color;
     h2 {
-      font-size: 8em;
+      font-size: 6em;
       text-align: center;
+      line-height: .85;
     }
     @include media(min-width $medium) {
       h2 {
@@ -108,8 +109,11 @@ svg {
   }
 }
 .wrap {
-  @include outer-container;
   padding: $wrap-padding 0;
+  @include outer-container;
+  @include media(max-width $medium) {
+    padding: 6em 0;
+  }
   .head & {
     padding: 16em 0 8em;
   }
@@ -254,9 +258,6 @@ nav {
   height: 100%;
   width: 100%;
   padding: 0 5%;
-  @include media(max-width $medium) {
-    font-size: .5em;
-  }
   .collapse & {
     padding-top: $wrap-padding;
     max-width: none;
@@ -266,6 +267,9 @@ nav {
     font-size: 4.75em;
     line-height: 1;
     margin-bottom: 0.35em;
+    @include media(max-width $medium) {
+      font-size: 2.75em;
+    }
     span {
       color: $secondary-color;
     }
@@ -276,7 +280,10 @@ nav {
   p {
     font-family: $sans-serif-2;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    @include media(max-width $medium) {
+      font-size: 1.25em;
+    }
   }
 }
 // Split Panel
@@ -310,18 +317,24 @@ nav {
     text-align: center;
     line-height: 75px;
     color: white;
+    @include media(max-width $medium) {
+      float: none;
+      margin:0px auto;
+    }
   }
   .bullet-content {
     margin-left: 6em;
     margin-top: 2em;
     margin-bottom: 2em;
+    @include media(max-width $medium) {
+      margin-left: 0;
+    }
   }
   h3 {
-    border-bottom: 1px solid transparentize($base-font-color, 0.8);
     display: inline-block;
     font-weight: 800;
     margin: 0;
-    padding-top: 0.35em;
+    padding: 0.35em 0 0.25em 0;
   }
   li {
     list-style: none;

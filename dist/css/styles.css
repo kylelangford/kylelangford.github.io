@@ -653,8 +653,9 @@ svg {
   .panel.welcome {
     background: #ffcc2f; }
     .panel.welcome h2 {
-      font-size: 8em;
-      text-align: center; }
+      font-size: 6em;
+      text-align: center;
+      line-height: .85; }
     @media screen and (min-width: 768px)  {
       .panel.welcome h2 {
         font-size: 12em;
@@ -665,14 +666,17 @@ svg {
           letter-spacing: -12px; } }
 
 .wrap {
+  padding: 14em 0;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  padding: 14em 0; }
+  margin-right: auto; }
   .wrap:after {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (max-width: 768px)  {
+    .wrap {
+      padding: 6em 0; } }
   .head .wrap {
     padding: 16em 0 8em; }
   article .wrap {
@@ -802,9 +806,6 @@ nav.primary {
   height: 100%;
   width: 100%;
   padding: 0 5%; }
-  @media screen and (max-width: 768px)  {
-    .message {
-      font-size: .5em; } }
   .collapse .message {
     padding-top: 14em;
     max-width: none;
@@ -813,6 +814,9 @@ nav.primary {
     font-size: 4.75em;
     line-height: 1;
     margin-bottom: 0.35em; }
+    @media screen and (max-width: 768px)  {
+      .message h2 {
+        font-size: 2.75em; } }
     .message h2 span {
       color: #ffcc2f; }
   .message h3 {
@@ -820,7 +824,10 @@ nav.primary {
   .message p {
     font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 1.25rem; }
+    font-size: 1.75rem; }
+    @media screen and (max-width: 768px)  {
+      .message p {
+        font-size: 1.25em; } }
 
 .split-panel {
   text-align: center;
@@ -856,16 +863,22 @@ nav.primary {
     text-align: center;
     line-height: 75px;
     color: white; }
+    @media screen and (max-width: 768px)  {
+      .bullets .bullet-icon {
+        float: none;
+        margin: 0px auto; } }
   .bullets .bullet-content {
     margin-left: 6em;
     margin-top: 2em;
     margin-bottom: 2em; }
+    @media screen and (max-width: 768px)  {
+      .bullets .bullet-content {
+        margin-left: 0; } }
   .bullets h3 {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block;
     font-weight: 800;
     margin: 0;
-    padding-top: 0.35em; }
+    padding: 0.35em 0 0.25em 0; }
   .bullets li {
     list-style: none; }
   .bullets img {
