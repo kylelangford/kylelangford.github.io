@@ -10,26 +10,29 @@
         <div class="message">
           <!-- 1.1 Process -->
           <h2>Process</h2>
-          <p>More then just design. More then just development. Lorem ipsum set dolor et tu </p>
-          <p class="date">Revised - 30 Mar 2014</p>
+          <p>"Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design."</p>
+          <p class="date">&mdash; Dieter Rams</p>
       </div>
       </div>
     </header>
+
     <div class="panel article">
       <div class="wrap">
         <div class="squeeze">
-            <h3><code>Hello!</code> This is a brief overview of my creative process. This is the mojo, the magic sauce… what makes it all happen. A carefully crafted methodology is an important aspect to our craft. Process allows us to apply our trade to many industries and projects of all shapes and sizes. It is a way of problem solving which when followed whole-heartedly should yield amazing results. The contents that follow are a living document, process is something that evolves. </h3>
+            <code>Preface</code>
+            <h3> This is an overview of my creative process. Methodology is important to delivering quality work time and time again. Process allows me to apply my designs to projects of all shapes and sizes. It is a way of problem solving which when followed whole-heartedly should yield great results. The following outlines my mental exercises for approaching a web project.</h3>
             <hr>
             <h4>Goals</h4>
-            <p>At the start of any project I like to come up with a list of needs and wants. Discussing goals with the client is vital to making sure expectations are understood and met. This process is often called requirements gathering or discovery and is used to help create budgets, proposals, and quotes for clients as well as guide you along your creative process. What I hate hearing at this point is. 'I need you to make this website for me’. My pipe dream of a request would be "I have this great idea, how do I go about sharing that to the world. I would really love your input and I want to pay you with real money." But of course this is a huge responsibility and if they are investing in you, then you have to deliver. One important way to get everyone on the same page is to establish metrics of success. Analytics are an important part of measuring success of web based projects, it can be one of the most illuminating tools at your disposal. It is important to trust your gut but you also have to read the numbers. </p>
+            <p>At the start of a project I like to come up with a list of needs and wants with the client. Discussing and even shaping goals with the client is vital to making sure everyone is happy and expectations are met. Even with self-projects, goals will help focus my energy. It is important for me to have measurable goals and keep track of progress as well. Analytics are an important part of measuring success of any web based project, it can be one of the most illuminating tools at my disposal.</p>
 
             <h4>Audit</h4>
             <p>Many times clients already have a web presence, social presence, maybe even marketing. It is important to know what is already existing before going in and working on your project. Research your client!  What they do, their competitors, the market they work in, their target audience and existing customers. When a client approaches you looking for work I find having the content, at least samples or drafts of that in hand. Content will be needed in order to craft the best possible product. You need to really understand what you are working with! You may have to work with the client to prepare this content or find them help in doing so. Certain projects also require you to consider what the client is capable of maintaining and what resources they have available. This is especially true of content managed sites. The ultimate goal here is to document what we have available to us and what we plan to produce. </p>
+            <img src="../img/example-content-inventory.jpg">
 
             <h4>Content Strategy</h4>
+
             <p>Okay, so now we have gone through what we have and what we want to be. We need to evaluate the nuances of distributing this information. Persona is important with building a connection with your user. The design should reflect the tone and personality of the content. Identifying this early on is key. This feeds in heavily with the brand where you want to deliver consistent and targeted messaging. Some other consideration here are search engine optimization, how your content will be marketed digitally and distributed.</p>
 
-            <img src="http://lorempixel.com/1000/1000/abstract/"/>
             <h4>Content Bootcamp</h4>
             <p>If you are still lacking content at this point for your initial launch or deadline, time to kick it into high gear. If you wait to the end for the content it will cause delays and no one will be happy. You may need to help out the client with this process if they are having trouble on their own. </p>
 
@@ -38,31 +41,29 @@
 
             <em>Ok lets talk a little bit about websites.</em>
 
-            <img src="http://lorempixel.com/1000/1000/abstract/"/>
             <h4>Sitemaps</h4>
             <p>The sitemap helps us figure out how we want to organize the content as a whole. A sitemap is a great visual tool to show the hierarchy/user paths of your site. The primary level of your sitemap essentially becomes the site navigation. Always consider how many clicks it will take to reach certain sections. I try to keep sites as shallow as possible, this prevents sites from becoming overly complicated. Best to keep these documents simple and too the point. </p>
-            <pre><code class="box">
-              &lt;!-- initially --&gt;
-              &lt;header class="headroom"&gt;
-
-              &lt;!-- scrolling down --&gt;
-              &lt;header class="headroom headroom--unpinned"&gt;
-
-              &lt;!-- scrolling up --&gt;
-              &lt;header class="headroom headroom--pinned"&gt;
-            </code></pre>
-
+            <img src="../img/example-sitemap.png">
+            <img src="../img/example-sitemap-2.jpg">
+            <img src="../img/example-sitemap.jpg">
 
             <h4>Layout/Wireframes</h4>
             <p>Before you fire up your text editor, lets spend some time frantically scribbling on napkins or whatever, its cool. I like to spend some time gathering inspiration by looking at favorite sites, top 10 sites, and doing some sketches with pen and paper. Then I like to do some basic static mockups. I use balsamiq/illustrator for this. I like to keep wireframes as neutral and void of design as possible, the key focus here is to layout the content on the page. At the same time I do like to visualize the end product and possible design directions. At this point I want the client focused on content and layout so I do not include any of that in deliverable. The deliverable I like to do in browser using simple styles and blocking. I’ll generally use a css framework like bourbon +neat + bitters to prototype the layout. The deliverable usually ends up being a live prototype. </p>
+            <img src="../img/example-wireframe.jpg">
+            <img src="../img/example-wireframe-2.png">
+
+            <h5>userflow</h5>
+            <img src="../img/example-userflow.jpg">
 
             <h4>Moodboard / Style Tiles</h4>
             <p>Okay finally getting to some fun stuff. Jk, its all fun.  Here we want to establish the general aesthetic we will use to show the content. I never know if I am making a mood-board or a style tile I’ll usually start with one and end up with the other. I have heard style tiles described as digital swatches. Anyway, the idea here is to avoid investing a lot time in a design direction that the client will not like. I generally like to show 2-3 options. What this consists of is some weird frankenstein page with images, design patterns, and typography. They are a bit weird, i dunno they work. Depending on my mood I will do this in code or photoshop.</p>
+            <img src="../img/example-moodboard.png">
+            <img src="../img/example-moodboards-2.jpg">
+
 
             <h4>Kitchen Sink / Design Patterns (deconstruct)</h4>
             <p>So you have the wireframe prototype and some design direction from the mood-board hopefully some code as well. Next, I will build out each module / piece independently and produce what is know as a kitchen sink. This is a precursor to your living style guide which would run off of your production css. This process allows you to deconstruct what you just built in the wireframe and build each piece in a modular fashion as good CSS should. This also allows you to see how your individual pieces look together outside of the page layout. But! Most importantly you have a ton of your front-end code done at this point. Your HTML layout has been worked out in the wireframe. You have created most of the html/css pieces of your site in the kitchen sink. My mind is going crazy with how efficient we just were in using our time and communicating with the client.  So I would not show the kitchen sink at this point or ever but will use it for the next phase. </p>
 
-            <img src="http://lorempixel.com/1000/1000/abstract/"/>
             <h4>Living Design: Prototype</h4>
             <p>Time to start putting this all together and get the pages built out. I think the intention here is to demonstrate the design but I find showing as much of the UI completed helps with understanding the user experience. It has been awhile since we’ve given anything to the client so we want to find the right balance between fully functional and what the site design will look like. </p>
 

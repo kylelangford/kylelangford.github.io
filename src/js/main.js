@@ -82,6 +82,8 @@ var waypoints = $('.wp-rotate').waypoint(function() {
 
 })();
 
+
+
 // Preload Elements
 window.onload = function() {
 	setTimeout(function() {

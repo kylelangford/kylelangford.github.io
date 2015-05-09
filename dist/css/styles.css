@@ -598,19 +598,36 @@ body {
   background-color: #09f;
   opacity: 0; }
   body .mast-head h1 {
-    -webkit-transition: all .25s ease .8s;
-    -moz-transition: all .25s ease .8s;
-    transition: all .25s ease .8s;
+    -webkit-transition: all .45s ease .7s;
+    -moz-transition: all .45s ease .7s;
+    transition: all .45s ease .7s;
     position: relative;
     left: -200px; }
   body.tween {
     opacity: 1;
-    -webkit-transition: all .8s ease-in;
-    -moz-transition: all .8s ease-in;
-    transition: all .8s ease-in; }
+    -webkit-transition: all .7s ease-in;
+    -moz-transition: all .7s ease-in;
+    transition: all .7s ease-in; }
     body.tween .mast-head h1 {
       left: 0px;
       opacity: 1; }
+
+.content_div {
+  box-shadow: 0 0 10px;
+  border: 10px solid black;
+  height: 800px;
+  left: -1000px;
+  width: 100%;
+  -webkit-animation: slide_in 800ms ease-out forwards;
+  position: absolute;
+  box-sizing: border-box; }
+
+@-webkit-keyframes slide_in {
+  0% {
+    left: -1000px; }
+
+  100% {
+    left: 0px; } }
 
 p {
   font-family: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
@@ -665,6 +682,24 @@ svg {
         .panel.welcome h2 .kern {
           letter-spacing: -12px; } }
 
+.head {
+  background: #cdcdcd;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #cdcdcd 0%, #ffffff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdcdcd), color-stop(100%, #ffffff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cdcdcd 0%, #ffffff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cdcdcd 0%, #ffffff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cdcdcd 0%, #ffffff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #cdcdcd 0%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
 .wrap {
   padding: 14em 0;
   max-width: 68em;
@@ -679,6 +714,8 @@ svg {
       padding: 6em 0; } }
   .head .wrap {
     padding: 16em 0 8em; }
+  .contact .wrap {
+    padding: 10em 0; }
   article .wrap {
     padding: 8em 0; }
   .wrap .left, .wrap .right {
@@ -734,10 +771,11 @@ svg {
 .site-logo {
   position: absolute;
   top: 1.25em;
-  left: 2em;
+  left: 1.25em;
   color: #333;
   font-size: 1.6rem;
-  z-index: 9999; }
+  z-index: 9999;
+  width: 300px; }
   .site-logo span {
     color: #09f; }
   .site-logo.active {
@@ -746,13 +784,13 @@ svg {
       color: white; }
 
 footer .icon {
-  color: white;
+  color: #555;
   font-size: 1.5em; }
 footer .icon-copyright {
   font-size: 1.2em; }
 
 p.copy {
-  color: white;
+  color: #555;
   font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100;
   font-size: 1em; }
@@ -782,8 +820,8 @@ p.copy {
 nav.primary {
   background: #09f;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
   padding-right: 0.6em;
   z-index: -1;
@@ -851,6 +889,89 @@ nav.primary {
       .message p {
         font-size: 1.25em; } }
 
+.browser {
+  background: transparent;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  box-shadow: 0 .25em 1em #b9b9b9;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.4);
+  border-right: 1px solid rgba(160, 160, 160, 0.4);
+  border-left: 1px solid rgba(160, 160, 160, 0.4);
+  position: relative;
+  margin: 0 auto;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 6em; }
+  .browser img {
+    width: 100%; }
+  .browser:before {
+    background-color: #f6f6f6;
+    color: #555;
+    height: 2em;
+    display: block;
+    content: 'Site Title Here';
+    line-height: 2em;
+    font-size: .75em;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+    text-shadow: 0 0 1px #b9b9b9; }
+  .browser:after {
+    background-color: #f6f6f6;
+    color: #555;
+    display: inline-block;
+    content: 'Work done at Brunello | ma-ena.org';
+    line-height: 1em;
+    font-size: .65em;
+    text-align: left;
+    border-top-right-radius: 4px;
+    position: absolute;
+    padding: 4px 10px;
+    bottom: 0px;
+    left: 0px;
+    border-right: 1px solid rgba(160, 160, 160, 0.4);
+    border-top: 1px solid rgba(160, 160, 160, 0.4); }
+  .browser span {
+    background-color: #fc5857;
+    border-radius: 50%;
+    box-shadow: inset 0 0 2px #b9b9b9;
+    border: 1px solid #e24f4e;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    content: '';
+    z-index: 999;
+    display: block; }
+    .browser span:after {
+      background-color: #35cd41;
+      border-radius: 50%;
+      box-shadow: inset 0 0 2px #b9b9b9;
+      border: 1px solid #2fb83a;
+      height: 11px;
+      width: 11px;
+      content: '';
+      z-index: 999;
+      display: block;
+      position: relative;
+      top: -12px;
+      left: 27px; }
+    .browser span:before {
+      background-color: #febe2f;
+      border-radius: 50%;
+      box-shadow: inset 0 0 2px #b9b9b9;
+      border: 1px solid #e4ab2a;
+      height: 11px;
+      width: 11px;
+      content: '';
+      z-index: 999;
+      display: block;
+      position: relative;
+      left: 13px;
+      top: -1px; }
+
 .split-panel {
   text-align: center;
   background-color: #555; }
@@ -916,23 +1037,24 @@ nav.primary {
     max-width: 100%; }
 
 button {
-  border-radius: 8px;
-  padding: 0.35em 1em;
+  border-radius: 4px;
   line-height: 1.6;
+  padding: 0.6em 1em;
   font-size: 1rem;
   outline: none;
-  border: 0;
-  border-bottom: 3px solid #004c7f;
-  -webkit-box-shadow: inset 0 -2px #004c7f;
-  box-shadow: inset 0 -2px #004c7f; }
+  border: 0; }
   button.active {
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-top: 1px; }
   button.primary-menu-btn {
     background-color: #09f;
+    border-bottom: 3px solid #004c7f;
+    -webkit-box-shadow: inset 0 -2px #004c7f;
+    box-shadow: inset 0 -2px #004c7f;
     color: white;
     position: absolute;
+    padding: 0.35em 1em;
     top: 2em;
     right: 2em;
     z-index: 99999; }
@@ -944,19 +1066,17 @@ button {
   text-align: center;
   padding: 2em; }
   .credits a {
-    color: white; }
-  .credits.panel {
-    background-color: #333; }
+    color: #555; }
 
 .line-behind-text {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #555;
   text-align: center;
   width: 30%;
   min-width: 200px;
   margin: 0 auto 4.5em; }
   .line-behind-text h2 {
-    background: #333;
-    color: #f4f4f4;
+    background: #f4f4f4;
+    color: #555;
     display: inline-block;
     font-size: 1rem;
     padding: 0 10px;

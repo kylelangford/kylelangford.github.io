@@ -28,7 +28,7 @@
         <div class="line-behind-icon">
           <span class="icon-cube"></span>
         </div>
-        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project. Anything I can't do, I find someone smarter then me to do it. <small>Pro-tip:</small> Find smart people, kidnap them!</p>
+        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project.</p>
       </div>
     </div>
   </section>
@@ -47,7 +47,7 @@
           <div class="bullet-content">
             <!-- 1.2.1 Content Strategy -->
             <h3>Content Strategy</h3>
-            <p>Form follows function. I relly heavily on real content to influence and drive my designs. Successful projects start here, and they realize a website is only a piece of the overall puzzle.</p>
+            <p>Form follows function. I rely heavily on real content to influence and drive my designs. Successful projects start here, and they realize a website is only a piece of the overall puzzle.</p>
           </div>
         </li>
         <li class="bullet">
@@ -124,7 +124,7 @@
           <span class="icon-bolt"></span>
         </div>
         <p>A Fledling Agency. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
-        <button href="http://www.raskyl.com">The Dopeshit</button>
+        <a href="http://www.raskyl.com">The Dopeshit</a>
       </div>
     </div>
   </aside>
