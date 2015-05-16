@@ -5,16 +5,6 @@
   <?php include 'inc/nav-inc.php' ?>
 
   <article>
-    <section class="panel window grey">
-      <div class="wrap">
-        <div class="message">
-          <!-- 1.1 Work -->
-          <h2>Work</h2>
-          <p>"If my mind can conceive it, and my heart can believe it &mdash; then I can achiece it."</p>
-          <p class="date">&mdash; Muhammad Ali</p>
-        </div>
-      </div>
-    </section>
     <section class="panel head">
       <div class="wrap">
         <div class="message">
@@ -25,7 +15,6 @@
         </div>
       </div>
     </section>
-
     <section class="panel">
       <div class="wrap">
         <div class="browser">
@@ -66,17 +55,18 @@
 
         <div class="message">
           <!-- 1.1 Work -->
-          <h2>Capabilities</h2>
+          <h2>Additional Work Available</h2>
 
-          <h3>Work by Request</h3>
+          <h3>By Request</h3>
           <p>Over the years I have collected a wide variety of work some I can not show you here. But if you are interested in seeing more of my work please feel free to contact me.</p>
-        </div>
+          <a href="/contact.php">email me</a>  
+       </div>
 
       </div>
     </section>
 
   </article>
 
-  <span class="hint icon-chevron-down animated infinite bounce"></span>
-
   <?php include 'inc/foot-inc.php' ?>
+
+  <span class="hint icon-chevron-down animated infinite bounce"></span>

@@ -3,6 +3,20 @@
 $(".mast-head").headroom( {
   onTop : function() {
     $('.hint').show();
+  },
+  offset : 100
+});
+
+// Break Apart
+$(".grid").on('click', function() {
+  $(this).toggleClass('break-apart');
+});
+
+$('#message').change(function(event){
+  if ($(this).val()) {
+    $(this).next().hide();
+  } else {
+    $(this).next().show();
   }
 });
 
@@ -37,6 +51,11 @@ $('.site-logo').hover(
 //
 // Waypoints.js
 //
+var waypoints = $('.squish').waypoint(function() {
+  $('.squish').addClass('animate');
+}, {
+  offset: '40%'
+});
 var waypoints = $('.close-hint').waypoint(function() {
   $('.hint').hide();
 }, {

@@ -6,21 +6,19 @@
 
   <section class="panel welcome window">
     <div class="wrap">
-      <div class="left">
+      <div class="message">
         <!-- 1.1 Web UI -->
         <!-- <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2> -->
-        <ul class="grid">
-          <li class="ot-letter-bottom"><span data-letter="W">W</span></li>
-          <li class="ot-letter-bottom"><span data-letter="e">e</span></li>
-          <li class="ot-letter-bottom"><span data-letter="b">b</span></li>
-          <li class="ot-letter-bottom"><span data-letter="U">U</span></li>
-          <li class="ot-letter-bottom"><span data-letter="I">I</span></li>
-        </ul>
 
+        <div class="grid">
+          <div class="ot-letter-bottom"><span data-letter="W">W</span></div>
+          <div class="ot-letter-bottom"><span data-letter="e">e</span></div>
+          <div class="ot-letter-bottom"><span data-letter="b">b</span></div>
+          <div class="ot-letter-bottom"><span data-letter="U">U</span></div>
+          <div class="ot-letter-bottom"><span data-letter="I">I</span></div>
+        </div>
       </div>
-      <div class="right">
 
-      </div>
     </div>
   </section>
   <section class="panel close-hint">
@@ -35,7 +33,7 @@
       </div>
     </div>
   </section>
-  <section class="panel paint">
+  <section class="panel">
     <div class="wrap">
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
@@ -97,12 +95,7 @@
         <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also..  </p>
         <a href="/work.php" class="btn cta cta-work"><span>SAMPLES<span></a>
         <a href="/process.php" class="btn cta cta-process"><span>PROCESS<span></a>
-          <div id="container">
-            <div id="cube" class="animate">
-              <!-- Cube Side Panels -->
-              <div></div><div></div><div></div><div></div><div></div><div></div>
-            </div>
-          </div>
+
       </div>
     </div>
   </section>

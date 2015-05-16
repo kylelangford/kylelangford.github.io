@@ -5,6 +5,7 @@
   <?php include 'inc/nav-inc.php' ?>
 
   <article>
+    
     <header class="panel head">
       <div class="wrap">
         <div class="message">
