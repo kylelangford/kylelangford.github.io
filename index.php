@@ -8,15 +8,18 @@
     <div class="wrap">
       <div class="left">
         <!-- 1.1 Web UI -->
-        <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2>
+        <!-- <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2> -->
+        <ul class="grid">
+          <li class="ot-letter-bottom"><span data-letter="W">W</span></li>
+          <li class="ot-letter-bottom"><span data-letter="e">e</span></li>
+          <li class="ot-letter-bottom"><span data-letter="b">b</span></li>
+          <li class="ot-letter-bottom"><span data-letter="U">U</span></li>
+          <li class="ot-letter-bottom"><span data-letter="I">I</span></li>
+        </ul>
+
       </div>
       <div class="right">
-        <div id="container">
-          <div id="cube" class="animate">
-            <!-- Cube Side Panels -->
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -28,16 +31,16 @@
         <div class="line-behind-icon">
           <span class="icon-cube"></span>
         </div>
-        <p>Greetings! Everhood is my portfolio site. I <span class="icon icon-heart2"></span> the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project.</p>
+        <p>Greetings! Everhood is my portfolio site. I love the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project.</p>
       </div>
     </div>
   </section>
-  <section class="panel">
+  <section class="panel paint">
     <div class="wrap">
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
         <h2>Creative <span class="wp-rotate">+</span> Tech<span class="span-tada"> #$*!YEA!!</span></h2>
-        <p>Technology and content are two sides of the same coin. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and a better execution of your product.</p>
+        <p>Technology and content are two sides of the same coin. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
       </div>
       <ul class="bullets">
         <li class="bullet">
@@ -47,7 +50,7 @@
           <div class="bullet-content">
             <!-- 1.2.1 Content Strategy -->
             <h3>Content Strategy</h3>
-            <p>Form follows function. I rely heavily on real content to influence and drive my designs. Successful projects start here, and they realize a website is only a piece of the overall puzzle.</p>
+            <p>Form follows function. I rely heavily on content to influence my work. Successful projects start with content, and they realize a website is only a piece of the overall puzzle.</p>
           </div>
         </li>
         <li class="bullet">
@@ -86,33 +89,33 @@
   <section class="panel">
     <div class="wrap">
       <div class="message">
-        <!-- 1.3 Drupal Experience -->
-        <h2>Drupal Experience</h2>
-        <div class="line-behind-icon">
-          <span class="icon-drupal"></span>
-        </div>
-        <p>I have 5 years experience developing in drupal starting from version 6 and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
-    </div>
-    </div>
-  </section>
-  <section class="panel">
-    <div class="wrap collapse">
-      <div class="message">
         <!-- 1.4 What I've done: Work Experience. -->
         <h2>Work</h2>
         <div class="line-behind-icon">
           <span class="icon-lamp"></span>
         </div>
         <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also..  </p>
+        <a href="/work.php" class="btn cta cta-work"><span>SAMPLES<span></a>
+        <a href="/process.php" class="btn cta cta-process"><span>PROCESS<span></a>
+          <div id="container">
+            <div id="cube" class="animate">
+              <!-- Cube Side Panels -->
+              <div></div><div></div><div></div><div></div><div></div><div></div>
+            </div>
+          </div>
       </div>
     </div>
-    <div class="split-panel">
-      <div class="left">
-        <h3><a href="/work.php">SAMPLES</a></h3>
-      </div>
-      <div class="right">
-        <h3><a href="/process.php">PROCESS</a></h3>
-      </div>
+  </section>
+  <section class="panel">
+    <div class="wrap">
+      <div class="message">
+        <!-- 1.3 Drupal Experience -->
+        <h2>Drupal Experience</h2>
+        <div class="line-behind-icon">
+          <span class="icon-drupal"></span>
+        </div>
+        <p>I have 5 years experience developing in drupal and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
+    </div>
     </div>
   </section>
   <aside class="panel">
@@ -124,7 +127,9 @@
           <span class="icon-bolt"></span>
         </div>
         <p>A Fledling Agency. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
-        <a href="http://www.raskyl.com">The Dopeshit</a>
+
+        <a href="http://www.raskyl.com" class="btn cta-raskyl"><span>Raskyl<span></a>
+
       </div>
     </div>
   </aside>

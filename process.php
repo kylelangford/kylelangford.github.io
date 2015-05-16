@@ -43,14 +43,13 @@
 
             <h4>Sitemaps</h4>
             <p>The sitemap helps us figure out how we want to organize the content as a whole. A sitemap is a great visual tool to show the hierarchy/user paths of your site. The primary level of your sitemap essentially becomes the site navigation. Always consider how many clicks it will take to reach certain sections. I try to keep sites as shallow as possible, this prevents sites from becoming overly complicated. Best to keep these documents simple and too the point. </p>
-            <img src="../img/example-sitemap.png">
-            <img src="../img/example-sitemap-2.jpg">
             <img src="../img/example-sitemap.jpg">
+
+            <h4>Inspiration</h4>
 
             <h4>Layout/Wireframes</h4>
             <p>Before you fire up your text editor, lets spend some time frantically scribbling on napkins or whatever, its cool. I like to spend some time gathering inspiration by looking at favorite sites, top 10 sites, and doing some sketches with pen and paper. Then I like to do some basic static mockups. I use balsamiq/illustrator for this. I like to keep wireframes as neutral and void of design as possible, the key focus here is to layout the content on the page. At the same time I do like to visualize the end product and possible design directions. At this point I want the client focused on content and layout so I do not include any of that in deliverable. The deliverable I like to do in browser using simple styles and blocking. I’ll generally use a css framework like bourbon +neat + bitters to prototype the layout. The deliverable usually ends up being a live prototype. </p>
             <img src="../img/example-wireframe.jpg">
-            <img src="../img/example-wireframe-2.png">
 
             <h5>userflow</h5>
             <img src="../img/example-userflow.jpg">

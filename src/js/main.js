@@ -14,8 +14,9 @@ $(".mast-head").headroom( {
 (function () {
   $('.primary-menu-btn').on('click touchstart',function (e) {
     $('nav.primary').toggleClass('overlay');
-    $(this).toggleClass('active')
-    $('.site-logo').toggleClass('active')
+    $(this).toggleClass('active');
+    $('.mast-head').toggleClass('active');
+    $('.site-logo').toggleClass('active');
     e.preventDefault();
   });
 })();
