@@ -61,11 +61,7 @@ var waypoints = $('.close-hint').waypoint(function() {
 }, {
   offset: '75%'
 });
-var waypoints = $('.wp-rotate').waypoint(function() {
-  $('.wp-rotate').addClass('on');
-}, {
-  offset: '75%'
-});
+
 $('.span-tada').hide();
 var waypoints = $('.wp-rotate').waypoint(function() {
   $('.span-tada').addClass('animated tada');
@@ -101,6 +97,37 @@ var waypoints = $('.wp-rotate').waypoint(function() {
   $.mark.jump();
 
 })();
+
+
+$('.validate input').on('keyup blur', function () {
+
+  var thisForm = $(this).closest('.validate');
+  var requiredInputs = thisForm.find('.input-required');
+  var testValid = requiredInputs.length;
+  var validated = 0;
+
+  requiredInputs.each(function() {
+    var isValid = $(this).val();
+    if ( isValid == true ) {
+      validated++;
+    }
+  });
+
+  console.log(validated);
+
+
+  // Error Message
+
+
+  if ( validated == testValid ) {
+    console.log('form is valid');
+    // $('#verify-button').prop('disabled', false);
+
+  }
+
+});
+
+
 
 
 

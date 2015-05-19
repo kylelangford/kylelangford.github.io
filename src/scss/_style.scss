@@ -587,11 +587,12 @@ button {
   font-weight:bold;
 }
 [class^="cta-"], [class*=" cta-"] {
+  margin-top:2em;
   background: $primary-color;
   border-radius:$border-radius;
 	color: #fff;
   display:inline-block;
-  padding:1em 3em;
+  padding:1.2em 6em;
 	-webkit-transition: background-color 0.3s, color 0.3s;
 	transition: background-color 0.3s, color 0.3s;
   &:before {
@@ -628,10 +629,10 @@ button {
 
 }
 .cta-process::before {
-  // background:url('../../img/preview.jpg');
+  background:url('../../img/cool.jpg');
 }
 .cta-work::before {
-  // background:url('../../img/preview.jpg');
+  background:url('../../img/cool2.jpg');
 }
 
 // Credits
@@ -852,7 +853,7 @@ p.author {
 	background: #f0f0f0;
 	color: #aaa;
 	font-weight: 400;
-	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $sans-serif-2;
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 }
 .input__field:focus {
@@ -1071,4 +1072,10 @@ p.author {
 	-webkit-transform: rotateX(20deg);
 	-ms-transform: rotateX(20deg);
 	transform: rotateX(20deg);
+}
+
+
+.wp-rotate {
+  display: inline-block;
+  @include transform(rotate(135deg))
 }

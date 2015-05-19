@@ -483,18 +483,6 @@ dl {
   -moz-animation: spinningH 6s infinite linear;
   animation: spinningH 6s infinite linear; }
 
-.wp-rotate {
-  display: inline-block;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
-  .wp-rotate.on {
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg); }
-
 /* Everhood 0.1.0
  * http://everhood.com
  * Copyright 2014–2015 Kyle Langford
@@ -1032,11 +1020,12 @@ button {
   font-weight: bold; }
 
 [class^="cta-"], [class*=" cta-"] {
+  margin-top: 2em;
   background: #09f;
   border-radius: 2px;
   color: #fff;
   display: inline-block;
-  padding: 1em 3em;
+  padding: 1.2em 6em;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s; }
   [class^="cta-"]:before, [class*=" cta-"]:before {
@@ -1066,6 +1055,12 @@ button {
       opacity: 1; }
     [class^="cta-"]:hover span, [class*=" cta-"]:hover span {
       border-bottom: 3px solid #09f; }
+
+.cta-process::before {
+  background: url('../../img/cool.jpg'); }
+
+.cta-work::before {
+  background: url('../../img/cool2.jpg'); }
 
 .credits {
   text-align: center;
@@ -1254,7 +1249,7 @@ p.author {
   background: #f0f0f0;
   color: #aaa;
   font-weight: 400;
-  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   -webkit-appearance: none;
   /* for box shadows to show on iOS */ }
 
@@ -1453,3 +1448,11 @@ p.author {
   -webkit-transform: rotateX(20deg);
   -ms-transform: rotateX(20deg);
   transform: rotateX(20deg); }
+
+.wp-rotate {
+  display: inline-block;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }

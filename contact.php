@@ -9,10 +9,10 @@
       <!-- 1.1 Web UI -->
       <div class="contact">
         <h2><small>Contact</small></h2>
-        <form method="post" action="">
+        <form method="post" class="validate" action="">
 
             <span class="input input--nao">
-					    <input class="input__field input__field--nao" type="text" id="input-1">
+					    <input class="input__field input__field--nao input-required" type="text" id="input-1">
 				    	<label class="input__label input__label--nao" for="input-1">
 						    <span class="input__label-content input__label-content--nao">Name</span>
 					    </label>
@@ -22,7 +22,7 @@
 			    	</span>
 
             <span class="input input--nao">
-              <input class="input__field input__field--nao" type="text" id="input-1">
+              <input class="input__field input__field--nao input-required" type="text" id="input-1">
               <label class="input__label input__label--nao" for="input-1">
                 <span class="input__label-content input__label-content--nao">Email</span>
               </label>
@@ -35,7 +35,7 @@
               <label class="input__label input__label--kozakura" for="message">
     						<span class="input__label-content input__label-content--kozakura">Message</span>
     					</label>
-    					<textarea id="message" class="input__field input__field--kozakura" rows="8"></textarea>
+    					<textarea id="message" class="input__field input__field--kozakura input-required" rows="8"></textarea>
     					<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
     						<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path>
     					</svg>

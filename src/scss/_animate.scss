@@ -170,10 +170,3 @@
 .animate {
   @include animation(spinningH 6s infinite linear);
 }
-.wp-rotate {
-  display: inline-block;
-  @include transition(all 0.5s ease-in);
-  &.on {
-    @include transform(rotate(135deg))
-  }
-}

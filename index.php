@@ -29,7 +29,7 @@
         <div class="line-behind-icon">
           <span class="icon-cube"></span>
         </div>
-        <p>Greetings! Everhood is my portfolio site. I love the Web. I studied graphic design and animation in school and for the last 6 years been teaching myself web development. I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project.</p>
+        <p>Everhood is my portfolio site. I love the Web. With experience in design and animation I specialize in front-end technologies but I am a soup to nuts guy, working on all phases of a web project.</p>
       </div>
     </div>
   </section>
@@ -37,36 +37,16 @@
     <div class="wrap">
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
-        <h2>Creative <span class="wp-rotate">+</span> Tech<span class="span-tada"> #$*!YEA!!</span></h2>
+        <h2>Creative <span class="wp-rotate">+</span> Tech</h2>
         <p>Technology and content are two sides of the same coin. Effective web design starts at the idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
       </div>
       <ul class="bullets">
         <li class="bullet">
           <div class="bullet-icon">
-            <span class="icon-bulb"></span>
-          </div>
-          <div class="bullet-content">
-            <!-- 1.2.1 Content Strategy -->
-            <h3>Content Strategy</h3>
-            <p>Form follows function. I rely heavily on content to influence my work. Successful projects start with content, and they realize a website is only a piece of the overall puzzle.</p>
-          </div>
-        </li>
-        <li class="bullet">
-          <div class="bullet-icon">
-            <span class="icon-file-settings"></span>
-          </div>
-          <div class="bullet-content">
-            <!-- 1.2.2 Content Management -->
-            <h3>Content Mangement</h3>
-            <p>Content Mangement systems are a nessersary part of a website. the ability to change and edit content is critical to a companies success. There are many types of CMS's out there and chooses the right one can save you a lot of time and headaches.</p>
-          </div>
-        </li>
-        <li class="bullet">
-          <div class="bullet-icon">
             <span class="icon-layout"></span>
           </div>
           <div class="bullet-content">
-            <!-- 1.2.3 UI/UX Designer -->
+            <!-- 1.2.1 UI/UX Designer -->
             <h3>UI/UX Design</h3>
             <p>Human centric design strives for accessibility. It is content driven and looks to create immersion and engagement through narrative and persona.</p>
           </div>
@@ -76,11 +56,32 @@
             <span class="icon-code"></span>
           </div>
           <div class="bullet-content">
-            <!-- 1.2.4 Front-end Development -->
+            <!-- 1.2.2 Front-end Development -->
             <h3>Front-end Development</h3>
             <p>I have a lot of experience with responive design, templating, prototyping, as well as email. My focus is for code that is DRY, human readable, and follows best practices.</p>
           </div>
         </li>
+        <li class="bullet">
+          <div class="bullet-icon">
+            <span class="icon-bulb"></span>
+          </div>
+          <div class="bullet-content">
+            <!-- 1.2.3 Content Strategy -->
+            <h3>Content Strategy</h3>
+            <p>Form follows function. I rely heavily on content to influence my work. Successful projects start with content, and they realize a website is only a piece of the overall puzzle.</p>
+          </div>
+        </li>
+        <li class="bullet">
+          <div class="bullet-icon">
+            <span class="icon-file-settings"></span>
+          </div>
+          <div class="bullet-content">
+            <!-- 1.2.4 Content Management -->
+            <h3>Content Mangement</h3>
+            <p>Content Mangement systems are a nessersary part of a website. the ability to change and edit content is critical to a companies success. There are many types of CMS's out there and chooses the right one can save you a lot of time and headaches.</p>
+          </div>
+        </li>
+
       </ul>
     </div>
   </section>
@@ -103,12 +104,30 @@
     <div class="wrap">
       <div class="message">
         <!-- 1.3 Drupal Experience -->
-        <h2>Drupal Experience</h2>
+        <h2>Specialties</h2>
+
+        <h3>Drupal</h3>
+        <p>I have 5 years experience developing in drupal and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
         <div class="line-behind-icon">
           <span class="icon-drupal"></span>
         </div>
+
+        <!-- 1.3 Drupal Experience -->
+        <h3>Mailchimp</h3>
         <p>I have 5 years experience developing in drupal and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
+        <div class="line-behind-icon">
+          <span class="icon-drupal"></span>
+        </div>
+
+        <!-- 1.3 Drupal Experience -->
+        <h3>Shopify</h3>
+        <p>I have 5 years experience developing in drupal and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
+        <div class="line-behind-icon">
+          <span class="icon-drupal"></span>
+        </div>
     </div>
+
+
     </div>
   </section>
   <aside class="panel">
