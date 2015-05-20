@@ -98,34 +98,61 @@ var waypoints = $('.wp-rotate').waypoint(function() {
 
 })();
 
+// Show Alert
+function showAlert (message, elem) {
+  $(elem).append(message);
+}
 
-$('.validate input').on('keyup blur', function () {
+// Run when valid
+var doOnce = true;
+function validForm (form) {
+  if ( doOnce ) {
+    $( '.form-submit' ).prop( 'disabled' , false );
+    doOnce = false;
+  }
+}
 
-  var thisForm = $(this).closest('.validate');
-  var requiredInputs = thisForm.find('.input-required');
-  var testValid = requiredInputs.length;
-  var validated = 0;
+// Validation
+$( '.validate .input-field' ).on( 'keyup blur' , function validate () {
+  var formElement = $( this ).closest(' .validate' );
+  var requiredInputs = formElement.find( '.input-required' );
+  var validInputs = requiredInputs.length;
+  var validatedInputs = 0;
+  var minLength = 1;
 
-  requiredInputs.each(function() {
-    var isValid = $(this).val();
-    if ( isValid == true ) {
-      validated++;
-    }
+  requiredInputs.each( function () {
+    var isValid = $( this ).val();
+    if ( isValid.length > minLength ) {
+      validatedInputs += 1; }
   });
 
-  console.log(validated);
-
-
-  // Error Message
-
-
-  if ( validated == testValid ) {
-    console.log('form is valid');
-    // $('#verify-button').prop('disabled', false);
-
+  if ( validatedInputs == validInputs ) {
+    // console.log('valid');
+    validForm(formElement);
+    return true;
   }
 
 });
+
+// #( '.validate' ).submit( function( event ){
+//   var killswitch = $('.killswitch').val();
+//
+//   console.log(killswitch);
+//
+//   if ( validate(this) ){
+//     if ( killswitch.length < 0 ) {
+
+// check killswitch
+
+// timestamp
+
+//
+//
+//       showAlert( '<p>Thank you for your attention, your email has been sent.</p>' , '.alert' );
+//
+//     }
+//   }
+// });
 
 
 
