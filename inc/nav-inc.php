@@ -16,7 +16,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a class="thisone" href="/work.php">Work</a></li>
-          <li><a href="/process.php">Process</a></li>
+          <!-- <li><a href="/process.php">Process</a></li>-->
           <li><a href="/contact.php">Contact</a></li>
         </ul>
       </div>

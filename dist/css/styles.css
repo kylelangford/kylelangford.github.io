@@ -818,6 +818,14 @@ nav.primary {
       .message p {
         font-size: 1.25em; } }
 
+.three-col .col {
+  width: 32%;
+  float: left;
+  padding: 2%; }
+  .three-col .col p {
+    text-align: left;
+    font-size: 1.15em; }
+
 .browser {
   background: transparent;
   border-top-right-radius: 4px;
@@ -1079,12 +1087,6 @@ button.form-submit {
       opacity: 1; }
     [class^="cta-"]:hover span, [class*=" cta-"]:hover span {
       border-bottom: 3px solid #09f; }
-
-.cta-process::before {
-  background: url('../../img/cool.jpg'); }
-
-.cta-work::before {
-  background: url('../../img/cool2.jpg'); }
 
 .credits {
   text-align: center;

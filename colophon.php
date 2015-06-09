@@ -19,16 +19,6 @@
       <div class="wrap">
         <div class="squeeze">
 
-          <h3>Dev Notes</h3>
-          <h4>jQuery vs Vanilla JS</h4>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor.</p>
-
-          <h4>Speed</h4>
-          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
-
-          <h4>Pre-loading Images</h4>
-          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</p>
-
           <h3>thanks to:</h3>
 
           <h4>Software</h4>
@@ -38,7 +28,6 @@
             <li>Chrome/FF/Safari</li>
             <li>MAMP Pro</li>
             <li>Transmit</li>
-            <li>Notes</li>
           </ul>
 
           <h5>Local Development</h4>
@@ -69,7 +58,7 @@
 
           <h4>Build Process</h4>
           <ul>
-            <li>Grunt.js, (grunt-contrib-handlebars, contrib-uglify, contrib-watch, contrib-sass)</li>
+            <li>Grunt.js, (contrib-uglify, contrib-watch, contrib-sass)</li>
           </ul>
 
           <h4>Development</h4>

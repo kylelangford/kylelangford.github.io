@@ -11,7 +11,6 @@ $(".mast-head").headroom( {
 $(".grid").on('click', function() {
   $(this).toggleClass('break-apart');
 });
-
 $('#message').change(function(event){
   if ($(this).val()) {
     $(this).next().hide();
@@ -19,7 +18,6 @@ $('#message').change(function(event){
     $(this).next().show();
   }
 });
-
 (function () {
   $("body").addClass( "tween" );
 })();
@@ -61,7 +59,6 @@ var waypoints = $('.close-hint').waypoint(function() {
 }, {
   offset: '75%'
 });
-
 $('.span-tada').hide();
 var waypoints = $('.wp-rotate').waypoint(function() {
   $('.span-tada').addClass('animated tada');
@@ -154,26 +151,22 @@ $( '.validate .input-field' ).on( 'keyup blur' , function validate () {
 //   }
 // });
 
-
-
-
-
 // Preload Elements
-window.onload = function() {
-	setTimeout(function() {
-		// XHR to request a JS and a CSS
-		// var xhr = new XMLHttpRequest();
-		// xhr.open('GET', 'http://domain.tld/preload.js');
-		// xhr.send('');
-    // xhr = new XMLHttpRequest();
-		// xhr.open('GET', 'http://domain.tld/preload.css');
-		// xhr.send('');
-		// preload image
-		new Image().src = "img/danklin2012.jpg";
-		new Image().src = "img/p-ballyribbon.jpg";
-		new Image().src = "img/p-brunello.jpg";
-		new Image().src = "img/p-imaginatik.jpg";
-		new Image().src = "img/p-ma-ena.jpg";
-		new Image().src = "img/p-orchard.jpg";
-	}, 1000);
-};
+// window.onload = function() {
+// 	setTimeout(function() {
+// 		// XHR to request a JS and a CSS
+// 		// var xhr = new XMLHttpRequest();
+// 		// xhr.open('GET', 'http://domain.tld/preload.js');
+// 		// xhr.send('');
+//     // xhr = new XMLHttpRequest();
+// 		// xhr.open('GET', 'http://domain.tld/preload.css');
+// 		// xhr.send('');
+// 		// preload image
+// 		new Image().src = "img/danklin2012.jpg";
+// 		new Image().src = "img/p-ballyribbon.jpg";
+// 		new Image().src = "img/p-brunello.jpg";
+// 		new Image().src = "img/p-imaginatik.jpg";
+// 		new Image().src = "img/p-ma-ena.jpg";
+// 		new Image().src = "img/p-orchard.jpg";
+// 	}, 1000);
+// };

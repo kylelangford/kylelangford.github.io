@@ -367,6 +367,16 @@ nav {
     }
   }
 }
+// Three Col
+.three-col .col {
+  width: 32%;
+  float: left;
+  padding: 2%;
+  p {
+    text-align:left;
+    font-size:1.15em;
+  }
+}
 // Browser
 .browser {
   background:transparent;
@@ -481,7 +491,6 @@ nav {
     @include span-columns(10);
     @include shift(1);
   }
-
   .bullet {
     @include flex-basis(20em);
     @include flex-grow(1);
@@ -650,13 +659,6 @@ button.form-submit {
       border-bottom: 3px solid $primary-color;
     }
   }
-
-}
-.cta-process::before {
-  background:url('../../img/cool.jpg');
-}
-.cta-work::before {
-  background:url('../../img/cool2.jpg');
 }
 
 // Credits

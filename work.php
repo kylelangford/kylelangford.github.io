@@ -9,23 +9,23 @@
       <div class="wrap">
         <div class="message">
           <!-- 1.1 Work -->
-          <h2>Work</h2>
+          <h2>Site Examples</h2>
           <p>"If my mind can conceive it, and my heart can believe it &mdash; then I can achiece it."</p>
-          <p class="date">&mdash; Muhammad Ali</p>
+          <cite class="date">Muhammad Ali</cite>
         </div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel close-hint">
       <div class="wrap">
         <div class="browser">
-          <img src="img/p-ma-ena.jpg">
+          <img src="img/p-ma-ena-1.jpg">
           <span></span>
           <p>Kyle Langford</p>
         </div>
         <div class="browser">
-          <img src="img/p-dgap.jpg">
+          <img src="img/p-orchard.jpg">
           <span></span>
-          <p>Kyle Langford</p>
+          <p>Work done at Brunello</p>
         </div>
         <div class="browser">
           <img src="img/p-imaginatik.jpg">
@@ -38,12 +38,17 @@
           <p>Work done at Brunello</p>
         </div>
         <div class="browser">
+          <img src="img/p-threadss.jpg">
+          <span></span>
+          <p>Work done at Questex</p>
+        </div>
+        <div class="browser">
           <img src="img/p-ibs.png">
           <span></span>
           <p>Work done at Questex</p>
         </div>
         <div class="browser">
-          <img src="img/p-webguru.png">
+          <img src="img/p-webguru.jpg">
           <span></span>
           <p>Kyle Langford</p>
         </div>
@@ -59,7 +64,7 @@
 
           <h3>By Request</h3>
           <p>Over the years I have collected a wide variety of work some I can not show you here. But if you are interested in seeing more of my work please feel free to contact me.</p>
-          <a href="/contact.php">email me</a>  
+          <a href="/contact.php">email me</a>
        </div>
 
       </div>
