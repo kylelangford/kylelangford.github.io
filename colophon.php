@@ -10,7 +10,6 @@
         <div class="message">
           <!-- 1.1 Process -->
           <h2>Colophon</h2>
-          <p>More then just design. More then just development. Lorem ipsum set dolor et tu </p>
           <p class="date">Revised - 30 Mar 2014</p>
         </div>
       </div>

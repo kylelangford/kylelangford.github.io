@@ -11,12 +11,13 @@
         <!-- <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2> -->
 
         <div class="grid">
-          <div class="ot-letter-bottom"><span data-letter="W">W</span></div>
-          <div class="ot-letter-bottom"><span data-letter="e">e</span></div>
-          <div class="ot-letter-bottom"><span data-letter="b">b</span></div>
+
           <div class="ot-letter-bottom"><span data-letter="U">U</span></div>
-          <div class="ot-letter-bottom"><span data-letter="I">I</span></div>
+          <div class="ot-letter-bottom"><span data-letter="I">X</span></div>
+          <div class="ot-letter-bottom"><span data-letter="D">D</span></div>
+
         </div>
+
       </div>
     </div>
   </section>
@@ -28,7 +29,8 @@
         <div class="line-behind-icon">
           <span class="icon-cube"></span>
         </div>
-        <p>My name is Kyle langford I live and work in Boston, MA. I have experience in graphic design, computer animation and developing for the web. Designing interfaces and user experience is my passion I enjoy working on all phases of a project from the initial engagement to QA.</p>
+        <p>Designing for interfaces and user experience is my passion. My name is Kyle langford I live and work in Boston, MA. I have experience in graphic design, developing for the web, and computer animation. This is my professional experience site and I invite you to come take a look.</p>
+        <a href="/work.php" class="btn cta cta-work"><span>WORK<span></a>
       </div>
     </div>
   </section>
@@ -36,7 +38,7 @@
     <div class="wrap">
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
-        <h2>Creative <span class="wp-rotate">+</span> Technology</h2>
+        <h2>Methodology</h2>
         <p>Technology and content are two sides of the same coin. Effective design starts at the idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
       </div>
       <ul class="bullets">
@@ -46,8 +48,8 @@
           </div>
           <div class="bullet-content">
             <!-- 1.2.1 UI/UX Designer -->
-            <h3>Interface/Experience Design</h3>
-            <p>Human centric design strives for accessibility. It is content driven and looks to create immersion and engagement through narrative and persona.</p>
+            <h3>Battle-Tested Process</h3>
+            <p>I have a several years experience working on responive site builds. Including designing, templating, prototyping, and content strategy for single page sites and more complex web platforms.</p>
           </div>
         </li>
         <li class="bullet">
@@ -56,8 +58,8 @@
           </div>
           <div class="bullet-content">
             <!-- 1.2.2 Front-end Development -->
-            <h3>Mobile First</h3>
-            <p>I have a lot of experience with responive design, templating, prototyping, as well as email. My focus is for code that is DRY, human readable, and follows best practices.</p>
+            <h3>Accessible Design</h3>
+            <p>Design should be accesible to people and their devices. The most important consideration is for the users needs and challanges.</p>
           </div>
         </li>
         <li class="bullet">
@@ -67,7 +69,7 @@
           <div class="bullet-content">
             <!-- 1.2.3 Content Strategy -->
             <h3>Content Driven</h3>
-            <p>Form follows function. I rely heavily on content to influence my work. Successful projects start with content, and they realize a website is only a piece of the overall puzzle.</p>
+            <p>Successful projects start with content. I use goals among other things to guide my creative process and energy. Sites should strive to create immersion and engagement with narrative and persona.</p>
           </div>
         </li>
         <li class="bullet">
@@ -77,7 +79,7 @@
           <div class="bullet-content">
             <!-- 1.2.4 Content Management -->
             <h3>Content Managed Sites</h3>
-            <p>Content Mangement systems are a nessersary part of a website. the ability to change and edit content is critical to a companies success. There are many types of CMS's out there and chooses the right one can save you a lot of time and headaches.</p>
+            <p>  Working with a CMS is many times crucials for managing that content. There are many types of CMS's out there and choosing the right one can save you a lot of time and headaches.</p>
           </div>
         </li>
 
@@ -86,16 +88,13 @@
   </section>
   <section class="panel">
     <div class="wrap">
-      <div class="message">
-        <!-- 1.4 What I've done: Work Experience. -->
-        <h2>Work</h2>
-        <div class="line-behind-icon">
-          <span class="icon-lamp"></span>
-        </div>
-        <p>This is a small sampling of my work. In-dept inquaries can handled on a case-by-case basis. I have also..  </p>
-        <a href="/work.php" class="btn cta cta-work"><span>SAMPLES<span></a>
-        <a href="/process.php" class="btn cta cta-process"><span>PROCESS<span></a>
-
+      <div class="message three-col">
+        <!-- 1.3 Drupal Experience -->
+        <h2>Passion</h2>
+          <div class="line-behind-icon">
+            <span class="icon-drupal"></span>
+          </div>
+          <p>Devotion to ones skill, process, and a life time of learning is the mark of a true craftsman. However, enjoyment of one-self outside of 'work' and in the company of friends should be an equal part of your success in life.</p>
       </div>
     </div>
   </section>
@@ -103,12 +102,16 @@
     <div class="wrap">
       <div class="message three-col">
         <!-- 1.3 Drupal Experience -->
-        <h2>Drupal</h2>
-
+        <h2>Design Thought</h2>
           <div class="line-behind-icon">
             <span class="icon-drupal"></span>
           </div>
-          <p>I have 5 years experience developing in drupal and have worked on everything from brochure sites to large publishing sites to multi-site platforms. I am a designer by trade but frequently find myself writing php and meddling in stuff outside my comfort zone.</p>
+          <p>"Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design."</p>
+          <cite class="date">Dieter Rams</cite>
+          <br />
+          <br />
+          <p>"If my mind can conceive it, and my heart can believe it — then I can achiece it."</p>
+          <cite class="date">Muhammad Ali</cite>
       </div>
     </div>
   </section>
@@ -122,7 +125,7 @@
         </div>
         <p>A Fledling Agency. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
 
-        <a href="http://www.raskyl.com" class="btn cta-raskyl"><span>Raskyl<span></a>
+        <a href="http://www.raskyl.com" target="_blank" class="btn cta-raskyl"><span>Raskyl<span></a>
 
       </div>
     </div>

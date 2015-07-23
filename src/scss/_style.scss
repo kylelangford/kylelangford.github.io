@@ -593,7 +593,7 @@ button {
     }
   }
 }
-button.form-submit {
+button.submit {
   background-color:transparent;
   font-size:6em;
   font-family:$sans-serif;
@@ -1056,8 +1056,7 @@ p.author {
     cursor:pointer;
   }
 }
-.grid div span:before,
-.grid div span:after {
+.grid div span:before {
 	position: absolute;
 	content: attr(data-letter);
 	line-height: inherit;
@@ -1066,8 +1065,7 @@ p.author {
 	right: 0;
 	bottom: 0;
 }
-.break-apart.grid div span:before,
-.break-apart.grid div span:after {
+.break-apart.grid div span:before {
   position: relative;
 }
 .grid div span:after {
@@ -1080,16 +1078,10 @@ p.author {
 }
 
 /* Down */
-.ot-letter-bottom span:before,
-.ot-letter-bottom span:after {
+.ot-letter-bottom span:before {
 	-webkit-transform-origin: 50% 0;
 	-ms-transform-origin: 50% 0;
 	transform-origin: 50% 0;
-}
-.ot-letter-bottom span:after {
-	-webkit-transform: scale(1,1.05) skew(8deg,0deg);
-	-ms-transform: scale(1,1.05) skew(8deg,0deg);
-	transform: scale(1,1.05) skew(8deg,0deg);
 }
 .ot-letter-bottom span:before {
 	// text-shadow: 0px -1px 0px hsla(360, 100%, 100%, 0.1), 0px 3px 1px hsla(0, 0%, 0%, 0.4);
@@ -1097,8 +1089,6 @@ p.author {
 	-ms-transform: rotateX(20deg);
 	transform: rotateX(20deg);
 }
-
-
 .wp-rotate {
   display: inline-block;
   @include transform(rotate(135deg))

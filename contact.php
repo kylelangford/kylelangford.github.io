@@ -28,15 +28,14 @@ if(isset($_POST['submit'])){
       <!-- 1.1 Web UI -->
       <div class="contact">
         <h2><small>Contact</small></h2>
-        <form method="post" class="validate" action="" autocomplete="off">
+        <form id="ajax-contact" method="post" class="validate" autocomplete="off" action="mailer.php">
 
-
-            <input class="killswitch" type="text">
-            <input class="timestamp" type="text">
+            <!-- <input class="killswitch" type="text">
+            <input class="timestamp" type="text"> -->
 
             <span class="input input-nao">
-					    <input class="input-field input-field-nao input-required" type="text" id="input-name" required>
-				    	<label class="input-label input-label-nao" for="input-name">
+					    <input class="input-field input-field-nao input-required" type="text" id="name" name="name" required>
+				    	<label class="input-label input-label-nao" for="name">
 						    <span class="input-label-content input-label-content-nao">Name</span>
 					    </label>
 					    <svg class="graphic graphic-nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
@@ -45,8 +44,8 @@ if(isset($_POST['submit'])){
 			    	</span>
 
             <span class="input input-nao">
-              <input class="input-field input-field-nao input-required" type="email" id="input-email" required>
-              <label class="input-label input-label-nao" for="input-email">
+              <input class="input-field input-field-nao input-required" type="email" id="email" name="email" required>
+              <label class="input-label input-label-nao" for="email">
                 <span class="input-label-content input-label-content-nao">Email</span>
               </label>
               <svg class="graphic graphic-nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
@@ -58,16 +57,19 @@ if(isset($_POST['submit'])){
               <label class="input-label input-label-kozakura" for="message">
     						<span class="input-label-content input-label-content-kozakura">Message</span>
     					</label>
-    					<textarea id="message" class="input-field input-field-kozakura input-required" rows="8" pattern=".{10,}" required title="10 Characters Minimum"></textarea>
+    					<textarea id="message" name="message" class="input-field input-field-kozakura input-required" rows="8" pattern=".{10,}" required title="10 Characters Minimum"></textarea>
     					<svg class="graphic graphic-kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
     						<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path>
     					</svg>
     				</span>
             <div class="alert"><div>
-            <button class="form-submit button" href="http://www.raskyl.com" disabled><span class="icon-paper-plane"></span></button>
-            <input type="submit" name="submit" value="Submit">
+
+            <div id="form-messages"></div>
+
+            <button class="submit button" disabled><span class="icon-paper-plane"></span></button>
 
         </form>
+
       </div>
     </div>
   </section>

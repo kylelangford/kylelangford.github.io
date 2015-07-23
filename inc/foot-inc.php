@@ -9,9 +9,9 @@
     <a href="https://twitter.com/stuckinthetubes"><span class="icon icon-twitter"></span></a>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="dist/js/jquery-1.11.2.min.js"><\/script>')
+    window.jQuery || document.write('<script src="dist/js/jquery-2.1.0.min.js"><\/script>')
   </script>
 
   <script src="dist/js/scripts.min.js"></script>

@@ -1027,7 +1027,7 @@ button {
         color: #09f;
         box-shadow: inset 0 -2px #004c7f; }
 
-button.form-submit {
+button.submit {
   background-color: transparent;
   font-size: 6em;
   font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -1039,9 +1039,9 @@ button.form-submit {
   -webkit-transition: color .15s ease-in, opacity .75s ease-in;
   -moz-transition: color .15s ease-in, opacity .75s ease-in;
   transition: color .15s ease-in, opacity .75s ease-in; }
-  button.form-submit:hover {
+  button.submit:hover {
     color: #09f; }
-  button.form-submit:disabled {
+  button.submit:disabled {
     opacity: 0; }
 
 .killswitch, .timestamp {
@@ -1440,7 +1440,7 @@ p.author {
   .grid div span:hover {
     cursor: pointer; }
 
-.grid div span:before, .grid div span:after {
+.grid div span:before {
   position: absolute;
   content: attr(data-letter);
   line-height: inherit;
@@ -1449,7 +1449,7 @@ p.author {
   right: 0;
   bottom: 0; }
 
-.break-apart.grid div span:before, .break-apart.grid div span:after {
+.break-apart.grid div span:before {
   position: relative; }
 
 .grid div span:after {
@@ -1461,15 +1461,10 @@ p.author {
   color: #444; }
 
 /* Down */
-.ot-letter-bottom span:before, .ot-letter-bottom span:after {
+.ot-letter-bottom span:before {
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
   transform-origin: 50% 0; }
-
-.ot-letter-bottom span:after {
-  -webkit-transform: scale(1, 1.05) skew(8deg, 0deg);
-  -ms-transform: scale(1, 1.05) skew(8deg, 0deg);
-  transform: scale(1, 1.05) skew(8deg, 0deg); }
 
 .ot-letter-bottom span:before {
   -webkit-transform: rotateX(20deg);
