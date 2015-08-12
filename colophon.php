@@ -10,13 +10,15 @@
         <div class="message">
           <!-- 1.1 Process -->
           <h2>Colophon</h2>
-          <p class="date">Revised - 30 Mar 2014</p>
+          <p>"Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design."</p>
+          <cite class="date">Dieter Rams</cite>
         </div>
       </div>
     </header>
     <div class="panel article">
       <div class="wrap">
         <div class="squeeze">
+          <p class="date">Revised - 30 Mar 2014</p>
 
           <h3>thanks to:</h3>
 

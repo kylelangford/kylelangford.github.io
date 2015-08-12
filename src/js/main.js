@@ -54,11 +54,13 @@ var waypoints = $('.squish').waypoint(function() {
 }, {
   offset: '40%'
 });
+
 var waypoints = $('.close-hint').waypoint(function() {
   $('.hint').hide();
 }, {
   offset: '75%'
 });
+
 $('.span-tada').hide();
 var waypoints = $('.wp-rotate').waypoint(function() {
   $('.span-tada').addClass('animated tada');

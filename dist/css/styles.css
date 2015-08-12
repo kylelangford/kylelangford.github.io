@@ -575,7 +575,9 @@ textarea {
 
 .panel {
   width: 100vw;
-  background-color: white; }
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%; }
   .panel:after {
     content: "";
     display: table;
@@ -589,20 +591,18 @@ textarea {
     background-color: #cdcdcd !important; }
   .panel:nth-child(odd) {
     background-color: #f4f4f4; }
-  .panel.welcome {
-    background: #ffcc2f; }
+  .panel.welcome h2 {
+    font-size: 6em;
+    text-align: center;
+    line-height: .85; }
+  @media screen and (min-width: 769px)  {
     .panel.welcome h2 {
-      font-size: 6em;
-      text-align: center;
-      line-height: .85; }
-    @media screen and (min-width: 769px)  {
-      .panel.welcome h2 {
-        font-size: 12em;
-        margin-bottom: 0;
-        text-align: right;
-        line-height: .95; }
-        .panel.welcome h2 .kern {
-          letter-spacing: -12px; } }
+      font-size: 12em;
+      margin-bottom: 0;
+      text-align: right;
+      line-height: .95; }
+      .panel.welcome h2 .kern {
+        letter-spacing: -12px; } }
 
 .head {
   background: #cdcdcd;
@@ -638,6 +638,10 @@ textarea {
     padding: 16em 0 8em; }
   .contact .wrap {
     padding: 10em 0; }
+  .credits .wrap {
+    padding: 3em 0; }
+  .welcome .wrap {
+    padding: 0; }
   article .wrap {
     padding: 8em 0; }
   .wrap .left, .wrap .right {
@@ -653,6 +657,8 @@ textarea {
   .window .wrap {
     display: table-cell;
     vertical-align: middle; }
+    .window .wrap p {
+      color: #333; }
   .wrap.collapse {
     padding: 0; }
 
@@ -694,24 +700,22 @@ textarea {
   position: absolute;
   top: 1.25em;
   left: 1.25em;
-  color: #444;
+  color: #333;
   font-size: 1.6rem;
   z-index: 9999;
   padding-left: 1.2em;
   width: 300px; }
   .site-logo.active {
     color: white; }
-  @media screen and (max-width: 640px)  {
-    .site-logo {
-      left: 0; } }
 
 footer .icon {
   color: #555;
   font-size: 1.5em; }
 footer .icon-copyright {
-  font-size: 1.2em; }
-
-p.copy {
+  font-size: 15px;
+  position: relative;
+  top: 1px; }
+footer p.copy {
   color: #555;
   font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100;
@@ -736,7 +740,7 @@ p.copy {
   .headroom--pinned.headroom--top {
     background-color: transparent; }
     .headroom--pinned.headroom--top .site-logo {
-      color: #444; }
+      color: #333; }
     .headroom--pinned.headroom--top .cube > div {
       background-color: transparent; }
 
@@ -788,13 +792,23 @@ nav.primary {
   margin: 0px auto;
   padding: 0 1.5em; }
 
+#form-messages {
+  padding: 0 0 5% 0;
+  text-align: center; }
+
 .message {
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   height: 100%;
   width: 100vw;
   padding: 0 5%; }
+  .welcome .message {
+    text-align: center; }
+    .welcome .message p {
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto; }
   .collapse .message {
     padding-top: 14em;
     max-width: none;
@@ -836,9 +850,25 @@ nav.primary {
   border-left: 1px solid rgba(160, 160, 160, 0.4);
   position: relative;
   margin: 0 auto;
-  height: 800px;
+  height: auto;
   overflow: hidden;
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  /*   &:after {
+    background-color:#f6f6f6;
+    color:#555;
+    display:inline-block;
+    content:'Work done at Brunello | ma-ena.org';
+    line-height:1em;
+    font-size:.65em;
+    text-align:left;
+    border-top-right-radius:4px;
+    position:absolute;
+    padding:4px 10px;
+    bottom:0px;
+    left:0px;
+    border-right:1px solid rgba(160,160,160,.4);
+    border-top:1px solid rgba(160,160,160,.4);
+  } */ }
   .browser img {
     width: 100%; }
   .browser:before {
@@ -846,7 +876,7 @@ nav.primary {
     color: #555;
     height: 2em;
     display: block;
-    content: 'Site Title Here';
+    content: ' ';
     line-height: 2em;
     font-size: .75em;
     text-align: center;
@@ -854,21 +884,6 @@ nav.primary {
     border-top-left-radius: 4px;
     border-bottom: 1px solid rgba(160, 160, 160, 0.3);
     text-shadow: 0 0 1px #b9b9b9; }
-  .browser:after {
-    background-color: #f6f6f6;
-    color: #555;
-    display: inline-block;
-    content: 'Work done at Brunello | ma-ena.org';
-    line-height: 1em;
-    font-size: .65em;
-    text-align: left;
-    border-top-right-radius: 4px;
-    position: absolute;
-    padding: 4px 10px;
-    bottom: 0px;
-    left: 0px;
-    border-right: 1px solid rgba(160, 160, 160, 0.4);
-    border-top: 1px solid rgba(160, 160, 160, 0.4); }
   .browser span {
     background-color: #fc5857;
     border-radius: 50%;
@@ -979,7 +994,8 @@ button {
   padding: 0.6em 1em;
   font-size: 1rem;
   outline: none;
-  border: 0; }
+  border: 0;
+  line-height: 100%; }
   button.active {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -988,7 +1004,7 @@ button {
     background-color: #09f;
     color: white;
     position: absolute;
-    padding: 0.35em 1em;
+    padding: 0.65em 1em;
     top: 2em;
     right: 2em;
     z-index: 99999; }
@@ -1014,7 +1030,7 @@ button {
       width: inherit;
       display: block;
       content: 'MENU';
-      padding: 0.35em 1em;
+      padding: 0.65em 1em;
       background-color: #09f;
       top: 0px;
       left: 0px;
@@ -1080,7 +1096,7 @@ button.submit {
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
   [class^="cta-"]:hover, [class*=" cta-"]:hover {
     background-color: transparent;
-    color: #444; }
+    color: #333; }
     [class^="cta-"]:hover:before, [class*=" cta-"]:hover:before {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
@@ -1089,7 +1105,6 @@ button.submit {
       border-bottom: 3px solid #09f; }
 
 .credits {
-  text-align: center;
   padding: 2em; }
   .credits a {
     color: #555; }
@@ -1098,26 +1113,31 @@ button.submit {
 
 .line-behind-text {
   border-bottom: 1px solid #555;
-  text-align: center;
+  text-align: left;
   width: 30%;
   min-width: 200px;
-  margin: 0 auto 4.5em; }
+  margin: 0 0 4.5em; }
   .line-behind-text h2 {
     background: #f4f4f4;
     color: #555;
     display: inline-block;
     font-size: 1rem;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
     position: relative;
     text-transform: uppercase;
     top: 14px; }
 
 .line-behind-icon {
   border-bottom: 1px solid #cdcdcd;
-  text-align: center;
+  text-align: left;
   width: 30%;
   min-width: 200px;
-  margin: 0 auto 4.5em; }
+  margin: 0 0 4.5em; }
+  .window.panel .line-behind-icon {
+    border-color: white; }
+    .window.panel .line-behind-icon span.icon-cube {
+      background: #ffcc2f;
+      color: white; }
   .line-behind-icon span {
     background: #f4f4f4;
     color: #cdcdcd;
@@ -1150,7 +1170,7 @@ p.type {
 
 p.date {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  color: rgba(68, 68, 68, 0.4);
+  color: rgba(51, 51, 51, 0.4);
   margin: 0.5em 0;
   font-weight: 400;
   font-size: 1em; }
@@ -1219,6 +1239,8 @@ p.author {
     background-position: center center;
     border: 2px solid white;
     background-color: transparent; }
+  .contact-page .cube > div {
+    border-color: #333; }
   .cube div:nth-child(1) {
     -webkit-transform: translateZ(11px);
     -moz-transform: translateZ(11px);
@@ -1337,12 +1359,12 @@ p.author {
   transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1); }
 
 .input-field-nao:focus + .input-label-nao, .input-filled .input-label-nao {
-  color: #444;
+  color: #333;
   -webkit-transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
   transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1); }
 
 .input-field-nao:focus ~ .graphic-nao, .input-filled .graphic-nao {
-  stroke: #444;
+  stroke: #333;
   -webkit-transform: translate3d(-66.6%, 0, 0);
   transform: translate3d(-66.6%, 0, 0); }
 
@@ -1415,7 +1437,9 @@ p.author {
   padding: 0;
   list-style: none;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  margin-top: -3em;
+  margin-bottom: 3em; }
 
 .grid div {
   position: relative;
@@ -1458,7 +1482,7 @@ p.author {
   z-index: -1; }
 
 .grid div span:before {
-  color: #444; }
+  color: #333; }
 
 /* Down */
 .ot-letter-bottom span:before {

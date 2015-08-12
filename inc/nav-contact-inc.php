@@ -1,6 +1,6 @@
-<header class="mast-head">
+<header class="mast-head ">
     <div class="container">
-      <div class="animate cube">
+      <div class="animate cube contact-page">
         <div></div><div></div><div></div><div></div><div></div><div></div>
       </div>
     </div>

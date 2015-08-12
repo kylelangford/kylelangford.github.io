@@ -4,42 +4,32 @@
 <body>
   <?php include 'inc/nav-inc.php'; ?>
 
-  <section class="panel welcome window">
+  <section class="panel welcome window head">
     <div class="wrap">
       <div class="message">
         <!-- 1.1 Web UI -->
         <!-- <h2><span class="kern">W</span>eb<br/><span class="kern">U</span>I</h2> -->
-
         <div class="grid">
-
           <div class="ot-letter-bottom"><span data-letter="U">U</span></div>
           <div class="ot-letter-bottom"><span data-letter="I">X</span></div>
           <div class="ot-letter-bottom"><span data-letter="D">D</span></div>
-
         </div>
-
+        <p>My name is Kyle Langford, I live and work in Boston, MA and designing user interfaces
+           and user experience is my passion.  I have extensive experience in graphic design, web
+           development, and computer animation. This is my professional website and I invite you
+           to come take a look at my work.</p>
+        <a href="/work.php" class="btn cta cta-work"><span>Work Samples<span></a>
+      </div>
       </div>
     </div>
   </section>
+
   <section class="panel close-hint">
     <div class="wrap">
       <div class="message">
-        <!-- 1 Grettings My Name is Kyle Langford -->
-        <h2>Kyle Langford</h2>
-        <div class="line-behind-icon">
-          <span class="icon-cube"></span>
-        </div>
-        <p>Designing for interfaces and user experience is my passion. My name is Kyle langford I live and work in Boston, MA. I have experience in graphic design, developing for the web, and computer animation. This is my professional experience site and I invite you to come take a look.</p>
-        <a href="/work.php" class="btn cta cta-work"><span>WORK<span></a>
-      </div>
-    </div>
-  </section>
-  <section class="panel">
-    <div class="wrap">
-      <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
-        <h2>Methodology</h2>
-        <p>Technology and content are two sides of the same coin. Effective design starts at the idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
+        <h2>Web Design</h2>
+        <p>Technology and content are two sides of the same coin. Effective design begins with an idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
       </div>
       <ul class="bullets">
         <li class="bullet">
@@ -49,7 +39,7 @@
           <div class="bullet-content">
             <!-- 1.2.1 UI/UX Designer -->
             <h3>Battle-Tested Process</h3>
-            <p>I have a several years experience working on responive site builds. Including designing, templating, prototyping, and content strategy for single page sites and more complex web platforms.</p>
+            <p>I have a several years of experience working on responsive site builds. Including designing, templating, prototyping, and content strategy for single page sites as well as more complex web platforms.</p>
           </div>
         </li>
         <li class="bullet">
@@ -58,8 +48,8 @@
           </div>
           <div class="bullet-content">
             <!-- 1.2.2 Front-end Development -->
-            <h3>Accessible Design</h3>
-            <p>Design should be accesible to people and their devices. The most important consideration is for the users needs and challanges.</p>
+            <h3>Responsive Design</h3>
+            <p>Design should be accessible to every user and their device(s). The most important consideration is that of the individual user’s needs and challenges.</p>
           </div>
         </li>
         <li class="bullet">
@@ -79,57 +69,34 @@
           <div class="bullet-content">
             <!-- 1.2.4 Content Management -->
             <h3>Content Managed Sites</h3>
-            <p>  Working with a CMS is many times crucials for managing that content. There are many types of CMS's out there and choosing the right one can save you a lot of time and headaches.</p>
+            <p>Working with a CMS is extremely crucial when managing your sites content. There are many types of CMSs out there and choosing the right one can save you a lot of time and future headaches.</p>
           </div>
         </li>
-
       </ul>
     </div>
   </section>
+
   <section class="panel">
     <div class="wrap">
       <div class="message three-col">
         <!-- 1.3 Drupal Experience -->
-        <h2>Passion</h2>
-          <div class="line-behind-icon">
-            <span class="icon-drupal"></span>
-          </div>
-          <p>Devotion to ones skill, process, and a life time of learning is the mark of a true craftsman. However, enjoyment of one-self outside of 'work' and in the company of friends should be an equal part of your success in life.</p>
+        <h2>Process</h2>
+        <p>Discussing even shaping goals early in a project's life is vital to making sure everyone is happy and expectations are met. Not every client needs a website, look at what you need to accomplish and how you can achieve that elegantly.</p>
       </div>
     </div>
   </section>
+
   <section class="panel">
-    <div class="wrap">
-      <div class="message three-col">
-        <!-- 1.3 Drupal Experience -->
-        <h2>Design Thought</h2>
-          <div class="line-behind-icon">
-            <span class="icon-drupal"></span>
-          </div>
-          <p>"Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design."</p>
-          <cite class="date">Dieter Rams</cite>
-          <br />
-          <br />
-          <p>"If my mind can conceive it, and my heart can believe it — then I can achiece it."</p>
-          <cite class="date">Muhammad Ali</cite>
-      </div>
-    </div>
-  </section>
-  <aside class="panel">
     <div class="wrap">
       <div class="message">
-        <!-- sectioned: Raskyl -->
-        <h2>Raskyl <span>Collective</span></h2>
-        <div class="line-behind-icon">
-          <span class="icon-bolt"></span>
-        </div>
-        <p>A Fledling Agency. I have joined forces with long time friend and pal Rachel Sorkin. Who is a force on the dance floor... as well as a design genius.</p>
-
-        <a href="http://www.raskyl.com" target="_blank" class="btn cta-raskyl"><span>Raskyl<span></a>
-
+        <!-- 1 Grettings My Name is Kyle Langford -->
+        <h2>Designing Systems</h2>
+        <p>Modular is the key word here. Theming Drupal sites have taught me a lot about not just creating the look but building out the bigger picture while creating a base that can scale gracefully. Performance and ease of use are also critically important.</p>
+        <a href="/work.php" class="btn cta cta-work"><span>Portfolio<span></a>
+        <a href="/work.php" class="btn cta cta-work"><span>Contact<span></a>
       </div>
     </div>
-  </aside>
+  </section>
 
   <span class="hint icon-chevron-down animated infinite bounce"></span>
 
