@@ -582,6 +582,10 @@ textarea {
     content: "";
     display: table;
     clear: both; }
+  .front .panel {
+    background-color: #f4f4f4; }
+    .front .panel:nth-child(odd) {
+      background-color: white; }
   .panel.animate {
     -webkit-transition: height 2s ease-in;
     -moz-transition: height 2s ease-in;
@@ -638,6 +642,9 @@ textarea {
     padding: 16em 0 8em; }
   .contact .wrap {
     padding: 10em 0; }
+    @media screen and (max-width: 769px)  {
+      .contact .wrap {
+        padding: 6em 0; } }
   .credits .wrap {
     padding: 3em 0; }
   .welcome .wrap {
@@ -803,6 +810,8 @@ nav.primary {
   height: 100%;
   width: 100vw;
   padding: 0 5%; }
+  .message a {
+    text-align: center; }
   .welcome .message {
     text-align: center; }
     .welcome .message p {
@@ -1074,8 +1083,12 @@ button.submit {
   color: #fff;
   display: inline-block;
   padding: 1.2em 6em;
+  min-width: 260px;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s; }
+  @media screen and (max-width: 769px)  {
+    [class^="cta-"], [class*=" cta-"] {
+      display: block; } }
   [class^="cta-"]:before, [class*=" cta-"]:before {
     content: '';
     position: absolute;
@@ -1285,6 +1298,9 @@ p.author {
   margin: 2em 0;
   width: 100%;
   vertical-align: top; }
+  @media screen and (max-width: 769px)  {
+    .input {
+      margin: 1em 0; } }
 
 .input-field {
   position: relative;
@@ -1449,6 +1465,9 @@ p.author {
   text-align: center;
   width: auto;
   display: inline-block; }
+  @media screen and (max-width: 769px)  {
+    .grid div {
+      font-size: 8em; } }
 
 /* Common styles for the letters */
 .grid div span {

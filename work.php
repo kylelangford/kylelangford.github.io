@@ -27,6 +27,10 @@
           <span></span>
         </div>
         <div class="browser">
+          <img src="img/p-ballyribbon.jpg">
+          <span></span>
+        </div>
+        <div class="browser">
           <img src="img/p-threadss.jpg">
           <span></span>
         </div>

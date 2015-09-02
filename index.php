@@ -1,7 +1,7 @@
 <?php include 'inc/head-inc.php'; ?>
 
 <!-- Outline -->
-<body>
+<body class="front">
   <?php include 'inc/nav-inc.php'; ?>
 
   <section class="panel welcome window head">
@@ -15,7 +15,7 @@
           <div class="ot-letter-bottom"><span data-letter="D">D</span></div>
         </div>
         <p>My name is Kyle Langford, I live and work in Boston, MA and designing user interfaces
-           and user experience is my passion.  I have extensive experience in graphic design, web
+           and experiences is my passion.  I have extensive experience in graphic design, web
            development, and computer animation. This is my professional website and I invite you
            to come take a look at my work.</p>
         <a href="/work.php" class="btn cta cta-work"><span>Work Samples<span></a>
@@ -29,7 +29,7 @@
       <div class="message">
         <!-- 1.2 Who I do: Creative & Tech -->
         <h2>Web Design</h2>
-        <p>Technology and content are two sides of the same coin. Effective design begins with an idea. Understanding and designing your content allows for a better user experience and execution of your product.</p>
+        <p>Discussing even shaping goals early in a project's life is vital to making sure everyone is happy and expectations are met. Not every client needs a website, look at what you need to accomplish and how you can achieve that elegantly.</p>
       </div>
       <ul class="bullets">
         <li class="bullet">
@@ -39,7 +39,7 @@
           <div class="bullet-content">
             <!-- 1.2.1 UI/UX Designer -->
             <h3>Battle-Tested Process</h3>
-            <p>I have a several years of experience working on responsive site builds. Including designing, templating, prototyping, and content strategy for single page sites as well as more complex web platforms.</p>
+            <p>I have a several years of experience working on responsive site builds. Including designing, templating, prototyping, and content strategy for complex websites to single page sites.</p>
           </div>
         </li>
         <li class="bullet">
@@ -49,7 +49,7 @@
           <div class="bullet-content">
             <!-- 1.2.2 Front-end Development -->
             <h3>Responsive Design</h3>
-            <p>Design should be accessible to every user and their device(s). The most important consideration is that of the individual user’s needs and challenges.</p>
+            <p>Design should be accessible to user and their device(s). Responsive design is one solution that addresses the wide variety of devices and platforms out there.</p>
           </div>
         </li>
         <li class="bullet">
@@ -59,7 +59,7 @@
           <div class="bullet-content">
             <!-- 1.2.3 Content Strategy -->
             <h3>Content Driven</h3>
-            <p>Successful projects start with content. I use goals among other things to guide my creative process and energy. Sites should strive to create immersion and engagement with narrative and persona.</p>
+            <p>Successful projects start with content. Understanding and designing your content allows for a better user experience and execution of your final product.</p>
           </div>
         </li>
         <li class="bullet">
@@ -81,7 +81,7 @@
       <div class="message three-col">
         <!-- 1.3 Drupal Experience -->
         <h2>Process</h2>
-        <p>Discussing even shaping goals early in a project's life is vital to making sure everyone is happy and expectations are met. Not every client needs a website, look at what you need to accomplish and how you can achieve that elegantly.</p>
+        <p>Effective design begins with an idea but is realized through process. Sites should strive to create immersion and engagement with narrative and persona which is only possible with a good understanding of your objectives and content. </p>
       </div>
     </div>
   </section>
@@ -91,7 +91,7 @@
       <div class="message">
         <!-- 1 Grettings My Name is Kyle Langford -->
         <h2>Designing Systems</h2>
-        <p>Modular is the key word here. Theming Drupal sites have taught me a lot about not just creating the look but building out the bigger picture while creating a base that can scale gracefully. Performance and ease of use are also critically important.</p>
+        <p>Theming Drupal sites have taught me a lot about not just creating the look but building out the bigger picture while creating a base that can scale gracefully. Performance and ease of use are also critically important as website become increasingly complex and users more demanding.</p>
         <a href="/work.php" class="btn cta cta-work"><span>Portfolio<span></a>
         <a href="/work.php" class="btn cta cta-work"><span>Contact<span></a>
       </div>

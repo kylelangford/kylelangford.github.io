@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
     <div class="wrap">
       <!-- 1.1 Web UI -->
       <div class="contact">
-        <h2><small>Greetings!</small></h2>
+        <h2><small>Hello!</small></h2>
 
         <form id="ajax-contact" method="post" class="validate" autocomplete="off" action="mailer.php">
           <!-- <input class="killswitch" type="text">

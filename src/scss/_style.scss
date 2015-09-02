@@ -114,6 +114,13 @@ textarea {
   padding-left:5%;
   padding-right:5%;
   @include clearfix;
+  // Reversed
+  .front & {
+    background-color: $panel-odd-color;
+    &:nth-child(odd) {
+      background-color: $panel-even-color;
+    }
+  }
   &.animate {
     @include transition(height 2s ease-in);
     height:20vh;
@@ -164,6 +171,9 @@ textarea {
   }
   .contact & {
     padding: 10em 0;
+    @include media(max-width $medium) {
+      padding: 6em 0;
+    }
   }
   .credits & {
     padding: 3em 0;
@@ -354,6 +364,9 @@ nav {
   height: 100%;
   width: 100vw;
   padding: 0 5%;
+  a {
+    text-align: center;
+  }
   .welcome & {
     text-align: center;
     p {
@@ -649,8 +662,12 @@ button.submit {
 	color: #fff;
   display:inline-block;
   padding:1.2em 6em;
+  min-width: 260px;
 	-webkit-transition: background-color 0.3s, color 0.3s;
 	transition: background-color 0.3s, color 0.3s;
+  @include media(max-width $medium) {
+    display:block;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -899,6 +916,9 @@ p.author {
   margin: 2em 0;
 	width: 100%;
 	vertical-align: top;
+  @include media(max-width $medium) {
+    margin: 1em 0;
+  }
 }
 .input-field {
 	position: relative;
@@ -1068,6 +1088,9 @@ p.author {
 	text-align: center;
 	width: auto;
   display: inline-block;
+  @include media(max-width $medium) {
+    font-size: 8em;
+  }
 }
 /* Common styles for the letters */
 .grid div span {

@@ -1,8 +1,8 @@
 <footer class="credits panel">
   <div class="wrap">
       <div class="message">
-        <a href="https://github.com/kylelangford"><span class="icon icon-github"></span></a>
-        <a href="https://twitter.com/stuckinthetubes"><span class="icon icon-twitter"></span></a>
+        <!-- <a href="https://github.com/kylelangford"><span class="icon icon-github"></span></a>
+        <a href="https://twitter.com/stuckinthetubes"><span class="icon icon-twitter"></span></a> -->
         <p class="copy"><span class="icon icon-copyright"></span> Kyle Langford 2015</p>
         <div class="line-behind-text">
           <!-- Credits: Copyright -->
