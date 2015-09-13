@@ -11,7 +11,10 @@
         <div class="message">
           <!-- 1.1 Work -->
           <h2>Site Examples</h2>
-          <p>Devotion to ones skill, process, and a life time of learning is the mark of a true craftsman. Below is a sampling of work spanning over 6 years. The works are self-lead were I completed the majority of work for the website. I have more samples available including work done at other agencies/companies that are available by request.</p>
+          <p>Devotion to ones skill, process, and a life time of learning is the mark of a true
+          craftsman. Below is a sampling of work spanning over 6 years. The works are self-lead
+          with the majority of the work completed by me. I have more samples available including
+          work done at other agencies/companies that are available by request.</p>
         </div>
       </div>
 
@@ -46,7 +49,11 @@
         <div class="message three-col">
           <!-- 1.3 Drupal Experience -->
           <h2>Working <br /> with Code</h2>
-            <p>In regards to creating frontend interfaces working with codes seems a more logical approach that allows you to iterate and refine your work more in the course of a project. Working in photoshop or other graphic editing programs can be a good part of the creative process however and I frequently use these programs along side my text editor.</p>
+          <p>In regards to creating frontend interfaces, working with code is a logical approach that
+          allows you to iterate and refine your work in the course of completing a project.
+          However, working in photoshop or other graphic editing programs as well, are a part of
+          the creative process and I frequently use both of these programs in conjunction with a
+          text editor.</p>
         </div>
       </div>
     </section>
