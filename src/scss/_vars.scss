@@ -1,0 +1,18 @@
+$sans-serif: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$sans-serif-2: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$serif: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino' , serif;
+$primary-color: #09f;
+$secondary-color: #ffcc2f;
+$off-white-color: #f4f4f4;
+$grey-color: #cdcdcd;
+$heading-font-color: #333;
+$paragraph-font-color: #555;
+$panel-odd-color: $off-white-color;
+$panel-even-color: white;
+$button-edge: shade( $primary-color, 50%);
+$wrap-padding: 14em;
+$small: 640px;
+$medium: 769px;
+$large: 1024px;
+$nav-bg-color: $primary-color;
+$border-radius:2px;

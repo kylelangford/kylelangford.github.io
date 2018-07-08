@@ -1,15 +1,12 @@
-# humanstxt.org/
+# humanstxt.org
 # The humans responsible & technology colophon
 
 # TEAM
-
-    Kyle Langford -- <role> -- <twitter>
+  Kyle Langford -- <role> -- <twitter>
 
 # THANKS
-
-    <name>
+  <name>
 
 # TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+  HTML5, CSS3
+  jQuery, Modernizr

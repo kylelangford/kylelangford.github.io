@@ -1,0 +1,83 @@
+
+
+// Button
+button {
+  // Default
+  border-radius: $border-radius;
+  line-height: 1.6;
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  outline: none;
+  border: 0;
+  line-height: 100%;
+  &.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 1px;
+  }
+  &.primary-menu-btn {
+    background-color: $primary-color;
+    color: white;
+    position: absolute;
+    padding: 0.65em 1em;
+    top: 2em;
+    right: 2em;
+    z-index: 99999;
+    &:before {
+      content: '';
+      position: absolute;
+      top:5px;
+      left:1px;
+      background-color: rgba(0, 0, 0, .12);
+      -webkit-transform: scale(1, 1.05) skew(4deg, 0deg);
+      -ms-transform: scale(1, 1.05) skew(4deg, 0deg);
+      transform: scale(1, 1.05) skew(4deg, 0deg);
+      display: block;
+      width: 88px;
+      height: 40px;
+      border-radius:$border-radius;
+      .active & {
+        -webkit-transform: scale(.95) skew(4deg, 0deg);
+        -ms-transform: scale(.95) skew(4deg, 0deg);
+        transform: scale(.95) skew(4deg, 0deg);
+      }
+    }
+    &:after {
+      position: absolute;
+      width:inherit;
+      display:block;
+      content: 'CONTACT';
+      padding: 0.65em 1em;
+      background-color: $primary-color;
+      top:0px;
+      left:0px;
+      border-radius: $border-radius;
+      border-bottom: 3px solid $button-edge;
+      -webkit-box-shadow: inset 0 -2px $button-edge;
+      box-shadow: inset 0 -4px $button-edge;
+      .active & {
+        background-color: white;
+        color: $primary-color;
+        box-shadow: inset 0 -2px $button-edge;
+      }
+    }
+  }
+}
+
+button.submit {
+  background-color:transparent;
+  font-size:6em;
+  font-family:$sans-serif;
+  font-weight:bold;
+  margin: 0px auto;
+  padding:0px;
+  display: block;
+  width: auto;
+  @include transition(color .15s ease-in, opacity .75s ease-in);
+  &:hover {
+    color:$primary-color;
+  }
+  &:disabled {
+    opacity:0;
+  }
+}

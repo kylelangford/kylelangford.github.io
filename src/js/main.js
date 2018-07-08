@@ -11,6 +11,7 @@ $(".mast-head").headroom( {
 $(".grid").on('click', function() {
   $(this).toggleClass('break-apart');
 });
+
 $('#message').change(function(event){
   if ($(this).val()) {
     $(this).next().hide();
@@ -18,6 +19,7 @@ $('#message').change(function(event){
     $(this).next().show();
   }
 });
+
 (function () {
   $("body").addClass( "tween" );
 })();
@@ -32,19 +34,6 @@ $('#message').change(function(event){
     e.preventDefault();
   });
 })();
-
-// Logo Swap
-$('.site-logo').hover(
-  function() {
-    var $this = $(this); // caching $(this)
-    $this.data('Everhood', $this.text());
-    $this.text("Kyle Langford");
-  },
-  function() {
-    var $this = $(this); // caching $(this)
-    $this.text($this.data('Everhood'));
-  }
-);
 
 //
 // Waypoints.js

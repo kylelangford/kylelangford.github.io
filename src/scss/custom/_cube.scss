@@ -1,0 +1,114 @@
+/*
+  Based on: http://cssdeck.com/labs/simple-css3-3d-cube
+  Author: http://kushagra.me/
+*/
+
+// Cube
+@include keyframes(spinningH) {
+  from {
+    @include transform(rotateX(0deg) rotateY(0deg));
+  }
+  to {
+    @include transform(rotateX(360deg) rotateY(360deg));
+  }
+}
+.animate {
+  @include animation(spinningH 6s infinite linear);
+}
+
+
+// Cube
+.container {
+  display: block;
+  position: absolute;
+  top: 36px;
+  left: 1.5em;
+  width: auto;
+  z-index:9999;
+  @include perspective(1000px);
+  @include perspective-origin(50% 50%);
+  @include media($medium) {
+     display: inline-block;
+  }
+}
+.cube {
+  $cube-translate-z: 11px;
+  $cube-border-color: white;
+  $cube-border-size: 2px;
+  $cube-color-1: #00ffcf;
+  $cube-color-2: #cf00ff;
+  $cube-color-3: #002fff;
+  opacity:0;
+  position: relative;
+  height: $cube-translate-z * 2;
+  width: $cube-translate-z * 2;
+  margin: 0 auto;
+  cursor: pointer;
+  @include transition(transform 2s linear);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  &:hover {
+    & > div {
+      border: $cube-border-size solid $cube-border-color;
+    }
+  }
+  > div {
+    position: absolute;
+    height: $cube-translate-z * 2;
+    width: $cube-translate-z * 2;
+    opacity: 1;
+    background-position: center center;
+    border: $cube-border-size solid $cube-border-color;
+    background-color: transparent;
+  }
+  .contact-page & {
+    > div {
+      border-color:$heading-font-color;
+    }
+  }
+  div:nth-child(1) {
+    -webkit-transform: translateZ($cube-translate-z);
+    -moz-transform: translateZ($cube-translate-z);
+    -o-transform: translateZ($cube-translate-z);
+    -ms-transform: translateZ($cube-translate-z);
+    transform: translateZ($cube-translate-z);
+  }
+  div:nth-child(2) {
+    -webkit-transform: rotateY(90deg) translateZ($cube-translate-z);
+    -moz-transform: rotateY(90deg) translateZ($cube-translate-z);
+    -o-transform: rotateY(90deg) translateZ($cube-translate-z);
+    -ms-transform: rotateY(90deg) translateZ($cube-translate-z);
+    transform: rotateY(90deg) translateZ($cube-translate-z);
+  }
+  div:nth-child(3) {
+    -webkit-transform: rotateY(180deg) translateZ($cube-translate-z);
+    -moz-transform: rotateY(180deg) translateZ($cube-translate-z);
+    -o-transform: rotateY(180deg) translateZ($cube-translate-z);
+    -ms-transform: rotateY(180deg) translateZ($cube-translate-z);
+    transform: rotateY(180deg) translateZ($cube-translate-z);
+  }
+  div:nth-child(4) {
+    -webkit-transform: rotateY(-90deg) translateZ($cube-translate-z);
+    -moz-transform: rotateY(-90deg) translateZ($cube-translate-z);
+    -o-transform: rotateY(-90deg) translateZ($cube-translate-z);
+    -ms-transform: rotateY(-90deg) translateZ($cube-translate-z);
+    transform: rotateY(-90deg) translateZ($cube-translate-z);
+  }
+  div:nth-child(5) {
+    -webkit-transform: rotateX(-90deg) translateZ($cube-translate-z) rotate(180deg);
+    -moz-transform: rotateX(-90deg) translateZ($cube-translate-z) rotate(180deg);
+    -o-transform: rotateX(-90deg) translateZ($cube-translate-z) rotate(180deg);
+    -ms-transform: rotateX(-90deg) translateZ($cube-translate-z) rotate(180deg);
+    transform: rotateX(-90deg) translateZ($cube-translate-z) rotate(180deg);
+  }
+  div:nth-child(6) {
+    -webkit-transform: rotateX(90deg) translateZ($cube-translate-z);
+    -moz-transform: rotateX(90deg) translateZ($cube-translate-z);
+    -o-transform: rotateX(90deg) translateZ($cube-translate-z);
+    -ms-transform: rotateX(90deg) translateZ($cube-translate-z);
+    transform: rotateX(90deg) translateZ($cube-translate-z);
+  }
+}

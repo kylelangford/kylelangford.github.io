@@ -1,0 +1,57 @@
+
+// Bullets
+.bullets {
+  $base-line-height: 1.5em !default;
+  $base-link-color: $action-color !default;
+  $dark-gray: $base-font-color !default;
+  $base-font-color: $dark-gray !default;
+  $icon-bullet-size: 3.5em;
+  margin-bottom: $base-line-height;
+  overflow: auto;
+  padding: 0;
+  @include span-columns(8);
+  @include shift(2);
+  @include media(max-width $medium) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+  .bullet {
+    @include flex-basis(20em);
+    @include flex-grow(1);
+  }
+  .bullet-icon {
+    background: $secondary-color;
+    border-radius: 50%;
+    float: left;
+    height: 72px;
+    width: 72px;
+    font-size: 42px;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    @include media(max-width $medium) {
+      float: none;
+      margin:0px auto;
+    }
+  }
+  .bullet-content {
+    margin-left: 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    @include media(max-width $medium) {
+      margin-left: 0;
+    }
+  }
+  h3 {
+    display: inline-block;
+    font-weight: 800;
+    margin: 0;
+    padding: 0.35em 0 0.25em 0;
+  }
+  li {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+  }
+}
