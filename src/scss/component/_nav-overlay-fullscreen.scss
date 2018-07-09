@@ -8,9 +8,10 @@
   padding-right: 0.6em;
   z-index: -1;
   display: none;
+  
   // Overlay
   &.overlay {
-    @include transition(opacity .5s ease-in);
+    @include prefix(transition, opacity .5s ease-in, webkit ms );
     display: table;
     opacity: 1;
     z-index: 999;
@@ -21,6 +22,7 @@
       vertical-align: middle;
     }
   }
+
   ul {
     width: 100vw;
     text-align: center;

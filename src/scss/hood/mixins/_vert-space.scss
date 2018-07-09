@@ -1,0 +1,13 @@
+// @mixin set_vertical_space
+@mixin set_vert_space() {
+
+}
+
+.wrap {
+  padding: $wrap-padding 0;
+  @include outer-container;
+
+  @include mobile-first($medium) {
+    padding: 6em 0;
+  }
+}

@@ -1,0 +1,25 @@
+/**
+ * Paragraph Base 
+ *
+ * General
+ *
+ *
+ * Style guide: Components Library.Paragraph
+ *
+ */
+
+.paragraph {
+
+	&.align--left {
+		text-align: left;
+	}
+
+	&.align--center {
+		text-align: center;
+	}
+
+	&.align--right {
+		text-align: right;
+	}
+
+}

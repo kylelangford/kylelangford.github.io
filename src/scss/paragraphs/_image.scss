@@ -1,0 +1,49 @@
+/**
+ * Image 
+ *
+ * Add Image Media
+ *
+ * Markup: image.twig
+ *
+ * .width--window           - description
+ * .width--page             - description
+ *
+ * Style guide: Components Library.Image
+ *
+ */
+
+.paragraph--type--image {
+	text-align:center;
+
+	img {
+		margin-bottom: .5em;
+	}
+
+	&.width--centered {
+		.media--image img {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&.fluid {
+
+	}
+
+	&.width--page {
+		@include outer-container($max-width);
+	}
+
+	&.width--twotone {
+		&:after {
+	    content: '';
+	    display: block;
+	    background: #f4f4f4;
+	    width: 100%;
+	    height: 300px;
+	    margin-top: -300px;
+		}
+	}
+}
+

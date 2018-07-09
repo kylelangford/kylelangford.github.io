@@ -1,0 +1,32 @@
+/**
+ * Structure Row
+ *
+ * Handles Layout Grid
+ *
+ * .overlay  - Description
+ * .parallax  - Description
+ *
+ * Style guide: Components Library.structure
+ *
+ */
+
+.paragraph--type--structure-row {
+
+	&.has-background {
+		.field-group-background-image {
+	    background-size: cover;
+	    background-position: top center;
+		  background-repeat: no-repeat;
+	    height: 50vh;
+	  }
+
+	  &.parallax {
+			.field-group-background-image {
+			  background-attachment: fixed;
+			}
+		}
+	}
+}
+
+
+

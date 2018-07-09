@@ -1,0 +1,49 @@
+.paragraph-layout {
+
+  // Row
+  &.paragraph--type--structure-row {
+  	padding: $base-padding 0;
+
+  	&.has-background {
+  		padding: 0;
+  		.field-group-background-image {
+		  	padding: $base-padding 0;
+  		}
+  	}
+
+  	.paragraph {
+
+  	}
+
+  	.theme-light {
+		  // add padding
+		  // padding: $base-spacing * 2 0;
+		}
+
+		.theme-dark {
+		  // add padding
+		  // padding: $base-spacing * 2 0;
+		}
+
+  } 
+}
+
+
+.paragraph--view-mode--default {
+
+	.container {
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		.paragraph.paragraph--type--statement {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+.paragraph--view-mode--two-column {}
+.paragraph--view-mode--one-column {}
+.paragraph--view-mode--three-column {}

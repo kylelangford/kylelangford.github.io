@@ -90,7 +90,7 @@ function images() {
 
 // Copy Fonts
 function icons() {
-  return gulp.src('./src/fonts/*')
+  return gulp.src('./src/fonts/**/*')
   .pipe(gulp.dest('dist/fonts/'));
 }
 

@@ -1,0 +1,37 @@
+// .block {
+//   color: red;
+
+//   @include bem_element(element) {
+//     color: green;
+
+//     @include bem_modifier(modifier) {
+//       color: blue;
+//     }
+//   }
+// }
+//
+//
+//
+// .block {
+//   color: red;
+// }
+
+// .block__element {
+//   color: green;
+// }
+
+// .block__element--modifier {
+//   color: blue;
+// }
+
+@mixin bem_element($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+@mixin bem_modifier($name) {
+  @at-root #{&}--#{$name} {
+    @content;
+  }
+}

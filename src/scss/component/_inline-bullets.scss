@@ -6,19 +6,24 @@
   $dark-gray: $base-font-color !default;
   $base-font-color: $dark-gray !default;
   $icon-bullet-size: 3.5em;
+  
   margin-bottom: $base-line-height;
   overflow: auto;
   padding: 0;
-  @include span-columns(8);
-  @include shift(2);
-  @include media(max-width $medium) {
-    @include span-columns(10);
-    @include shift(1);
+  
+  // @include span-columns(8);
+  // @include shift(2);
+
+  @include mobile-first($medium) {
+    // @include span-columns(10);
+    // @include shift(1);
   }
+  
   .bullet {
-    @include flex-basis(20em);
-    @include flex-grow(1);
+    // @include flex-basis(20em);
+    // @include flex-grow(1);
   }
+  
   .bullet-icon {
     background: $secondary-color;
     border-radius: 50%;
@@ -29,28 +34,34 @@
     text-align: center;
     line-height: 75px;
     color: white;
-    @include media(max-width $medium) {
+
+    @include mobile-first($medium) {
       float: none;
       margin:0px auto;
     }
   }
+  
   .bullet-content {
     margin-left: 6em;
     margin-top: 2em;
     margin-bottom: 2em;
-    @include media(max-width $medium) {
+
+    @include mobile-first($medium) {
       margin-left: 0;
     }
   }
+  
   h3 {
     display: inline-block;
     font-weight: 800;
     margin: 0;
     padding: 0.35em 0 0.25em 0;
   }
+  
   li {
     list-style: none;
   }
+  
   img {
     max-width: 100%;
   }

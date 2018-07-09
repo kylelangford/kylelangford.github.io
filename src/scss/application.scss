@@ -1,25 +1,23 @@
 @charset "UTF-8";
-// Foundation Components
+
+/* Everhood 0.2.0
+ * http://everhood.co
+ * Copyright 2018 Kyle Langford
+ * MIT License */
+
 @import
-  "vars",
-
-  "bourbon/bourbon",
-  "neat/neat",
-  "base/base",
-
-  "primer/primer",
-
+  "hood/hood",
   "component/nav-overlay-fullscreen",
   "component/browser",
   "component/custom_button",
   "component/hint",
   "component/inline-bullets",
-
-  "custom/animate",
+  "component/animate",
   // "custom/article",
-  "custom/cube",
-  "custom/headroom",
-  "custom/icons",
-  "custom/inputs",
-  "custom/letters",
-  "custom/custom_styles"
+  "component/cube",
+  "component/line-behind-text",
+  "component/headroom",
+  "component/icons",
+  "component/inputs",
+  "component/letters",
+  "custom_styles";
