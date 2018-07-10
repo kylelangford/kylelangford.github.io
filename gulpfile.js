@@ -11,17 +11,18 @@ var rename      = require("gulp-rename");
 var pump        = require('pump');
 
 // Settings
-var cssOutPutStyle = 'compressed';
+var cssOutPutStyle = 'expanded';
+// var cssOutPutStyle = 'compressed';
 
 // Tasks
 gulp.task('build', 
-  gulp.series( clean, index, images, icons, css, js ));
+  gulp.series( clean, files, images, icons, css, js ));
 
 gulp.task('css', 
-  gulp.series(  css ));
+  gulp.series(css));
 
 gulp.task( 'default',
-  gulp.series( 'build', server, watch ));
+  gulp.series('build', server, watch));
 
 
 // Delete the "dist" folder
@@ -36,7 +37,6 @@ function css() {
   .pipe(sourcemaps.init())
   .pipe(sass({
     outputStyle: cssOutPutStyle,
-    outputStyle: "expanded",
     sourceMap: true 
   }))
   .pipe(sourcemaps.write('./maps'))
@@ -77,8 +77,13 @@ function js() {
 }
 
 // Copy Index
-function index() {
-  return gulp.src('./*.html')
+function files() {
+  return gulp.src([
+    './src/index.html',
+    './src/.htaccess',
+    './src/robots.txt',
+    './src/humans.txt',
+    ])
   .pipe(gulp.dest('dist/'));
 }
 
@@ -108,7 +113,7 @@ function server(done) {
 function watch() {
   gulp.watch(['./src/scss/**/*.scss']).on('change', gulp.series( css, browser.reload));
   gulp.watch(['./src/js/**/*.js']).on('change', gulp.series( js, modernizr, browser.reload));
-  gulp.watch(['./*.html']).on('change', gulp.series( index, browser.reload));
+  gulp.watch(['./src/*.html', './src/*.txt', './src/.htaccess']).on('change', gulp.series( files, browser.reload));
   gulp.watch(['./src/images/**/*']).on('change', gulp.series( images, browser.reload));
 }
 
