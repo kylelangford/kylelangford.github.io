@@ -1,16 +1,24 @@
+/*
+* Hood V1.0.0
+* Copyright 2018, Kyle Langford
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 7/22/2018
+*/
+
 @import
-	// Base Styling
-  "primer/primer",
-  // Documentation Styling
-  "scribe/scribe",
-  // Utilities
+  "animations/animate",
+  "animations/animate-bounce";
+
+@import
+  "mixins/bem",
+  "mixins/buttonize",
   "mixins/clearfix",
-  "mixins/outer-container",
-  "mixins/align",
-  "mixins/panel",
+  "mixins/iconize",
   "mixins/media",
+  "mixins/containerize",
+  "mixins/panelize",
   "mixins/prefix",
-  "mixins/keyframes",
-  "mixins/vert-space";
-
-
+  "mixins/px-to-em",
+  "mixins/px-to-rem",
+  "mixins/zebra-stripe";

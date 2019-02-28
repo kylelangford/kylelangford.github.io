@@ -1,0 +1,81 @@
+// Buttons
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: button.html
+//
+// Style guide: components.button
+
+.button,
+.form-submit {
+  @include buttonize();
+}
+
+.button--small {
+  @include btn-small();
+}
+
+.button--primary,
+.form-submit {
+  background: $button-primary-background-color;
+  border-color: $button-primary-background-color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: $button-primary-background-color--hover;
+    border-color: $button-primary-background-color--hover;
+    color: $white;
+  }
+
+  &:active {
+    background: $button-primary-background-color--active;
+    border-color: $button-primary-background-color--active;
+  }
+
+}
+
+.button--inline {
+  display: inline;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 400;
+  text-decoration: underline;
+
+  .danger {
+    color: #c72100;  
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ff2a00;
+    text-decoration: underline;
+    text-shadow: none;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: none;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    color: #737373;
+    cursor: default;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: none;
+  }
+}
+

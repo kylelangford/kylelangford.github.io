@@ -13,18 +13,3 @@ Give examples
 ```
 
 ## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-
-https://www.axis-praxis.org/specimens/__DEFAULT__
-
-https://neat.bourbon.io/docs/1.7.1/
-
-https://zurb.com/playground/css-grid-builder?utm_source=www.uoota.com
-
-https://www.companyfolders.com/blog/golden-ratio-design-examples
-
-http://getskeleton.com/`

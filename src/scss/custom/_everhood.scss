@@ -1,0 +1,75 @@
+
+.container {
+  @include zebra(); 
+}
+
+.site-logo {
+  margin: 2em auto;
+  max-width: 200px;
+  display: block;
+}
+
+.page-title {
+  font-size: 58px;
+}
+
+.sub-title {
+  font-size: 24px;
+}
+
+.section-title {
+
+}
+
+
+// Room
+.room-desk {
+  max-width: 600px;
+  margin-left: -130px;
+  margin-top: 3rem;
+}
+
+.position-top-left {
+  position: absolute;
+  top: 4em;
+  left: 2em;
+  max-width: 180px;
+}
+
+.position-top-right {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  max-width: 240px;
+}
+
+.position-bottom-right {
+  position: absolute;
+  bottom: 4em;
+  right: 4em;
+  max-width: 220px;
+}
+
+
+.list-title {
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: bold;
+}
+
+
+.skill-img {
+  max-width: 360px;
+  width: 100%;
+}
+
+// .icon {
+//   color: #ddd;
+//   font-size: 150%;
+// }
+
+
+// Credits
+.credits {
+  padding: 2em;
+}

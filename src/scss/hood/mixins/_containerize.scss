@@ -1,0 +1,8 @@
+// Outer Container
+
+// A container is a centered element with a max-width
+@mixin containerize($local-max-width: $max-width) {
+	margin-left: auto;
+  margin-right: auto;
+  max-width: $local-max-width;
+}

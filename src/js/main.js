@@ -1,10 +1,14 @@
+// GA 
+$(function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15632291-2']);
+  _gaq.push(['_trackPageview']);
 
-// Headroom
-$(".mast-head").headroom( {
-  onTop : function() {
-    $('.hint').show();
-  },
-  offset : 100
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 });
 
 // Break Apart
@@ -20,9 +24,9 @@ $('#message').change(function(event){
   }
 });
 
-(function () {
-  $("body").addClass( "tween" );
-})();
+// (function () {
+//   $("body").addClass( "tween" );
+// })();
 
 // Menu Trigger
 (function () {
@@ -162,11 +166,11 @@ $( '.validate .input-field' ).on( 'keyup blur' , function validate () {
 // 	}, 1000);
 // };
 
-
+// https://blog.teamtreehouse.com/create-ajax-contact-form
 $(function() {
 
 	// Get the form.
-	var form = $('#ajax-contact');
+	var form = $('#form-contact');
 
 	// Get the messages div.
 	var formMessages = $('#form-messages');

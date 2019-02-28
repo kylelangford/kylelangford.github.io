@@ -1,0 +1,44 @@
+// Layout
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: button.html
+//
+// Style guide: components.button
+
+body {
+  margin: 0;
+}
+
+// Container
+.container {
+  @include panelize(100%);
+  @include clearfix;
+
+  // is-window
+  &.size-to-window  {
+    @include panelize(100%, 100vh);
+  }
+
+  &.animate {
+    @include prefix(transition, height 2s ease-in, webkit ms );
+    height: 20vh;
+  }
+}
+
+.row {
+  padding: $base-spacing 0;
+
+  &.contain {
+    position: relative;
+  }
+}
+
+.content {
+  &.is-narrow {
+    padding: 4.5rem;
+    max-width: 1024px;
+  }
+}

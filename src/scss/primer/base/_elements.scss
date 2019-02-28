@@ -1,0 +1,244 @@
+// Elements
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: button.html
+//
+// Style guide: components.button
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; 
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 ($base-spacing / 2);
+
+  &.collapse {
+    margin: 0;
+  }
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  @include prefix(transition, color 0.1s linear, webkit ms );
+
+  &:hover {
+    color: shade($base-link-color, 15%);
+  }
+
+  &:active, &:focus {
+    color: shade($base-link-color, 15%);
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+}
+
+
+address {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-spacing 0;
+  padding-left: $base-spacing / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: "\2014 \00A0";
+  }
+}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; 
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; 
+}
+
+code {
+  background: $off-white-color;
+  border-radius: $base-border-radius * 1.5;
+  border: 1px solid $grey-color;
+  font-size: 0.8em;
+  font-style: normal;
+  padding: 0.1em 0.4em;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  &.box {
+    display: block;
+  }
+}
+
+
+
+
+/**
+ * Generic elements.
+ */
+
+summary,
+.fieldgroup > legend {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+u,
+ins {
+  text-decoration: underline;
+}
+
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+
+big {
+  font-size: larger;
+}
+
+small {
+  font-size: smaller;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+  line-height: normal;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  line-height: normal;
+}
+
+abbr,
+acronym {
+  border-bottom: dotted 1px;
+}
+
+details {
+  line-height: 1.295em;
+}
+
+details summary {
+  padding: $half-spacing;
+}
+
+details summary:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl {
+  margin-bottom: $base-spacing / 2;
+
+  dt {
+    font-weight: bold;
+    margin-top: $base-spacing / 2;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+
+

@@ -1,0 +1,31 @@
+// Panel
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: button.html
+//
+// Style guide: components.button
+
+.panel {
+  margin: 0 0 $base-spacing;
+  background: $white;
+  border: $base-border;
+  border-radius: $base-corner-radius;
+  padding: 0;
+}
+
+.panel__title {
+  font-size: 1em;
+  text-transform: capitalize;
+  margin: 0 0 $half-spacing;
+  padding-bottom: $half-spacing;
+  background: $subtle-gray;
+  border-bottom: $base-border;
+  padding: $half-spacing $base-spacing;
+}
+
+.panel__content {
+  padding: $half-spacing $base-spacing $base-spacing;
+}

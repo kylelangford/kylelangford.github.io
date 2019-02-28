@@ -1,37 +1,33 @@
 // .block {
-//   color: red;
+//     /* CSS declarations for `.block` */
 
-//   @include bem_element(element) {
-//     color: green;
-
-//     @include bem_modifier(modifier) {
-//       color: blue;
+//     @include element('element') {
+//         /* CSS declarations for `.block__element` */
 //     }
-//   }
-// }
-//
-//
-//
-// .block {
-//   color: red;
+
+//     @include modifier('modifier') {
+//         /* CSS declarations for `.block--modifier` */
+
+//         @include element('element') {
+//             /* CSS declarations for `.block--modifier__element` */
+//         }
+//     }
 // }
 
-// .block__element {
-//   color: green;
-// }
-
-// .block__element--modifier {
-//   color: blue;
-// }
-
-@mixin bem_element($name) {
-  @at-root #{&}__#{$name} {
-    @content;
-  }
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
 }
 
-@mixin bem_modifier($name) {
-  @at-root #{&}--#{$name} {
-    @content;
-  }
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
 }

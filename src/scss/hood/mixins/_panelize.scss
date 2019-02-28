@@ -1,0 +1,13 @@
+// @mixin panel - Slide / presentation
+
+// a panel is a container with a set height and width
+
+@mixin panelize($width, $height: auto) {
+
+	// @include outer-container();
+  width: $width;
+  height: $height;
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+}

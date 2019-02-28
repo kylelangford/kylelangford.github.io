@@ -1,0 +1,44 @@
+// Breadcrumbs
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: button.html
+//
+// Style guide: components.button
+
+.breadcrumb {
+  margin: 0;
+  padding: 0 0 1em;
+  font-weight: 600;
+
+  ol {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+	  display: inline;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+
+	  &:first-child:before {
+		  content: none;
+		}
+
+		&:before {
+			content: '/';
+			color: $medium-gray;
+		}
+	}
+
+	.icon {
+		display: inline-block;
+		color: $action-color;
+		font-size: 11px;
+		padding-right: 4px;
+	}
+}
