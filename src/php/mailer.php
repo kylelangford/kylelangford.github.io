@@ -1,4 +1,8 @@
 <?php
+  
+  //
+  // https://blog.teamtreehouse.com/create-ajax-contact-form
+  //
 
   // Only process POST reqeusts.
   if ($_SERVER["REQUEST_METHOD"] == "POST") {

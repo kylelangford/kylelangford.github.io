@@ -1,3 +1,11 @@
+// Prefix
+//
+// Creates vendor prefixes.
+//
+// Markup: prefix/prefix.twig
+//
+// Style guide: Hood Mixins.prefix
+
 $prefixes: 'webkit', 'moz', 'ms', 'o' !default;
 
 @mixin prefix($property, $value, $prefixes: $prefixes) {

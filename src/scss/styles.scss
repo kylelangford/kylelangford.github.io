@@ -5,10 +5,11 @@
  * Copyright 2018 Kyle Langford
  */
 
+/* hood */
 @import
   "hood/hood",
-  "primer/vars",
-  "primer/primer",
-  "scribe/scribe",
-  "component/hint",
+  "primer/primer";
+
+/* custom */
+@import
   "custom/everhood";

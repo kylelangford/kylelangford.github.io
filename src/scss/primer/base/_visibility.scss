@@ -1,0 +1,24 @@
+// Visibility
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: visibility/visibility.twig
+//
+// Style guide: Helpers.visibility
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.hidden {
+	display: none !important;
+}
+
+// show / hide

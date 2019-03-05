@@ -1,33 +1,40 @@
-// .block {
-//     /* CSS declarations for `.block` */
+/*
+  BEM
 
-//     @include element('element') {
-//         /* CSS declarations for `.block__element` */
-//     }
+	http://getbem.com/naming/
 
-//     @include modifier('modifier') {
-//         /* CSS declarations for `.block--modifier` */
+	Modifier names may consist of Latin letters, digits, dashes and 
+	underscores. CSS class is formed as block’s or element’s name plus 
+	two dashes: .block--mod or .block__elem--mod and .block--color-black 
+	with .block--color-red. Spaces in complicated modifiers are replaced by dash.
 
-//         @include element('element') {
-//             /* CSS declarations for `.block--modifier__element` */
-//         }
-//     }
-// }
+	.form { }
+	.form--theme-xmas { }
+	.form--simple { }
+	.form__input { }
+	.form__submit { }
+	.form__submit--disabled { }
 
-/// Block Element
-/// @access public
-/// @param {String} $element - Element's name
-@mixin element($element) {
-    &__#{$element} {
-        @content;
-    }
+*/
+
+// BEM
+//
+// Your standard button suitable for clicking.
+//
+// Markup: bem/bem.twig
+//
+// Style guide: Hood Mixins.bem
+
+/* Block Element */
+@mixin elem($element) {
+  &__#{$element} {
+    @content;
+  }
 }
 
-/// Block Modifier
-/// @access public
-/// @param {String} $modifier - Modifier's name
-@mixin modifier($modifier) {
-    &--#{$modifier} {
-        @content;
-    }
+/* Block Modifier */
+@mixin mod($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
 }

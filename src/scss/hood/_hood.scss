@@ -7,18 +7,13 @@
 */
 
 @import
-  "animations/animate",
-  "animations/animate-bounce";
+  "vars-required";
 
 @import
   "mixins/bem",
-  "mixins/buttonize",
-  "mixins/clearfix",
-  "mixins/iconize",
-  "mixins/media",
   "mixins/containerize",
-  "mixins/panelize",
-  "mixins/prefix",
-  "mixins/px-to-em",
-  "mixins/px-to-rem",
-  "mixins/zebra-stripe";
+  "mixins/em",
+  "mixins/iconize",
+  "mixins/keyframe",
+  "mixins/media",
+  "mixins/prefix";

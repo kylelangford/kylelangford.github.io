@@ -1,0 +1,41 @@
+// Breadcrumbs
+//
+// Your standard button suitable for clicking.
+//
+// Markup: breadcrumbs/breadcrumbs.twig
+//
+// Style guide: Pattern Library.breadcrumbs
+
+.breadcrumb {
+  margin: 0;
+  padding: 0 0 1em;
+  font-weight: 600;
+
+  ol {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include elem('item') {
+	  display: inline;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+
+	  &:first-child:before {
+		  content: none;
+		}
+
+		&:before {
+			content: '/';
+			color: $medium-gray;
+		}
+	}
+  @include elem('icon') {
+		display: inline-block;
+		color: $action-color;
+		font-size: 11px;
+		padding-right: 4px;
+	}
+}

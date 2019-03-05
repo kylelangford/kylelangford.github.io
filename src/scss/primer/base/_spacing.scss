@@ -1,0 +1,86 @@
+// Spacing
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: spacing/spacing.twig
+//
+// Style guide: Helpers.spacing
+
+
+// even padding all sides - 
+// margin-bottom - headings, p, 
+// top / bottom padding
+// gutters
+// left / right padding 
+
+// $sm
+// $md
+// $lg
+
+
+$double-spacing: $base-spacing * 2;
+$base-spacing: $base-spacing;
+$half-spacing: $base-spacing / 2;
+$quarter-spacing: $base-spacing / 4;
+$shim: $base-spacing / 4;
+
+
+// Columns
+@mixin gutter(){
+	& > div {
+		padding: 0 1em;
+
+	}
+}
+
+
+.collapse {
+	margin-left: -1em;
+	margin-right: -1em;
+}
+
+// Horz
+.p-sm {
+	padding: $base-spacing;
+}
+.p-md {
+	padding: $base-spacing * 2;
+}
+.p-lg {
+	padding: $base-spacing * 3;
+}
+
+.pl-sm {
+	padding: $base-spacing;
+}
+.pl-md {
+	padding: $base-spacing * 2;
+}
+.pl-lg {
+	padding: $base-spacing * 3;
+}
+
+// Vertical
+.m-sm {
+	padding: $base-spacing / 2;
+}
+.m-md {
+	padding: $base-spacing;
+}
+.m-lg {
+	padding: $base-spacing * 2;
+}
+
+.mb-sm {
+	margin-bottom: $base-spacing / 2;
+}
+
+.mb-md {
+	margin-bottom: $base-spacing;
+}
+
+.mb-lg {
+	margin-bottom: $base-spacing * 2;
+}

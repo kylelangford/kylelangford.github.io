@@ -1,0 +1,167 @@
+// Tabs Vertical
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: tabs-vert/tabs-vert.html
+//
+// Style guide: Pattern Library.vert
+
+// Tab Navigation / Secondary Nav
+
+
+// vert tabs
+// Theme 1
+$tabs-border: $base-border !default;
+$tabs-primary-border: $base-border !default;
+$tabs-primary-bg-color: $subtle-gray !default;
+$tabs-primary-bg-color--hover: $light-gray !default;
+$tabs-primary-bg-color--focus: $white !default;
+$tabs-secondary-bg-color: $subtle-gray !default;
+$tabs-secondary-bg-color--hover: $light-gray !default;
+$tabs-secondary-bg-color--focus: $white !default;
+$tabs-color: $action-color !default;
+$tabs-color--hover: $action-color--hover !default;
+$tabs-primary-padding-default: 16px 0 17px 40px !default;
+$tabs-secondary-padding-default: 16px 0 17px 40px !default;
+$tabs-margin: 0 !default;
+$tabs-a-margin: 0 !default;
+
+
+
+
+// Theme 3
+// $tabs-primary-color--hover: white;
+// $tabs-primary-bg-color: transparent;
+// $tabs-primary-bg-color--hover: rgba(0,0,0,.2);
+// $tabs-primary-bg-color--focus: transparent;
+// $tabs-secondary-bg-color: transparent;
+// $tabs-secondary-bg-color--hover: $light-gray;
+// $tabs-secondary-bg-color--focus: transparent;
+// $tabs-primary-border: none;
+// $tabs-secondary-border: none;
+// $tabs-primary-padding-default: $half-spacing 0 $half-spacing 40px;
+// $tabs-secondary-padding-default: $half-spacing 0 $half-spacing 40px;
+// $tabs-margin: $half-spacing;
+// $tabs-margin: 0;
+// $tabs-a-margin: 0;
+// $tabs-border-radius: $base-corner-radius;
+// $tabs-padding-default: 0;
+
+
+// theme 3
+$tabs-primary-color--hover: white;
+$tabs-primary-bg-color: transparent;
+$tabs-primary-bg-color--hover: transparent;
+$tabs-primary-bg-color--focus: transparent;
+$tabs-secondary-bg-color: transparent;
+$tabs-secondary-bg-color--hover: $light-gray;
+$tabs-secondary-bg-color--focus: transparent;
+$tabs-primary-border: none;
+$tabs-secondary-border: none;
+$tabs-primary-padding-default: $half-spacing 0 $half-spacing 40px;
+$tabs-secondary-padding-default: $half-spacing 0 $half-spacing 40px;
+$tabs-margin: 0 $base-spacing;
+$tabs-a-margin: 0;
+$tabs-border-radius: $base-corner-radius;
+$tabs-padding-default: 0;
+
+
+// Vertical Tabs
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__tab {
+  border-bottom: $tabs-primary-border;
+  border-radius: $tabs-border-radius;
+  color: $tabs-color;
+  display: block;
+  @include prefix(transition, border-color 0.2s, background-color 0.2s);
+  width: calc(100% - $tabs-margin);
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+}
+
+/* Primary tabs */
+.tabs--primary {
+
+  .tabs__tab {
+    background-color: $tabs-primary-bg-color;
+    margin: $tabs-margin;
+    padding: 0;
+
+    a {
+      margin: $tabs-a-margin;
+      padding: $tabs-primary-padding-default;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $tabs-primary-bg-color--hover;
+      color: $tabs-primary-color--hover;
+    }
+
+    a:focus {
+      color: $tabs-primary-color--hover;
+      background-color: $tabs-primary-bg-color--hover;
+    }
+
+    &.is-active {
+      border-color: $medium-gray;
+      background-color: #fff;
+      color: #004f80;
+
+    }
+  }
+}
+
+/* Secondary tabs */
+.tabs--secondary {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .tabs__tab {
+    background-color: $tabs-secondary-bg-color;
+    color: #0074bd;
+
+    a {
+      padding-left: $double-spacing;
+    }
+
+    &:hover,
+    &:focus {
+      color: #008ee6;
+    }
+
+    &:first-child {
+      border-top: $tabs-secondary-border;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.is-active {
+      color: #004f80;
+
+      a {
+        color: #004f80;
+      }
+    }
+  }
+}

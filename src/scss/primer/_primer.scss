@@ -1,19 +1,35 @@
 /*
-* Primer V1.0.0
-* Copyright 2018, Kyle Langford
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 7/22/2018
-*/
+ * Primer V1.0.0
+ * Copyright 2018, Kyle Langford
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 7/22/2018
+ */
 
 @import
+  "mixins/buttons",
+  "mixins/clearfix",
+  "mixins/text-shorten",
+  "mixins/zebra-stripe";
+
+@import
+  "vars",
   "base/buttons",
   "base/elements",
   "base/grid-flex",
   "base/grid-float",
-  "base/form-elements",
+  "base/forms",
   "base/page",
   "base/tables";
+
+@import
+  "helpers/align",
+  "helpers/spacing",
+  "helpers/visibility";
+
+@import
+  "animations/animate",
+  "animations/animate-bounce";
 
 // @import
   // "extend/checkbox",
@@ -22,4 +38,18 @@
   // "extend/tablesort";
 
 @import
-  "helpers/align";
+  "components/list",
+  "components/breadcrumbs",
+  "components/details",
+  "components/hint",
+  "components/image",
+  "components/input-autocomplete",
+  "components/input-group",
+  "components/line-behind-text",
+  "components/messages",
+  "components/pager",
+  "components/panel",
+  "components/spinner",
+  "components/text",
+  "components/tabs-horz",
+  "components/tabs-vert";

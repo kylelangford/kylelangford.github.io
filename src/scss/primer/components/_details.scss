@@ -1,0 +1,46 @@
+// Details
+//
+// Your standard button suitable for clicking.
+//
+// Markup: details/details.twig
+//
+// Style guide: Pattern Library.details
+
+.details {
+  margin-top: 0;
+  margin-bottom: $base-spacing;
+  padding: 0;
+  background-color: $white; 
+  border: $base-border;
+  border-radius: $base-corner-radius;
+
+  @include elem('summary') {
+    text-shadow: none;
+    color: $action-color;
+  }
+
+}
+
+// .details-wrapper {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-between;
+// }
+
+.details__summary {
+
+}
+
+.details__summary:hover,
+.details__summary:focus,
+.details[open] > .details__summary {
+  background-color: $white;
+  color: $action-color--hover;
+}
+
+.details__wrapper {
+  padding: 0 $base-spacing $base-spacing;
+}
+ 
+
+

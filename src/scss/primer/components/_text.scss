@@ -1,0 +1,71 @@
+ // Statement
+ //
+ // Text Component, Combines a pre-title/title with a short descriptive text
+ //
+ // Markup: statement.twig
+ //
+ // .text--regular           - description
+ // .text--large             - description
+ // .text--super             - description
+ // .align--left             - description
+ // .align--right            - description
+ // .align--center           - description
+ //
+ // Style guide: Pattern Library.Text
+ //
+
+// text
+// text--large
+
+.text {
+
+  &.text--regular {
+
+		.title {
+			font-size: em(32);
+		}
+		.dek {
+			font-size: em(18);
+		}
+  }
+
+	&.text--large {
+
+	  @include mobile-first($large-screen) {
+			padding-top: $base-padding * 2;
+			padding-bottom: $base-padding * 2;
+	  }
+
+		.title {
+			font-size: em(48);
+		}
+		.dek {
+			font-size: em(24);
+		}
+	}
+
+	&.text--super {
+
+	  @include mobile-first($large-screen) {
+			padding-top: $base-padding * 3;
+			padding-bottom: $base-padding * 3;
+	  }
+
+		.title {
+			font-size: em(64);
+
+			&:after {
+				content: '';
+				height: 1px;
+				background-color: #cdcdcd;
+				display: block;
+				max-width: 100px;
+				margin: 0px auto;
+			}
+		}
+		.dek {
+			font-size: em(32);
+	  }
+	}
+}
+

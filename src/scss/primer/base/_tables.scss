@@ -1,12 +1,10 @@
 // Tables
 //
-// Your standard button suitable for clicking.
+// Your standard table suitable for tableling.
 //
-// :hover   - Highlights when hovering.
+// Markup: tables/tables.twig
 //
-// Markup: button.html
-//
-// Style guide: components.button
+// Style guide: components.tables
 
 table {
   border-collapse: collapse;
@@ -40,7 +38,7 @@ table {
 }
 
 thead th {
-  background: $table-header-bg;
+  // background: $table-header-bg;
   border: none;
   border-bottom: 2px solid $medium-gray;
   color: $text-color;
@@ -129,8 +127,6 @@ th.is-active > a:focus:after {
 .field-multiple-drag {
   padding-left: 0;
 }
-
-
 
 tr {
   .chosen-container-single .chosen-single {

@@ -1,0 +1,12 @@
+ .input-group {
+  margin: $base-spacing 0;
+
+  .button {
+    margin-right: $base-spacing;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

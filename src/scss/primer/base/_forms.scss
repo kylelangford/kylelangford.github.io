@@ -1,0 +1,371 @@
+// Forms
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: forms/forms.html
+//
+// Style guide: components.forms
+
+fieldset {
+  background: lighten($base-border-color, 10);
+  border: $base-border;
+  margin: 0 0 ($base-spacing / 2) 0;
+  padding: $base-spacing;
+}
+
+input,
+label,
+select {
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $base-spacing / 4;
+
+  &.required:after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+select[multiple=multiple] {
+  // @include box-sizing(border-box);
+  // @include transition(border-color);
+  background-color: white;
+  border-radius: $form-border-radius;
+  border: 1px solid $form-border-color;
+  box-shadow: $form-box-shadow;
+  margin-bottom: $base-spacing / 2;
+  padding: ($base-spacing / 3) ($base-spacing / 3);
+  width: 100%;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+  // @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $base-spacing / 4;
+}
+
+input[type="file"] {
+  padding-bottom: $base-spacing / 2;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+
+/**
+ * Form elements.
+ */
+
+.form--inline .form-item {
+  float: none;
+  margin-right: 0;
+}
+
+fieldset:not(.fieldgroup) {
+  background-color: $white;
+  border-radius: $base-corner-radius;
+  margin: 0 0 $base-spacing 0;
+  padding: $base-spacing;
+}
+
+.fieldgroup {
+  min-width: 0;
+}
+
+.form__item {
+  margin: $base-spacing 0;
+  text-align: left;
+}
+
+.marker {
+  background: $red;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border-radius: $base-corner-radius;
+  padding: 2px 4px;
+  margin-left: 4px;
+}
+
+.description {
+  text-align: left;
+}
+
+.details-wrapper {
+  .form-item {
+    margin: $half-spacing 0;
+  }
+}
+
+tr.odd .form-item,
+tr.even .form-item {
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+.form-type-checkbox {
+  padding: 0;
+}
+
+
+label {
+  display: inline-block;
+  margin: 0 0 $half-spacing;
+  font-weight: 600;
+}
+
+label.error {
+  color: #a51b00;
+}
+
+.form__item label.option {
+  text-transform: none;
+}
+
+.form__item label.option input {
+  vertical-align: middle;
+}
+
+.form-disabled label {
+  color: #686868;
+}
+
+.form-disabled input.form-text,
+.form-disabled input.form-tel,
+.form-disabled input.form-email,
+.form-disabled input.form-url,
+.form-disabled input.form-search,
+.form-disabled input.form-number,
+.form-disabled input.form-color,
+.form-disabled input.form-file,
+.form-disabled textarea.form-textarea,
+.form-disabled select.form-select {
+  border-color: #d4d4d4;
+  background-color: hsla(0, 0%, 0%, 0.08);
+  box-shadow: none;
+}
+
+.form__item input.error,
+.form__item textarea.error,
+.form__item select.error {
+  border-width: 1px;
+  border-color: #e62600;
+  background-color: hsla(15, 75%, 97%, 1);
+  box-shadow: inset 0 5px 5px -5px #b8b8b8;
+  color: #a51b00;
+}
+
+.form__item input.error:focus,
+.form__item textarea.error:focus,
+.form__item select.error:focus {
+  border-color: #e62600;
+  outline: 0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 8px 1px #e62600;
+  background-color: #fcf4f2;
+}
+
+.form-item .description.error {
+  margin-top: 0;
+  color: #a51b00;
+}
+
+.form--required:after {
+  background-size: 7px 7px;
+  width: 7px;
+  height: 7px;
+}
+
+.form--required:after {
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(../../../../misc/icons/ee0000/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+}
+
+.form-item--error-message {
+  margin-top: 0.15em;
+  color: #e32700;
+}
+
+.fieldset-wrapper > .form-item--error-message {
+  margin-top: 0;
+}
+
+.tips {
+  margin: $half-spacing 0 0 0;
+  color: $text-color;
+  font-size: 16px;
+}
+
+.tips {
+  display: inline-block;
+  display: block;
+  padding: 4px $half-spacing;
+  color: $text-description-color;
+  font-size: 16px;
+  background: $light-yellow;
+  margin-top: $half-spacing;
+  margin-bottom: $half-spacing;
+  border-radius: $base-corner-radius;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+ul.tips li {
+  margin: 0.25em 0 0.25em 1.5em; /* LTR */
+}
+
+input.form__text
+select {
+  height: $input-height;
+  line-height: $input-height;
+}
+
+input.form__text,
+input.form__textarea {
+  border-radius: $base-corner-radius;
+  font-size: 1em;
+  line-height: normal;
+}
+
+input.form-autocomplete,
+input.form-text,
+input.form-tel,
+input.form-email,
+input.form-url,
+input.form-search,
+input.form-number,
+input.form-color,
+input.form-file,
+input.form-date,
+input.form-time,
+textarea.form-textarea {
+  padding: 0 $half-spacing; /* LTR */
+  width: 100%;
+  border: $base-border;
+  border-radius: $base-corner-radius;
+  background: $input-text-bg-color;
+  box-shadow: none;
+  font-size: 16px;
+  height: $input-height;
+  color: $text-color;
+}
+
+textarea.form-textarea {
+  max-width: 100%;
+  padding: $half-spacing; /* LTR */
+  height: $textarea-default-height;
+}
+
+.form-text:focus,
+.form-tel:focus,
+.form-email:focus,
+.form-url:focus,
+.form-search:focus,
+.form-number:focus,
+.form-color:focus,
+.form-file:focus,
+.form-textarea:focus,
+.form-date:focus,
+.form-time:focus {
+  border-color: $action-color;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: 0;
+  background-color: $white;
+}
+
+
+/**
+ * Limits extra long instances of select elements to the max width allowed
+ * to avoid breaking layouts.
+ */
+select {
+  width: 100%;
+}
+
+/**
+ * Select elements - Webkit only
+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 1px 1.571em 1px 0.5em; /* LTR */
+    border: $base-border;
+    height: $input-height;
+    border-radius: $base-corner-radius;
+    background: url(../../img/svg/pull-down-carrot.svg) no-repeat, $input-select-bg-color;
+    background-position: calc(100% - 12px) 55%;
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.6);
+    font-size: 1rem;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  select:focus {
+    background-image:
+      url(../../../../misc/icons/333333/caret-down.svg),
+      -webkit-linear-gradient(top, $white, $subtle-gray);    
+  }
+
+  select:hover {
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.125);
+  }
+}
+
+
+

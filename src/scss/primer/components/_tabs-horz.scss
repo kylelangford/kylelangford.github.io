@@ -1,0 +1,142 @@
+// Tabs Horizontal
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: tabs-horz/tabs-horz.twig
+//
+// Style guide: Pattern Library.horz
+
+
+.horizontal-tabs {
+  margin: 0 0 1em 0; /* LTR */
+  border: $base-border;
+  border-radius: $base-corner-radius;
+}
+
+.horizontal-tabs .horizontal-tabs-list {
+  display: inline-block;
+  margin: 0;
+  border: 0;
+  padding: 0px;
+  list-style: none;
+  background-color: $tabs-bg-color;
+  border-right: none; /* LTR */
+  border-bottom: $base-border;
+  border-top-left-radius: $base-corner-radius;
+  border-top-right-radius: $base-corner-radius;
+  width: 100%;
+  height: auto;
+  clear: both;
+}
+
+.horizontal-tabs-pane {
+  padding: 0 1em;
+  border: 0;
+}
+
+.horizontal-tabs-pane > summary {
+  display: none;
+}
+
+/* Layout of each tab */
+.horizontal-tabs  .horizontal-tab-button {
+  position: relative;
+  background: $tabs-bg-color;
+  border-right: $base-border; /* LTR */
+  padding: 1px;
+  padding-top: 0;
+  margin: 0;
+  min-width: 5em; /* IE7 */
+  float: left; /* LTR */
+
+  &.first {
+    border-top-left-radius: $base-corner-radius;
+  }
+
+  &:hover {
+    background: $tabs-bg-color--hover ;
+  }
+}
+
+.horizontal-tabs .horizontal-tab-button a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0.6em;
+}
+
+.horizontal-tabs .horizontal-tab-button a:hover {
+  outline: none;
+  background-color: $tabs-bg-color--hover;
+}
+
+.horizontal-tabs .horizontal-tab-button li:hover,
+.horizontal-tabs .horizontal-tab-button li:focus {
+  background-color: $tabs-bg-color--focus;
+}
+
+.horizontal-tabs ul.horizontal-tabs-list :focus {
+  outline: none;
+}
+
+.horizontal-tab-button a:focus strong,
+.horizontal-tab-button a:active strong,
+.horizontal-tab-button a:hover strong {
+  text-decoration: none;
+  outline: none;
+}
+
+.horizontal-tab-button.selected {
+  background-color: #fff;
+  padding: 0 0 1px 0;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    bottom: -1px;
+    background-color: #FFFFFF;
+    position: absolute;
+  }
+}
+
+.horizontal-tabs ul.horizontal-tabs-list li a,
+.horizontal-tabs ul.horizontal-tabs-list li.selected a {
+  display: block;
+  text-decoration: none;
+  padding: 13px 24px;
+  position:relative;
+  top: 0px;
+}
+
+.horizontal-tab-button .selected strong {
+  color: #000;
+}
+
+.horizontal-tab-button .summary {
+  display: block;
+}
+
+.horizontal-tab-button .summary {
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+/**
+ * tab content
+ */
+div.field-group-htabs-wrapper .field-group-format-wrapper {
+  clear: both;
+  padding: 0 0 0.6em;
+}
+
+/*hide*/
+.horizontal-tabs .horizontal-tab-hidden {
+  display: block;
+  position: absolute;
+  top: -100000px;
+  width: 100%;
+}
+

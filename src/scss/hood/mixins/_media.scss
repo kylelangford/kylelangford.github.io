@@ -1,34 +1,19 @@
-$medium: '769px';
+// Media
+//
+// media
+//
+// Markup: media/media.twig
+//
+// Style guide: Hood Mixins.media
 
-$phone: '(max-width: 480px)';
-// $tablet-portrait: '(max-width: 767px)';
-// $tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
-// $large-desktop: '(min-width: 1200px)';
-// $non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
-// $retina: '(min--moz-device-pixel-ratio: 1.5), 
-//                     (-o-min-device-pixel-ratio: 3/2), 
-//                     (-webkit-min-device-pixel-ratio: 1.5), 
-//                     (min-device-pixel-ratio: 1.5), 
-//                     (min-resolution: 144dpi), 
-//                     (min-resolution: 1.5dppx)';
-
-// @mixin media($query: $phone) {
-//   @media only screen and $query {
-//     @content;
-//   }
-// }
-
-
-$breakpoints: (
-    "phone":        400px,
-    "phone-wide":   480px,
-    "phablet":      560px,
-    "tablet-small": 640px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
-);
+$phone:        400px  !default;
+$phone-wide:   480px  !default;
+$phablet:      560px  !default;
+$tablet-small: 640px  !default;
+$tablet:       768px  !default;
+$tablet-wide:  1024px !default;
+$desktop:      1248px !default;
+$desktop-wide: 1440px !default;
 
 @mixin mobile-first($width) {
   @media only screen and (max-width: $width) {

@@ -1,3 +1,11 @@
+// Icons
+//
+// Adds Icon in before element
+//
+// Markup: icons/icons.twig
+//
+// Style guide: Hood Mixins.icons
+
 @mixin iconize($icon-family, $icon-uni, $side: 'before') {
   speak: none;
   font-style: normal;
