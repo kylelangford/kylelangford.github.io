@@ -1,0 +1,95 @@
+// Float Grid
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: grid/float.twig
+//
+// Style guide: Primer.Floats
+
+/* 
+ * Clearfix
+ */
+
+.row--float {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 0 $page-margin--desktop;
+
+	&:before,
+	&:after {
+	  @include clearfix();
+	}
+
+  &.collapse {
+    padding-left: -$page-margin--desktop;
+    padding-right: -$page-margin--desktop;
+  }
+
+
+}
+
+// .column {
+[class*='col-'] {
+
+  &.outline {
+	  border: 1px solid #666;
+	  background: #343436;
+  }
+
+  &.align-right {
+    float: right;
+  }
+
+  &.align-center {
+    margin: 0 auto;
+  }
+
+  &.align-left {
+    float: left;
+  }
+
+}
+
+.col-one,
+.col-one-third,
+.col-two-thirds,
+.col-one-fourth,
+.col-half {
+  width: 100%;
+}
+/* 
+* Any styling that should be applied to screen widths larger
+* than a mobile device: tablet, laptop, desktop, etc. 
+*/
+
+@media only screen and (min-width: 800px) {
+
+  [class*='col-'] {
+    float: left;
+    padding-right: $gutter--desktop;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+  }
+
+  .col-full { 
+    width: 100%; // 12
+  }
+  .col-half {
+    width: calc(100% / 2); // 6
+  }
+  .col-one-third {
+    width: calc(100% / 3); // 4
+  }
+  .col-one-fourth {
+    width: calc(100% / 4); // 3
+  }
+  .col-one-sixth {
+    width: calc(100% / 6);  // 2
+  }
+}

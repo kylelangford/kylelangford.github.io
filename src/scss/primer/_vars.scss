@@ -22,7 +22,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 //
 // Markup: colors/colors.twig
 //
-// Style guide: Colors
+// Style guide: Primer.Colors
 
 $primary-color: #6DA6A0;
 $primary-color-medium: darken($primary-color, 15%) !default;
@@ -58,23 +58,6 @@ $action-color--active: $primary-color-dark !default;
 $base-font-color: #555;
 $base-link-color: $action-color;
 $base-accent-color: $action-color;
-
-/*
- * Panels 
- */
-$panel-border-color: $medium-gray !default;
-$panel-bg-color: $white !default;
-$panel-corner-radius: $base-corner-radius !default;
-$panel-padding: 0 !default;
-
-/* Panel Title */
-$panel-header-bg-color: $subtle-gray !default;
-$panel-header-padding: $half-spacing $base-spacing !default;
-$panel-header-font-size: 1em !default;
-
-/* Panel Content */
-$panel-content-padding: $half-spacing $base-spacing $base-spacing !default;
-
 
 /* Status Colors */
 $messages--status: $primary-color;
@@ -175,7 +158,16 @@ $form-border-color: $base-border-color;
 $form-border-radius: $base-corner-radius;
 $form-border-color-hover: $primary-color;
 $form-border-color-focus: $primary-color;
-
+$input-text-bg-color: $white !default;
+$input-text-bg-color--hover: $white !default;
+$input-text-bg-color--focus: $white !default;
+$input-select-bg-color: linear-gradient(to bottom, $white, $subtle-gray) !default;
+$input-select-bg-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
+$input-select-bg-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
+$input-max-width: 500px;
+$input-height: 40px !default;
+$input-height-small: 32px !default;
+$textarea-default-height: 80px !default;
 
  /* TABLES
  ----------------------------------------------------------------------------------
@@ -190,33 +182,6 @@ $table-link-color--hover: $action-color--hover !default;
 $tablesort--asc-img: '../../../../misc/icons/004875/twistie-up.svg';
 $tablesort--desc-img: '../../../../misc/icons/004875/twistie-down.svg';
 
- /* FORMS
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$input-text-bg-color: $white !default;
-$input-text-bg-color--hover: $white !default;
-$input-text-bg-color--focus: $white !default;
-$input-select-bg-color: linear-gradient(to bottom, $white, $subtle-gray) !default;
-$input-select-bg-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$input-select-bg-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$input-max-width: 500px;
-$input-height: 40px !default;
-$input-height-small: 32px !default;
-$textarea-default-height: 80px !default;
-
-
-
- /* PAGER
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$pager-select-bg-color: linear-gradient(to bottom, $white, $subtle-gray) !default;
-$pager-select-bg-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$pager-select-bg-color--active: $action-color--active !default;
-$pager-in-between-spacing: $half-spacing / 2 !default;
-$pager-button-padding: 0 7px 2px !default;
-
 
  /* TABS
  ----------------------------------------------------------------------------------
@@ -229,6 +194,25 @@ $tabs-bg-color--focus: $white !default;
 $tabs-color: $action-color !default;
 $tabs-color--hover: $action-color--hover !default;
 $tabs-padding-default: 16px 0 17px 40px !default;
+
+
+/* PANELS
+----------------------------------------------------------------------------------
+- comments
+---------------------------------------------------------------------------------- */
+$panel-border-color: $medium-gray !default;
+$panel-bg-color: $white !default;
+$panel-corner-radius: $base-corner-radius !default;
+$panel-padding: 0 !default;
+
+/* Panel Title */
+$panel-header-bg-color: $subtle-gray !default;
+$panel-header-padding: $half-spacing $base-spacing !default;
+$panel-header-font-size: 1em !default;
+
+/* Panel Content */
+$panel-content-padding: $half-spacing $base-spacing $base-spacing !default;
+
 
 
  /* BUTTONS
@@ -249,18 +233,5 @@ $button-primary-background-color: $action-color !default;
 $button-primary-background-color--hover: $action-color--hover !default;
 $button-primary-background-color--focus: $action-color--focus !default;
 $button-primary-background-color--active: $action-color--active !default;
-
-
- /* DROPBUTTON
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-// $drop-button
-// $dropbutton-background-color: linear-gradient(to bottom, $white, $subtle-gray)  !default;
-// $dropbutton-background-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-// $dropbutton-background-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
-
-
-
 
 

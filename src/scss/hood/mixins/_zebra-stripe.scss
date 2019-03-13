@@ -1,7 +1,0 @@
-@mixin zebra( $color1: $panel-even-color , $color2: $panel-odd-color) {
-  background-color: $color1;
-
-  &:nth-child(odd) {
-    background-color: $color2;
-  }
-}

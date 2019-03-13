@@ -1,0 +1,50 @@
+ /* Admin List
+ ----------------------------------------------------------------------------------
+ - comments
+ ---------------------------------------------------------------------------------- */
+$panel-bg-color: $white !default;
+$panel-border-color: $medium-gray !default;
+$panel-header-bg-color: $subtle-gray !default;
+
+$panel-bg-color: #FCFBF7;
+$panel-border-color: #FCFBF7;
+$panel-header-bg-color: #FAF3EE;
+
+// Panel
+//
+// Your standard button suitable for clicking.
+//
+//
+// Markup: panel/panel.twig
+//
+// Style guide: Pattern Library.admin-list
+
+@mixin panelize() {
+  background: $panel-bg-color;
+  border: $base-border;
+  border-color: $panel-border-color;
+  border-radius: $base-corner-radius;
+  margin: 0 0 $base-spacing;
+  padding: 0;
+
+  @include elem('title') {
+    background: $panel-header-bg-color;
+    border-bottom: $base-border;
+    border-color: $panel-border-color;
+    border-top-right-radius: $base-corner-radius;
+    border-top-left-radius: $base-corner-radius;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 $half-spacing;
+    padding: $half-spacing $base-spacing;
+    text-transform: capitalize;
+  }
+
+  @include elem('content') {
+    padding: $half-spacing $base-spacing $base-spacing; 
+  }
+}
+
+.panel {
+  @include panelize();
+}

@@ -1,3 +1,7 @@
+/*
+ * Vendor Prefix
+*/
+
 // Prefix
 //
 // Creates vendor prefixes.
@@ -6,6 +10,7 @@
 //
 // Style guide: Hood Mixins.prefix
 
+// Map
 $prefixes: 'webkit', 'moz', 'ms', 'o' !default;
 
 @mixin prefix($property, $value, $prefixes: $prefixes) {
@@ -14,6 +19,6 @@ $prefixes: 'webkit', 'moz', 'ms', 'o' !default;
     #{'-' + $prefix + '-' + $property}: $value;
   }
  
-  // Output standard non-prefixed declaration
+  /* Output standard non-prefixed declaration */
   #{$property}: $value;
 }

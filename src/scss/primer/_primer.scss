@@ -1,5 +1,6 @@
 /*
  * Primer V1.0.0
+ * Prototyping Framework
  * Copyright 2018, Kyle Langford
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
@@ -7,49 +8,35 @@
  */
 
 @import
-  "mixins/buttons",
-  "mixins/clearfix",
-  "mixins/text-shorten",
-  "mixins/zebra-stripe";
-
-@import
   "vars",
-  "base/buttons",
   "base/elements",
-  "base/grid-flex",
-  "base/grid-float",
-  "base/forms",
+  "base/spacing",
+  "base/buttons",
+  "base/tables",
   "base/page",
-  "base/tables";
+  "base/forms",
+  "base/row",
+  "base/row-flex",
+  "base/row-float",
+  "base/row-inline",
+  "base/visibility";
+
+@import "animations/bounce";
 
 @import
-  "helpers/align",
-  "helpers/spacing",
-  "helpers/visibility";
-
-@import
-  "animations/animate",
-  "animations/animate-bounce";
-
-// @import
-  // "extend/checkbox",
-  // "extend/draggable",
-  // "extend/select",
-  // "extend/tablesort";
-
-@import
-  "components/list",
-  "components/breadcrumbs",
-  "components/details",
-  "components/hint",
-  "components/image",
-  "components/input-autocomplete",
-  "components/input-group",
-  "components/line-behind-text",
-  "components/messages",
-  "components/pager",
-  "components/panel",
-  "components/spinner",
-  "components/text",
-  "components/tabs-horz",
-  "components/tabs-vert";
+  "components/list/list",
+  // "components/breadcrumbs",
+  "components/detail/details",
+  "components/hint/hint",
+  // "components/image",
+  // "components/input-autocomplete",
+  // "components/input-group",
+  // "components/line-behind-text",
+  // "components/messages",
+  // "components/pager",
+  "components/toolbar",
+  "components/zebra",
+  "components/panel/panel",
+  // "components/spinner",
+  // "components/tabs-horz",
+  "components/tabs-vert/tabs-vert";

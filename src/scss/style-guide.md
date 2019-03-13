@@ -1,7 +1,7 @@
 <img src="http://via.placeholder.com/800x400">
 
 ## Getting Started
-The Brunello Design System is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).
+The Hood Design System is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).
 
 ### For Designers
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -20,7 +20,7 @@ Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus va
 
 
 ### For Developers
-The Brunello Design System provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+The Hood Design System provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ```
 $ gulp styleguide
@@ -61,22 +61,12 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu le
 - Human Oriented
 - Objective Design
 
-## Resources
-##### Brunello Design Kit (sketch)
-The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building.
-
-##### Brunello Component Library (github)
-##### Brunello Drupal 8 (github)
 
 ### Additional Links
 
-##### SMACSS
-https://smacss.com/book/categorizing
-_CSS Architecture_
-
 ##### BEM
 http://getbem.com/naming/
-_BEM_
+_Documentation_
 
 ##### KSS - Knyle Style Sheets
 http://warpspire.com/kss/
@@ -86,9 +76,13 @@ _Documentation_
 http://bradfrost.com/blog/post/atomic-web-design/
 _Documentation_
 
-##### OOCSS
-http://oocss.org/
-_Object Oriented CSS_
+##### Material Design
+https://material.io/design/
+_Documentation_
+
+##### 8 point Grids
+https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
+_Documentation_
 
 ## Credits
 Neato Drupal 8 Theme
@@ -99,12 +93,14 @@ ICOMOON
 https://icomoon.io/
 _Font Generator_
 
-Carbon Design System
-_Inspiration_
+https://www.carbondesignsystem.com/
+https://marvelapp.com/styleguide/components/form-elements
+https://neat.bourbon.io/
+http://basscss.com/
+https://blog.thebrickfactory.com/2016/06/designing-systems-instead-of-pages/
 
 ### Special Thanks
-
-
+Brunello
 
 ## Questions
 We love to hear your opinions. Visit our slack channel, or tweet us @brunelloinc to provide feedback on our content.

@@ -1,22 +1,4 @@
- // Statement
- //
- // Text Component, Combines a pre-title/title with a short descriptive text
- //
- // Markup: statement.twig
- //
- // .text--regular           - description
- // .text--large             - description
- // .text--super             - description
- // .align--left             - description
- // .align--right            - description
- // .align--center           - description
- //
- // Style guide: Pattern Library.Text
- //
-
-// text
-// text--large
-
+// .content {
 .text {
 
   &.text--regular {
@@ -39,6 +21,7 @@
 		.title {
 			font-size: em(48);
 		}
+		
 		.dek {
 			font-size: em(24);
 		}
@@ -69,3 +52,27 @@
 	}
 }
 
+
+.text--left {
+	text-align: left;
+}
+
+.text--center {
+	text-align: center;
+}
+
+.text--right {
+	text-align: right;
+}
+
+
+/*
+ * Ellipsis
+ * Keep?
+*/
+
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

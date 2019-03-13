@@ -1,0 +1,103 @@
+// Flex Grid
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: grid/flex.twig
+//
+// Style guide: Primer.Flex
+
+.row-flex {
+  display: flex;
+  margin: 0 $page-margin--desktop;
+
+  // .collapse {
+  //  margin-left: -1em;
+  //  margin-right: -1em;
+  // }
+
+}
+
+/* With gutters */
+.flex-gutters {
+  margin: -1em 0 0 -1em;
+}
+.flex-gutters > .flex-box {
+  padding: 1em 0 0 1em;
+}
+
+.justify,
+.row-justify {
+  justify-content: center;
+}
+
+.fill-height {
+  height: 100%;
+}
+
+/* Alignment per row */
+.row-align--top {
+  align-items: flex-start;
+}
+.row-align--bottom {
+  align-items: flex-end;
+}
+
+.align-center,
+.row-align--center {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Alignment per cell */
+.self-align--top {
+  align-self: flex-start;
+}
+.self-align--bottom {
+  align-self: flex-end;
+}
+.self-align--center {
+  align-self: center;
+}
+
+.box-full,
+.box-one-sixth,
+.box-one-third,
+.box-one-fourth,
+.box-half {
+  width: 100%;
+}
+/* 
+* Any styling that should be applied to screen widths larger
+* than a mobile device: tablet, laptop, desktop, etc. 
+*/
+
+@media only screen and (min-width: 800px) {
+
+  [class*='box-'] {
+    flex: 1;
+    margin-right: $gutter--desktop;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+
+  .box-full { 
+    width: 100%; // 12
+  }
+  .box-half {
+    width: calc(100% / 2); // 6
+  }
+  .box-one-third {
+    width: calc(100% / 3); // 4
+  }
+  .box-one-fourth {
+    width: calc(100% / 4); // 3
+  }
+  .box-one-sixth {
+    width: calc(100% / 6);  // 2
+  }
+}

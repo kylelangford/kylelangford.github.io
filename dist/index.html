@@ -30,9 +30,9 @@
 <body class="page page--front">
 
   <section class="container size-to-window">
-    <div class="flex-row row-align--center row-justify fill-height">
+    <div class="row-flex row-align--center row-justify fill-height">
 
-      <div class="flex-box text-center">
+      <div class="flex-box text--center">
         <header class="bio">
           <img src="../img/svg/logo.svg" class="page__logo">
           <h1 class="page__title">Kyle Langford</h1>
@@ -49,112 +49,211 @@
     </div>
   </section>
 
-  <section class="container size-to-window close-hint">
-    <div class="row">
-      <div class="content is-narrow">
+  <section class="container size-to-window event--close-hint">
+<!--     content-flex
+    content-float
+    content-inline
+    content -->
+    <div class="content pad-default">
 
-        <!-- 1.2 Who I do: Creative & Tech -->
-        <h2 class="section__title">Hello!</h2>
+      <!-- 1.2 Who I do: Creative & Tech -->
+      <h2 class="section__title">Hello!</h2>
 
-        <p class="text--large">I work as a Senior UI Designer and Frontend Developer for a Boston based web agency. I have 10 years experience and have worked on over 70 sites/apps and 100s of projects over that time. I have expert knowledge of web technologies and standards. I am passionate about helping people use technology through design. I have a positive attitude and enjoy working on all types of projects.</p>
-        
-        <figure class="image">
-          <img src="../img/svg/bottom-right.svg" class="position-bottom-right">
-        </figure>
+<!--  I am:
+      a problem solver
+      a process driven
+      a life long learner -->
 
-      </div>
+      <p class="text--large animatable js-anim-trigger">I work as a Senior Designer and Frontend Developer for a Boston based web agency. I have 10 years experience and have worked on over 70 sites/apps and 100s of projects over that time. I have expert knowledge of web technologies and standards. I am passionate about helping people use technology through design. I have a positive attitude and enjoy working on all types of projects.</p>
+
+      <!-- 10000 hours -->
+      <figure class="image">
+        <img src="../img/svg/bottom-right.svg" class="position-bottom-right">
+      </figure>
 
     </div>
   </section>
 
-  <section class="container has-text-centered size-to-window">
-    <div class="content is-narrow">  
-      <div class="columns is-centered">
-        <div class="column one-third para">
+  <section class="container size-to-window">
+    <div class="content pad-default">  
+      <div class="row">
+        <div class="col-one-fourth">
                     
-          <h2 class="section-title">UI/UX</h2>
-          <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+          <h2 class="section-title">UI</h2>
+          <p>Design systems not pages.</p>
           
-          <p class="list-title">Things I enjoy designing:</p>
-          <p>Websites, Mobile, Apps, Emails</p>
-
           <p class="list-title">Design Tools:</p>
           <ul class="pretty">
             <li>Adobe CC</li>
+            <li>Browser</li>
             <li>Balsamiq Mockups</li>
             <li>Invision</li>
             <li>Pen &amp; Paper</li>
             <li>Sketch</li>
             <li>Sketchup</li>
+          </ul>
+        </div>
+
+        <div class="col-one-fourth">
+          
+          <h2 class="section-title">UX</h2>
+          <p>Content is king!</p>
+
+          <p class="list-title">Specialties:</p>
+          <ul class="pretty">
+            <li>Accesibility</li>
+            <li>Analytics Reports</li>
+            <li>Continuous Intergration</li>
+            <li>Functional Testing</li>
+            <li>Tracking Intergration</li>
+            <li>Visual Regression Testing</li>
+            <li>UX Audits</li>
+          </ul>
+
+          <p class="list-title">Tools:</p>
+          <ul class="pretty">
+            <li>Google</li>
+            <li>Circle CI</li>
+            <li>Selinium</li>
             <li>Excel</li>
           </ul>
         </div>
-        <div class="column one-third para">
+
+        <div class="col-one-fourth">
           
-          <h2 class="section-title">Developement</h2>
-          <p>Lorem Ipsum</p>
+          <h2 class="section-title">FE</h2>
+          <p>Plan. Implement. Iterate.</p>
 
-          <p class="list-title">Languages I speak:</p>
-          <p>HTML, CSS, JS, PHP, mySQL, Swift</p>
-
-          <p class="list-title">Dev Tools:</p>
+          <p class="list-title">Specialties:</p>
           <ul class="pretty">
-            <li>Angular</li>
             <li>Drupal</li>
+            <li>Node.js</li>
             <li>Shopify</li>
+            <li>Javascript</li>
+            <li>Angular</li>
+            <li>LAMP</li>
+            <li>Swift</li>
+          </ul>
+
+          <p class="list-title">Tools:</p>
+          <ul class="pretty">
+            <li>Chrome</li>
             <li>Gulp</li>
             <li>Git</li>
+            <li>CLI</li>
+            <li>Sublime</li>
+            <li>MAMP / Ubuntu</li>
+            <li>Sequel Pro</li>
             <li>xCode</li>
           </ul>
         </div>
-
       </div>
 
       <figure class="image">
         <img src="../img/svg/shelf.svg" class="position-bottom-right">
       </figure>
 
-
     </div>
   </section>
 
-  <section class="container has-text-centered size-to-window">
+  <section class="container size-to-window">
+    <div class="content pad-default">  
+
+      <div class="row">
+        <div class="col-one-third"> 
+
+          <h2 class="section__title">Modern CSS Framework</h2>
+
+          <p class="list-title">Primer</p>
+          <p>Just the tools and a little bit to get you started.</p>
+
+          <p class="list-title">Features:</p>
+          <ul class="pretty">
+            <li>Human Readable</li>
+            <li>Mixins Library</li>
+            <li>Customizable Patterns</li>
+            <li>Well Documented</li>
+          </ul>
+          <br>
+          <a href="/styleguide" class="button button--primary">See Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- <section class="container size-to-window">
+    <div class="content is-narrow">  
+
+      <div class="columns is-centered">
+        <div class="column one-third"> 
+
+          <h2 class="section__title">Design Thought</h2>
+          <p>Musings</p>
+
+          <p class="list-title">Features:</p>
+          <ul class="pretty">
+            <li>Design, Motion, Iteration</li>
+          </ul>
+          <br>
+          <a href="/styleguide" class="button button--primary">Get Primer</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+<!-- <section class="container size-to-window">
     <div class="content is-narrow">  
       <div class="columns is-centered">
         <div class="column one-third"> 
 
-          <h2 class="section__title">Hood + Primer</h2>
-          <p>CSS Framework</p>
-
-          <p class="list-title">CSS Framework:</p>
-          <p>Designlab’s UX Academy</p>
+          <h2 class="section__title">Email Builder</h2>
+          <p>Service</p>
 
           <p class="list-title">Mentor Stats:</p>
           <ul class="pretty">
-            <li>3 years experience</li>
-            <li>26 short courses</li>
-            <li>24 bootcamps</li>
-            <li>90+ students</li>
-            <li>750+ mentor sessions</li>
-            <li>60+ group critiques</li>
-            <li>8,000+ comments</li>
+            <li>Manage your personal email library</li>
+            <li>Upload your own html designs</li>
+            <li>Build Emails with GUI</li>
+            <li>Generate Email HTML</li>
+            <li>Custom Design Services</li>
+            <li>Send tests to Litmus</li>
           </ul>
           <br>
-          <a href="/styleguide" class="button">Styleguide</a>
+          <a href="/styleguide" class="button button--primary">Free Trial</a>
         </div>
       </div>
-
     </div>
-  </section>
+  </section> -->
 
-  <section class="container">
+<!-- <section class="container size-to-window">
+    <div class="content is-narrow">  
+      <div class="columns is-centered">
+        <div class="column one-third"> 
 
-    <figure class="image">
-      <img src="../img/svg/frame.svg" style="width: 260px;">
-    </figure>
+          <h2 class="section__title">Project Manager</h2>
+          <p>Time based todo manager</p>
 
-    <div class="flex-row row-align--center">
-      <div class="flex-box one-half">
+          <p class="list-title">Features:</p>
+          <ul class="pretty">
+            <li>Ullamcorper Euismod</li>
+            <li>Cursus Commodo</li>
+            <li>Ultricies Fusce</li>
+          </ul>
+          <br>
+          <a href="/styleguide" class="button button--primary">Free Trail</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="container size-to-window">
+
+    <div class="row-flex row-align--center">
+      <div class="flex-box pad-default one-half">
+
+        <figure class="image">
+          <img src="../img/svg/frame.svg" style="width: 260px;">
+        </figure>
 
         <h2 class="section__title">
           <small>Contact</small>
@@ -196,14 +295,18 @@
   </section>
 
   <section class="container">
-    <div class="flex-row">
-      <footer class="flex-box">
-        <p class="copy"><span class="icon icon-copyright"></span> Kyle Langford 2018</p>
-        <a href="https://github.com/kylelangford"><span class="icon icon-github">KyleLangford</span></a>
-        <a href="https://linkedin.com/kylelangford"><span class="icon icon-linkedin">Linkedin</span></a>
-      </footer>
-    </div>
+    <footer>
+      <ul>
+        <li><p class="copy"><span class="icon icon-copyright"></span> Kyle Langford 2018</p></li>
+        <li><a href="https://github.com/kylelangford"><span class="icon icon-github">KyleLangford</span></a></li>
+        <li><a href="https://linkedin.com/kylelangford"><span class="icon icon-linkedin">Linkedin</span></a></li>
+      </ul>
+    </footer>
   </section>
+
+  <div class="dev-bar horz-tab">
+    <a href="">Show Grid</a>
+  </div>
 
   <span class="hint icon-chevron-down animated infinite bounce"></span>
 

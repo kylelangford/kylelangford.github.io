@@ -1,12 +1,10 @@
-// Clearfix
-//
-// Provides an easy way to clear floats.
-//
-// Markup: clearfix/clearfix.twig
-//
-// Style guide: Hood Mixins.clearfix
+/*
+ * Clearfix
+*/
 
 @mixin clearfix {
+  overflow: hidden;
+
   &:after {
     content: "";
     display: table;

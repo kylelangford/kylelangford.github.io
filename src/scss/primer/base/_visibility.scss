@@ -6,7 +6,7 @@
 //
 // Markup: visibility/visibility.twig
 //
-// Style guide: Helpers.visibility
+// Style guide: Primer.Visibility
 
 .visually-hidden {
   position: absolute !important;
@@ -21,4 +21,24 @@
 	display: none !important;
 }
 
-// show / hide
+// Hide Mixin
+@mixin hide($media) {
+
+}
+
+// Hide Mixin
+@mixin show($media) {
+
+}
+
+.hidden--desktop {}
+.hidden--mobile {}
+.hidden--screen-reader {}
+
+.show--desktop {}
+.show--mobile {}
+.show--screen-reader {}
+
+// screen readers
+// show hide
+// aria-hidden="true"

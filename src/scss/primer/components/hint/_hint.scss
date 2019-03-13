@@ -1,0 +1,30 @@
+// Hint
+//
+// Your standard button suitable for clicking.
+//
+//
+// Markup: hint/hint.twig
+//
+// Style guide: Pattern Library.hint
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.hint {
+  display: block;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  left: 0;
+  bottom: 20px;
+}

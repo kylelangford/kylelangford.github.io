@@ -1,23 +1,47 @@
+// Page
+//
+// Your standard button suitable for clicking.
+//
+// :hover   - Highlights when hovering.
+//
+// Markup: page/page.twig
+//
+// Style guide: Primer.Page
+
+$page-margin--desktop: $double-spacing;
+$page-margin--tablet: $double-spacing;
+$page-margin--mobile: $base-spacing;
+$gutter--desktop: $base-spacing;
+$gutter--mobile: $base-spacing;
+
+// Fixed Container
 .row {
-  padding: $base-spacing 0;
 
+  &.has-background {
+    .image {
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      height: 50vh;
+    }
+  }
 
-	&.has-background {
-		.field-group-background-image {
-	    background-size: cover;
-	    background-position: top center;
-		  background-repeat: no-repeat;
-	    height: 50vh;
-	  }
+  &.parallax {
+    .image {
+      background-attachment: fixed;
+    }
+  }
 
-	  &.parallax {
-			.field-group-background-image {
-			  background-attachment: fixed;
-			}
-		}
-	}
-
-  &.contain {
+  &.relative {
     position: relative;
   }
+
+  &.center {
+    @include containerize();  
+  }
+
+  &.left-right {
+
+  }
+
 }

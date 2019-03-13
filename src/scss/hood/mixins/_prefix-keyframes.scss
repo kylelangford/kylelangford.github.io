@@ -1,0 +1,16 @@
+/*
+ * Prefix Keyframes
+*/
+
+// Prefix Keyframe
+//
+// Prefix keyframe
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+    @content;
+	}
+	@keyframes #{$name} {
+    @content;
+	}
+}

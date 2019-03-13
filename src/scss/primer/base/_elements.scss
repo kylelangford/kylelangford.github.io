@@ -2,14 +2,12 @@
 //
 // Your standard button suitable for clicking.
 //
-// :hover   - Highlights when hovering.
-//
 // Markup: elements/elements.twig
 //
-// Style guide: components.elements
+// Style guide: Primer.elements
 
 html {
-  font-size: 16px; 
+  font-size: $base-font-size; 
 }
 
 body {
@@ -72,7 +70,7 @@ p {
 a {
   color: $base-link-color;
   text-decoration: none;
-  @include prefix(transition, color 0.1s linear, webkit ms );
+  @include prefix(transition, color 0.15s linear, webkit ms );
 
   &:hover {
     color: shade($base-link-color, 15%);
@@ -141,7 +139,6 @@ pre > code {
   white-space: pre; 
 }
 
-
 /**
  * Generic elements.
  */
@@ -200,7 +197,6 @@ details summary:focus {
   outline: none;
   text-decoration: underline;
 }
-
 
 ul,
 ol {

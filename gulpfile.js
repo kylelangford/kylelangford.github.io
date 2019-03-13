@@ -182,6 +182,7 @@ function watch() {
   gulp.watch(['./src/styleguide/components/*/*.twig']).on('change', gulp.series( kss_styleguide, browser.reload));
   gulp.watch(['./src/scss/**/*.scss']).on('change', gulp.series( css, browser.reload));
   gulp.watch(['./src/js/**/*.js']).on('change', gulp.series( js, modernizr, browser.reload));
+  gulp.watch(['./src/index.html']).on('change', gulp.series( files, browser.reload));
   gulp.watch(['./src/sys-files/*']).on('change', gulp.series( files, browser.reload));
   gulp.watch(['./src/images/**/*']).on('change', gulp.series( images, browser.reload));
 }

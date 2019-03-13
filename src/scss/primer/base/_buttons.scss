@@ -3,18 +3,89 @@
 // Your standard button suitable for clicking.
 //
 // :hover   - Highlights when hovering.
+// :focus   - Highlights when hovering.
+// :active   - Highlights when hovering.
+// :disabled   - Highlights when hovering.
 //
 // Markup: buttons/buttons.twig
 //
-// Style guide: components.buttons
+// Style guide: Primer.buttons
+
+/* 
+ * Button
+ * button map - 
+ * themable 
+ */
+
+@mixin clickable {
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-shadow: none;
+  font-size: 1rem;
+  font-weight: 600;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  &:disabled,
+  &:disabled:active,
+  &.is-disabled,
+  &.is-disabled:active {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
 
 .button,
 .form-submit {
-  @include buttonize();
+  @include clickable();
+  padding: $button-padding-default;
+  border-radius: $base-corner-radius;
+  border: 1px solid $button-border-color;
+  background-color: $white;
+  background: $button-background-color;
+  // transition: $clickable-traansition;
+  color: $text-color;
+
+  &:hover,
+  &:focus {
+    border-color: $button-border-color;
+    background: linear-gradient(to bottom, $subtle-gray, $white);
+    color: $text-color;
+  }  
+
+  &:active {
+    background: $button-background-color--active;
+    border-color: $button-border-color;
+  }
+
+  &:disabled,
+  &:disabled:active,
+  &.is-disabled,
+  &.is-disabled:active {
+    box-shadow: none;
+    border-color: #d4d4d4;
+    background: #ededed;
+    color: #5c5c5c;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }  
 }
 
 .button--small {
-  @include btn-small();
+  font-size: 1rem;
+  padding: $button-padding-small;
 }
 
 .button--primary,

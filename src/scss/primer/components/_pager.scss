@@ -1,12 +1,7 @@
-// Pager
-//
-// For paginated content
-//
-// Markup: pager/pager.twig
-//
-// Style guide: Pattern Library.pager
-
-// Pager
+/* PAGER
+ ----------------------------------------------------------------------------------
+ - comments
+ ---------------------------------------------------------------------------------- */
 $pager-select-bg-color: linear-gradient(to bottom, $white, $subtle-gray) !default;
 $pager-select-bg-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
 $pager-select-bg-color--active: $action-color--active !default;
