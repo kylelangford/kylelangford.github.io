@@ -1,42 +1,42 @@
 /*
- * Primer V1.0.0
- * Prototyping Framework
- * Copyright 2018, Kyle Langford
+ * Primer V 0.1.0
+ * CSS Framework
+ * Copyright 2019, Kyle Langford
  * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 7/22/2018
- */
+ * http://www.opensource.org/licenses/mit-license.php */
 
-@import
-  "vars",
-  "base/elements",
-  "base/spacing",
-  "base/buttons",
-  "base/tables",
-  "base/page",
-  "base/forms",
-  "base/row",
-  "base/row-flex",
-  "base/row-float",
-  "base/row-inline",
-  "base/visibility";
+/* Mixins */
+@import "mixins/bem";
+@import "mixins/clearfix";
+@import "mixins/clickable";
+@import "mixins/containerize";
+@import "mixins/grid";
+@import "mixins/iconize";
+@import "mixins/media-queries";
+@import "mixins/prefix";
+@import "mixins/prefix-keyframes";
+@import "mixins/em";
+@import "mixins/rem";
+@import "mixins/zebra";
 
-@import "animations/bounce";
+@import "vars";
 
-@import
-  "components/list/list",
-  // "components/breadcrumbs",
-  "components/detail/details",
-  "components/hint/hint",
-  // "components/image",
-  // "components/input-autocomplete",
-  // "components/input-group",
-  // "components/line-behind-text",
-  // "components/messages",
-  // "components/pager",
-  "components/toolbar",
-  "components/zebra",
-  "components/panel/panel",
-  // "components/spinner",
-  // "components/tabs-horz",
-  "components/tabs-vert/tabs-vert";
+/* Base */
+@import "base/animate";
+@import "base/grid";
+@import "base/layout";
+@import "base/elements";
+@import "base/spacing";
+@import "base/row-flex";
+@import "base/visibility";
+
+/* Components */
+@import "components/animations/fade-in";
+@import "components/animations/bounce";
+@import "components/animations/hint";
+@import "components/buttons/buttons";
+@import "components/buttons/buttons-inline";
+@import "components/forms/forms";
+@import "components/lists/list-inline";
+@import "components/text/text";
+

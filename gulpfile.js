@@ -8,16 +8,12 @@ var uglify      = require('gulp-uglify');
 var path        = require('path');
 var rimraf      = require('rimraf');
 var browser     = require('browser-sync').create();
-var rename      = require("gulp-rename");
-var pump        = require('pump');
-var kss         = require('kss');
 
 // Settings
 var cssOutPutStyle = 'expanded';
 // var cssOutPutStyle = 'compressed';
 
 // Tasks
-
 gulp.task('css', 
   gulp.series(css));
 
@@ -27,11 +23,8 @@ gulp.task('clean',
 gulp.task('build', 
   gulp.series(files, images, icons, css, js));
 
-gulp.task('styleguide',
-  gulp.series(kss_clean, kss_css, css, kss_styleguide));
-
 gulp.task('default',
-  gulp.series('build', 'styleguide', server, watch));
+  gulp.series('build', server, watch));
 
 
 // Delete the "dist" folder
@@ -49,35 +42,12 @@ function css() {
   }))
   .pipe(sourcemaps.write('./maps'))
   .pipe(gulp.dest('./dist/css'))
-  .pipe(gulp.dest('./dist/styleguide/kss-assets/css'))
   .pipe(notify({
     title: "SASS Compiled",
     message: "All SASS files have been recompiled to CSS.",
     onLast: true
   }));
 }
-
-
-/**
- * KSS Sass
- * Compile styles for styleguide
- */
-function kss_css() {
-  return gulp.src('./src/styleguide/builder/scribe/kss-assets/scss/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      outputStyle: cssOutPutStyle,
-      sourceMap: true
-    }))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./src/styleguide/builder/scribe/kss-assets/css'))
-    .pipe(notify({
-      title: "KSS Builder SASS Compiled",
-      message: "All SASS files have been recompiled to CSS.",
-      onLast: true
-    }));
-}
-
 
 // JS
 function js() {
@@ -89,7 +59,7 @@ function js() {
   }
 
   return gulp.src([
-      './src/js/vendor/jquery.waypoints.js',
+      './src/js/vendor/wow.js',
       './src/js/*.js' 
     ])
     .pipe(concat('main.js'))
@@ -142,44 +112,8 @@ function server(done) {
 }
 
 
-/**
- * Generate Style guide
- */
-function kss_styleguide() {
-  return kss({
-    source: [
-      'src/scss',
-      'src/styleguide/components',
-    ],
-    destination: './dist/styleguide',
-    builder: 'src/styleguide/builder/scribe',
-    // namespace: 'everhood:' + __dirname + '/src/styleguide/components/',
-    'verbose': true,
-    // The following paths are relative to the generated style guide.
-    css: [
-      'kss-assets/css/styles.css'
-    ],
-    js: [
-      // '../../src/components/teaser/teaser.js'
-    ],
-    homepage: 'style-guide.md',
-    title: 'CSS Framework'
-  }); 
-}
-
-
-/**
- * Clean KSS directory
- */
-function kss_clean(done) {
-  rimraf('dist/styleguide', done);
-}
-
 // Watch for file changes
 function watch() {
-  gulp.watch(['./src/styleguide/builder/scribe/kss-assets/scss/*.scss']).on('change', gulp.series( kss_css,kss_styleguide, browser.reload));
-  gulp.watch(['./src/styleguide/builder/scribe/index.twig']).on('change', gulp.series( kss_styleguide, browser.reload));
-  gulp.watch(['./src/styleguide/components/*/*.twig']).on('change', gulp.series( kss_styleguide, browser.reload));
   gulp.watch(['./src/scss/**/*.scss']).on('change', gulp.series( css, browser.reload));
   gulp.watch(['./src/js/**/*.js']).on('change', gulp.series( js, modernizr, browser.reload));
   gulp.watch(['./src/index.html']).on('change', gulp.series( files, browser.reload));

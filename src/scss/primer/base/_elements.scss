@@ -6,7 +6,12 @@
 //
 // Style guide: Primer.elements
 
+* {
+  box-sizing: border-box;
+}
+
 html {
+  font-size: 100%; 
   font-size: $base-font-size; 
 }
 
@@ -17,10 +22,6 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 h1,

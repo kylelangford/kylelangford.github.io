@@ -1,3 +1,22 @@
+.page__logo {
+  margin: 2em auto;
+  max-width: 200px;
+  display: block;
+}
+
+.page__title {
+  font-size: 58px;
+}
+
+.page__sub-title {
+  font-size: 24px;
+}
+
+.section__title {
+  margin-bottom: $half-spacing;
+}
+
+
 // Room
 .room-desk {
   max-width: 600px;
@@ -42,3 +61,11 @@
   @include zebra(); 
 }
 
+
+.kss-header {
+  padding-left: $keyline;
+}
+
+.text--center {
+  text-align: center;
+}

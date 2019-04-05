@@ -1,0 +1,22 @@
+/*
+ * Prefix Keyframes
+*/
+
+// Prefix
+//
+// Creates vendor prefixes.
+//
+// Markup: prefix/keyframe-prefix.twig
+//
+// Style guide: Mixins.Keyframes
+
+// $keyframe-prefixes: 'webkit';
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+    @content;
+	}
+	@keyframes #{$name} {
+    @content;
+	}
+}

@@ -1,0 +1,53 @@
+
+// Font Size
+.text--small {
+	font-size: 80%;	
+}
+
+.text--default {
+	font-size: em(16);	
+}
+
+.text--large {
+	font-size: em(20);	
+}
+
+.text--display {
+	font-size: em(64);
+}
+
+
+// Alignment
+.text--left {
+	text-align: left;
+}
+
+.text--center {
+	text-align: center;
+}
+
+.text--right {
+	text-align: right;
+}
+
+
+// Colors
+.text--dark {
+	color: $text-color;
+}
+
+.text--white {
+	color: $white;
+}
+
+.text--action {
+	color: $action-color;
+}
+
+.text--primary {
+	color: $primary-color;
+}
+
+.text--secondary {
+	color: $secondary-color;
+}

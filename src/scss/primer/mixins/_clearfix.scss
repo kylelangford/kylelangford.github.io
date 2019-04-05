@@ -1,0 +1,19 @@
+/*
+ * Clearfix
+*/
+
+// Clearfix
+//
+// Your standard button suitable for clicking.
+//
+// Style guide: Mixins.Clearfix
+
+@mixin clearfix {
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

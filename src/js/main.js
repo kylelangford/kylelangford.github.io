@@ -11,106 +11,96 @@ $(function() {
   })();
 });
 
-// Break Apart
-// $(".grid").on('click', function() {
-//   $(this).toggleClass('break-apart');
-// });
 
-$('#message').change(function(event){
-  if ($(this).val()) {
-    $(this).next().hide();
-  } else {
-    $(this).next().show();
-  }
+$('document').ready(function(){
+
+	// Add Tween Class
+  $("body").addClass( "tween" );
+
+	// Wow
+	wow = new WOW(
+	  {
+	    boxClass:     'animate',      // animated element css class (default is wow)
+	    animateClass: 'animated', // animation css class (default is animated)
+	    offset:       0,          // distance to the element when triggering the animation (default is 0)
+	    mobile:       true,       // trigger animations on mobile devices (default is true)
+	    live:         true,       // act on asynchronously loaded content (default is true)
+	    callback:     function(box) {
+	      // the callback is fired every time an animation is started
+	      // the argument that is passed in is the DOM node being animated
+	    },
+	    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+	    resetAnimation: true,     // reset animation on end (default is true)
+	  }
+	);
+
+	wow.init();
+
 });
 
 
-// // Init Chosen.js
-// $('select').chosen({
-//   no_results_text: "Oops, nothing found!",
-//   disable_search_threshold: 12
-// }); 
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
 
-
-// (function () {
-//   $("body").addClass( "tween" );
-// })();
-
-// Menu Trigger
-// (function () {
-//   $('.primary-menu-btn').on('click touchstart',function (e) {
-//     $('nav.primary').toggleClass('overlay');
-//     $(this).toggleClass('active');
-//     $('.mast-head').toggleClass('active');
-//     $('.site-logo').toggleClass('active');
-//     e.preventDefault();
-//   });
-// })();
-
-//
-// Waypoints.js
-//
-var waypoints = $('.js-anim-trigger').waypoint(function() {
-  $(this).addClass('anim-appear');
-}, {
-  offset: '40%'
-});
-
-
-// var waypoints = $('.squish').waypoint(function() {
-//   $('.squish').addClass('animate');
-// }, {
-//   offset: '40%'
-// });
-
-var waypoints = $('.close-hint').waypoint(function() {
-  $('.hint').hide();
-}, {
-  offset: '75%'
-});
-
-// $('.span-tada').hide();
-// var waypoints = $('.wp-rotate').waypoint(function() {
-//   $('.span-tada').addClass('animated tada');
-//   $('.span-tada').fadeIn();
-//   }, {
-//   offset: '50%'
-// });
-
-// Scroll To
-// (function () {
-//   $.mark = {
-//     jump: function (options) {
-//       var defaults = {
-//         selector: 'a.scroll-on-page-link'
-//       };
-//       if (typeof options == 'string') {
-//         defaults.selector = options;
-//       }
-//       options = $.extend(defaults, options);
-//       return $(options.selector).click(function (e) {
-//         var jumpobj = $(this);
-//         var target = jumpobj.attr('href');
-//         var thespeed = 1000;
-//         var offset = $(target).offset().top;
-//         $('html,body').animate({
-//           scrollTop: offset
-//         }, thespeed, 'swing');
-//         e.preventDefault();
-//       });
-//     }
-//   };
-
-//   $.mark.jump();
-
-// })();
-
-// Show Alert
-function showAlert (message, elem) {
-  $(elem).append(message);
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
 }
 
-// Run when valid
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+
+
+
+
+
+
+// // Run when valid
 var doOnce = true;
 function validForm (form) {
   if ( doOnce ) {
@@ -119,7 +109,7 @@ function validForm (form) {
   }
 }
 
-// Validation
+// // Validation
 $( '.validate .input-field' ).on( 'keyup blur' , function validate () {
   var formElement = $( this ).closest(' .validate' );
   var requiredInputs = formElement.find( '.input-required' );
@@ -152,8 +142,6 @@ $( '.validate .input-field' ).on( 'keyup blur' , function validate () {
 // check killswitch
 
 // timestamp
-
-//
 //
 //       showAlert( '<p>Thank you for your attention, your email has been sent.</p>' , '.alert' );
 //
@@ -182,54 +170,52 @@ $( '.validate .input-field' ).on( 'keyup blur' , function validate () {
 // };
 
 // https://blog.teamtreehouse.com/create-ajax-contact-form
-$(function() {
+// $(function() {
 
-	// Get the form.
-	var form = $('#form-contact');
+// 	// Get the form.
+// 	var form = $('#form-contact');
 
-	// Get the messages div.
-	var formMessages = $('#form-messages');
+// 	// Get the messages div.
+// 	var formMessages = $('#form-messages');
 
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
+// 	// Set up an event listener for the contact form.
+// 	$(form).submit(function(e) {
+// 		// Stop the browser from submitting the form.
+// 		e.preventDefault();
 
-		// Serialize the form data.
-		var formData = $(form).serialize();
+// 		// Serialize the form data.
+// 		var formData = $(form).serialize();
 
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
+// 		// Submit the form using AJAX.
+// 		$.ajax({
+// 			type: 'POST',
+// 			url: $(form).attr('action'),
+// 			data: formData
+// 		})
+// 		.done(function(response) {
+// 			// Make sure that the formMessages div has the 'success' class.
+// 			$(formMessages).removeClass('error');
+// 			$(formMessages).addClass('success');
 
-			// Set the message text.
-			$(formMessages).text(response);
+// 			// Set the message text.
+// 			$(formMessages).text(response);
 
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
+// 			// Clear the form.
+// 			$('#name').val('');
+// 			$('#email').val('');
+// 			$('#message').val('');
+// 		})
+// 		.fail(function(data) {
+// 			// Make sure that the formMessages div has the 'error' class.
+// 			$(formMessages).removeClass('success');
+// 			$(formMessages).addClass('error');
 
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
-	});
-
-});
+// 			// Set the message text.
+// 			if (data.responseText !== '') {
+// 				$(formMessages).text(data.responseText);
+// 			} else {
+// 				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+// 			}
+// 		});
+// 	});
+// });

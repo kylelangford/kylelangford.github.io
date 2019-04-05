@@ -1,0 +1,27 @@
+// Rem
+//
+// Convert pixels to ems
+// pixel / base = ems
+//
+// Markup: em/em.twig
+//
+// Style guide: Mixins.Rem
+
+$base-font-size: 16px !default;
+
+// Can use this for type settings
+// This will allow us to set our type proportional to the base size
+// also allows user browser font-sizes
+// I think it kinda looks cool
+// Use pixels for layout
+@function rem($pixels, $root_context: $base-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($root_context)) {
+    $root_context: $root_context * 1px;
+  }
+
+  @return $pixels / $root_context * 1rem;
+}
