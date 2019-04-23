@@ -78,7 +78,7 @@ function js() {
 // Copy Misc Files
 function files() {
   return gulp.src([
-    './src/index.html',
+    './src/*.html',
     './src/php/mailer.php',
     './src/sys-files/*',
     ])
