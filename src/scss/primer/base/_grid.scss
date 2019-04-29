@@ -10,11 +10,11 @@ $half: calc(100% / 2);
 @media only screen and (min-width: 800px) {
 
   .column {
-    margin-right: $gutter--desktop;
+    padding-right: $gutter--desktop;
     width: 100%;
 
     &:last-of-type {
-      margin-right: 0;
+      padding-right: 0;
     }
 
       &.stretch {
@@ -36,7 +36,7 @@ $half: calc(100% / 2);
     }
     
     &.two-thirds {
-      width: calc(100% / 3); // 4
+      width: calc(100% / 1.5); // 4
     }
     
     &.one-fourth {

@@ -21,7 +21,7 @@ gulp.task('clean',
   gulp.series(clean));
 
 gulp.task('build', 
-  gulp.series(files, images, icons, css, js));
+  gulp.series(files, pages, images, icons, css, js));
 
 gulp.task('default',
   gulp.series('build', server, watch));
@@ -79,10 +79,17 @@ function js() {
 function files() {
   return gulp.src([
     './src/*.html',
-    './src/php/mailer.php',
     './src/sys-files/*',
     ])
   .pipe(gulp.dest('dist/'));
+}
+
+// Copy Pages
+function pages() {
+  return gulp.src([
+    './src/pages/*.html'
+    ])
+  .pipe(gulp.dest('dist/pages/'));
 }
 
 // Copy Images
@@ -93,7 +100,7 @@ function images() {
 
 // Copy Fonts
 function icons() {
-  return gulp.src('./src/fonts/**/*')
+  return gulp.src('./src/fonts/**/fonts/*')
   .pipe(gulp.dest('dist/fonts/'));
 }
 
@@ -116,7 +123,8 @@ function server(done) {
 function watch() {
   gulp.watch(['./src/scss/**/*.scss']).on('change', gulp.series( css, browser.reload));
   gulp.watch(['./src/js/**/*.js']).on('change', gulp.series( js, modernizr, browser.reload));
-  gulp.watch(['./src/index.html']).on('change', gulp.series( files, browser.reload));
+  gulp.watch(['./src/pages/*.html']).on('change', gulp.series( pages, browser.reload));
+  gulp.watch(['./src/*.html']).on('change', gulp.series( files, browser.reload));
   gulp.watch(['./src/sys-files/*']).on('change', gulp.series( files, browser.reload));
   gulp.watch(['./src/images/**/*']).on('change', gulp.series( images, browser.reload));
 }

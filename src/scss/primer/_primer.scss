@@ -19,6 +19,7 @@
 @import "mixins/rem";
 @import "mixins/zebra";
 
+/* Vars */
 @import "vars";
 
 /* Base */
@@ -34,9 +35,9 @@
 @import "components/animations/fade-in";
 @import "components/animations/bounce";
 @import "components/animations/hint";
+@import "components/animations/letters";
 @import "components/buttons/buttons";
 @import "components/buttons/buttons-inline";
-@import "components/forms/forms";
 @import "components/lists/list-inline";
 @import "components/text/text";
 

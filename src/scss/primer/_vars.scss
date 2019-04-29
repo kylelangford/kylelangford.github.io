@@ -1,35 +1,16 @@
-  /* BREAKPOINTS SETTINGS
+ /* Layout
  ----------------------------------------------------------------------------------
- - comments
  ---------------------------------------------------------------------------------- */
-$small: 640px;
-$medium: 769px;
-$large: 1024px;
-$medium-screen: em(640);
-$large-screen: em(860);
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+ $max-width: em(1088) !default;
 
 
  /* COLOR SETTINGS
  ----------------------------------------------------------------------------------
- - comments
  ---------------------------------------------------------------------------------- */
-
-// Colors
-//
-// Color Pallete
-//
-// Markup: colors/colors.twig
-//
-// Style guide: Primer.Colors
-
 $primary-color: #6DA6A0;
 $primary-color-medium: darken($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 25%) !default;
-
 $secondary-color: #ffcc2f;
-
 $white: #FFFFFF !default;
 $off-white-color: #f4f4f4;
 $subtle-gray: #F6F6F6 !default;
@@ -37,6 +18,19 @@ $light-gray: #F2F0F0 !default;
 $gray: #D9D9D9 !default;
 $medium-gray: #CACACA !default;
 $dark-gray: #AAAAAA !default;
+
+$scrap-green: #40a880;
+$cyber-green: #52dfb4;
+$twilight: #273269;
+$burnt-sunset: #e58b44;
+$red-eye: #e33c42;
+$robot-salmon: #e53b56;
+$concrete: #718078;
+$future-yellow: #fde803;
+$grease: #202020;
+$robo-sludge: #323e43;
+
+$shark-skin: #8aa8b8;
 
 // Secondary Colors
 $light-yellow: #FFFBED !default;
@@ -49,13 +43,13 @@ $text-color: $charcoal !default;
 $text-description-color: #555555 !default;
 
 // 'Link' Color
-$action-color: $primary-color !default;
+$action-color: #5689b2 !default;
 $action-color--hover: $primary-color-medium !default;
 $action-color--focus: $primary-color-medium !default;
 $action-color--active: $primary-color-dark !default;
 
 /* Font Colors */
-$base-font-color: #555;
+$base-font-color: #323e43;
 $base-link-color: $action-color;
 $base-accent-color: $action-color;
 
@@ -75,36 +69,33 @@ $base-spacing: $base-line-height * 1em;
 $base-padding: 1.5rem;
 $wrap-padding: 1.5rem;
 
+
  /* SPACING
  ----------------------------------------------------------------------------------
  - comments
  ---------------------------------------------------------------------------------- */
 $base-gutter: 2.5rem !default;
 $base-spacing: 1.5rem !default;
-$base-line-height: 1.5em !default;
 $half-spacing: $base-spacing / 2 !default;
-$max-width: em(1088) !default;
+$base-line-height: 1.5em !default;
 
 
  /* FONT SETTINGS
  ----------------------------------------------------------------------------------
-	- default body text  Arial, Helvetica Neue, Helvetica, sans-serif
-	- subtitle h2 text   Garamond, Hoefler Text, Times New Roman, Times, serif
-	- form input text    Cambria, Georgia, Times, Times New Roman, Times, serif
-	- default p text     Copperplate Light, Copperplate Gothic Light, serif
+	- default body text  'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+	- subtitle h2 text   'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+	- form input text    'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+	- default p text     'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
 	- pre and code       Consolas, Lucida Console, Monaco, monospace
  ---------------------------------------------------------------------------------- */
-
-
 $sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $sans-serif-2: 'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $serif: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino' , serif;
-
 $base-font-family: $sans-serif;
 $header-font-family: $sans-serif-2;
 
+// Font Sizes
 $base-font-size: 16px;
-
 $h1-font-size: $base-font-size * 2.25;
 $h2-font-size: $base-font-size * 2;
 $h3-font-size: $base-font-size * 1.75;
@@ -134,7 +125,6 @@ $h3-font-line-height: 1.4em !default;
 $h3-font-margin-bottom: 0.5em !default;
 
 
-
  /* DIVIDERS AND LINES
  ----------------------------------------------------------------------------------
  - comments
@@ -148,54 +138,6 @@ $base-corner-radius: 4px !default;
 $base-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1) !default;
 
 
- /* FORMS
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$form-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1) !default;
-$form-box-shadow-focus: inset 0 0 5px rgba(0, 0, 0, 0.1) !default;
-$form-border-color: $base-border-color;
-$form-border-radius: $base-corner-radius;
-$form-border-color-hover: $primary-color;
-$form-border-color-focus: $primary-color;
-$input-text-bg-color: $white !default;
-$input-text-bg-color--hover: $white !default;
-$input-text-bg-color--focus: $white !default;
-$input-select-bg-color: linear-gradient(to bottom, $white, $subtle-gray) !default;
-$input-select-bg-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$input-select-bg-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$input-max-width: 500px;
-$input-height: 40px !default;
-$input-height-small: 32px !default;
-$textarea-default-height: 96px !default;
-
- /* TABLES
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$table-header-bg: $white !default;
-$table-row-padding: 0.1em 0.6em !default;
-$table-row-bg: $white !default;
-$table-row-bg--hover: $light-yellow !default;
-$table-link-color: $action-color !default;
-$table-link-color--hover: $action-color--hover !default;
-$tablesort--asc-img: '../../../../misc/icons/004875/twistie-up.svg';
-$tablesort--desc-img: '../../../../misc/icons/004875/twistie-down.svg';
-
-
- /* TABS
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$tabs-border: $base-border !default;
-$tabs-bg-color: $subtle-gray !default;
-$tabs-bg-color--hover: $light-gray !default;
-$tabs-bg-color--focus: $white !default;
-$tabs-color: $action-color !default;
-$tabs-color--hover: $action-color--hover !default;
-$tabs-padding-default: 16px 0 17px 40px !default;
-
-
 /* PANELS
 ----------------------------------------------------------------------------------
 - comments
@@ -204,15 +146,10 @@ $panel-border-color: $medium-gray !default;
 $panel-bg-color: $white !default;
 $panel-corner-radius: $base-corner-radius !default;
 $panel-padding: 0 !default;
-
-/* Panel Title */
 $panel-header-bg-color: $subtle-gray !default;
 $panel-header-padding: $half-spacing $base-spacing !default;
 $panel-header-font-size: 1em !default;
-
-/* Panel Content */
 $panel-content-padding: $half-spacing $base-spacing $base-spacing !default;
-
 
 
  /* BUTTONS
@@ -224,7 +161,6 @@ $button-padding-small: 4px 24px !default;
 $button-background-color: linear-gradient(to bottom, $white, $subtle-gray)  !default;
 $button-background-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
 $button-background-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
-// -webkit-linear-gradient(top, $subtle-gray, $white)
 $button-background-color--active: $light-gray !default;
 $button-border-color: $medium-gray !default;
 
