@@ -12,7 +12,7 @@
   <!-- Load Resources -->
   <link rel="icon" type="image/png" href="../img/brand/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Modernizr - Load after CSS -->
   <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -21,7 +21,7 @@
 <body class="page page--front">
 
   <header class="container intro">
-    <div class="row row--flex row-align--center row--justify fill-height">
+    <div class="row flex flex-align--center flex--justify fill-height">
       <!-- 1.0 - Intro Bio -->
       <div class="column half text--center">
         <h1 class="page__title">Kyle Langford</h1>
@@ -32,28 +32,18 @@
   </header>
 
   <section class="container size-to-window event--close-hint">
-    <div class="row row--flex row-align--center row--justify fill-height pad-default">
+    <div class="row flex flex-align--center flex--justify fill-height pad-default">
       <div class="column half animate fade-in">
 
-        <!-- 1.1 - Intro Description  -->
+        <!-- 1.1 - ntro Description  -->
         <h2 class="section__title">Welcome!</h2>
-
-        <!-- <h2 class="section__title">
-          <span>I am </span>
-          <span class="word wisteria">a&nbsp;problem&nbsp;solver</span>
-          <span class="word belize">process&nbsp;driven</span>
-          <span class="word pomegranate">a life long learner</span>
-          <span class="word pomegranate">a skier</span>
-          <span class="word pomegranate">a father</span>
-          <span class="word pomegranate">a Bruins fan</span>
-        </h2> -->
 
         <p class="text--large">This is my website it explains a bit of what I do and provides an outlet for professional networking, and personal projects. I work as a Senior Designer and Frontend Developer for a Boston based web agency. I have 10 years experience and have worked on 100s of projects over that time. I am passionate about helping people use technology through design and code. I have a positive attitude and enjoy working on all types of projects. </p>
 
       </div>
 
       <figure class="image">
-        <img src="../img/svg-2/graphic_design.svg" class="icon-image position-bottom-right">
+        <img src="assets/img/svg-2/graphic_design.svg" class="icon-image position-bottom-right">
       </figure>
 
     </div>
@@ -61,21 +51,21 @@
 
   <section class="container size-to-window relative">
     <!-- 2.0 - User Interface Design  -->
-    <header class="row row--inline row--grid pad-default">
-      <div class="column text--center">
+    <header class="row pad-default">
+      <div class="column">
         <div class="text--display"><strong>UI</strong></div>
         <p>Modern. Simple. Human.</p>
       </div>
     </header>
     <!-- 2.1 - Specialties -->
-    <div class="row row--flex row--grid pad-double">
+    <div class="row flex pad-double">
       <div class="column one-fourth animate fade-in">
         <p class="list-title">Specialties</p>
         <ul class="pretty">
+          <li>App Design</li>
           <li>CMS Theming</li>
-          <li><span class="icon-list gold-star icons-star"></span>Design Systems</li>
+          <li>Design Systems</li>
           <li>Email Design</li>
-          <li>Product Development</li>
           <li><span class="icon-list gold-star icons-star"></span>Responsive Web</li>
         </ul>
       </div>
@@ -83,7 +73,8 @@
       <div class="column one-fourth animate fade-in">
         <p class="list-title">Design Tools</p>
         <ul class="pretty">
-          <li><span class="icon-list gold-star icons-star"></span>Adobe CC</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
           <li>Balsamiq</li>
           <li><span class="icon-list gold-star icons-star"></span>Browser</li>
           <li>Invision</li>
@@ -94,10 +85,9 @@
       
       <div class="column one-fourth animate fade-in">
         <div class="card lgbg-1">
-          <p class="list-title">Spotlight</p>
+          <p class="list-title">Design Examples</p>
           <ul class="pretty">
-            <li><span class="icons-corner-down-right"></span><a href="">Princeton Alumni Mag.</a></li>
-            <li><span class="icons-corner-down-right"></span><a href="">Healthy Living Engine</a></li>
+            <li><span class="icons-corner-down-right"></span><a href="pages/case-study--paw.html">Princeton Alumni Mag.</a></li>
             <li><span class="icons-corner-down-right"></span><a href="">Elev8d Fitness Video Player</a></li>
           </ul>
         </div>
@@ -107,26 +97,27 @@
 
   <section class="container size-to-window relative">
     <!-- 3.0 - User Experience Design  -->
-    <header class="row row--inline row--grid pad-default">
-      <div class="column text--center">
+    <header class="row pad-default">
+      <div class="column">
         <div class="text--display"><strong class="chrome">UX</strong></div>
         <p>Plan. Implement. Iterate.</p>
       </div>
     </header>
 
-    <div class="special">
+    <!-- <div class="special"> -->
 
-    <div class="row row--flex row--grid pad-double">
+    <div class="row flex  pad-double">
       <div class="column one-fourth animate fade-in">
         <!-- 3.1 - Capabilities  -->
         <p class="list-title">Capabilities</p>
         <ul class="pretty">
-          <li>Accesibility</li>
-          <li>Analytics Reporting</li>
-          <li>Functional Testing</li>
-          <li>User Tracking</li>
-          <li>UX Audits</li>
-          <li>Visual Regression Testing</li>
+          <li>Accesibility (AA, AAA)</li>
+          <li><span class="icon-list gold-star icons-star"></span>Content Strategy</li>
+          <li>Site Audit</li>
+          <li>Tracking</li>
+          <li>User Research</li>
+          <li>Sitemaps</li>
+          <li>Wireframing</li>
         </ul>
       </div>
 
@@ -140,84 +131,85 @@
         </div>
       </div> -->
 
-       <div class="column one-fourth animate fade-in">
+      <div class="column one-fourth animate fade-in">
         <div class="card lgbg-2">
            <h2><a href="/pages/site-audit.html">Request a<br>Site Audit.</a></h2>
         </div>
       </div>
 
     </div>
-  </div>
+  <!-- </div> -->
   </section>
 
   <section class="container size-to-window relative">
     <!-- 4.0 - Frontend Development  -->
-    <header class="row row--inline row--grid pad-default">
-      <div class="column text--center">
+    <header class="row flex--inline  pad-default">
+      <div class="column">
         <div class="text--display"><strong>FE</strong></div>
         <p>Design systems, not pages.</p>
       </div>
     </header>
 
-    <div class="row row--flex row--grid pad-double">
+    <div class="row flex  pad-double">
       <!-- 4.1 - Technology -->
       <div class="column one-fourth animate fade-in">
-        <p class="list-title">Web Technologies</p>
+        <p class="list-title">Foundation</p>
         <ul class="pretty">
           <li><span class="icon-list gold-star icons-star"></span>HTML / CSS</li>
-          <li>Javascript (vanilla, jQuery)</li>
-          <li>Node.js</li>
-          <li>Angular</li>
-          <li>PHP</li>
-          <li>MySQL</li>
+          <li>Javascript ES5 / jQuery</li>
+          <li>SaSS / ScSS</li>
+          <li>PHP / MySQL</li>
+          <li>Local Development</li>
+          <li>Version Control (Git)</li>
         </ul>
       </div>
       <!-- 4.2 - Other -->
       <div class="column one-fourth animate fade-in">
         <p class="list-title">Capabilities</p>
         <ul class="pretty">
-          <li>Automation (Gulp)</li>
-          <li>Best Practices</li>
-          <li>LAMP / MAMP</li>
-          <li>Performance</li>
-          <li><span class="icon-list gold-star icons-star"></span>Solutions Planning</li>
-          <li>Version Control (Git)</li>
-          <!-- <li>Continuos Intergration (Circle Ci)</li> -->
+          <li>Rapid Prototyping</li>
+          <li>Data Visualization</li>
+          <li>Web Forms and Surveys</li>
+          <li>Speed and Performance</li>
+          <li>Solutions Planning</li>
+          <li><span class="icon-list gold-star icons-star"></span>Website Development</li>
         </ul>
       </div>
       <!-- 4.1 - Content Manament Systems -->
       <div class="column one-fourth animate fade-in">
-        <p class="list-title">CMS</p>
+        <p class="list-title">Technologies</p>
         <ul class="pretty">
-          <li>CMSB</li>
-          <li><span class="icon-list gold-star icons-star"></span>Drupal 7,8</li>
+          <li>Angular</li>
+          <li><span class="icon-list gold-star icons-star"></span>Drupal CMS</li>
+          <li>Twig / Handlebars.js</li>
+          <li>Node / Express</li>
+          <li>Gulp.js</li>
           <li>Shopify</li>
-          <li>Wordpress</li>
         </ul>
       </div>
-
-      <!-- <div class="column one-fourth animate fade-in">
-        <div class="card lgbg-1">
-          <p class="list-title">Case Studies</p>
-          <ul class="pretty">
-            <li><span class="icons-corner-down-right"></span><a href="">Theming a SaaS Multisite</a></li>
-            <li><span class="icons-corner-down-right"></span><a href="">Writing a CSS Framework</a></li>
-          </ul>
-        </div>
-      </div> -->
-
+      <!-- 4.1 - Content Manament Systems -->
+      <div class="column one-fourth animate fade-in">
+        <p class="list-title">Intergrations</p>
+        <ul class="pretty">
+          <li>Contentful</li>
+          <li>Google Analytics</li>
+          <li>Survey Monkey</li>
+          <li>Stripe</li>
+          <li>Mailchimp</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section class="container contact size-to-window relative row--flex">
+  <section class="container contact size-to-window relative">
     <!-- 5.0 - Contact Info -->
-    <header class="row row--inline row--grid pad-default">
-      <div class="column text--center">
+    <header class="row pad-default">
+      <div class="column">
         <h2 class="section__title">Contact</h2>
       </div>
     </header>
 
-    <div class="row row--flex row--grid pad-double">
+    <div class="row flex pad-double">
       <!-- 5.1 - Get in Touch -->
       <div class="column one-fourth animate fade-in">
         <p class="list-title">Get in Touch</p>
@@ -246,10 +238,9 @@
             <a href="/pages/bookmarks.html"><span class="icon-list icons-bookmark"></span>My Bookmarks</a></li>
           </ul>
       </div>
-
     </div>
 
-    <footer class="row row--float row--grid pad-double stick-bottom">
+    <footer class="row pad-double stick-bottom">
       <ul class="inline">
         <li class="list__item">
           <!-- 6.0 - Credits -->
@@ -264,7 +255,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> <!-- CDN -->
   <script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script> <!-- Fallback -->
-  <script src="js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,55 @@
+// Page
+$page-margin--desktop: 15vh;
+$page-margin--tablet: 10vh;
+$page-margin--mobile: 5vh;
+
+// Fixed Container
+.row {
+  margin-left: $page-margin--mobile;
+  margin-right: $page-margin--mobile; 
+
+  @include media($sm-breakpoint) {
+    margin-left: $page-margin--tablet;
+    margin-right: $page-margin--tablet;
+  }
+
+  @include media($md-breakpoint) {
+    margin-left: $page-margin--desktop;
+    margin-right: $page-margin--desktop;
+  }
+
+  &.row--collapse {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.row--grid {
+  @include containerize();
+}
+
+// Fluid Container
+.container {
+  overflow: hidden;
+  position: relative;
+
+  &.size-to-window  {
+
+    @include media($md-breakpoint) {
+      width: 100%;
+      height: 100vh;
+      max-height: 850px;
+    }    
+  }
+}
+
+// Layout Helpers
+.relative {
+  position: relative;
+}
+.clearfix {
+  @include clearfix;
+}
+.fill-height {
+  height: 100%;
+}

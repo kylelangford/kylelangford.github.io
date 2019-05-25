@@ -29,8 +29,9 @@ $concrete: #718078;
 $future-yellow: #fde803;
 $grease: #202020;
 $robo-sludge: #323e43;
-
 $shark-skin: #8aa8b8;
+
+$paw: #f37021;
 
 // Secondary Colors
 $light-yellow: #FFFBED !default;
@@ -136,38 +137,5 @@ $line-color: $medium-gray !default;
 $base-border: 1px solid $line-color !default;
 $base-corner-radius: 4px !default;
 $base-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1) !default;
-
-
-/* PANELS
-----------------------------------------------------------------------------------
-- comments
----------------------------------------------------------------------------------- */
-$panel-border-color: $medium-gray !default;
-$panel-bg-color: $white !default;
-$panel-corner-radius: $base-corner-radius !default;
-$panel-padding: 0 !default;
-$panel-header-bg-color: $subtle-gray !default;
-$panel-header-padding: $half-spacing $base-spacing !default;
-$panel-header-font-size: 1em !default;
-$panel-content-padding: $half-spacing $base-spacing $base-spacing !default;
-
-
- /* BUTTONS
- ----------------------------------------------------------------------------------
- - comments
- ---------------------------------------------------------------------------------- */
-$button-padding-default: 9px 24px 10px 24px !default;
-$button-padding-small: 4px 24px !default;
-$button-background-color: linear-gradient(to bottom, $white, $subtle-gray)  !default;
-$button-background-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$button-background-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$button-background-color--active: $light-gray !default;
-$button-border-color: $medium-gray !default;
-
-// Primary Buttons
-$button-primary-background-color: $action-color !default;
-$button-primary-background-color--hover: $action-color--hover !default;
-$button-primary-background-color--focus: $action-color--focus !default;
-$button-primary-background-color--active: $action-color--active !default;
 
 

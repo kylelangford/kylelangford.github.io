@@ -8,6 +8,10 @@
     background-color: #34427b;
     color: white;
   }
+  &.paw {
+    background-color: $paw;
+    color: white;
+  }
   &.bookmarks {
     height: 90vh;
     // min-height: 550px;
@@ -44,6 +48,13 @@
   &.text--display {
     color: $base-font-color;
   }
+}
+
+.text--display {
+  font-family: $sans-serif-2;
+  font-size: em(88);
+  color: #e33c42;
+  line-height: 1.2;
 }
 
 .list-title {
@@ -193,4 +204,9 @@ ul.bookmarks {
 
 .blue-drupal {
   color: #0678BE;
+}
+
+
+.text--center {
+  text-align: center;
 }

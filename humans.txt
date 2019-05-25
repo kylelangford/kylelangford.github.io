@@ -1,0 +1,28 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# AUTHOR
+  Kyle Langford
+
+
+#Hood
+Human oriented objective design
+
+Human Oriented
+* UI/UX
+* Accessible
+* Mobile First Mentality
+
+Objective Design/Development
+* Content First
+* Responsive / Adaptive Systems
+* Modular Designs / Patterns / "atomic design"
+* DRY CSS - leverage Mixin Libraries
+* HTML5 / Semantics Matters
+* Automated (build processes)
+* Human Readable Code
+
+
+# TECHNOLOGY COLOPHON
+  HTML5, CSS3
+  jQuery, Modernizr

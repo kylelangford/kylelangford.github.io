@@ -1,19 +1,10 @@
 // Spacing
-//
-// Your standard button suitable for clicking.
-//
-// Markup: spacing/spacing.twig
-//
-// Style guide: Primer.Spacing
 
-$double-spacing: $base-spacing * 2;
-$base-spacing: $base-spacing;
-$half-spacing: $base-spacing / 2;
-$quarter-spacing: $base-spacing / 4;
-
-* {
-  box-sizing: border-box;
-}
+$base: 8px;
+$base-spacing: $base * 2;
+$half-spacing: $base;
+$quarter-spacing: $base / 2;
+$double-spacing: $base * 4;
 
 /*
 This .scss loop will create "margin helpers" and "padding helpers" for use in your web projects.
@@ -67,6 +58,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 .pad-default {
   padding: grid(7) 0;
+
+  @include media($md-breakpoint) {
+    // padding: grid(2) 0;
+  }
 }
 
 .pad-double {
