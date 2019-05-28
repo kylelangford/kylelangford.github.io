@@ -3,8 +3,8 @@
 * than a mobile device: tablet, laptop, desktop, etc. 
 */
 
-$gutter--desktop: $base-spacing;
-$gutter--mobile: $base-spacing;
+$gutter--desktop: 20px;
+$gutter--mobile: 20px;
 $half: calc(100% / 2);
 
 .column {

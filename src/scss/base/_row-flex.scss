@@ -12,6 +12,7 @@
   @include media($md-breakpoint) {
     display: flex;
     flex-flow: row nowrap;
+    
     .column {
       flex: 0 auto;
     }

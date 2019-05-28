@@ -24,7 +24,7 @@ h5,
 h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
-  margin: 0;
+  margin: 0 0 24px 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
@@ -88,6 +88,19 @@ picture {
   height: auto;
   margin: 0;
   max-width: 100%;
+}
+
+figure {
+  margin: 36px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+figcaption {
+  font-size: 16px;
+  margin: 8px 0;
 }
 
 address {
@@ -193,7 +206,7 @@ details summary:focus {
 
 ul,
 ol {
-  margin: 0;
+  margin: 0 0 $base-spacing 0;
   padding: 0;
   list-style-type: none;
 }

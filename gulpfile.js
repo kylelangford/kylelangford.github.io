@@ -17,20 +17,12 @@ var cssOutPutStyle = 'expanded';
 gulp.task('css', 
   gulp.series(css));
 
-gulp.task('clean', 
-  gulp.series(clean));
-
 gulp.task('build', 
-  gulp.series(images, icons, css, js));
+  gulp.series(css, js));
 
 gulp.task('default',
   gulp.series('build', server, watch));
 
-
-// Delete the "dist" folder
-function clean(done) {
-  rimraf('dist', done);
-}
 
 // Compile Scss into CSS
 function css() {
@@ -75,36 +67,6 @@ function js() {
     }));
 }
 
-// // Copy Misc Files
-// function files() {
-//   return gulp.src([
-//     './src/*.html',
-//     './src/sys-files/*',
-//     ])
-//   .pipe(gulp.dest('assets/'));
-// }
-
-// // Copy Pages
-// function pages() {
-//   return gulp.src([
-//     './src/pages/*.html'
-//     ])
-//   .pipe(gulp.dest('assets/pages/'));
-// }
-
-// Copy Images
-function images() {
-  return gulp.src('./src/img/**/*')
-  .pipe(gulp.dest('assets/img/'));
-}
-
-// Copy Fonts
-function icons() {
-  return gulp.src('./src/fonts/**/fonts/*')
-  .pipe(gulp.dest('assets/fonts/'));
-}
-
-
 /**
  * Start a server with LiveReload to preview the site in
  */
@@ -125,7 +87,5 @@ function watch() {
   gulp.watch(['./src/js/**/*.js']).on('change', gulp.series( js, modernizr, browser.reload));
   gulp.watch(['./pages/*.html']).on('change', gulp.series(browser.reload));
   gulp.watch(['./*.html']).on('change', gulp.series(browser.reload));
-  // gulp.watch(['./src/sys-files/*']).on('change', gulp.series( files, browser.reload));
-  gulp.watch(['./src/images/**/*']).on('change', gulp.series( images, browser.reload));
 }
 

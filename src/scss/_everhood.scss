@@ -4,14 +4,24 @@
 
   &.intro {
     height: 90vh;
-    // min-height: 550px;
     background-color: #34427b;
     color: white;
   }
+
   &.paw {
-    background-color: $paw;
-    color: white;
+    height: 90vh;
+    background-color: $white;
+    color: $paw;
+
+    .page__title {
+      color: $paw;
+    }
+
+    .button--previous {
+      color: $paw;
+    }
   }
+
   &.bookmarks {
     height: 90vh;
     // min-height: 550px;
@@ -58,6 +68,7 @@
 }
 
 .list-title {
+  color: $charcoal;
   font-size: 80%;
   text-transform: uppercase;
   font-weight: bold;
@@ -206,7 +217,33 @@ ul.bookmarks {
   color: #0678BE;
 }
 
-
 .text--center {
   text-align: center;
+}
+
+.content {
+  font-size: 16px;
+  width: 100%;
+
+  @include media($md-breakpoint) {
+    font-size: 18px;
+    max-width: 756px;
+  }
+}
+
+.paper {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+    /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+  /* Padding for demo purposes */
+  padding: 30px;
 }
