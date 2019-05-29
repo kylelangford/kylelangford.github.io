@@ -4,8 +4,7 @@
  * http://everhood.co
  * Copyright 2018 Kyle Langford */
 
-/* hood */
-@import "../fonts/feather-icons/style";
+@import "../../assets/fonts/feather-icons/style";
 
 /* Mixins */
 @import "mixins/bem";
@@ -38,6 +37,8 @@
 @import "components/animations/fade-in";
 @import "components/animations/bounce";
 @import "components/animations/hint";
+@import "components/slick/slick";
+@import "components/slick/slick-theme";
 
 /* custom */
 @import "everhood";

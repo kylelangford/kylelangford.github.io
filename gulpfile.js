@@ -51,6 +51,7 @@ function js() {
   }
 
   return gulp.src([
+      './src/js/vendor/slick.js',
       './src/js/vendor/wow.js',
       './src/js/*.js' 
     ])

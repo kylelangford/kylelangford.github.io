@@ -121,24 +121,24 @@
 }
 
 .card {
-  padding: $base-spacing;
-  border-radius: 4px;
+  // padding: $base-spacing;
+  // border-radius: 4px;
   height: 100%;
-  color: white;
-  // border-width: 16px;
-  // border-bottom-color: #3333;
-  // border-right-color: #3333;
-  // border-bottom-right-radius: 0;
-  // border-bottom-left-radius: 0;
-  // border-top-right-radius: 0;
-  // border-style: solid;
-  // border-top: none;
-  // // box-shadow: 2px 2px 6px;
-  // border-left: none;
+  // color: white;
+  border-width: 16px;
+  border-bottom-color: #3333;
+  border-right-color: #3333;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-style: solid;
+  border-top: none;
+  // box-shadow: 2px 2px 6px;
+  border-left: none;
 
-  // &:hover {
-  //   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-  // }
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  }
 
   &:after {
     content: '';
@@ -147,21 +147,8 @@
   }
 
   a {
-    color: white;
+    // color: white;
   }
-
-  
-  // &.lgbg-1 {
-  //   a {
-  //     // color: #2336B6;
-  //   }
-  // }
-
-  // &.lgbg-2 {
-  //   a {
-  //     color: #50e3c2;
-  //   }
-  // }
 }
 
 .lgbg-1 {
@@ -175,10 +162,10 @@
 }
 
 ul.bookmarks {
-  margin-bottom: $base-spacing;
+  margin-bottom: $base-spacing * 2;
 
   li {
-    margin-bottom: $half-spacing / 2;
+    margin-bottom: $half-spacing;
   }
 }
 
@@ -231,7 +218,16 @@ ul.bookmarks {
   }
 }
 
-.paper {
+.specimen {
+  margin-bottom: g(6);
+}
+
+.caption {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.stack {
   background: #fff;
   box-shadow:
     /* The top layer shadow */
@@ -244,6 +240,13 @@ ul.bookmarks {
     0 20px 0 -10px #eee,
     /* The third layer shadow */
     0 20px 1px -9px rgba(0,0,0,0.15);
-  /* Padding for demo purposes */
-  padding: 30px;
+  padding: g(2);
+  margin-bottom: g(6);
+
+}
+
+.paper {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);  
+  padding: 8px;  
 }
