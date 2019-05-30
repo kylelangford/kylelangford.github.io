@@ -3,15 +3,49 @@
   @include zebra(); 
 
   &.intro {
-    height: 90vh;
     background-color: #34427b;
     color: white;
+    height: 90vh;
+  }
+
+  &.portfolio {
+    background-color: $scrap-green;
+    color: white;
+    height: 90vh;
+    
+    .page__title {
+      color: $future-yellow;
+    }
+  }
+
+  &.brm {
+    background-color: #1d4d9c;
+    color: $white;
+    height: 90vh;
+    
+    .page__title {
+      color: $white;
+    }
+  }
+
+  &.cpl {
+    background-color: $white;
+    color: #c21f2f;
+    height: 90vh;
+
+    .page__title {
+      color: #c21f2f;
+    }
+
+    .button--previous {
+      color: $text-color;
+    }
   }
 
   &.paw {
-    height: 90vh;
     background-color: $white;
     color: $paw;
+    height: 90vh;
 
     .page__title {
       color: $paw;
@@ -23,10 +57,9 @@
   }
 
   &.bookmarks {
-    height: 90vh;
-    // min-height: 550px;
     background-color: $red-eye;
     color: white;
+    height: 90vh;
 
     .page__title {
       color: $future-yellow;
@@ -45,6 +78,7 @@
   font-size: 58px;
   color: #50e3c2;
   margin-bottom: 8px;
+  letter-spacing: .025em;
 }
 
 .page__sub-title {
@@ -151,21 +185,15 @@
   }
 }
 
-.lgbg-1 {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(49,207,69,0.5)), to(#50e3c2));
-  background: linear-gradient(to right, rgba(49,207,69,0.5), #50e3c2);
-}
-
-.lgbg-2 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#4d3b7e), to(#273269));
-  background-image: linear-gradient(90deg, #4d3b7e 0%, #273269 100%);
-}
-
 ul.bookmarks {
   margin-bottom: $base-spacing * 2;
 
   li {
     margin-bottom: $half-spacing;
+
+    a {
+      color: $robot-salmon;
+    }
   }
 }
 
@@ -241,8 +269,6 @@ ul.bookmarks {
     /* The third layer shadow */
     0 20px 1px -9px rgba(0,0,0,0.15);
   padding: g(2);
-  margin-bottom: g(6);
-
 }
 
 .paper {
