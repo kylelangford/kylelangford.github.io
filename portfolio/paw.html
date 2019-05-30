@@ -154,7 +154,7 @@
 
           <p>Prototyping also allowed us to iterate more on our FE code.</p>
 
-          <a href="/demo/paw.wires.edu/index.html" class="button">Prototype</a>
+          <a href="/demo/paw.wires/index.html" class="button">Prototype</a>
 
           <p>Design</p>
 
@@ -171,6 +171,65 @@
           </div>
 
           <a href="https://paw.princeton.edu">Live Site</a>
+
+
+          <code><pre>
+            <body class="front">
+              <header class="header-region"></header>
+              <section class="wrap">
+                <div class="content-top"></div>
+                <div class="main">
+                  <div class="inner">
+                    <div class="content-body"></div>
+                  </div>
+                </div>
+                <aside class="content-bottom"></aside>
+                <aside class="sidebar">
+                  <div class="sidebar-inner"></div>
+                </aside>
+              </section>
+
+              <footer class="footer-region"></footer>
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+              <script src="dist/js/scripts.min.js"></script>
+              <script>
+              $(function(){
+                // Header
+                $('<div class="header"></div>').appendTo('.header-region').load("inc/header.html");
+
+                // Content Top
+                $('<div class="block"></div>').appendTo('.content-top').load("inc/marquee--three.html");
+
+                // Body
+                $('<section class="block"></section>').appendTo('.content-body').load("inc/section-list--news-and-features.html");
+                $('<section class="block"></section>').appendTo('.content-body').load("inc/section-list--princetonians.html");
+                $('<section class="block"></section>').appendTo('.content-body').load("inc/section-list--memorials.html");
+                $('<section class="block"></section>').appendTo('.content-body').load("inc/section-list--inbox.html");
+                $('<section class="block"></section>').appendTo('.content-body').load("inc/section-list--books-featured.html");
+
+                // Content Bottom
+                $('<div class="block"></div>').appendTo('.content-bottom').load("inc/content-bottom--web-exclusives.html");
+                $('<div class="block"></div>').appendTo('.content-bottom').load("inc/content-bottom--classifieds.html");
+
+                // Sidebar
+                $('<div class="container"></div>').appendTo('.sidebar-inner').load("inc/sidebar--image.html");
+                $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--tiger-of-the-week.html");
+                $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--most-commented.html");
+                $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--latest-news.html");
+                $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--classified-ad.html");
+
+                // Footer
+                $('<div class="block"></div>').appendTo('.footer-region').load("inc/footer--image.html");
+                $('<div class="wrap"></div>').appendTo('.footer-region').load("inc/footer--subscription-block.html");
+                $('<footer class="footer"></footer>').appendTo('.footer-region').load("inc/footer.html");
+                $('<div class="block"></div>').appendTo('.footer-region').load("inc/footer--credits.html");
+              });
+              </script>
+
+            </body>
+
+          </pre></code>
 
           <p>Work done at brunello</p>
 
