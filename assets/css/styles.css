@@ -2825,6 +2825,10 @@ ul.bookmarks li a {
   padding-right: 4px;
 }
 
+.button-group {
+  margin-bottom: 48px;
+}
+
 .contact a {
   color: #e33c42;
 }

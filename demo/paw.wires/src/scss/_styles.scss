@@ -251,6 +251,7 @@ hr {
 // Navigation
 .navigation {
   @include span-columns(8);
+  padding-top: $half-space;
   padding-left: $half-space;
   margin-right:0;
 

@@ -664,6 +664,7 @@ h2 .trail::before {
   display: block;
   margin-right: 2.3576515979%;
   width: 65.8807828007%;
+  padding-top: 12px;
   padding-left: 12px;
   margin-right: 0;
   font-family: 'Archivo Narrow', sans-serif;
