@@ -1,0 +1,29 @@
+@import "../neat/neat-helpers";
+
+// Neat Overrides
+/* $column: 90px;
+$gutter: 24px;
+$grid-columns: 12;
+ */
+$max-width: em(1120);
+
+// Neat Breakpoints
+/* $medium-screen: em(640);
+$large-screen: em(860);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8); */
+
+$phone:540px;
+$ipad:767px;
+$tablet: 900px; //994 is when sidebar goes below 300
+$tablet-plus:1024px;
+$desktop: 1100px;
+
+// Vert Spacing
+$quarter-space: 6px;
+$half-space: $quarter-space * 2;
+$full-space: $quarter-space * 4;
+$double-space: $full-space * 2;
+
+//Item Padding
+$item-padding: 1%;

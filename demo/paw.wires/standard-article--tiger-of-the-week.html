@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Tiger of the Week</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:700|Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/styles.css">
+  <script src="dist/js/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+
+  <header class="header-region"></header>
+
+  <article class="wrap">
+
+    <header class="section-identifier">
+      <div class="inner">
+        <h1>
+          <span class="section-title">Tiger of The Week</span>
+          Donec id elit non mi porta gravida at eget metus.
+        </h1>
+      </div>
+    </header>
+
+    <div class="content-top"></div>
+
+    <div class="main">
+      <div class="inner">
+        <div class="content-body"></div>
+      </div>
+    </div>
+
+    <aside class="content-bottom"></aside>
+
+    <aside class="sidebar">
+      <div class="sidebar-inner"></div>
+    </aside>
+
+  </article>
+
+  <footer class="footer-region"></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="dist/js/scripts.min.js"></script>
+  <script>
+  $(function(){
+    // Header
+    $('<header class="header"></header>').appendTo('.header-region').load("inc/header.html");
+
+    // Content Top
+    $('<footer class="block collapse"></footer>').appendTo('.content-top').load("inc/article--top-default.html");
+
+    // Body
+    $('<div class="block"></div>').appendTo('.content-body').load("inc/article--body-default-short-no-submit.html");
+
+    // Content Bottom
+    $('<div class="block"></div>').appendTo('.content-bottom').load("inc/article-bottom--comments.html");
+    $('<div class="block"></div>').appendTo('.content-bottom').load("inc/content-bottom--past-tiger-of-the-week.html");
+    $('<div class="block"></div>').appendTo('.content-bottom').load("inc/content-bottom--more-princetonians.html");
+    $('<div class="block"></div>').appendTo('.content-bottom').load("inc/content-bottom--web-exclusives.html");
+
+    // Sidebar
+    $('<div class="ad-block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--image.html");
+    $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--alumni-around-the-web.html");
+    $('<div class="block"></div>').appendTo('.sidebar-inner').load("inc/sidebar--nominate-tiger-of-week.html");
+
+    // Footer
+    $('<div class="block"></div>').appendTo('.footer-region').load("inc/footer--image.html");
+    $('<div class="wrap"></div>').appendTo('.footer-region').load("inc/footer--subscription-block.html");
+    $('<footer class="footer"></footer>').appendTo('.footer-region').load("inc/footer.html");
+    $('<div class="block"></div>').appendTo('.footer-region').load("inc/footer--credits.html");
+  });
+  </script>
+
+</body>
+</html>
