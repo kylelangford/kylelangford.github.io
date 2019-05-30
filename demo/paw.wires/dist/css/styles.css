@@ -593,7 +593,7 @@ hr {
   .ad:last-child {
     margin-right: 0; }
 
-/* .trail {
+ .trail {
   &::before {
     content: ' ';
     height: 8px;
@@ -610,7 +610,7 @@ hr {
       top: -7px;
     }
   }
-} */
+} 
 .section-identifier {
   margin-bottom: 24px; }
   .section-identifier.collapse {
