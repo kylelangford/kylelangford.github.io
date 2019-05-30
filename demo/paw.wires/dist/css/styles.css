@@ -592,24 +592,19 @@ hr {
   margin-left: 8.5298042998%; }
   .ad:last-child {
     margin-right: 0; }
-
- .trail {
-  &::before {
-    content: ' ';
-    height: 8px;
-    width: 8px;
-    position: relative;
-    border-radius: 50%;
-    margin-right: 4px;
-    background: #FF6F55;
-    display: inline-block;
-    top: -2px;
-  }
-  h2 & {
-    &::before {
-      top: -7px;
-    }
-  }
+.trail::before {
+  content: ' ';
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  margin-right: 4px;
+  background: #FF6F55;
+  display: inline-block;
+  top: -2px;
+}
+h2 .trail::before {
+  top: -7px;
 } 
 .section-identifier {
   margin-bottom: 24px; }
