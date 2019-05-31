@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: column nowrap;
 
-  @include media($sm-breakpoint) {
+  @include media($md-breakpoint) {
     .column {
       flex: 1 auto;
     }

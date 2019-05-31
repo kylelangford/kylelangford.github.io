@@ -2,26 +2,28 @@
 .container {
   @include zebra(); 
 
+  $height: 85vh;
+
   &.intro {
     background-color: #34427b;
     color: white;
-    height: 90vh;
+    height: $height;
   }
 
   &.portfolio {
     background-color: $scrap-green;
     color: white;
-    height: 90vh;
+    height: $height;
     
     .page__title {
-      color: $future-yellow;
+      color: $robo-sludge;
     }
   }
 
   &.brm {
     background-color: #1d4d9c;
     color: $white;
-    height: 90vh;
+    height: $height;
     
     .page__title {
       color: $white;
@@ -31,7 +33,7 @@
   &.mena {
     background-color: #7d4c92;
     color: $white;
-    height: 90vh;
+    height: $height;
     
     .page__title {
       color: $white;
@@ -41,7 +43,7 @@
   &.cpl {
     background-color: $white;
     color: #c21f2f;
-    height: 90vh;
+    height: $height;
 
     .page__title {
       color: #c21f2f;
@@ -54,7 +56,7 @@
 
   &.paw {
     background-color: $white;
-    height: 90vh;
+    height: $height;
 
     .page__title {
       color: $paw;
@@ -69,10 +71,22 @@
     }
   }
 
+  &.elev8d {
+    background-color: #F1BF9C;
+
+    .page__title {
+      color: #125687;
+    }
+
+    .button--previous {
+      color: #125687;
+    }
+  }
+
   &.bookmarks {
     background-color: $red-eye;
     color: white;
-    height: 90vh;
+    height: $height;
 
     .page__title {
       color: $future-yellow;
@@ -100,7 +114,7 @@
 
 .section__title {
   font-size: em(40);
-  margin-bottom: $half-spacing;
+  margin-bottom: g(3);
 
   &.text--display {
     color: $base-font-color;
@@ -112,6 +126,10 @@
   font-size: em(88);
   color: #e33c42;
   line-height: 1.2;
+
+  strong {
+    margin-left: -6px;
+  }
 }
 
 .list-title {
@@ -211,6 +229,10 @@ ul.bookmarks {
 
     a {
       color: $robot-salmon;
+
+      &:hover {
+        color: darken($robot-salmon, 15%);
+      }
     }
   }
 }
@@ -218,6 +240,10 @@ ul.bookmarks {
 ul.portfolio {
   a {
     color: $scrap-green;
+    
+    &:hover {
+      color: darken($scrap-green, 15%);
+    }
   }
 }
 
@@ -238,6 +264,10 @@ ul.portfolio {
 .contact {
   a {
     color: #e33c42;
+
+    &:hover {
+      color: darken(#e33c42, 15%);
+    }    
   }
 }
 
@@ -302,4 +332,8 @@ ul.portfolio {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.15);  
   padding: 8px;  
+}
+
+.video-player {
+  margin-bottom: g(6);
 }

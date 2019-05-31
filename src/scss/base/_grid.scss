@@ -11,7 +11,7 @@ $half: calc(100% / 2);
   margin-bottom: grid(4);
 }
 
-@media only screen and (min-width: 800px) {
+@include media($md-breakpoint) {
   
   .column {
     padding-right: $gutter--desktop;
@@ -47,7 +47,7 @@ $half: calc(100% / 2);
   }
 }
 
-@media only screen and (min-width: 800px) {
+@include media($md-breakpoint) {
   
   .grid {
     padding-right: $gutter--desktop;
