@@ -34,7 +34,7 @@
 
       <div class="column half text--center">
         <h1 class="page__title">PAW</h1>
-        <p class="description">Site Redesign</p>
+        <p class="description">Site Design and Build</p>
       </div>
 
     </div>
@@ -44,15 +44,9 @@
     <div class="row flex flex--justify pad-default">
       <div class="column two-thirds">
         <article class="content">
-          <h4>Pellentesque Vehicula Ultricies</h4>
+          <h4>Content is King</h4>
 
-          <p>After successful redesigns of bycycling.com and guidepost.org I was excited for our next project but realized that our process at this point was unsustainable.</p>
-
-          <p>Around 2012 the web world changed with real support for css media queries. This sent a ripple through the industry that would change how we work moving forward. We had been making incremental improvements to our process over this time. We started to intergrate RWD ideas around a similar time but it took until 2014 for our processes to really embrace this change. Many companies struggled to adjust and many were looking for guidance. As the rest of us waited for the technologicaal floor to meet our feet. A result of producing phone, tablet, desktop comps for all pages through multiple versions was part of the growing pains. This reached an apex with guideposts when at one time we had ~90 working wireframe documents.</p>
-
-          <p>I knew moving forward that code was our answer. My proposal was to only produce 5 wireframe pages at phone/tablet/desktop. The rest of the site would be designed using a component library derived from those 5 pages. Ultimately a full working version of their site would be produced in code at a wireframe fidelity. The client would see full working version before we even technically entered the design phase (The overall process was still waterfall). This would be a huge departure from what we had done in the past. Luckily the group at PAW was supportive and interested in new ways of working.</p>
-
-          <p>My accomplishments for this project include crafting a viable process from content > design > development that I was apart of for the entirety of the project. Designing reusable components and list styles that would be used to complete any number of pages. All of this was done from a mobile first perspective in design and in code. I was ultimately responsible for creating the sitemap, mobile priority, wireframes, and working prototype. I also produced all the frontend production code, much of which was recycled from the prototype. I still hold to this day this is the best redesign Brunello haas done.</p>
+          <p>My accomplishments for this project include crafting a process from design to development. I designed reusable components and list styles that were used to layout all the pages of the site. I was ultimately responsible for creating the sitemap, mobile-priority, wireframes, and working prototype. I also produced all the front-end production code, much of which was recycled from the prototype.</p>
 
           <div class="specimen">
             <img src="../assets/img/projects/paw/way-back.jpg"
@@ -60,131 +54,129 @@
             <div class="caption">Princeton Alumni Website, prior to redesign.</div>
           </div>
 
-          <p>The website was dense and packed with content. We wanted to add more of the magazines editorial look and feel to the online experience. While making the site responsive and mobile first site.</p>
+          <p>The current website was fixed width, dense, and packed with content. We wanted to add more of the magazines editorial look and feel to the online experience. It was also important to make the site responsive and mobile-first.</p>
 
           <div class="specimen text--center">
             <img src="../assets/img/projects/paw/mag-cover.png"
-                 alt="Elephant at sunset" style="max-width: 50%;">
+                 alt="Elephant at sunset" class="paper" style="max-width: 50%;">
             <div class="caption">Issue #</div>
           </div>
 
-          <p>Competitor Research</p>
+          <p>Visual Research</p>
 
           <div class="specimen">
             <img src="../assets/img/projects/paw/style-tile-1.png"
-                 alt="Elephant at sunset">
-            <div class="caption">Competitor Style Collage #1.</div>
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">Inspiration Style Collage #1.</div>
           </div>
 
           <div class="specimen">
             <img src="../assets/img/projects/paw/style-tile-2.png"
-                 alt="Elephant at sunset">
-            <div class="caption">Competitor Style Collage #2.</div>
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">Inspiration Style Collage #2.</div>
           </div>
 
-          <p>We started by doing a content invetory of the previous site. This was converted into a mobile priority document and sitemap. </p>
+          <p>We started by breaking down the current site content. We wanted to simplify the site navigation as much as possible while still making content easy to find.</p>
 
           <div class="specimen">
             <img src="../assets/img/projects/paw/sitemap_v1.jpg"
-                 alt="Elephant at sunset">
+                 alt="Elephant at sunset" class="paper">
             <div class="caption">Near Final Sitemap.</div>
           </div>
 
-          <p>Content Inventory</p>
+          <p>Around 2012 the industry changed with real support for css media queries. We had been making incremental improvements to our process since then. We started to intergrate RWD ideas and DRY concepts around a similar time but it took until 2015 for our processes to really embrace this change as well.</p>
+
           <div class="specimen">
             <div class="stack">
               <img src="../assets/img/projects/paw/cpw-01.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-04.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-05.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-06.jpg"
-                   alt="Elephant at sunset">                
+                 alt="Elephant at sunset">
             </div>
-            <div class="caption">We wanted to keep the homepage fresh.</div>
+            <div class="caption">I created this Content Inventory &mdash; to show at a block level the heirarchy of information for the page. We created a list of all possible blocks and used that to scaffold out all the page types. Types were assigned to blocks of similar functionality to display placements. </div>
           </div>
 
-          <p>Dynamic Grids</p>
+          <p>Modular Design was important to the layout of this site. I wanted to create something predictable and easy to read. It was important to our development process that the site was component based. Building in this way allowed for greater efficiency and added to the maintainability of the code.</p>
+
+          <p>Article List Arrangements</p>
           <div class="specimen">
-            <img src="../assets/img/projects/paw/list-blocks.jpg"
-                 alt="Elephant at sunset">
             <img src="../assets/img/projects/paw/list-blocks-mobile.jpg"
-                 alt="Elephant at sunset">                         
-            <div class="caption">We wanted to keep the homepage fresh.</div>
+                 alt="Elephant at sunset" class="paper">
+            <img src="../assets/img/projects/paw/list-blocks.jpg"
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">I wanted to allow flexibility in the feature list sections. No matter the number of articles the presentation would always be desirable.</div>
           </div>
 
-          <!-- <div class="specimen">
+          <div class="specimen">
+            <img src="../assets/img/projects/paw/content-grid.png"
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">Design produced by Jay Fournier.</div>
+          </div>
+
+          <p>There were approx. 30 components on the site, only about a third of those were accounted for in the initial wireframing process. The rest I derived from common list style layouts I had created previously.</p>
+
+          <div class="specimen text--center">
             <img src="../assets/img/projects/paw/list-blocks-sidebar-mobile.jpg"
-                 alt="Elephant at sunset">
+                 alt="Elephant at sunset" class="paper">
             <img src="../assets/img/projects/paw/list-blocks-sidebar.jpg"
-                 alt="Elephant at sunset">
-            <div class="caption">Sidebar Component, showing mobile vs Desktop.</div>
-          </div> -->
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">Sidebar component, showing Desktop vs Mobile versions.</div>
+          </div>
+
+          <p>Producing phone, tablet, and desktop compositions for all pages was time consuming. We had to create a reusable processes.</p>
 
           <p>Wireframes</p>
           <div class="specimen">
             <div class="stack">
               <img src="../assets/img/projects/paw/cpw-10.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-11.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-12.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-13.jpg"
-                   alt="Elephant at sunset">
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-14.jpg"
-                   alt="Elephant at sunset"> 
+                 alt="Elephant at sunset">
               <img src="../assets/img/projects/paw/cpw-15.jpg"
-                   alt="Elephant at sunset">                       
+                 alt="Elephant at sunset">
             </div>
             <div class="caption"></div>
           </div>
 
-          <p>Wireframe Sample</p>
+          <p>Article Page</p>
           <div class="specimen">
             <img src="../assets/img/projects/paw/wireframe-rwd-article-page.jpg"
-                 alt="Elephant at sunset">                 
-            <div class="caption">Full Fidelity Article Wireframe, one of the few that was produced.</div>
+                 alt="Elephant at sunset" class="paper">
+            <div class="caption">Full Fidelity Wireframe - Kyle Langford</div>
           </div>
 
-          <!-- <div class="specimen">
-            <img src="../assets/img/projects/paw/article.png"
-                 alt="Elephant at sunset">
-            <div class="caption">Final Comp produced by Jay Fournier.</div>
-          </div> -->
+          <p>My proposal was to only produce 5 wireframe pages at phone/tablet/desktop. The rest of the site would be designed using a component library derived from those 5 pages. The goal was to make a fully working version of the site in html/css/js at a wireframe fidelity and show it to the client. Changes would be incorporated directly into the prototype. This would be a huge departure from what we had done in the past. Luckily the group at PAW was supportive and interested in new ways of working.</p>
 
-          <p>Prototyping also allowed us to iterate more on our FE code. 41 pages, ~30 components with 111 variations in content. So not only did we mkae this more managable but ultimately we were able to show more pages then we did with guideposts, in less time. Win. 2000 lines of CSS.</p>
+          <p>I devised a simple template system that I used to create the prototype. 41 templates made with approx 30 components with about 111 variations in content were produced. This made the process extremely managable and about 2000 lines of CSS were reused to start the production build. We were able to show more pages at more screen sizes than we did prevously. </p>
 
           <pre><code>
-          $(function(){
-            $('<div class="header"></div>').appendTo('.header-region').load("inc/header.html");
-          });
+$(elem).appendTo('.header-region').load("inc/header.html");
           </code></pre>
 
-          <div class="text--center button-group">
-            <a href="/demo/paw.wires/index.html" class="button">Prototype</a>          
-          </div>
-
-          <p>Design</p>
-
-          <div class="specimen">
-            <img src="../assets/img/projects/paw/content-grid.png"
-                 alt="Elephant at sunset">
-            <div class="caption">Dynamic Grid.</div>
-          </div>
+          <p>The final designs were produced by Jay Fournier and the site was built in Drupal 7 by Mike Calebrese. I did the front-end development. Below is a working version of that prototype, follow the orange dots.</p>
 
           <div class="text--center button-group">
+            <a href="/demo/paw.wires/index.html" class="button button--primary">Prototype</a>          
             <a href="https://paw.princeton.edu" class="button">Live Site</a>
           </div>
 
           <div class="credits">
             <p class="attribution">Work done at Brunello, Inc.</p>
             <ul class="team-list">
-              <li>Nicole Baltzer: PM</li>
               <li>Jason Fournier: Designer</li>
               <li>Kyle Langford: Designer, Front-End Developer</li>
               <li>Mike Calebrese: Drupal Developer</li>
+              <li>Nicole Baltzer: PM</li>
             </ul>
             <p class="last-edit">Last Edit: 5.30.19</p>
           </div>
