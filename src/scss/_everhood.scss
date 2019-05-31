@@ -5,19 +5,28 @@
   $height: 85vh;
 
   &.intro {
-    background-color: #34427b;
-    color: white;
+    background-color: $twilight;
+    color: $white;
     height: $height;
+
+    .page__title {
+      color: $cyber-green;
+    }
+
   }
 
   &.portfolio {
     background-color: $scrap-green;
-    color: white;
+    color: $cyber-green;
     height: $height;
     
     .page__title {
-      color: $robo-sludge;
+      color: $cyber-green;
     }
+    .button--previous {
+      color: $cyber-green;
+    }
+
   }
 
   &.brm {
@@ -73,6 +82,7 @@
 
   &.elev8d {
     background-color: #F1BF9C;
+    height: $height;
 
     .page__title {
       color: #125687;
@@ -105,7 +115,7 @@
   font-size: 58px;
   color: #50e3c2;
   margin-bottom: 8px;
-  letter-spacing: .025em;
+  letter-spacing: .05rem;
 }
 
 .page__sub-title {
@@ -115,6 +125,7 @@
 .section__title {
   font-size: em(40);
   margin-bottom: g(3);
+  color: $twilight;
 
   &.text--display {
     color: $base-font-color;
@@ -124,7 +135,7 @@
 .text--display {
   font-family: $sans-serif-2;
   font-size: em(88);
-  color: #e33c42;
+  color: $cyber-green;
   line-height: 1.2;
 
   strong {
@@ -239,10 +250,10 @@ ul.bookmarks {
 
 ul.portfolio {
   a {
-    color: $scrap-green;
+    color: $cyber-green;
     
     &:hover {
-      color: darken($scrap-green, 15%);
+      color: darken($cyber-green, 15%);
     }
   }
 }
@@ -263,10 +274,10 @@ ul.portfolio {
 
 .contact {
   a {
-    color: #e33c42;
+    color: $scrap-green;
 
     &:hover {
-      color: darken(#e33c42, 15%);
+      color: darken($scrap-green, 15%);
     }    
   }
 }
