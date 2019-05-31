@@ -131,10 +131,11 @@
 
 .position-top-left {
   position: absolute;
-  top: 4em;
+  top: 2em;
   left: $page-margin--mobile;
 
   @include media($sm-breakpoint) {
+    top: 4em;
     left: $page-margin--tablet;
   }
 }
