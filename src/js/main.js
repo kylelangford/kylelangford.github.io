@@ -17,6 +17,15 @@ $('document').ready(function(){
 	// Add Tween Class
   $("body").addClass( "tween" );
 
+  // Menu Trigger
+  $('.primary-menu-btn').on('click touchstart',function (e) {
+    $('nav.primary').toggleClass('overlay');
+    $(this).toggleClass('active');
+    $('.mast-head').toggleClass('active');
+    $('.site-logo').toggleClass('active');
+    e.preventDefault();
+  });
+
 	// Wow
 	wow = new WOW(
 	  {

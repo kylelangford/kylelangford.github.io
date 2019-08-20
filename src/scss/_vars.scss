@@ -1,24 +1,23 @@
- /* Layout
+/* Layout
  ----------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------- */
- $max-width: em(1088) !default;
+$max-width: em(1088) !default;
 
-
- /* COLOR SETTINGS
+/* COLOR SETTINGS
  ----------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------- */
-$primary-color: #6DA6A0;
+$primary-color: #6da6a0;
 $primary-color-medium: darken($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 25%) !default;
 $secondary-color: #ffcc2f;
-$white: #FFFFFF !default;
+$white: #ffffff !default;
 $black: #212121 !default;
 $off-white-color: #f4f4f4;
-$subtle-gray: #F6F6F6 !default;
-$light-gray: #F2F0F0 !default;
-$gray: #D9D9D9 !default;
-$medium-gray: #CACACA !default;
-$dark-gray: #AAAAAA !default;
+$subtle-gray: #f6f6f6 !default;
+$light-gray: #f2f0f0 !default;
+$gray: #d9d9d9 !default;
+$medium-gray: #cacaca !default;
+$dark-gray: #aaaaaa !default;
 
 $scrap-green: #40a880;
 $cyber-green: #52dfb4;
@@ -31,12 +30,13 @@ $future-yellow: #fde803;
 $grease: #202020;
 $robo-sludge: #323e43;
 $shark-skin: #8aa8b8;
+$pink: #f27181;
 
 $paw: #f37021;
 
 // Secondary Colors
-$light-yellow: #FFFBED !default;
-$red: #FF5050 !default;
+$light-yellow: #fffbed !default;
+$red: #ff5050 !default;
 $charcoal: #333333 !default;
 $charcoal: #323e43;
 
@@ -53,7 +53,6 @@ $action-color--active: $primary-color-dark !default;
 
 /* Font Colors */
 $base-font-color: #323e43;
-$base-font-color: #555555;
 $base-link-color: $action-color;
 $base-accent-color: $action-color;
 
@@ -62,8 +61,7 @@ $messages--status: $primary-color;
 $messages--warning: $light-yellow;
 $messages--error: $red;
 
-
- /* VERTICAL SPACING
+/* VERTICAL SPACING
  ----------------------------------------------------------------------------------
  - comments
  ---------------------------------------------------------------------------------- */
@@ -73,8 +71,7 @@ $base-spacing: $base-line-height * 1em;
 $base-padding: 1.5rem;
 $wrap-padding: 1.5rem;
 
-
- /* SPACING
+/* SPACING
  ----------------------------------------------------------------------------------
  - comments
  ---------------------------------------------------------------------------------- */
@@ -83,8 +80,7 @@ $base-spacing: 1.5rem !default;
 $half-spacing: $base-spacing / 2 !default;
 $base-line-height: 1.5em !default;
 
-
- /* FONT SETTINGS
+/* FONT SETTINGS
  ----------------------------------------------------------------------------------
 	- default body text  'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
 	- subtitle h2 text   'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
@@ -94,7 +90,7 @@ $base-line-height: 1.5em !default;
  ---------------------------------------------------------------------------------- */
 $sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $sans-serif-2: 'Rubik', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$serif: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino' , serif;
+$serif: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
 $base-font-family: $sans-serif;
 $header-font-family: $sans-serif-2;
 
@@ -128,8 +124,7 @@ $h3-font-color: $text-color !default;
 $h3-font-line-height: 1.4em !default;
 $h3-font-margin-bottom: 0.5em !default;
 
-
- /* DIVIDERS AND LINES
+/* DIVIDERS AND LINES
  ----------------------------------------------------------------------------------
  - comments
  ---------------------------------------------------------------------------------- */
@@ -141,4 +136,21 @@ $base-border: 1px solid $line-color !default;
 $base-corner-radius: 4px !default;
 $base-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1) !default;
 
-
+$sans-serif: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$sans-serif-2: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$serif: 'Palatino Linotype', 'Book Book Antiqua', 'Palatino', serif;
+$primary-color: #eb2088;
+$secondary-color: #ffcc2f;
+$off-white-color: #f4f4f4;
+$grey-color: #cdcdcd;
+$heading-font-color: #999;
+$paragraph-font-color: #212121;
+$panel-odd-color: $off-white-color;
+$panel-even-color: white;
+$button-edge: shade($primary-color, 50%);
+$wrap-padding: 6em;
+$small: 640px;
+$medium: 769px;
+$large: 1024px;
+$nav-bg-color: $primary-color;
+$border-radius: 2px;

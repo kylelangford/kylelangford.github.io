@@ -3,8 +3,8 @@
 }
 
 html {
-  font-size: 100%; 
-  font-size: $base-font-size; 
+  font-size: 100%;
+  font-size: $base-font-size;
 }
 
 body {
@@ -14,6 +14,10 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin: 0;
+
+  &.page--front {
+    color: $white;
+  }
 }
 
 h1,
@@ -63,13 +67,14 @@ p {
 a {
   color: $base-link-color;
   text-decoration: none;
-  @include prefix(transition, color 0.15s linear, webkit ms );
+  @include prefix(transition, color 0.15s linear, webkit ms);
 
   &:hover {
     color: shade($base-link-color, 15%);
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     color: shade($base-link-color, 15%);
     outline: none;
   }
@@ -119,20 +124,20 @@ cite {
   font-style: italic;
 
   &:before {
-    content: "\2014 \00A0";
+    content: '\2014 \00A0';
   }
 }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
-  border-radius: 4px; 
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
 }
 
 pre {
@@ -142,7 +147,7 @@ pre {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; 
+  white-space: pre;
 }
 
 /**
@@ -223,6 +228,3 @@ dl {
     margin: 0;
   }
 }
-
-
-

@@ -29,15 +29,18 @@
     <!-- Modernizr - Load after CSS -->
     <script src="../assets/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </head>
-  <body class="page page--portfolio-list">
+  <body class="page page--portfolio-all">
     <header class="container size-to-window portfolio">
       <div class="row flex flex-align--center flex--justify fill-height">
         <nav class="position-top-left">
-          <a href="/" class="button--previous">$ cd ..</a>
+          <a href="/" class="button--previous"
+            ><span class="icons-skip-back"></span>Back</a
+          >
         </nav>
 
-        <div class="column two-thirds">
+        <div class="column half text--center">
           <h1 class="page__title">Portfolio</h1>
+          <p class="description">All Projects</p>
         </div>
       </div>
     </header>
@@ -49,7 +52,7 @@
             <li class="list__item">
               <a href="/portfolio/brm.html">
                 <span class="label">Bally Ribbon Mills</span>
-                <p>Site design and Drupal build.</p>
+                <div class="description">Site design and Drupal build.</div>
               </a>
             </li>
             <li class="list__item">

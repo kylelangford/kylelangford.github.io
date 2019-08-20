@@ -1,15 +1,26 @@
 # Project Title
 
-One Paragraph of project description goes here
+Personal Site, shows how the sausage is made.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
+Resolve Node Dependencies
 
 ```
-Give examples
+npm init
 ```
 
-## Built With
+Run Local Server and build files
+
+```
+gulp
+```
+
+## License
+
+All content in /blog, /demo and /portfolio are mine. I own them. Everything else is MIT license. Have at it.
+
+## Upcomming Features
+
+- Add GA
+- Handlebar Templates
