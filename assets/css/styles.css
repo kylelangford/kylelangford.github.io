@@ -2882,7 +2882,7 @@ button.primary-menu-btn {
   background-color: #273269;
   background-color: #5e6bb8;
   color: #ffffff;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.intro .page__title {
@@ -2922,7 +2922,7 @@ button.primary-menu-btn {
 .container.brm {
   background-color: #1d4d9c;
   color: #ffffff;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.brm .page__title {
@@ -2932,7 +2932,7 @@ button.primary-menu-btn {
 .container.mena {
   background-color: #7d4c92;
   color: #ffffff;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.mena .page__title {
@@ -2942,7 +2942,7 @@ button.primary-menu-btn {
 .container.cpl {
   background-color: #ffffff;
   color: #c21f2f;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.cpl .page__title {
@@ -2955,7 +2955,7 @@ button.primary-menu-btn {
 
 .container.paw {
   background-color: #ffffff;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.paw .page__title {
@@ -2972,7 +2972,7 @@ button.primary-menu-btn {
 
 .container.elev8d {
   background-color: #f1bf9c;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.elev8d .page__title {
@@ -2986,7 +2986,7 @@ button.primary-menu-btn {
 .container.bookmarks {
   background-color: #e33c42;
   color: white;
-  height: 85vh;
+  height: 100vh;
 }
 
 .container.bookmarks .page__title {
