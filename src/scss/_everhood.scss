@@ -25,16 +25,16 @@ body {
     }
   }
 
-  &.page--blog-list {
-    .container {
-      background-color: $twilight;
-    }
-  }
-  &.page--portfolio-list {
-    .container {
-      background-color: #8aa8b8;
-    }
-  }
+  // &.page--blog-list {
+  //   .container {
+  //     background-color: $twilight;
+  //   }
+  // }
+  // &.page--portfolio-list {
+  //   .container {
+  //     background-color: #8aa8b8;
+  //   }
+  // }
 }
 
 .mast-head {
@@ -113,17 +113,29 @@ button {
   &.primary-menu-btn {
     color: #52dfb4;
     position: absolute;
-    padding: 0.7em 1.75em;
-    top: 2em;
-    right: 2em;
+    padding: 1em 1.75em;
+    // top: 2em;
+    // right: 22px;
+    left: -23px;
+    width: 100%;
+    text-align: right;
     z-index: 99999;
     background-color: rgba(0, 0, 0, 0.16);
     -webkit-transform: scale(1, 1.05) skew(-8deg, 0deg);
     -ms-transform: scale(1, 1.05) skew(-8deg, 0deg);
-    transform: scale(1, 1.05) skew(-8deg, 0deg);
+    transform: scale(1, 1.05) skew(-45deg, 0deg);
     display: block;
     line-height: 100%;
+
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
     // border-radius:$border-radius;
+  }
+
+  &.active {
+    background-color: rgba(200, 200, 200, 0.32);
   }
 }
 
@@ -497,7 +509,11 @@ ul.blog {
 }
 
 .text--large {
-  font-size: 24px;
+  font-size: 16px;
+
+  @include media($sm-breakpoint) {
+    font-size: 24px;
+  }
 }
 
 .content {

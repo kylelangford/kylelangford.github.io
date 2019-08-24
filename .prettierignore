@@ -3,6 +3,10 @@
 *.yml
 *.yaml
 
+# ignore files with markdown
+src/templates/pages/**/*.html
+src/templates/layouts/**/*.html
+
 # ignore processed CSS
 css
 
@@ -11,3 +15,5 @@ node_modules
 
 # Ignore Vendor JS
 vendor
+
+
