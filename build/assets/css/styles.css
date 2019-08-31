@@ -3,25 +3,25 @@
  * http://everhood.co
  * Copyright 2018 Kyle Langford */
 @font-face {
+  font-family: 'feather-icons';
   src: url("../fonts/feather-icons/fonts/feather-icons.eot?chiksl");
   src: url("../fonts/feather-icons/fonts/feather-icons.eot?chiksl#iefix") format("embedded-opentype"), url("../fonts/feather-icons/fonts/feather-icons.ttf?chiksl") format("truetype"), url("../fonts/feather-icons/fonts/feather-icons.woff?chiksl") format("woff"), url("../fonts/feather-icons/fonts/feather-icons.svg?chiksl#feather-icons") format("svg");
-  font-family: 'feather-icons';
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icons-"], [class*=" icons-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'feather-icons' !important;
   speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'feather-icons' !important;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-transform: none;
 }
 
 .icons-activity:before {
@@ -1210,8 +1210,8 @@
 /* Base */
 .animated {
   -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
@@ -1230,8 +1230,8 @@
 
 @media only screen and (min-width: 1100px) {
   .column {
-    width: 100%;
     padding-right: 20px;
+    width: 100%;
   }
   .column:last-of-type {
     padding-right: 0;
@@ -1258,8 +1258,8 @@
 
 @media only screen and (min-width: 1100px) {
   .grid {
-    width: 100%;
     padding-right: 20px;
+    width: 100%;
   }
   .grid:last-of-type {
     padding-right: 0;
@@ -1285,49 +1285,49 @@
 }
 
 .row {
-  margin-right: 6vh;
   margin-left: 6vh;
+  margin-right: 6vh;
 }
 
 @media only screen and (min-width: 800px) {
   .row {
-    margin-right: 10vh;
     margin-left: 10vh;
+    margin-right: 10vh;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   .row {
-    width: 100%;
-    max-width: 1004px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    max-width: 1004px;
+    width: 100%;
   }
 }
 
 .row.row--collapse {
-  margin-right: 0;
   margin-left: 0;
+  margin-right: 0;
 }
 
 .row--grid {
-  width: 100%;
-  max-width: 1004px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  max-width: 1004px;
+  width: 100%;
 }
 
 .container {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .wrap {
-  width: 100%;
-  max-width: 1004px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 6em 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1004px;
+  width: 100%;
 }
 
 @media only screen and (min-width: max-width 769px) {
@@ -1354,9 +1354,9 @@
 }
 
 .clearfix:after {
+  content: "";
   display: table;
   clear: both;
-  content: "";
 }
 
 .fill-height {
@@ -1374,12 +1374,12 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  margin: 0;
   color: #323e43;
-  color: #ffffff;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
+  color: #ffffff;
 }
 
 h1,
@@ -1388,9 +1388,9 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 24px 0;
   font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.25;
+  margin: 0 0 24px 0;
   text-rendering: optimizeLegibility;
 }
 
@@ -1429,6 +1429,8 @@ p.collapse {
 a {
   color: #5689b2;
   text-decoration: none;
+  -webkit-transition: color 0.15s linear;
+  -ms-transition: color 0.15s linear;
   /* Output standard non-prefixed declaration */
   transition: color 0.15s linear;
 }
@@ -1438,23 +1440,23 @@ a:hover {
 }
 
 a:active, a:focus {
-  outline: none;
   color: shade(#5689b2, 15%);
+  outline: none;
 }
 
 hr {
-  margin: 1.6em 0;
-  border-top: none;
-  border-right: none;
   border-bottom: 1px solid #cacaca;
   border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.6em 0;
 }
 
 img,
 picture {
-  max-width: 100%;
   height: auto;
   margin: 0;
+  max-width: 100%;
 }
 
 figure {
@@ -1466,8 +1468,8 @@ figure img {
 }
 
 figcaption {
-  margin: 8px 0;
   font-size: 16px;
+  margin: 8px 0;
 }
 
 address {
@@ -1475,10 +1477,10 @@ address {
 }
 
 blockquote {
-  margin: 1.6em 0;
-  padding-left: 0.8em;
   border-left: 2px solid #cacaca;
   color: #53676f;
+  margin: 1.6em 0;
+  padding-left: 0.8em;
 }
 
 cite {
@@ -1493,13 +1495,13 @@ cite:before {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  margin: 0 0.2rem;
   padding: 0.2rem 0.5rem;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
-  background: #f1f1f1;
+  margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
 }
 
 pre {
@@ -1541,15 +1543,15 @@ small {
 }
 
 sub {
+  vertical-align: sub;
   font-size: smaller;
   line-height: normal;
-  vertical-align: sub;
 }
 
 sup {
+  vertical-align: super;
   font-size: smaller;
   line-height: normal;
-  vertical-align: super;
 }
 
 abbr,
@@ -1582,8 +1584,8 @@ dl {
 }
 
 dl dt {
-  margin-top: 0.8em;
   font-weight: bold;
+  margin-top: 0.8em;
 }
 
 dl dd {
@@ -2068,25 +2070,25 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .hide--visually {
-  clip: rect(1px, 1px, 1px, 1px);
-  word-wrap: normal;
   position: absolute !important;
-  width: 1px;
-  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
 }
 
 /* Components */
 .fade-in {
+  opacity: 0;
   position: relative;
   top: 16px;
-  opacity: 0;
   transition: opacity 235ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-in.animated {
-  top: 0 !important;
   opacity: 1 !important;
+  top: 0 !important;
 }
 
 /*
@@ -2100,8 +2102,10 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   53%,
   80%,
   100% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   0% {
     opacity: 1;
@@ -2114,14 +2118,19 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   }
   40%,
   43% {
-    transform: translate3d(0, -30px, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
   }
   70% {
-    transform: translate3d(0, -15px, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
   }
   90% {
+    -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
@@ -2132,8 +2141,10 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   53%,
   80%,
   100% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
   0% {
     opacity: 1;
@@ -2146,54 +2157,62 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   }
   40%,
   43% {
-    transform: translate3d(0, -30px, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
   }
   70% {
-    transform: translate3d(0, -15px, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
   }
   90% {
+    -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
 
 .bounce {
   -webkit-animation-name: bounce;
-  transform-origin: center bottom;
   animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
 .hint {
   display: block;
   position: fixed;
-  bottom: 20px;
-  left: 0;
-  width: 100vw;
-  font-size: 24px;
   text-align: center;
+  width: 100vw;
+  left: 0;
+  bottom: 20px;
+  font-size: 24px;
 }
 
 /* Slider */
 .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  touch-action: pan-y;
   user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slick-list {
-  display: block;
   position: relative;
+  overflow: hidden;
+  display: block;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .slick-list:focus {
@@ -2207,21 +2226,25 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-  display: block;
   position: relative;
-  top: 0;
   left: 0;
-  margin-right: auto;
+  top: 0;
+  display: block;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-track:before, .slick-track:after {
-  display: table;
   content: "";
+  display: table;
 }
 
 .slick-track:after {
@@ -2233,10 +2256,10 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-slide {
-  display: none;
+  float: left;
   height: 100%;
   min-height: 1px;
-  float: left;
+  display: none;
 }
 
 [dir="rtl"] .slick-slide {
@@ -2280,30 +2303,32 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 /* Icons */
 @font-face {
+  font-family: "slick";
   src: url("./fonts/slick.eot");
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-family: "slick";
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
 }
 
 /* Arrows */
 .slick-prev,
 .slick-next {
-  display: block;
   position: absolute;
-  top: 50%;
-  width: 20px;
+  display: block;
   height: 20px;
-  padding: 0;
-  transform: translate(0, -50%);
-  border: none;
-  outline: none;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
   background: transparent;
   color: transparent;
-  font-size: 0px;
-  line-height: 0px;
-  cursor: pointer;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 .slick-prev:hover, .slick-prev:focus,
@@ -2327,13 +2352,13 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .slick-prev:before,
 .slick-next:before {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #323e43;
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
+  color: #323e43;
   opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
@@ -2341,8 +2366,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 [dir="rtl"] .slick-prev {
-  right: -25px;
   left: auto;
+  right: -25px;
 }
 
 .slick-prev:before {
@@ -2358,8 +2383,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 [dir="rtl"] .slick-next {
-  right: auto;
   left: -25px;
+  right: auto;
 }
 
 .slick-next:before {
@@ -2376,37 +2401,37 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-dots {
-  display: block;
   position: absolute;
   bottom: -25px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   list-style: none;
+  display: block;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .slick-dots li {
-  display: inline-block;
   position: relative;
-  width: 20px;
+  display: inline-block;
   height: 20px;
+  width: 20px;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
 }
 
 .slick-dots li button {
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
   border: 0;
-  outline: none;
   background: transparent;
-  color: transparent;
-  font-size: 0px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
   line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -2419,20 +2444,20 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-dots li button:before {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   top: 0;
   left: 0;
+  content: "•";
   width: 20px;
   height: 20px;
-  color: #323e43;
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  content: "•";
+  color: #323e43;
   opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
@@ -2447,28 +2472,23 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
  */
 .button,
 .form-submit {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -webkit-font-smoothing: antialiased;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  cursor: pointer;
   display: inline-block;
-  padding: 9px 24px 10px 24px;
-  border: 1px solid #cacaca;
-  border-radius: 4px;
-  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
-  background-color: #ffffff;
-  color: #323e43;
-  font-size: 1rem;
-  font-weight: 600;
   line-height: normal;
-  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
+  text-shadow: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 9px 24px 10px 24px;
+  border-radius: 4px;
+  border: 1px solid #cacaca;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
+  color: #323e43;
 }
 
 .button:hover, .button:focus, .button:active,
@@ -2499,8 +2519,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .button:active,
 .form-submit:active {
-  border-color: #cacaca;
   background: #f2f0f0;
+  border-color: #cacaca;
 }
 
 .button:disabled, .button:disabled:active, .button.is-disabled, .button.is-disabled:active,
@@ -2508,52 +2528,52 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 .form-submit:disabled:active,
 .form-submit.is-disabled,
 .form-submit.is-disabled:active {
+  box-shadow: none;
   border-color: #d4d4d4;
   background: #ededed;
-  box-shadow: none;
   color: #5c5c5c;
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 .button--small {
-  padding: 4px 24px;
   font-size: 1rem;
+  padding: 4px 24px;
 }
 
 .button--primary,
 .form-submit {
-  border-color: #5689b2;
   background: #5689b2;
+  border-color: #5689b2;
   color: #ffffff;
 }
 
 .button--primary:hover, .button--primary:focus,
 .form-submit:hover,
 .form-submit:focus {
-  border-color: #4b7b76;
   background: #4b7b76;
+  border-color: #4b7b76;
   color: #ffffff;
 }
 
 .button--primary:active,
 .form-submit:active {
-  border-color: #385c58;
   background: #385c58;
+  border-color: #385c58;
 }
 
 .button--inline {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: inline;
+  cursor: pointer;
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: none;
   box-shadow: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-weight: 400;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .button--inline .danger {
@@ -2561,38 +2581,49 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .button--inline:hover, .button--inline:focus, .button--inline:active {
-  padding: 0;
-  border: 0;
-  background: none;
-  box-shadow: none;
   color: #ff2a00;
   text-decoration: underline;
   text-shadow: none;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
 }
 
 .button--inline:disabled, .button--inline.is-disabled {
+  color: #737373;
+  cursor: default;
+  text-decoration: none;
   -webkit-font-smoothing: antialiased;
   padding: 0;
   border: 0;
-  background: none;
   box-shadow: none;
-  color: #737373;
-  text-decoration: none;
-  cursor: default;
+  background: none;
 }
 
-/* Article Styling */
+/* Article Styling
+
+content-full
+content-teaser
+
+ */
 article {
-  position: relative;
   width: 100%;
   max-width: 700px;
   margin: 0px auto;
-  padding: 0 48px;
+  position: relative;
+}
+
+@media only screen and (min-width: max-width 800px) {
+  article {
+    padding: 0;
+    padding: 0 48px;
+  }
 }
 
 article.collapse {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .dark-mode article p {
@@ -2639,9 +2670,9 @@ article h1 {
 }
 
 article h2 {
-  margin-bottom: 0.35em;
   font-size: 3.5em;
   line-height: 1;
+  margin-bottom: 0.35em;
 }
 
 @media only screen and (min-width: max-width 800px) {
@@ -2660,8 +2691,9 @@ article h3 {
 
 article p {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.5rem;
   font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 2em;
 }
 
 @media only screen and (min-width: max-width 800px) {
@@ -2676,15 +2708,15 @@ article p {
 }
 
 .dropcap {
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  float: left;
   color: #e53b56;
   color: #212121;
+  float: left;
   font-family: Georgia;
   font-size: 3.25em;
   line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
 /* Panel 
@@ -2705,10 +2737,10 @@ article p {
 .list .list__item {
   position: relative;
   margin: 0;
-  padding: 0;
   border-bottom: 1px solid #cacaca;
-  list-style-image: none;
   list-style-type: none;
+  list-style-image: none;
+  padding: 0;
 }
 
 .list .list__item:first-child a {
@@ -2721,8 +2753,9 @@ article p {
 
 .list .list__item a {
   display: block;
-  padding: 16px;
   background: none;
+  padding: 16px;
+  padding-left: 0;
 }
 
 .list .list__item a:hover {
@@ -2736,8 +2769,11 @@ article p {
 }
 
 /* custom */
-body {
+html {
   background-color: #5e6bb8;
+}
+
+body {
   opacity: 0;
 }
 
@@ -2751,68 +2787,80 @@ body.tween {
 }
 
 body.tween .mast-head h1 {
+  transition: all 0.45s ease 0.7s;
   left: 0px;
   opacity: 1;
-  transition: all 0.45s ease 0.7s;
 }
 
 body.tween article {
-  transform: translateY(0px);
   transition: all 0.7s ease-in;
+  transform: translateY(0px);
+}
+
+body.page--index .container {
+  background-color: #5e6bb8;
+}
+
+body.page--articles .container {
+  background-color: #273269;
+}
+
+body.page--work .container {
+  background-color: #8aa8b8;
 }
 
 .mast-head {
-  z-index: 9999;
   position: fixed;
   width: 100%;
   height: 6.5em;
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  z-index: 9999;
 }
 
 .mast-head h1 {
   display: inline;
+  margin: 0;
   position: relative;
   left: -200px;
-  margin: 0;
 }
 
 .site-logo {
-  z-index: 9999;
   position: absolute;
   top: 1.25em;
   left: 1.25em;
-  width: 300px;
-  padding-left: 1.2em;
   color: #999;
   font-size: 1.6rem;
+  z-index: 9999;
+  padding-left: 1.2em;
+  width: 300px;
 }
 
 nav.primary {
-  display: none;
-  z-index: -1;
   position: fixed;
   width: 100vw;
   height: 100vh;
   opacity: 0;
+  z-index: -1;
+  display: none;
 }
 
 nav.primary.overlay {
-  display: table;
-  z-index: 999;
-  opacity: 1;
   transition: opacity 0.5s ease-in;
+  display: table;
+  opacity: 1;
+  z-index: 999;
 }
 
 nav.primary.overlay .container {
+  background: #f27181;
   display: table-cell;
   padding: 0;
-  background: #f27181;
   vertical-align: middle;
 }
 
 nav.primary ul {
-  font-size: 3em;
   text-align: center;
+  font-size: 3em;
 }
 
 nav.primary ul a {
@@ -2820,28 +2868,30 @@ nav.primary ul a {
 }
 
 button {
-  padding: 0.6em 1em;
-  border: 0;
-  outline: none;
-  font-size: 1rem;
   line-height: 1.6;
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  outline: none;
+  border: 0;
 }
 
 button.primary-menu-btn {
-  display: block;
-  z-index: 99999;
+  color: #52dfb4;
   position: absolute;
+  padding: 1em 1.75em;
   left: -23px;
   width: 100%;
-  padding: 1em 1.75em;
-  transform: scale(1, 1.05) skew(-45deg, 0deg);
+  text-align: right;
+  z-index: 99999;
   background-color: rgba(0, 0, 0, 0.16);
-  color: #52dfb4;
+  -webkit-transform: scale(1, 1.05) skew(-8deg, 0deg);
+  -ms-transform: scale(1, 1.05) skew(-8deg, 0deg);
+  transform: scale(1, 1.05) skew(-45deg, 0deg);
+  display: block;
+  line-height: 100%;
+  letter-spacing: 2px;
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: 2px;
-  line-height: 100%;
-  text-align: right;
   cursor: pointer;
 }
 
@@ -2849,16 +2899,11 @@ button.active {
   background-color: rgba(200, 200, 200, 0.32);
 }
 
-.container {
-  background-color: #273269;
-  background-color: #5e6bb8;
-}
-
 .container.intro {
-  height: 100vh;
   background-color: #273269;
   background-color: #5e6bb8;
   color: #ffffff;
+  height: 75vh;
 }
 
 .container.intro .page__title {
@@ -2866,8 +2911,7 @@ button.active {
 }
 
 .container.blog {
-  height: 50vh;
-  background-color: #273269;
+  height: 75vh;
   text-align: left;
 }
 
@@ -2880,10 +2924,8 @@ button.active {
 }
 
 .container.portfolio {
-  height: 50vh;
-  background-color: #273269;
-  background-color: #8aa8b8;
   color: #52dfb4;
+  height: 75vh;
   text-align: left;
 }
 
@@ -2896,42 +2938,41 @@ button.active {
 }
 
 .container.brm {
-  height: 100vh;
-  background-color: #1d4d9c;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1d4d9c;
+  height: 75vh;
 }
 
-.container.brm .page__title {
-  color: #ffffff;
+.container.brm .page__title,
+.container.brm .button--previous {
+  color: #1d4d9c;
 }
 
 .container.mena {
-  height: 100vh;
-  background-color: #7d4c92;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #7d4c92;
+  height: 75vh;
 }
 
-.container.mena .page__title {
-  color: #ffffff;
+.container.mena .page__title,
+.container.mena .button--previous {
+  color: #7d4c92;
 }
 
 .container.cpl {
-  height: 100vh;
   background-color: #ffffff;
   color: #c21f2f;
+  height: 75vh;
 }
 
-.container.cpl .page__title {
-  color: #c21f2f;
-}
-
+.container.cpl .page__title,
 .container.cpl .button--previous {
-  color: #323e43;
+  color: #c21f2f;
 }
 
 .container.paw {
-  height: 100vh;
   background-color: #ffffff;
+  height: 75vh;
 }
 
 .container.paw .page__title {
@@ -2946,23 +2987,23 @@ button.active {
   color: #f37021;
 }
 
-.container.elev8d {
-  height: 100vh;
-  background-color: #f1bf9c;
+.container.fitnessapp {
+  background-color: #ffffff;
+  color: #f1bf9c;
+  height: 75vh;
 }
 
-.container.elev8d .page__title {
-  color: #125687;
+.container.fitnessapp .page__title {
+  color: #f1bf9c;
 }
 
-.container.elev8d .button--previous {
-  color: #125687;
+.container.fitnessapp .button--previous {
+  color: #f1bf9c;
 }
 
 .container.bookmarks {
-  height: 100vh;
-  background-color: #e33c42;
   color: white;
+  height: 75vh;
 }
 
 .container.bookmarks .page__title {
@@ -2970,15 +3011,15 @@ button.active {
 }
 
 .page__logo {
-  display: block;
-  max-width: 200px;
   margin: 2em auto;
+  max-width: 200px;
+  display: block;
 }
 
 .page__title {
-  margin-bottom: 8px;
-  color: #50e3c2;
   font-size: 58px;
+  color: #50e3c2;
+  margin-bottom: 8px;
   letter-spacing: 0.05rem;
 }
 
@@ -2987,19 +3028,19 @@ button.active {
 }
 
 .section__title {
-  margin-bottom: 24px;
-  color: #f27181;
   font-size: 2.5em;
+  margin-bottom: 24px;
+  color: #fde803;
 }
 
 .section__title.text--display {
-  color: #f27181;
+  color: #fde803;
 }
 
 .text--display {
-  color: #f27181;
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 5.5em;
+  color: #f27181;
   line-height: 1.2;
 }
 
@@ -3010,14 +3051,14 @@ button.active {
 .list-title {
   color: #fde803;
   font-size: 80%;
-  font-weight: bold;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .position-bottom-right {
   position: absolute;
-  right: 0;
   bottom: 2em;
+  right: 0;
 }
 
 .position-top-left {
@@ -3034,13 +3075,13 @@ button.active {
 }
 
 .title-image {
-  width: 100%;
   max-width: 260px;
+  width: 100%;
 }
 
 .icon-image {
-  width: 100%;
   max-width: 50%;
+  width: 100%;
   opacity: 0.15;
 }
 
@@ -3066,15 +3107,15 @@ button.active {
 
 .card {
   height: 100%;
-  border-top: none;
-  border-left: none;
   border-width: 16px;
-  border-style: solid;
-  border-top-right-radius: 0;
+  border-bottom-color: #3333;
+  border-right-color: #3333;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  border-right-color: #3333;
-  border-bottom-color: #3333;
+  border-top-right-radius: 0;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
 }
 
 .card:hover {
@@ -3082,9 +3123,9 @@ button.active {
 }
 
 .card:after {
+  content: '';
   display: block;
   position: absolute;
-  content: '';
 }
 
 ul.bookmarks {
@@ -3096,22 +3137,22 @@ ul.bookmarks li {
 }
 
 ul.bookmarks li a {
-  color: #e53b56;
+  color: #ffffff;
 }
 
 ul.bookmarks li a:hover {
-  color: #bb1932;
+  color: #d9d9d9;
 }
 
 ul.portfolio .list__item {
-  margin-bottom: 24px;
   border: none;
+  margin-bottom: 24px;
 }
 
 ul.portfolio .list__item article {
   padding: 3em;
-  border-radius: 8px;
   background-color: #4d3b7e;
+  border-radius: 8px;
 }
 
 ul.portfolio .list__item a {
@@ -3124,30 +3165,30 @@ ul.portfolio .list__item a:hover {
 
 ul.portfolio .list__item p,
 ul.portfolio .list__item small {
-  margin: 0;
   color: #ffffff;
+  margin: 0;
 }
 
 ul.blog .list__item {
-  margin-bottom: 24px;
   border: none;
+  margin-bottom: 24px;
 }
 
 ul.blog .list__item article {
   padding: 3em 2em;
-  border-radius: 8px;
   background-color: #4d3b7e;
+  border-radius: 8px;
 }
 
 ul.blog .list__item p,
 ul.blog .list__item small {
-  margin: 0;
   color: #ffffff;
+  margin: 0;
 }
 
 ul.blog .list__item a {
-  padding: 16px 0;
   color: #52dfb4;
+  padding: 16px 0;
 }
 
 ul.blog .list__item a:hover {
@@ -3155,13 +3196,13 @@ ul.blog .list__item a:hover {
 }
 
 .button--previous {
-  color: white;
   font-size: 20px;
+  color: white;
 }
 
 .button--previous span {
-  padding-right: 4px;
   font-size: 17px;
+  padding-right: 4px;
 }
 
 .button-group {
@@ -3209,14 +3250,13 @@ ul.blog .list__item a:hover {
 }
 
 .content {
-  width: 100%;
   font-size: 16px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1100px) {
   .content {
     max-width: 756px;
-    font-size: 18px;
   }
 }
 
@@ -3225,124 +3265,32 @@ ul.blog .list__item a:hover {
 }
 
 .caption {
+  font-size: 16px;
   margin: 8px 0;
+}
+
+.attribution {
+  font-size: 16px;
+}
+
+.last-edit {
   font-size: 16px;
 }
 
 .stack {
-  padding: 16px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  padding: 16px;
 }
 
 .paper {
-  padding: 8px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 8px;
 }
 
 .video-player {
   margin-bottom: 48px;
 }
 
-input[type='range'] {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  margin: 10px 0;
-}
-
-input[type='range']:focus {
-  outline: none;
-}
-
-input[type='range']::-webkit-slider-runnable-track {
-  animate: 0.2s;
-  width: 100%;
-  height: 5px;
-  border: 0px solid #000000;
-  border-radius: 1px;
-  background: #2497e3;
-  box-shadow: 0px 0px 0px #000000;
-  cursor: pointer;
-}
-
-input[type='range']::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
-  margin-top: -7px;
-  border: 1px solid #2497e3;
-  border-radius: 25px;
-  background: #a1d0ff;
-  box-shadow: 0px 0px 0px #000000;
-  cursor: pointer;
-}
-
-input[type='range']:focus::-webkit-slider-runnable-track {
-  background: #2497e3;
-}
-
-input[type='range']::-moz-range-track {
-  animate: 0.2s;
-  width: 100%;
-  height: 5px;
-  border: 0px solid #000000;
-  border-radius: 1px;
-  background: #2497e3;
-  box-shadow: 0px 0px 0px #000000;
-  cursor: pointer;
-}
-
-input[type='range']::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #2497e3;
-  border-radius: 25px;
-  background: #a1d0ff;
-  box-shadow: 0px 0px 0px #000000;
-  cursor: pointer;
-}
-
-input[type='range']::-ms-track {
-  animate: 0.2s;
-  width: 100%;
-  height: 5px;
-  border-color: transparent;
-  background: transparent;
-  color: transparent;
-  cursor: pointer;
-}
-
-input[type='range']::-ms-fill-lower {
-  border: 0px solid #000000;
-  border-radius: 2px;
-  background: #2497e3;
-  box-shadow: 0px 0px 0px #000000;
-}
-
-input[type='range']::-ms-fill-upper {
-  border: 0px solid #000000;
-  border-radius: 2px;
-  background: #2497e3;
-  box-shadow: 0px 0px 0px #000000;
-}
-
-input[type='range']::-ms-thumb {
-  width: 18px;
-  height: 18px;
-  margin-top: 1px;
-  border: 1px solid #2497e3;
-  border-radius: 25px;
-  background: #a1d0ff;
-  box-shadow: 0px 0px 0px #000000;
-  cursor: pointer;
-}
-
-input[type='range']:focus::-ms-fill-lower {
-  background: #2497e3;
-}
-
-input[type='range']:focus::-ms-fill-upper {
-  background: #2497e3;
-}
+/*# sourceMappingURL=maps/styles.css.map */

@@ -13,7 +13,7 @@
 
     &:first-child {
       a {
-        padding-top: 0;     
+        padding-top: 0;
       }
     }
 
@@ -25,6 +25,7 @@
       display: block;
       background: none;
       padding: $base-spacing;
+      padding-left: 0;
 
       &:hover {
         text-decoration: none;

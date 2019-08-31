@@ -19,9 +19,21 @@
 
 $button-padding-default: 9px 24px 10px 24px !default;
 $button-padding-small: 4px 24px !default;
-$button-background-color: linear-gradient(to bottom, $white, $subtle-gray)  !default;
-$button-background-color--hover: linear-gradient(to bottom, $subtle-gray, $white) !default;
-$button-background-color--focus: linear-gradient(to bottom, $subtle-gray, $white) !default;
+$button-background-color: linear-gradient(
+  to bottom,
+  $white,
+  $subtle-gray
+) !default;
+$button-background-color--hover: linear-gradient(
+  to bottom,
+  $subtle-gray,
+  $white
+) !default;
+$button-background-color--focus: linear-gradient(
+  to bottom,
+  $subtle-gray,
+  $white
+) !default;
 // -webkit-linear-gradient(top, $subtle-gray, $white)
 $button-background-color--active: $light-gray !default;
 $button-border-color: $medium-gray !default;
@@ -31,7 +43,6 @@ $button-primary-background-color: $action-color !default;
 $button-primary-background-color--hover: $action-color--hover !default;
 $button-primary-background-color--focus: $action-color--focus !default;
 $button-primary-background-color--active: $action-color--active !default;
-
 
 @mixin clickable {
   appearance: none;
@@ -65,7 +76,7 @@ $button-primary-background-color--active: $action-color--active !default;
 
 .button,
 .form-submit {
-  @include clickable();
+  @include buttonize();
   padding: $button-padding-default;
   border-radius: $base-corner-radius;
   border: 1px solid $button-border-color;
@@ -79,7 +90,7 @@ $button-primary-background-color--active: $action-color--active !default;
     border-color: $button-border-color;
     background: linear-gradient(to bottom, $subtle-gray, $white);
     color: $text-color;
-  }  
+  }
 
   &:active {
     background: $button-background-color--active;
@@ -96,7 +107,7 @@ $button-primary-background-color--active: $action-color--active !default;
     color: #5c5c5c;
     cursor: not-allowed;
     opacity: 0.5;
-  }  
+  }
 }
 
 .button--small {
@@ -121,7 +132,6 @@ $button-primary-background-color--active: $action-color--active !default;
     background: $button-primary-background-color--active;
     border-color: $button-primary-background-color--active;
   }
-
 }
 
 .button--inline {
@@ -138,7 +148,7 @@ $button-primary-background-color--active: $action-color--active !default;
   text-decoration: underline;
 
   .danger {
-    color: #c72100;  
+    color: #c72100;
   }
 
   &:hover,
@@ -165,4 +175,3 @@ $button-primary-background-color--active: $action-color--active !default;
     background: none;
   }
 }
-

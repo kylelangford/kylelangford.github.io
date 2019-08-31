@@ -1,11 +1,21 @@
-/* Article Styling */
+/* Article Styling
+
+content-full
+content-teaser
+
+ */
 
 article {
   width: 100%;
   max-width: 700px;
   margin: 0px auto;
-  padding: 0 48px;
+  // padding: 0 48px;
   position: relative;
+
+  @include media(max-width $sm-breakpoint) {
+    padding: 0;
+    padding: 0 48px;
+  }
 
   &.collapse {
     padding: 0;
@@ -81,7 +91,8 @@ article {
   p {
     font-family: $sans-serif-2;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2em;
 
     @include media(max-width $sm-breakpoint) {
       font-size: 1.25em;
