@@ -9,7 +9,8 @@
     border-bottom: $base-border;
     list-style-type: none;
     list-style-image: none;
-    padding: 0;
+    padding: $base-spacing;
+    padding-left: 0;
 
     &:first-child {
       a {
@@ -24,8 +25,12 @@
     a {
       display: block;
       background: none;
-      padding: $base-spacing;
-      padding-left: 0;
+      padding-left: 8px;
+      border-left: 3px solid transparent;
+
+      &:focus {
+        border-left: 3px solid;
+      }
 
       &:hover {
         text-decoration: none;

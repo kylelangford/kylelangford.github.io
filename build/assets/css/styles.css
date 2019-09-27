@@ -1379,6 +1379,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
+}
+
+body.page--index {
   color: #ffffff;
 }
 
@@ -2614,10 +2617,9 @@ article {
   position: relative;
 }
 
-@media only screen and (min-width: max-width 800px) {
+@media only screen and (min-width: 800px) {
   article {
     padding: 0;
-    padding: 0 48px;
   }
 }
 
@@ -2675,7 +2677,7 @@ article h2 {
   margin-bottom: 0.35em;
 }
 
-@media only screen and (min-width: max-width 800px) {
+@media only screen and (min-width: 800px) {
   article h2 {
     font-size: 2.75em;
   }
@@ -2693,12 +2695,12 @@ article p {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
-@media only screen and (min-width: max-width 800px) {
+@media only screen and (min-width: 800px) {
   article p {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
@@ -2740,7 +2742,8 @@ article p {
   border-bottom: 1px solid #cacaca;
   list-style-type: none;
   list-style-image: none;
-  padding: 0;
+  padding: 16px;
+  padding-left: 0;
 }
 
 .list .list__item:first-child a {
@@ -2754,8 +2757,12 @@ article p {
 .list .list__item a {
   display: block;
   background: none;
-  padding: 16px;
-  padding-left: 0;
+  padding-left: 8px;
+  border-left: 3px solid transparent;
+}
+
+.list .list__item a:focus {
+  border-left: 3px solid;
 }
 
 .list .list__item a:hover {
@@ -2770,10 +2777,11 @@ article p {
 
 /* custom */
 html {
-  background-color: #5e6bb8;
+  background-color: #3e498c;
 }
 
 body {
+  background-color: #f4f4f4;
   opacity: 0;
 }
 
@@ -2807,6 +2815,10 @@ body.page--articles .container {
 
 body.page--work .container {
   background-color: #8aa8b8;
+}
+
+body.page--bookmarks {
+  background-color: #5e6bb8;
 }
 
 .mast-head {
@@ -3010,6 +3022,26 @@ button.active {
   color: #fde803;
 }
 
+.page--paw h4 {
+  color: #f37021;
+}
+
+.page--fitnessapp h4 {
+  color: #f1bf9c;
+}
+
+.page--brm h4 {
+  color: #1d4d9c;
+}
+
+.page--cpl h4 {
+  color: #c21f2f;
+}
+
+.page--mena h4 {
+  color: #7d4c92;
+}
+
 .page__logo {
   margin: 2em auto;
   max-width: 200px;
@@ -3107,6 +3139,8 @@ button.active {
 
 .card {
   height: 100%;
+  padding: 32px;
+  background: white;
   border-width: 16px;
   border-bottom-color: #3333;
   border-right-color: #3333;
@@ -3116,10 +3150,6 @@ button.active {
   border-style: solid;
   border-top: none;
   border-left: none;
-}
-
-.card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .card:after {
@@ -3138,6 +3168,10 @@ ul.bookmarks li {
 
 ul.bookmarks li a {
   color: #ffffff;
+}
+
+ul.bookmarks li a:focus {
+  text-decoration: underline;
 }
 
 ul.bookmarks li a:hover {
@@ -3165,7 +3199,6 @@ ul.portfolio .list__item a:hover {
 
 ul.portfolio .list__item p,
 ul.portfolio .list__item small {
-  color: #ffffff;
   margin: 0;
 }
 
@@ -3198,6 +3231,13 @@ ul.blog .list__item a:hover {
 .button--previous {
   font-size: 20px;
   color: white;
+  padding: 4px;
+  border: 3px solid transparent;
+}
+
+.button--previous:focus {
+  padding: 4px;
+  border: 3px solid;
 }
 
 .button--previous span {
@@ -3211,6 +3251,10 @@ ul.blog .list__item a:hover {
 
 .contact a {
   color: #52dfb4;
+}
+
+.contact a:focus {
+  text-decoration: underline;
 }
 
 .contact a:hover {
@@ -3262,9 +3306,18 @@ ul.blog .list__item a:hover {
 
 .specimen {
   margin-bottom: 48px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+  .specimen.stretch {
+    margin-left: -10vw;
+    margin-right: -10vw;
+  }
 }
 
 .caption {
+  text-align: left;
   font-size: 16px;
   margin: 8px 0;
 }
@@ -3287,6 +3340,7 @@ ul.blog .list__item a:hover {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   padding: 8px;
+  width: 100%;
 }
 
 .video-player {

@@ -1,8 +1,9 @@
 html {
-  background-color: #5e6bb8;
+  background-color: darken(#5e6bb8, 15%);
 }
+
 body {
-  // background-color: #5e6bb8;
+  background-color: #f4f4f4;
   opacity: 0;
 
   article {
@@ -43,6 +44,9 @@ body {
     .container {
       background-color: #8aa8b8;
     }
+  }
+  &.page--bookmarks {
+    background-color: #5e6bb8;
   }
 }
 
@@ -224,10 +228,6 @@ button {
     .button--previous {
       color: #c21f2f;
     }
-
-    // .button--previous {
-    //   color: $text-color;
-    // }
   }
 
   &.paw {
@@ -272,6 +272,38 @@ button {
   }
 }
 
+.page--paw {
+  h4 {
+    color: $paw;
+  }
+}
+
+.page--fitnessapp {
+  h4 {
+    color: #f1bf9c;
+  }
+}
+
+.page--brm {
+  h4 {
+    color: #1d4d9c;
+  }
+}
+
+.page--cpl {
+  h4 {
+    color: #c21f2f;
+  }
+}
+
+.page--mena {
+  h4 {
+    color: #7d4c92;
+  }
+}
+
+.page--bookmarks {
+}
 // Custom Page
 .page__logo {
   margin: 2em auto;
@@ -374,6 +406,8 @@ button {
   // border-radius: 4px;
   height: 100%;
   // color: white;
+  padding: 32px;
+  background: white;
   border-width: 16px;
   border-bottom-color: #3333;
   border-right-color: #3333;
@@ -385,9 +419,9 @@ button {
   // box-shadow: 2px 2px 6px;
   border-left: none;
 
-  &:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  }
+  // &:hover {
+  //   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  // }
 
   &:after {
     content: '';
@@ -408,6 +442,10 @@ ul.bookmarks {
 
     a {
       color: $white;
+
+      &:focus {
+        text-decoration: underline;
+      }
 
       &:hover {
         color: darken($white, 15%);
@@ -437,7 +475,7 @@ ul.portfolio {
 
     p,
     small {
-      color: $white;
+      // color: $white;
       margin: 0;
     }
   }
@@ -475,6 +513,18 @@ ul.blog {
   font-size: 20px;
   color: white;
 
+  padding: 4px;
+  border: 3px solid transparent;
+
+  // &:hover {
+  //   color: darken(inherit, 15%);
+  // }
+
+  &:focus {
+    padding: 4px;
+    border: 3px solid;
+  }
+
   span {
     font-size: 17px;
     padding-right: 4px;
@@ -488,6 +538,10 @@ ul.blog {
 .contact {
   a {
     color: $cyber-green;
+
+    &:focus {
+      text-decoration: underline;
+    }
 
     &:hover {
       color: darken($cyber-green, 15%);
@@ -536,11 +590,21 @@ ul.blog {
 
 .specimen {
   margin-bottom: g(6);
+  text-align: center;
+
+  &.stretch {
+    @include media($md-breakpoint) {
+      margin-left: -10vw;
+      margin-right: -10vw;
+    }
+  }
 }
 
 .caption {
+  text-align: left;
   font-size: 16px;
   margin: 8px 0;
+  // padding-left: 5vw;
 }
 
 .attribution {
@@ -564,6 +628,7 @@ ul.blog {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   padding: 8px;
+  width: 100%;
 }
 
 .video-player {

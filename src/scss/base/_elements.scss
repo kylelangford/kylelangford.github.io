@@ -15,9 +15,9 @@ body {
   line-height: $base-line-height;
   margin: 0;
 
-  // &.page--front {
-  color: $white;
-  // }
+  &.page--index {
+    color: $white;
+  }
 }
 
 h1,

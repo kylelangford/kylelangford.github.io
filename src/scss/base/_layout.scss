@@ -13,8 +13,7 @@ $page-margin: 20px; // grid(5)
 // Fixed Container
 .row {
   margin-left: $page-margin--mobile;
-  margin-right: $page-margin--mobile; 
-
+  margin-right: $page-margin--mobile;
 
   @include media($sm-breakpoint) {
     margin-left: $page-margin--tablet;
@@ -51,14 +50,13 @@ $page-margin: 20px; // grid(5)
     padding: 6em 0;
   }
   img {
-    width:100%;
+    width: 100%;
   }
   .logo {
-    width:50%;
-    margin-bottom:3em;
+    width: 50%;
+    margin-bottom: 3em;
   }
 }
-
 
 // Layout Helpers
 .relative {

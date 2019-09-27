@@ -12,9 +12,9 @@ article {
   // padding: 0 48px;
   position: relative;
 
-  @include media(max-width $sm-breakpoint) {
+  @include media($sm-breakpoint) {
     padding: 0;
-    padding: 0 48px;
+    // padding: 0 48px;
   }
 
   &.collapse {
@@ -75,7 +75,7 @@ article {
     line-height: 1;
     margin-bottom: 0.35em;
 
-    @include media(max-width $sm-breakpoint) {
+    @include media($sm-breakpoint) {
       font-size: 2.75em;
     }
 
@@ -92,10 +92,10 @@ article {
     font-family: $sans-serif-2;
     font-weight: 400;
     font-size: 1.25rem;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 
-    @include media(max-width $sm-breakpoint) {
-      font-size: 1.25em;
+    @include media($sm-breakpoint) {
+      font-size: 1.5em;
     }
   }
 }
