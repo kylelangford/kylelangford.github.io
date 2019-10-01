@@ -1,5 +1,5 @@
 html {
-  background-color: darken(#5e6bb8, 15%);
+  background-color: darken(#5e6bb8, 30%);
 }
 
 body {
@@ -154,7 +154,7 @@ button {
 
 // Custom Layout
 .container {
-  $height: 75vh;
+  $height: 90vh;
 
   &.intro {
     background-color: $twilight;
@@ -628,7 +628,7 @@ ul.blog {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   padding: 8px;
-  width: 100%;
+  // width: 100%;
 }
 
 .video-player {

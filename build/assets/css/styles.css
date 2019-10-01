@@ -3,25 +3,25 @@
  * http://everhood.co
  * Copyright 2018 Kyle Langford */
 @font-face {
-  font-family: 'feather-icons';
   src: url("../fonts/feather-icons/fonts/feather-icons.eot?chiksl");
   src: url("../fonts/feather-icons/fonts/feather-icons.eot?chiksl#iefix") format("embedded-opentype"), url("../fonts/feather-icons/fonts/feather-icons.ttf?chiksl") format("truetype"), url("../fonts/feather-icons/fonts/feather-icons.woff?chiksl") format("woff"), url("../fonts/feather-icons/fonts/feather-icons.svg?chiksl#feather-icons") format("svg");
-  font-weight: normal;
+  font-family: 'feather-icons';
   font-style: normal;
+  font-weight: normal;
 }
 
 [class^="icons-"], [class*=" icons-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'feather-icons' !important;
   speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'feather-icons' !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
 }
 
 .icons-activity:before {
@@ -1210,8 +1210,8 @@
 /* Base */
 .animated {
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
@@ -1230,8 +1230,8 @@
 
 @media only screen and (min-width: 1100px) {
   .column {
-    padding-right: 20px;
     width: 100%;
+    padding-right: 20px;
   }
   .column:last-of-type {
     padding-right: 0;
@@ -1258,8 +1258,8 @@
 
 @media only screen and (min-width: 1100px) {
   .grid {
-    padding-right: 20px;
     width: 100%;
+    padding-right: 20px;
   }
   .grid:last-of-type {
     padding-right: 0;
@@ -1285,49 +1285,49 @@
 }
 
 .row {
-  margin-left: 6vh;
   margin-right: 6vh;
+  margin-left: 6vh;
 }
 
 @media only screen and (min-width: 800px) {
   .row {
-    margin-left: 10vh;
     margin-right: 10vh;
+    margin-left: 10vh;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   .row {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1004px;
     width: 100%;
+    max-width: 1004px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .row.row--collapse {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 }
 
 .row--grid {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1004px;
   width: 100%;
+  max-width: 1004px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .wrap {
-  padding: 6em 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1004px;
   width: 100%;
+  max-width: 1004px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6em 0;
 }
 
 @media only screen and (min-width: max-width 769px) {
@@ -1354,9 +1354,9 @@
 }
 
 .clearfix:after {
-  content: "";
   display: table;
   clear: both;
+  content: "";
 }
 
 .fill-height {
@@ -1374,11 +1374,11 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
+  margin: 0;
   color: #323e43;
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
 }
 
 body.page--index {
@@ -1391,9 +1391,9 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 24px 0;
   font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.25;
-  margin: 0 0 24px 0;
   text-rendering: optimizeLegibility;
 }
 
@@ -1432,8 +1432,6 @@ p.collapse {
 a {
   color: #5689b2;
   text-decoration: none;
-  -webkit-transition: color 0.15s linear;
-  -ms-transition: color 0.15s linear;
   /* Output standard non-prefixed declaration */
   transition: color 0.15s linear;
 }
@@ -1443,23 +1441,23 @@ a:hover {
 }
 
 a:active, a:focus {
-  color: shade(#5689b2, 15%);
   outline: none;
+  color: shade(#5689b2, 15%);
 }
 
 hr {
+  margin: 1.6em 0;
+  border-top: none;
+  border-right: none;
   border-bottom: 1px solid #cacaca;
   border-left: none;
-  border-right: none;
-  border-top: none;
-  margin: 1.6em 0;
 }
 
 img,
 picture {
+  max-width: 100%;
   height: auto;
   margin: 0;
-  max-width: 100%;
 }
 
 figure {
@@ -1471,8 +1469,8 @@ figure img {
 }
 
 figcaption {
-  font-size: 16px;
   margin: 8px 0;
+  font-size: 16px;
 }
 
 address {
@@ -1480,10 +1478,10 @@ address {
 }
 
 blockquote {
-  border-left: 2px solid #cacaca;
-  color: #53676f;
   margin: 1.6em 0;
   padding-left: 0.8em;
+  border-left: 2px solid #cacaca;
+  color: #53676f;
 }
 
 cite {
@@ -1498,13 +1496,13 @@ cite:before {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
+  padding: 0.2rem 0.5rem;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
+  background: #f1f1f1;
+  font-size: 90%;
+  white-space: nowrap;
 }
 
 pre {
@@ -1546,15 +1544,15 @@ small {
 }
 
 sub {
-  vertical-align: sub;
   font-size: smaller;
   line-height: normal;
+  vertical-align: sub;
 }
 
 sup {
-  vertical-align: super;
   font-size: smaller;
   line-height: normal;
+  vertical-align: super;
 }
 
 abbr,
@@ -1587,8 +1585,8 @@ dl {
 }
 
 dl dt {
-  font-weight: bold;
   margin-top: 0.8em;
+  font-weight: bold;
 }
 
 dl dd {
@@ -2073,25 +2071,25 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .hide--visually {
-  position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
   word-wrap: normal;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Components */
 .fade-in {
-  opacity: 0;
   position: relative;
   top: 16px;
+  opacity: 0;
   transition: opacity 235ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-in.animated {
-  opacity: 1 !important;
   top: 0 !important;
+  opacity: 1 !important;
 }
 
 /*
@@ -2105,10 +2103,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   53%,
   80%,
   100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   0% {
     opacity: 1;
@@ -2121,19 +2117,14 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   }
   40%,
   43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
@@ -2144,10 +2135,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   53%,
   80%,
   100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   0% {
     opacity: 1;
@@ -2160,62 +2149,54 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
   }
   40%,
   43% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   70% {
-    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
   90% {
-    -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0);
   }
 }
 
 .bounce {
   -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
+  animation-name: bounce;
 }
 
 .hint {
   display: block;
   position: fixed;
-  text-align: center;
-  width: 100vw;
-  left: 0;
   bottom: 20px;
+  left: 0;
+  width: 100vw;
   font-size: 24px;
+  text-align: center;
 }
 
 /* Slider */
 .slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
 }
 
 .slick-list {
-  position: relative;
-  overflow: hidden;
   display: block;
+  position: relative;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .slick-list:focus {
@@ -2229,25 +2210,21 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
   display: block;
-  margin-left: auto;
+  position: relative;
+  top: 0;
+  left: 0;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .slick-track:before, .slick-track:after {
-  content: "";
   display: table;
+  content: "";
 }
 
 .slick-track:after {
@@ -2259,10 +2236,10 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-slide {
-  float: left;
+  display: none;
   height: 100%;
   min-height: 1px;
-  display: none;
+  float: left;
 }
 
 [dir="rtl"] .slick-slide {
@@ -2306,32 +2283,30 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 /* Icons */
 @font-face {
-  font-family: "slick";
   src: url("./fonts/slick.eot");
   src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
+  font-family: "slick";
   font-style: normal;
+  font-weight: normal;
 }
 
 /* Arrows */
 .slick-prev,
 .slick-next {
-  position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
-  line-height: 0px;
-  font-size: 0px;
-  cursor: pointer;
-  background: transparent;
-  color: transparent;
+  position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  width: 20px;
+  height: 20px;
   padding: 0;
+  transform: translate(0, -50%);
   border: none;
   outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0px;
+  line-height: 0px;
+  cursor: pointer;
 }
 
 .slick-prev:hover, .slick-prev:focus,
@@ -2355,13 +2330,13 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .slick-prev:before,
 .slick-next:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #323e43;
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: #323e43;
   opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
@@ -2369,8 +2344,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 [dir="rtl"] .slick-prev {
-  left: auto;
   right: -25px;
+  left: auto;
 }
 
 .slick-prev:before {
@@ -2386,8 +2361,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 [dir="rtl"] .slick-next {
-  left: -25px;
   right: auto;
+  left: -25px;
 }
 
 .slick-next:before {
@@ -2404,37 +2379,37 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-dots {
+  display: block;
   position: absolute;
   bottom: -25px;
-  list-style: none;
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .slick-dots li {
-  position: relative;
   display: inline-block;
-  height: 20px;
+  position: relative;
   width: 20px;
+  height: 20px;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;
 }
 
 .slick-dots li button {
-  border: 0;
-  background: transparent;
   display: block;
-  height: 20px;
   width: 20px;
-  outline: none;
-  line-height: 0px;
-  font-size: 0px;
-  color: transparent;
+  height: 20px;
   padding: 5px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0px;
+  line-height: 0px;
   cursor: pointer;
 }
 
@@ -2447,20 +2422,20 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .slick-dots li button:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: absolute;
   top: 0;
   left: 0;
-  content: "•";
   width: 20px;
   height: 20px;
+  color: #323e43;
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: #323e43;
+  content: "•";
   opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
@@ -2475,23 +2450,28 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
  */
 .button,
 .form-submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
   -webkit-font-smoothing: antialiased;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: inline-block;
+  padding: 9px 24px 10px 24px;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
+  background-color: #ffffff;
+  color: #323e43;
   font-size: 1rem;
   font-weight: 600;
-  padding: 9px 24px 10px 24px;
-  border-radius: 4px;
-  border: 1px solid #cacaca;
-  background-color: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
-  color: #323e43;
+  line-height: normal;
+  text-shadow: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
 }
 
 .button:hover, .button:focus, .button:active,
@@ -2522,8 +2502,8 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 
 .button:active,
 .form-submit:active {
-  background: #f2f0f0;
   border-color: #cacaca;
+  background: #f2f0f0;
 }
 
 .button:disabled, .button:disabled:active, .button.is-disabled, .button.is-disabled:active,
@@ -2531,52 +2511,52 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 .form-submit:disabled:active,
 .form-submit.is-disabled,
 .form-submit.is-disabled:active {
-  box-shadow: none;
   border-color: #d4d4d4;
   background: #ededed;
+  box-shadow: none;
   color: #5c5c5c;
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 .button--small {
-  font-size: 1rem;
   padding: 4px 24px;
+  font-size: 1rem;
 }
 
 .button--primary,
 .form-submit {
-  background: #5689b2;
   border-color: #5689b2;
+  background: #5689b2;
   color: #ffffff;
 }
 
 .button--primary:hover, .button--primary:focus,
 .form-submit:hover,
 .form-submit:focus {
-  background: #4b7b76;
   border-color: #4b7b76;
+  background: #4b7b76;
   color: #ffffff;
 }
 
 .button--primary:active,
 .form-submit:active {
-  background: #385c58;
   border-color: #385c58;
+  background: #385c58;
 }
 
 .button--inline {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   display: inline;
-  cursor: pointer;
   padding: 0;
   border: 0;
   border-radius: 0;
-  box-shadow: none;
   background: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  box-shadow: none;
   font-weight: 400;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button--inline .danger {
@@ -2584,24 +2564,24 @@ Third letter is the number of spacing in pixels. Adjust the amounts generated by
 }
 
 .button--inline:hover, .button--inline:focus, .button--inline:active {
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
   color: #ff2a00;
   text-decoration: underline;
   text-shadow: none;
-  padding: 0;
-  border: 0;
-  box-shadow: none;
-  background: none;
 }
 
 .button--inline:disabled, .button--inline.is-disabled {
-  color: #737373;
-  cursor: default;
-  text-decoration: none;
   -webkit-font-smoothing: antialiased;
   padding: 0;
   border: 0;
-  box-shadow: none;
   background: none;
+  box-shadow: none;
+  color: #737373;
+  text-decoration: none;
+  cursor: default;
 }
 
 /* Article Styling
@@ -2611,10 +2591,10 @@ content-teaser
 
  */
 article {
+  position: relative;
   width: 100%;
   max-width: 700px;
   margin: 0px auto;
-  position: relative;
 }
 
 @media only screen and (min-width: 800px) {
@@ -2624,8 +2604,8 @@ article {
 }
 
 article.collapse {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .dark-mode article p {
@@ -2672,9 +2652,9 @@ article h1 {
 }
 
 article h2 {
+  margin-bottom: 0.35em;
   font-size: 3.5em;
   line-height: 1;
-  margin-bottom: 0.35em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -2692,10 +2672,10 @@ article h3 {
 }
 
 article p {
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
   margin-bottom: 3em;
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 800px) {
@@ -2710,15 +2690,15 @@ article p {
 }
 
 .dropcap {
-  color: #e53b56;
-  color: #212121;
-  float: left;
-  font-family: Georgia;
-  font-size: 3.25em;
-  line-height: 0.8;
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
+  float: left;
+  color: #e53b56;
+  color: #212121;
+  font-family: Georgia;
+  font-size: 3.25em;
+  line-height: 0.8;
 }
 
 /* Panel 
@@ -2739,11 +2719,11 @@ article p {
 .list .list__item {
   position: relative;
   margin: 0;
-  border-bottom: 1px solid #cacaca;
-  list-style-type: none;
-  list-style-image: none;
   padding: 16px;
   padding-left: 0;
+  border-bottom: 1px solid #cacaca;
+  list-style-image: none;
+  list-style-type: none;
 }
 
 .list .list__item:first-child a {
@@ -2756,9 +2736,9 @@ article p {
 
 .list .list__item a {
   display: block;
-  background: none;
   padding-left: 8px;
   border-left: 3px solid transparent;
+  background: none;
 }
 
 .list .list__item a:focus {
@@ -2777,7 +2757,7 @@ article p {
 
 /* custom */
 html {
-  background-color: #3e498c;
+  background-color: #262d57;
 }
 
 body {
@@ -2795,14 +2775,14 @@ body.tween {
 }
 
 body.tween .mast-head h1 {
-  transition: all 0.45s ease 0.7s;
   left: 0px;
   opacity: 1;
+  transition: all 0.45s ease 0.7s;
 }
 
 body.tween article {
-  transition: all 0.7s ease-in;
   transform: translateY(0px);
+  transition: all 0.7s ease-in;
 }
 
 body.page--index .container {
@@ -2822,57 +2802,57 @@ body.page--bookmarks {
 }
 
 .mast-head {
+  z-index: 9999;
   position: fixed;
   width: 100%;
   height: 6.5em;
   font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  z-index: 9999;
 }
 
 .mast-head h1 {
   display: inline;
-  margin: 0;
   position: relative;
   left: -200px;
+  margin: 0;
 }
 
 .site-logo {
+  z-index: 9999;
   position: absolute;
   top: 1.25em;
   left: 1.25em;
+  width: 300px;
+  padding-left: 1.2em;
   color: #999;
   font-size: 1.6rem;
-  z-index: 9999;
-  padding-left: 1.2em;
-  width: 300px;
 }
 
 nav.primary {
+  display: none;
+  z-index: -1;
   position: fixed;
   width: 100vw;
   height: 100vh;
   opacity: 0;
-  z-index: -1;
-  display: none;
 }
 
 nav.primary.overlay {
-  transition: opacity 0.5s ease-in;
   display: table;
-  opacity: 1;
   z-index: 999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 nav.primary.overlay .container {
-  background: #f27181;
   display: table-cell;
   padding: 0;
+  background: #f27181;
   vertical-align: middle;
 }
 
 nav.primary ul {
-  text-align: center;
   font-size: 3em;
+  text-align: center;
 }
 
 nav.primary ul a {
@@ -2880,30 +2860,28 @@ nav.primary ul a {
 }
 
 button {
-  line-height: 1.6;
   padding: 0.6em 1em;
-  font-size: 1rem;
-  outline: none;
   border: 0;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 button.primary-menu-btn {
-  color: #52dfb4;
+  display: block;
+  z-index: 99999;
   position: absolute;
-  padding: 1em 1.75em;
   left: -23px;
   width: 100%;
-  text-align: right;
-  z-index: 99999;
-  background-color: rgba(0, 0, 0, 0.16);
-  -webkit-transform: scale(1, 1.05) skew(-8deg, 0deg);
-  -ms-transform: scale(1, 1.05) skew(-8deg, 0deg);
+  padding: 1em 1.75em;
   transform: scale(1, 1.05) skew(-45deg, 0deg);
-  display: block;
-  line-height: 100%;
-  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.16);
+  color: #52dfb4;
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 100%;
+  text-align: right;
   cursor: pointer;
 }
 
@@ -2912,10 +2890,10 @@ button.active {
 }
 
 .container.intro {
+  height: 90vh;
   background-color: #273269;
   background-color: #5e6bb8;
   color: #ffffff;
-  height: 75vh;
 }
 
 .container.intro .page__title {
@@ -2923,7 +2901,7 @@ button.active {
 }
 
 .container.blog {
-  height: 75vh;
+  height: 90vh;
   text-align: left;
 }
 
@@ -2936,8 +2914,8 @@ button.active {
 }
 
 .container.portfolio {
+  height: 90vh;
   color: #52dfb4;
-  height: 75vh;
   text-align: left;
 }
 
@@ -2950,9 +2928,9 @@ button.active {
 }
 
 .container.brm {
+  height: 90vh;
   background-color: #ffffff;
   color: #1d4d9c;
-  height: 75vh;
 }
 
 .container.brm .page__title,
@@ -2961,9 +2939,9 @@ button.active {
 }
 
 .container.mena {
+  height: 90vh;
   background-color: #ffffff;
   color: #7d4c92;
-  height: 75vh;
 }
 
 .container.mena .page__title,
@@ -2972,9 +2950,9 @@ button.active {
 }
 
 .container.cpl {
+  height: 90vh;
   background-color: #ffffff;
   color: #c21f2f;
-  height: 75vh;
 }
 
 .container.cpl .page__title,
@@ -2983,8 +2961,8 @@ button.active {
 }
 
 .container.paw {
+  height: 90vh;
   background-color: #ffffff;
-  height: 75vh;
 }
 
 .container.paw .page__title {
@@ -3000,9 +2978,9 @@ button.active {
 }
 
 .container.fitnessapp {
+  height: 90vh;
   background-color: #ffffff;
   color: #f1bf9c;
-  height: 75vh;
 }
 
 .container.fitnessapp .page__title {
@@ -3014,8 +2992,8 @@ button.active {
 }
 
 .container.bookmarks {
+  height: 90vh;
   color: white;
-  height: 75vh;
 }
 
 .container.bookmarks .page__title {
@@ -3043,15 +3021,15 @@ button.active {
 }
 
 .page__logo {
-  margin: 2em auto;
-  max-width: 200px;
   display: block;
+  max-width: 200px;
+  margin: 2em auto;
 }
 
 .page__title {
-  font-size: 58px;
-  color: #50e3c2;
   margin-bottom: 8px;
+  color: #50e3c2;
+  font-size: 58px;
   letter-spacing: 0.05rem;
 }
 
@@ -3060,9 +3038,9 @@ button.active {
 }
 
 .section__title {
-  font-size: 2.5em;
   margin-bottom: 24px;
   color: #fde803;
+  font-size: 2.5em;
 }
 
 .section__title.text--display {
@@ -3070,9 +3048,9 @@ button.active {
 }
 
 .text--display {
+  color: #f27181;
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 5.5em;
-  color: #f27181;
   line-height: 1.2;
 }
 
@@ -3083,14 +3061,14 @@ button.active {
 .list-title {
   color: #fde803;
   font-size: 80%;
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .position-bottom-right {
   position: absolute;
-  bottom: 2em;
   right: 0;
+  bottom: 2em;
 }
 
 .position-top-left {
@@ -3107,13 +3085,13 @@ button.active {
 }
 
 .title-image {
-  max-width: 260px;
   width: 100%;
+  max-width: 260px;
 }
 
 .icon-image {
-  max-width: 50%;
   width: 100%;
+  max-width: 50%;
   opacity: 0.15;
 }
 
@@ -3140,22 +3118,22 @@ button.active {
 .card {
   height: 100%;
   padding: 32px;
-  background: white;
-  border-width: 16px;
-  border-bottom-color: #3333;
-  border-right-color: #3333;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  border-style: solid;
   border-top: none;
   border-left: none;
+  border-width: 16px;
+  border-style: solid;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right-color: #3333;
+  border-bottom-color: #3333;
+  background: white;
 }
 
 .card:after {
-  content: '';
   display: block;
   position: absolute;
+  content: '';
 }
 
 ul.bookmarks {
@@ -3179,14 +3157,14 @@ ul.bookmarks li a:hover {
 }
 
 ul.portfolio .list__item {
-  border: none;
   margin-bottom: 24px;
+  border: none;
 }
 
 ul.portfolio .list__item article {
   padding: 3em;
-  background-color: #4d3b7e;
   border-radius: 8px;
+  background-color: #4d3b7e;
 }
 
 ul.portfolio .list__item a {
@@ -3203,25 +3181,25 @@ ul.portfolio .list__item small {
 }
 
 ul.blog .list__item {
-  border: none;
   margin-bottom: 24px;
+  border: none;
 }
 
 ul.blog .list__item article {
   padding: 3em 2em;
-  background-color: #4d3b7e;
   border-radius: 8px;
+  background-color: #4d3b7e;
 }
 
 ul.blog .list__item p,
 ul.blog .list__item small {
-  color: #ffffff;
   margin: 0;
+  color: #ffffff;
 }
 
 ul.blog .list__item a {
-  color: #52dfb4;
   padding: 16px 0;
+  color: #52dfb4;
 }
 
 ul.blog .list__item a:hover {
@@ -3229,10 +3207,10 @@ ul.blog .list__item a:hover {
 }
 
 .button--previous {
-  font-size: 20px;
-  color: white;
   padding: 4px;
   border: 3px solid transparent;
+  color: white;
+  font-size: 20px;
 }
 
 .button--previous:focus {
@@ -3241,8 +3219,8 @@ ul.blog .list__item a:hover {
 }
 
 .button--previous span {
-  font-size: 17px;
   padding-right: 4px;
+  font-size: 17px;
 }
 
 .button-group {
@@ -3294,8 +3272,8 @@ ul.blog .list__item a:hover {
 }
 
 .content {
-  font-size: 16px;
   width: 100%;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -3311,15 +3289,15 @@ ul.blog .list__item a:hover {
 
 @media only screen and (min-width: 1100px) {
   .specimen.stretch {
-    margin-left: -10vw;
     margin-right: -10vw;
+    margin-left: -10vw;
   }
 }
 
 .caption {
-  text-align: left;
-  font-size: 16px;
   margin: 8px 0;
+  font-size: 16px;
+  text-align: left;
 }
 
 .attribution {
@@ -3331,20 +3309,17 @@ ul.blog .list__item a:hover {
 }
 
 .stack {
+  padding: 16px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
-  padding: 16px;
 }
 
 .paper {
+  padding: 8px;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  padding: 8px;
-  width: 100%;
 }
 
 .video-player {
   margin-bottom: 48px;
 }
-
-/*# sourceMappingURL=maps/styles.css.map */
