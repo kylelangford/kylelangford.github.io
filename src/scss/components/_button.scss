@@ -44,38 +44,11 @@ $button-primary-background-color--hover: $action-color--hover !default;
 $button-primary-background-color--focus: $action-color--focus !default;
 $button-primary-background-color--active: $action-color--active !default;
 
-@mixin clickable {
-  appearance: none;
-  cursor: pointer;
-  display: inline-block;
-  line-height: normal;
-  -webkit-font-smoothing: antialiased;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-shadow: none;
-  font-size: 1rem;
-  font-weight: 600;
-
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: none;
-    text-decoration: none;
-  }
-
-  &:disabled,
-  &:disabled:active,
-  &.is-disabled,
-  &.is-disabled:active {
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
+button {
+  @include buttonize();
 }
 
-.button,
-.form-submit {
+.button {
   @include buttonize();
   padding: $button-padding-default;
   border-radius: $base-corner-radius;
@@ -108,70 +81,36 @@ $button-primary-background-color--active: $action-color--active !default;
     cursor: not-allowed;
     opacity: 0.5;
   }
-}
 
-.button--small {
-  font-size: 1rem;
-  padding: $button-padding-small;
-}
-
-.button--primary,
-.form-submit {
-  background: $button-primary-background-color;
-  border-color: $button-primary-background-color;
-  color: $white;
-
-  &:hover,
-  &:focus {
-    background: $button-primary-background-color--hover;
-    border-color: $button-primary-background-color--hover;
+  &.button--primary,
+  &.form-submit {
+    background: $button-primary-background-color;
+    border-color: $button-primary-background-color;
     color: $white;
+
+    &:hover,
+    &:focus {
+      background: $button-primary-background-color--hover;
+      border-color: $button-primary-background-color--hover;
+      color: $white;
+    }
+
+    &:active {
+      background: $button-primary-background-color--active;
+      border-color: $button-primary-background-color--active;
+    }
   }
 
-  &:active {
-    background: $button-primary-background-color--active;
-    border-color: $button-primary-background-color--active;
+  &.button--small {
+    font-size: 1rem;
+    padding: $button-padding-small;
   }
 }
 
-.button--inline {
-  display: inline;
-  cursor: pointer;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  background: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  font-weight: 400;
-  text-decoration: underline;
+.button-group {
+  margin-bottom: g(6);
 
-  .danger {
-    color: #c72100;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #ff2a00;
-    text-decoration: underline;
-    text-shadow: none;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-    background: none;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    color: #737373;
-    cursor: default;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-    background: none;
-  }
+  // side by side
+  // Centered
+  // add v spacing
 }

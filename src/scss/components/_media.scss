@@ -1,0 +1,45 @@
+// Media Content
+.specimen,
+.media {
+  margin-bottom: g(6);
+  text-align: center;
+
+  &.stretch {
+    @include media($md-breakpoint) {
+      margin-left: -10vw;
+      margin-right: -10vw;
+    }
+  }
+}
+
+.media__caption,
+.caption {
+  text-align: left;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+/* Carousel Styling */
+.stack {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */ 0 1px 1px rgba(0, 0, 0, 0.15),
+    /* The second layer */ 0 10px 0 -5px #eee,
+    /* The second layer shadow */ 0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    /* The third layer */ 0 20px 0 -10px #eee,
+    /* The third layer shadow */ 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  padding: g(2);
+}
+
+/* Image Styling */
+.paper {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  // width: 100%;
+}
+
+/* Video Styling */
+.video-player {
+  margin-bottom: g(6);
+}

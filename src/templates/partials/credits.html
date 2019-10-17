@@ -1,7 +1,19 @@
-<footer class="credits panel">
+<footer class="credits">
+
+  <p class="attribution">{{ attribution }}</p>
+
+  <ul class="team-list">
+    {{#each team}}
+    <li class="list__item">{{this.name}}: {{this.title}}</li>
+    {{/each}}
+  </ul>
+
   <div class="line-behind-text">
     <!-- Credits: Copyright -->
-    <h2>END</h2>
+    <h2 class="last-edit">Last Edit: {{last-edit}}</h2>
   </div>
+
   <p class="copy"></span> Kyle Langford 2019</p>
+
 </footer>
+

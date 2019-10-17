@@ -1,6 +1,19 @@
 ---
 title: Elev8d Fitness
 description: Angular Video Component and Playlist
+team:   
+-
+  name: Nicole Baltzer
+  title: Partner
+-
+  name: Jason Fournier
+  title: UI Designer
+-
+  name: Kyle Langford
+  title: UX Designer, Front-End Developer
+-
+  name: Christian Gonzalez
+  title: Developer
 ---
 
 {{> header}}
@@ -23,7 +36,7 @@ description: Angular Video Component and Playlist
           this challanging.
         </p>
 
-        <div class="specimen">
+        <div class="specimen stretch">
           <img
             src="../assets/img/projects/elev8d/video-player.jpg"
             alt="Elephant at sunset"
@@ -54,16 +67,8 @@ description: Angular Video Component and Playlist
           Sorry, your browser doesn't support embedded videos.
         </video>
 
-        <div class="credits">
-          <p class="attribution">Work done at Brunello, Inc.</p>
-          <ul class="team-list">
-            <li>Nicole Baltzer: PM</li>
-            <li>Jason Fournier: Designer</li>
-            <li>Kyle Langford: Designer, Front-End Developer</li>
-            <li>Christian: Developer</li>
-          </ul>
-          <p class="last-edit">Last Edit: 5.30.19</p>
-        </div>
+        {{ > credits}}
+
       </article>
     </div>
   </div>

@@ -24,3 +24,5 @@ All content in /blog, /demo and /portfolio are mine. I own them. Everything else
 
 - Add GA
 - Handlebar Templates
+
+https://www.npmjs.com/package/stylelint-config-standard

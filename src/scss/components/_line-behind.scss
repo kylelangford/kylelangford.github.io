@@ -1,0 +1,19 @@
+// Line Behind Text
+.line-behind-text {
+  border-bottom: 1px solid $paragraph-font-color;
+  text-align: center;
+  width: 20%;
+  min-width: 200px;
+  margin: 0 auto 2.5em;
+
+  h2 {
+    background: #f4f4f4;
+    color: $paragraph-font-color;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: 14px;
+  }
+}

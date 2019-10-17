@@ -1,0 +1,30 @@
+/* Underlined Link */
+.link {
+  display: inline;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 400;
+  text-decoration: underline;
+
+  .danger {
+    color: #c72100;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ff2a00;
+    text-decoration: underline;
+    text-shadow: none;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: none;
+  }
+}

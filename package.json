@@ -25,24 +25,31 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "css-declaration-sorter": "^4.0.1",
+    "eslint-config-prettier": "^6.4.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^7.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-csslint": "^1.0.1",
     "gulp-eslint": "^6.0.0",
+    "gulp-if": "^3.0.0",
     "gulp-modernizr": "^3.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-series": "^1.0.2",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^10.0.0",
     "gulp-uglify": "^3.0.0",
     "marked": "^0.7.0",
     "normalize.css": "^8.0.1",
     "panini": "^1.6.3",
     "path": "^0.12.7",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0",
+    "yargs": "^14.2.0"
   },
   "dependencies": {}
 }

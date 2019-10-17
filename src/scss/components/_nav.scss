@@ -1,0 +1,64 @@
+// Button
+button {
+	&.primary-menu-btn {
+		line-height: 1.6;
+		padding: 0.6em 1em;
+		font-size: 1rem;
+		outline: none;
+		border: 0;
+		color: #52dfb4;
+		position: absolute;
+		padding: 1em 1.75em;
+		width: 100%;
+		text-align: right;
+		z-index: 99999;
+		background-color: rgba(0, 0, 0, 0.16);
+		display: block;
+		line-height: 100%;
+		letter-spacing: 2px;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	&.active {
+		background-color: rgba(200, 200, 200, 0.32);
+	}
+}
+
+// Navigation
+nav {
+	&.primary {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		opacity: 0;
+		z-index: -1;
+		display: none;
+
+		// Overlay
+		&.overlay {
+			transition: opacity 0.5s ease-in;
+			display: table;
+			opacity: 1;
+			z-index: 999;
+
+			.container {
+				background: #f27181;
+				display: table-cell;
+				padding: 0;
+				vertical-align: middle;
+			}
+		}
+
+		ul {
+			// width: 100vw;
+			text-align: center;
+			font-size: 3em;
+
+			a {
+				color: $future-yellow;
+			}
+		}
+	}
+}

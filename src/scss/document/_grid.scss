@@ -1,18 +1,24 @@
 /* 
 * Any styling that should be applied to screen widths larger
 * than a mobile device: tablet, laptop, desktop, etc. 
+
+
+Gutter: The space between the columns.
+
 */
 
 $gutter--desktop: 20px;
 $gutter--mobile: 20px;
-$half: calc(100% / 2);
 
 .column {
   margin-bottom: grid(4);
 }
 
+/*
+Columns: The vertical divisions of the page.
+*/
+
 @include media($md-breakpoint) {
-  
   .column {
     padding-right: $gutter--desktop;
     width: 100%;
@@ -21,62 +27,26 @@ $half: calc(100% / 2);
       padding-right: 0;
     }
 
-    &.full { 
+    &.full {
       width: 100%; // 12
     }
 
     &.half {
-      width: calc(100% / 2) // 6
+      width: calc(100% / 2); // 6
     }
-    
+
     &.one-third {
       width: calc(100% / 3); // 4
     }
-    
+
     &.two-thirds {
       width: calc(100% / 1.5); // 4
     }
-    
+
     &.one-fourth {
       width: calc(100% / 4); // 3
     }
-    
-    &.three-fourth {
-      width: calc(100% / 4); // 3
-    }
-  }
-}
 
-@include media($md-breakpoint) {
-  
-  .grid {
-    padding-right: $gutter--desktop;
-    width: 100%;
-
-    &:last-of-type {
-      padding-right: 0;
-    }
-
-    &.full { 
-      width: 100%; // 12
-    }
-
-    &.half {
-      width: calc(100% / 2) // 6
-    }
-    
-    &.one-third {
-      width: calc(100% / 3); // 4
-    }
-    
-    &.two-thirds {
-      width: calc(100% / 1.5); // 4
-    }
-    
-    &.one-fourth {
-      width: calc(100% / 4); // 3
-    }
-    
     &.three-fourth {
       width: calc(100% / 4); // 3
     }

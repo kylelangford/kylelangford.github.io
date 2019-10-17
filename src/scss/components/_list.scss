@@ -44,3 +44,24 @@
     }
   }
 }
+
+.list-title {
+  color: $future-yellow;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.icon-list {
+  position: absolute;
+  left: -20px;
+  padding-top: 4px;
+}
+
+.gold-star {
+  color: #ffd700;
+}
+
+.blue-drupal {
+  color: #0678be;
+}

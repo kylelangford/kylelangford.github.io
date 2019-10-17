@@ -1,6 +1,21 @@
 ---
 title: PAW
 description: Site Design and Build
+attribution: Work done at Brunello, Inc.
+last-edit: 5.30.19
+team:   
+-
+  name: Nicole Baltzer
+  title: Partner
+-
+  name: Jason Fournier
+  title: UI Designer
+-
+  name: Kyle Langford
+  title: Designer, Front-End Developer
+-
+  name: Mike Calebrese
+  title: Drupal Developer
 ---
 
 {{> header}}
@@ -21,7 +36,6 @@ description: Site Design and Build
         </div>
 
         <!-- Goals -->
-
         <p>
           My accomplishments for this project include crafting a process
           from research to development. I designed reusable components and
@@ -251,7 +265,7 @@ description: Site Design and Build
           with about 100 variations.
         </p>
 
-        <pre><code>
+        <pre class="markup"><code class="language-html"> 
 $(elem).appendTo('.header-region').load("inc/header.html");
       </code></pre>
 
@@ -272,16 +286,8 @@ $(elem).appendTo('.header-region').load("inc/header.html");
           <a href="https://paw.princeton.edu" class="button">Live Site</a>
         </div>
 
-        <div class="credits">
-          <p class="attribution">Work done at Brunello, Inc.</p>
-          <ul class="team-list">
-            <li>Jason Fournier: Designer</li>
-            <li>Kyle Langford: Designer, Front-End Developer</li>
-            <li>Mike Calebrese: Drupal Developer</li>
-            <li>Nicole Baltzer: PM</li>
-          </ul>
-          <p class="last-edit">Last Edit: 5.30.19</p>
-        </div>
+        {{> credits}}
+
       </article>
     </div>
   </div>

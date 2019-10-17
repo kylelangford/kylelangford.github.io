@@ -1,6 +1,18 @@
 ---
 title: B'link
-description: Feature Design
+description: Scheduling and Asset Management
+attribution: Work done at Brunello, Inc.
+last-edit: 5.30.19
+team:   
+-
+  name: Adam Hoyle
+  title: Partner
+-
+  name: Jason Fournier
+  title: UI Designer
+-
+  name: Kyle Langford
+  title: Designer / Developer
 ---
 
 {{> header}}
@@ -9,60 +21,158 @@ description: Feature Design
   <div class="row flex flex--justify pad-default">
     <div class="column two-thirds">
       <article class="content">
-        <h4>Feature Design</h4>
 
         <p>
-          <strong>Ask</strong>
-          Needed to display topics over a timeline...
+          <strong>What is B'link</strong>
+          a quick introduction
+        </p>
+
+        <div class="specimen stretch">
+          <img
+            src="../assets/img/projects/blink/home.jpg"
+            alt="Elephant at sunset"
+            class="paper"
+          />
+          <div class="caption">This is the Homepage</div>
+        </div>
+
+        <div class="specimen stretch">
+          <img
+            src="../assets/img/projects/blink/categories.jpg"
+            alt="Elephant at sunset"
+            class="paper"
+          />
+          <div class="caption">You can browse categories</div>
+        </div>
+        
+        <div class="specimen stretch">
+          <img
+            src="../assets/img/projects/blink/topics.jpg"
+            alt="Elephant at sunset"
+            class="paper"
+          />
+          <div class="caption">Asset topics are organized into categories</div>
+        </div>
+
+
+        <h4>New Feature Development</h4>
+
+        <p>
+          B'Link is an assement management website that is advertised as a "Simple, step-by-step suggestions for the best communications to use each month during your plan year." The site was well recieved but user struggled to know when to best use the digital communications. The client asked for a way to show samople communication plans. The client loved pdfs so that was the initial thought, we were able to convice them that the pdf would better be managed as a web content and that their drupal cms could hanlde creating a well designed schedule. 
         </p>
 
         <p>
-          <strong>Solution</strong>
-          Needed to display topics over a timeline...
-        </p>
-
-        <p>
-          <strong>Content</strong>
-          Needed to display topics over a timeline...
+          <strong>Schedule</strong>
+          Needed a way to display topics over a timeline...
         </p>
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/brm/.jpg"
+            src="../assets/img/projects/blink/schedule-drawing.jpg"
             alt="Elephant at sunset"
             class="paper"
           />
-          <div class="caption">Sketch of Idea</div>
+          <div class="caption">Initial Sketch</div>
         </div>
 
-        <div class="specimen">
+        <p>
+          We needed a way to organize the content but be easy to update in the future.  My initial Drawing looks a bit like a gant chart, but shows a layout that takes advantage of Drupal page building. I know we could use repeating fieldgroups to set arbitrary groups of topics. 
+        </p>
+
+        <div class="specimen stretch">
           <img
-            src="../assets/img/projects/brm/.jpg"
+            src="../assets/img/projects/blink/003-sample-timeline.jpg"
             alt="Elephant at sunset"
             class="paper"
           />
-          <div class="caption">Design of Idea</div>
+          <div class="caption">Using the site taxonomy and a few preprosecor hooks we are able to organize the topics and sort them visually using flexbox.</div>
         </div>
 
-        <p>
-          <strong>Implementation</strong>
-          Needed to display topics over a timeline...
-        </p>
+        <pre class="markup"><code class="language-php"> 
+$rowCount = count($rows);
 
-        <p>
-          <strong>Flexbox</strong>
-          Needed to display topics over a timeline...
-        </p>
+// If 2
+if ($rowCount == 2) {
+  // If "Get the most out of your benefits" and "Take care of your health"
+  if (array_key_exists("Get the most out of your benefits", $rows) && array_key_exists("Take care of your health", $rows) ) {
+   // Then "Get the Most" margin-left: auto
+    $layoutclass = 'double-right';
+  }
+  // If "Understand your benefits and costs" and "Take care of your health"
+  if (array_key_exists("Understand your benefits and costs", $rows) && array_key_exists("Take care of your health", $rows) ) {
+    // Then "Take Care" margin-left: auto
+    $layoutclass = 'double-split';
+  }
+} 
 
-        <div class="credits">
-          <p class="attribution">Work done at Brunello, Inc.</p>
-          <ul class="team-list">
-            <li>Adam Hoyle: Partner</li>
-            <li>Jason Fournier: UX Designer</li>
-            <li>Kyle Langford: UX Developer</li>
-          </ul>
-          <p class="last-edit">Last Edit: 5.30.19</p>
-        </div>
+// If 1
+if ($rowCount == 1) {
+  // If "Get the most out of your benefits" and "Take care of your health"
+  if (array_key_exists("Take care of your health", $rows) ) {
+    // Then "Take care of your health" margin-left: auto
+    $layoutclass = 'single-right';
+  }
+  // If "Understand your benefits and costs" and "Take care of your health"
+  if (array_key_exists("Get the most out of your benefits", $rows) ) {
+    // Then "Get the Most" margin-left: auto, margin-right: auto
+    $layoutclass = 'single-center';
+  }
+}
+
+?>
+        </code></pre>
+
+        <pre class="markup"><code class="language-css"> 
+// Row Container
+.schedule-grouping {
+  display: flex;
+
+  // Row Column
+  .schedule-column {
+    width: 33%;
+
+    // Topic Wrapper
+    .inner-wrapper {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+  // Layout Modifiers
+  &.double-right {
+    .schedule-column:first-of-type {
+      // Right Align Middle Item, First Item Aligned Left 
+      margin-left: auto;
+    }
+  }
+
+  &.double-split {
+    .schedule-column:nth-of-type(2) {
+      /* Right Align Middle Item, First Item Aligned Left */
+      margin-left: auto;
+    }
+  }
+
+  &.single-center {
+    .schedule-column {
+      // Center Align
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &.single-right {
+    .schedule-column {
+      // Right Align
+      margin-left: auto;
+    }
+  }
+}          
+        </code></pre>
+
+        {{> credits }}
+
       </article>
     </div>
   </div>

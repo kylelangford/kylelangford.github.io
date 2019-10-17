@@ -1,0 +1,21 @@
+// Visibility
+.hide {
+	display: none !important;
+}
+
+.hide--visually {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	word-wrap: normal;
+}
+
+.hide--for-mobile {
+	display: none;
+
+	@include media($sm-breakpoint) {
+		display: unset;
+	}
+}

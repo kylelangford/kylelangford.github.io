@@ -4,13 +4,15 @@
  * http://everhood.co
  * Copyright 2018 Kyle Langford */
 
-@import '../../build/assets/fonts/feather-icons/style';
+/* Vars */
+@import 'vars';
 
 /* Mixins */
 @import 'mixins/bem';
 @import 'mixins/clearfix';
 @import 'mixins/buttonize';
 @import 'mixins/containerize';
+// @import 'mixins/panelize';
 @import 'mixins/grid';
 @import 'mixins/iconize';
 @import 'mixins/media-queries';
@@ -20,29 +22,37 @@
 @import 'mixins/rem';
 @import 'mixins/zebra';
 
-/* Vars */
-@import 'vars';
-@import 'breakpoints';
+/* Document */
+@import 'document/grid';
+@import 'document/layout';
+@import 'document/elements';
+@import 'document/spacing';
+@import 'document/visibility';
 
-/* Base */
-@import 'base/animate';
-@import 'base/grid';
-@import 'base/layout';
-@import 'base/elements';
-@import 'base/spacing';
-@import 'base/row-flex';
-@import 'base/visibility';
+/* Icons */
+@import '../../build/assets/fonts/feather-icons/style';
+
+/* Animation */
+@import 'animations/animate';
+@import 'animations/fade-in';
+@import 'animations/bounce';
+@import 'animations/hint';
 
 /* Components */
-@import 'components/animations/fade-in';
-@import 'components/animations/bounce';
-@import 'components/animations/hint';
-@import 'components/slick/slick';
-@import 'components/slick/slick-theme';
-@import 'components/button';
 @import 'components/article';
-@import 'components/panel';
+@import 'components/button';
+@import 'components/link';
+@import 'components/line-behind';
 @import 'components/list';
+@import 'components/media';
+@import 'components/nav';
 
-/* custom */
+/* Slick Carousel */
+@import 'vendor/slick-js/slick';
+@import 'vendor/slick-js/slick-theme';
+
+/* Syntax Highlighting */
+@import 'vendor/prism-js/prism';
+
+/* Custom Styling */
 @import 'everhood';
