@@ -4,10 +4,11 @@
   text-align: center;
   width: 20%;
   min-width: 200px;
-  margin: 0 auto 2.5em;
+  margin: 8em auto 3em;
 
   h2 {
     background: #f4f4f4;
+    margin-bottom: 0;
     color: $paragraph-font-color;
     display: inline-block;
     font-size: 1rem;
@@ -15,5 +16,14 @@
     position: relative;
     text-transform: uppercase;
     top: 14px;
+  }
+
+  &.purple {
+    border-color: #262d57;
+
+    h2 {
+      background: #5e6bb8;
+      color: #262d57;
+    }
   }
 }

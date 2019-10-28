@@ -1,11 +1,57 @@
+---
+back-url: /
+work:   
+-
+  title: Bally Ribbon Mills
+  description: Web Design, Logo Design, Drupal Development
+  href: /work/brm
+-
+  title: Cambridge Public Library
+  description: Enviromental Signage, Wayfinding.
+  href: /work/cpl
+-
+  title: Drizly
+  description: Prodcut Design, AngularJS Development
+  href: /work/drizly
+-
+  title: Elev8d Fitness
+  description: UX Design, Angular Development.
+  href: /work/fitnessapp
+-
+  title: Healthy Living Engine (HLE)
+  description: Frontend Development, APP/Drupal Development, UX Design
+  href: /work/hle
+-
+  title: Princeton Alumni Magazine
+  description: UX Design, Drupal Development
+  href: /work/paw
+capabilities:
+-
+  title: Implementation
+  description: Lorem Ipsum
+  href: /capabilities/implementation
+-
+  title: Page Layout
+  description: Lorem Ipsum
+  href: /capabilities/layout
+-
+  title: Information Architecture
+  description: Lorem Ipsum
+  href: /capabilities/info
+-
+  title: Moodboards
+  description: Lorem Ipsum
+  href: /capabilities/moodboards
+
+---
+
 <header class="container size-to-window portfolio">
   <div class="row flex flex-align--center flex--justify fill-height">
     <nav class="position-top-left">
-      <a href="/" class="button--previous">$ cd ..</a>
+      <a href="{{back-url}}" class="button--previous">$ cd ..</a>
     </nav>
-
     <div class="column two-thirds">
-      <h1 class="page__title">Portfolio</h1>
+      <h1 class="page__title">Po<span class="kern-1">rtf</span>olio</h1>
     </div>
   </div>
 </header>
@@ -13,106 +59,49 @@
 <main class="container">
   <div class="row flex flex--justify pad-default">
     <div class="column two-thirds">
+
+      <h3 class="list-title animate fade-in">Capabilities</h3>
+
       <ul class="list portfolio">
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/brm">
-              <span class="label">Bally Ribbon Mills</span>
-              <p>
-                Site Design and Drupal Development
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/blink-schedule">
-              <span class="label">Premera B'Link</span>
-              <p>
-              Site Design and Drupal Development
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/brunello">
-              <span class="label">Brunello.com</span>
-              <p>
-               Site Design and Development
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/cpl">
-              <span class="label">Cambridge Public Library</span>
-              <p>
-                Enviromental Signage and Wayfinding.
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/email-builder">
-              <span class="label">Drizly Email Builder</span>
-              <p>
-                Drag and Drop email building tool.
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/fitnessapp">
-              <span class="label">Elev8d Fitness</span>
-              <p>
-                Angular Video Component and Playlist.
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item animate fade-in">
-          <article class="view--teaser">
-            <a href="/work/hle">
-              <span class="label">Healthy Living Engine</span>
-              <p>
-                Design and Development for web application. 
-              </p>
-            </a>
-          </article>
-        </li>
-        <li class="list__item">
-          <article class="view--teaser">
-            <a href="/work/imaginatik">
-              <span class="label">Imaginatik</span>
-              <p>
-                Site Design and Drupal Development
-              </p>
-            </a>
-          </article>
-        </li>
-        <!-- <li class="list__item">
-          <a href="/work/mena">
-            <span class="label">Mass. Emergency Nurse Association</span>
-            <p>
-              Site design and Drupal build.
-            </p>
-          </a>
-        </li> -->
-        <li class="list__item">
-          <article class="view--teaser">
-            <a href="/work/paw">
-              <span class="label">Princeton Alumni Magazine</span>
-              <p>
-                Site Design and Drupal build.
-              </p>
-            </a>
-          </article>
-        </li>
+        {{#each capabilities}}
+          <li class="list__item animate fade-in">
+            <article class="view--teaser">
+              <a href="{{ this.href }}">
+                <span class="label">{{ this.title }}</span>
+                <p>
+                  {{ this.description }}
+                </p>
+              </a>
+            </article>
+          </li>
+        {{/each}}
       </ul>
+
+      <br>
+      <br>
+
+      <h3 class="list-title animate fade-in">Best Work</h3>
+
+      <ul class="list portfolio">
+        {{#each work}}
+          <li class="list__item animate fade-in">
+            <article class="view--teaser">
+              <a href="{{ this.href }}">
+                <span class="label">{{ this.title }}</span>
+                <p>
+                  {{ this.description }}
+                </p>
+              </a>
+            </article>
+          </li>
+        {{/each}}
+      </ul>
+
+      <div class="line-behind-text purple">
+        <!-- Credits: Copyright -->
+        <h2 class="last-edit">THANK YOU</h2>
+      </div>
+      
     </div>
   </div>
 </main>

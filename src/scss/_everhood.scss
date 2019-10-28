@@ -101,7 +101,7 @@ body {
 
 // Custom Layout
 .container {
-  $height: 80vh;
+  $height: 60vh;
 
   &.intro {
     background-color: $twilight;
@@ -136,6 +136,9 @@ body {
 
     .page__title {
       color: $cyber-green;
+      color: #262d57;
+      font-size: 17vw;
+      opacity: 0.65;
     }
 
     .button--previous {
@@ -194,16 +197,42 @@ body {
   }
 
   &.fitnessapp {
-    background-color: $white;
-    color: #f1bf9c;
+    background-color: #f1bf9c;
+    color: $white;
     height: $height;
 
     .page__title {
-      color: #f1bf9c;
+      color: $white;
     }
 
     .button--previous {
-      color: #f1bf9c;
+      color: $white;
+    }
+  }
+
+  &.hle {
+  }
+
+  &.blink {
+    background-color: $white;
+
+    color: #337ab7;
+
+    .page__title {
+      color: #337ab7;
+    }
+
+    .button--previous {
+      color: #337ab7;
+    }
+  }
+
+  &.drizly {
+    color: white;
+
+    background-color: #e02b2d;
+    .page__title {
+      color: $white;
     }
   }
 
@@ -215,36 +244,6 @@ body {
     .page__title {
       color: $future-yellow;
     }
-  }
-}
-
-.page--paw {
-  h4 {
-    color: $paw;
-  }
-}
-
-.page--fitnessapp {
-  h4 {
-    color: #f1bf9c;
-  }
-}
-
-.page--brm {
-  h4 {
-    color: #1d4d9c;
-  }
-}
-
-.page--cpl {
-  h4 {
-    color: #c21f2f;
-  }
-}
-
-.page--mena {
-  h4 {
-    color: #7d4c92;
   }
 }
 
@@ -273,23 +272,30 @@ ul.portfolio {
     border: none;
     margin-bottom: 24px;
 
-    article {
-      padding: 3em;
-      background-color: #4d3b7e;
-      border-radius: 8px;
+    .label {
+      font-size: 32px;
     }
 
     a {
       color: $cyber-green;
+      color: #262d57;
 
       &:hover {
         color: darken($cyber-green, 15%);
+
+        p {
+          color: darken($cyber-green, 15%);
+        }
       }
     }
 
     p,
     small {
-      // color: $white;
+      @include prefix(transition, color 0.15s linear, webkit ms);
+      color: $white;
+      color: #262d57;
+      font-size: 1em;
+      font-weight: 600;
       margin: 0;
     }
   }
@@ -325,6 +331,7 @@ ul.blog {
 
 .button--previous {
   font-size: 20px;
+  font-weight: 600;
   color: white;
 
   padding: 4px;
@@ -432,10 +439,31 @@ ul.blog {
 .title-image {
   max-width: 260px;
   width: 100%;
+  margin-top: 3em;
 }
 
 .icon-image {
   max-width: 50%;
   width: 100%;
   opacity: 0.15;
+}
+
+.copy {
+  text-align: center;
+  font-size: 14px;
+}
+
+.kern-1 {
+  letter-spacing: 6px;
+}
+
+canvas {
+  transform: rotate(45deg) scale(2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0.25;
 }

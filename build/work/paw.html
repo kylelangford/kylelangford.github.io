@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+    <!-- <script src="js/modernizr-custom.js"></script> -->
 
     <noscript><style type="text/css">
         body { opacity: 1; }
@@ -34,7 +34,7 @@
     <header class="container size-to-window intro masthead paw">
       <div class="row flex flex-align--center flex--justify fill-height">
         <nav class="position-top-left">
-          <a href="/work/all.html" class="button--previous">$ cd ..</a>
+          <a href="/work/all" class="button--previous">$ cd ..</a>
         </nav>
         <div class="column half text--center">
           <h1 class="page__title">PAW</h1>
@@ -60,7 +60,6 @@
             </div>
     
             <!-- Goals -->
-    
             <p>
               My accomplishments for this project include crafting a process
               from research to development. I designed reusable components and
@@ -208,17 +207,19 @@
               previously.
             </p>
     
-            <div class="specimen text--center">
-              <img
-                src="../assets/img/projects/paw/list-blocks-sidebar-mobile.jpg"
-                alt="Elephant at sunset"
-                class="paper"
-              />
-              <img
-                src="../assets/img/projects/paw/list-blocks-sidebar.jpg"
-                alt="Elephant at sunset"
-                class="paper"
-              />
+            <div class="specimen stretch text--center">
+              <div class="split">
+                <img
+                  src="../assets/img/projects/paw/list-blocks-sidebar-mobile.jpg"
+                  alt="Elephant at sunset"
+                  class="paper"
+                />
+                <img
+                  src="../assets/img/projects/paw/list-blocks-sidebar.jpg"
+                  alt="Elephant at sunset"
+                  class="paper"
+                />
+              </div>
               <div class="caption">
                 Sidebar component, showing Desktop vs Mobile versions.
               </div>
@@ -262,12 +263,20 @@
     
             <p>Article Page</p>
             <div class="specimen">
-              <img
-                src="../assets/img/projects/paw/wireframe-rwd-article-page.png"
-                alt="Elephant at sunset"
-                class="paper"
-              />
-              <div class="caption">Full Fidelity Wireframe</div>
+              <div class="fake-browser-ui paper">
+                <div class="frame">
+                    <span style="background-color: #FB625D;"></span>
+                    <span style="background-color: #FDBD40;"></span>
+                    <span style="background-color: #35CC4B;"></span>
+                </div>
+    
+                <div class="scroll-box">
+                  <img 
+                    src="../assets/img/projects/paw/wireframe-rwd-article-page.png" 
+                    alt="A nice description">
+                </div>
+              </div>
+              <div class="caption">Full Fidelity Wireframe</div>          
             </div>
     
             <p>
@@ -290,7 +299,7 @@
               with about 100 variations.
             </p>
     
-            <pre><code>
+            <pre class="markup"><code class="language-html"> 
     $(elem).appendTo('.header-region').load("inc/header.html");
           </code></pre>
     
@@ -311,16 +320,27 @@
               <a href="https://paw.princeton.edu" class="button">Live Site</a>
             </div>
     
-            <div class="credits">
+            <footer class="credits">
+            
               <p class="attribution">Work done at Brunello, Inc.</p>
+            
               <ul class="team-list">
-                <li>Jason Fournier: Designer</li>
-                <li>Kyle Langford: Designer, Front-End Developer</li>
-                <li>Mike Calebrese: Drupal Developer</li>
-                <li>Nicole Baltzer: PM</li>
+                <li class="list__item">Nicole Baltzer: Partner</li>
+                <li class="list__item">Jason Fournier: UI Designer</li>
+                <li class="list__item">Kyle Langford: Designer, Front-End Developer</li>
+                <li class="list__item">Mike Calebrese: Drupal Developer</li>
               </ul>
-              <p class="last-edit">Last Edit: 5.30.19</p>
-            </div>
+            
+              <div class="line-behind-text">
+                <!-- Credits: Copyright -->
+                <h2 class="last-edit">Last Edit: 5.30.19</h2>
+              </div>
+            
+              <p class="copy"></span></p>
+            
+            </footer>
+            
+    
           </article>
         </div>
       </div>

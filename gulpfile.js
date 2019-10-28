@@ -21,8 +21,8 @@ const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
 
 // Settings
-// const cssOutPutStyle = 'expanded'; /* 'compressed' */
-const cssOutPutStyle = 'compressed'; /* 'compressed' */
+const cssOutPutStyle = 'expanded'; /* 'compressed' */
+// const cssOutPutStyle = 'compressed'; /* 'compressed' */
 
 // Tasks
 gulp.task('css', gulp.series(scss, prefixer, sorter));
@@ -48,7 +48,6 @@ function scss() {
         sourceMap: true,
       })
     )
-    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./build/assets/css'))
     .pipe(
       notify({
@@ -74,6 +73,7 @@ function sorter() {
   return gulp
     .src('./build/assets/css/styles.css')
     .pipe(gulpPostcss([cssDeclarationSorter({ order: 'smacss' })]))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./build/assets/css'));
 }
 
@@ -179,7 +179,8 @@ function paniniPress() {
 
 // rebuild pages after updating html
 function resetPages(done) {
-  panini.refresh();
+  // panini.refresh();
+  paniniPress();
   done();
 }
 
@@ -208,11 +209,10 @@ function watch() {
     .on('change', gulp.series('css', browser.reload));
 
   gulp
-    .watch(['./src/js/**/*.js'])
+    .watch(['./src/js/**/*.js', './src/js/*.js'])
     .on('change', gulp.series(js, browser.reload));
 
-  gulp.watch(
-    ['./src/templates/{data,helpers,layouts,pages,partials}/**/*'],
-    gulp.series(resetPages, browser.reload)
-  );
+  gulp
+    .watch(['./src/templates/**/*', './src/templates/**/**/*'])
+    .on('change', gulp.series(resetPages, browser.reload));
 }

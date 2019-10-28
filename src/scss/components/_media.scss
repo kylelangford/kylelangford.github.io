@@ -3,12 +3,20 @@
 .media {
   margin-bottom: g(6);
   text-align: center;
+}
 
-  &.stretch {
-    @include media($md-breakpoint) {
-      margin-left: -10vw;
-      margin-right: -10vw;
-    }
+.stretch {
+  @include media($md-breakpoint) {
+    margin-left: -10vw;
+    margin-right: -10vw;
+  }
+}
+
+.split {
+  display: flex;
+
+  & > div {
+    padding: 0 g(2);
   }
 }
 
@@ -42,4 +50,36 @@
 /* Video Styling */
 .video-player {
   margin-bottom: g(6);
+}
+
+.fake-browser-ui {
+  padding: 20px 0 0;
+  border-radius: 3px;
+  background: #ddd;
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+
+  .scroll-box {
+    overflow: scroll;
+    height: 500px;
+  }
+}
+
+.fake-browser-ui .frame {
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+}
+
+.fake-browser-ui span {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: #eee;
+  border: 1px solid #dadada;
+  float: left;
+  margin: 0 0 0 4px;
 }

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+    <!-- <script src="js/modernizr-custom.js"></script> -->
 
     <noscript><style type="text/css">
         body { opacity: 1; }
@@ -31,12 +31,18 @@
   <body class="page page--index">
 
     
+    <!-- <canvas id='c'></canvas> -->
+    
     <header class="container intro masthead">
       <div class="row flex flex-align--center flex--justify fill-height">
         <!-- 1.0 - Intro Name -->
         <div class="column half text--center">
+          <img
+            src="assets/img/svg/laptop.svg"
+            class="title-image"
+          />
           <h1 class="page__title">Kyle Langford</h1>
-          <h2 class="page__sub-title">Designer and Web Developer</h2>
+          <h2 class="page__sub-title">Web Design and Development</h2>
           <p class="description">Boston, MA</p>
         </div>
       </div>
@@ -46,15 +52,13 @@
       <div class="row flex flex-align--center fill-height pad-default">
         <div class="column two-thirds animate fade-in">
           <!-- 1.1 - Intro Description  -->
-          <h2 class="section__title">Digital Craftsman</h2>
+          <h2 class="section__title">Experience(d) Design</h2>
     
           <p class="text--large">
-            I work as a Designer and Web Developer for a Boston based agency. I
-            have 10 years of professional experience and entrepreneurship. I
-            find motivation in helping people use technology. I focus on
-            designing simple interfaces and writing clean human-readable code. I
-            am passionate about learning new skills and refining my processes. I
-            have a positive attitude and enjoy bringing designs to life.
+            I am a Designer and Drupal Developer @Brunello, a Boston based agency specializing in
+            Drupal. I have 10 years of professional experience and entrepreneurship in creating digital 
+            experiences. I focus on designing easy to use interfaces and writing clean human-readable 
+            code. I am passionate about learning new skills and refining my processes. I have a positive attitude and enjoy bringing ideas to life.
           </p>
         </div>
     
@@ -71,20 +75,28 @@
       <!-- 2.0 - User Interface Design  -->
       <header class="row pad-default">
         <div class="column">
-          <div class="text--display"><strong>UI</strong></div>
+          <div class="text--display"><strong>Design</strong></div>
           <p>Modern. Simple. Human.</p>
         </div>
       </header>
       <!-- 2.1 - Capabilities -->
       <div class="row flex pad-default">
         <div class="column one-fourth animate fade-in">
-          <p class="list-title">Capabilities</p>
+          <p class="list-title">Interface Design</p>
           <ul class="pretty">
-            <li>Pattern Library</li>
             <li>Information Architecture</li>
+            <li>Component Design Systems</li>
             <li>Responsive Web Design</li>
-            <li>Sitemaps</li>
-            <li>Wireframing</li>
+            <li>Page Layout</li>
+          </ul>
+        </div>
+        <div class="column one-fourth animate fade-in">
+          <!-- 3.1 - Capabilities  -->
+          <p class="list-title">Experience Design</p>
+          <ul class="pretty">
+            <li>Accessibility</li>
+            <li>Usability</li>
+            <li>Product Design</li>
           </ul>
         </div>
         <!-- 2.2 - Design Tools -->
@@ -93,20 +105,13 @@
           <ul class="pretty">
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
-            <li>Chrome Developer Tools</li>
+            <li>Balsamiq</li>
+            <li>Browser</li>
+            <li>Invision App</li>
             <li>Sketch</li>
           </ul>
         </div>
-        <div class="column one-fourth animate fade-in">
-          <!-- 3.1 - Capabilities  -->
-          <p class="list-title">Experience Design</p>
-          <ul class="pretty">
-            <li>Accessibility</li>
-            <li>Analytics</li>
-            <li>A/B Testing</li>
-            <li>User Feedback</li>
-          </ul>
-        </div>
+    
       </div>
     </section>
     
@@ -114,7 +119,7 @@
       <!-- 4.0 - Frontend Development  -->
       <header class="row flex--inline  pad-default">
         <div class="column">
-          <div class="text--display"><strong>FE</strong></div>
+          <div class="text--display"><strong>Dev<span class="hide--for-mobile">elopment</span></strong></div>
           <!-- <p>Design systems, not pages.</p> -->
           <p>Plan. Implement. Iterate.</p>
         </div>
@@ -125,12 +130,10 @@
         <div class="column one-fourth animate fade-in">
           <p class="list-title">Capabilities</p>
           <ul class="pretty">
-            <li>HTML Prototyping</li>
-            <li>Solutions Planning</li>
-            <li>Design Systems</li>
+            <li>CMS Theming</li>
+            <li>Frontend Development</li>
+            <li>Prototyping</li>
             <li>Website Development</li>
-            <li>Site Performance</li>
-            <li>Workflow Automation</li>
           </ul>
         </div>
     
@@ -139,9 +142,10 @@
           <p class="list-title">Core</p>
           <ul class="pretty">
             <li>HTML / CSS</li>
-            <li>Javascript ES6</li>
+            <li>JavaScript</li>
             <li>Gulp.js / NPM</li>
-            <li>Version Control: Git</li>
+            <li>Git</li>
+            <li>PHP</li>
           </ul>
         </div>
     
@@ -153,6 +157,7 @@
             <li>Drupal CMS</li>
             <li>Node.js</li>
             <li>Shopify CMS</li>
+            <li>LAMP Stack</li>
           </ul>
         </div>
       </div>
@@ -193,7 +198,6 @@
         <div class="column one-fourth animate fade-in">
           <p class="list-title">Locations</p>
           Boston, MA <br />
-          Salem, MA
         </div>
         <!-- 5.3 - Misc Links -->
         <div class="column one-fourth animate fade-in">
@@ -201,21 +205,29 @@
           <ul class="pretty">
             <li class="list__item">
               <a href="/bookmarks"
-                ><span class="icon-list icons-bookmark"> </span>Bookmarks</a
+                ><span class="icon-list icons-bookmark"></span>Bookmarks</a
               >
             </li>
-    <!--         <li class="list__item">
+            <li class="list__item">
               <a href="/work/all"
                 ><span class="icon-list icons-lock"></span>Portfolio</a
               >
             </li>
             <li class="list__item">
-              <a href="/assets/resume/klangford_2019.pdf"
+              <a href="/assets/resume/klangford_2020.pdf"
                 ><span class="icon-list icons-download-cloud"></span>Resume</a
               >
-            </li> -->
+            </li>
           </ul>
         </div>
+    
+        <figure class="image">
+          <img
+            src="assets/img/svg/sunglasses.svg"
+            class="icon-image position-bottom-right"
+          />
+        </figure>
+    
       </div>
     
     </section>
