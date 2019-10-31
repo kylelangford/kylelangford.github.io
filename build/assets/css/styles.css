@@ -3466,3 +3466,7 @@ canvas {
   transform: rotate(45deg) scale(2);
   opacity: 0.25;
 }
+
+.credits {
+  text-align: center;
+}
