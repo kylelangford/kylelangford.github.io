@@ -23,52 +23,37 @@
     <!-- Modernizr - Load after CSS -->
     <!-- <script src="js/modernizr-custom.js"></script> -->
 
-    <noscript
-      ><style type="text/css">
-        body {
-          opacity: 1;
-        }
-      </style></noscript
-    >
+    <noscript><style type="text/css">
+        body { opacity: 1; }
+    </style></noscript>
   </head>
 
   <body class="page page--index">
-    <!-- <canvas id='c'></canvas> -->
 
+    
+    <!-- <canvas id='c'></canvas> -->
     <header class="container intro masthead">
       <div class="row flex flex-align--center flex--justify fill-height">
-        <!-- 1.0 - Intro Name -->
-        <div class="column half text--center">
-          <!--  <img
-            src="assets/img/svg/laptop.svg"
-            class="title-image"
-          /> -->
-          <h1 class="page__title">Kyle Langford</h1>
-          <h2 class="page__sub-title">Web Design and Development</h2>
-          <p class="description">Boston, MA</p>
-
-          <!-- Currently at ACLU — ➀ working on the 2020 elections, ➁ making tools for organizers, and ➂ ?????. -->
+        <div class="column two-thirds">
+          <div class="intro-message">
+            <h1 class="page__title">Kyle Langford</h1>
+            <h2 class="page__sub-title">&nbsp;Currently <span class="icons-at-sign"></span>Brunello <span class="icons-coffee"></span> Working on Drupal websites <span class="icons-droplet"></span> Web Design projects and frontend dev <span class="icons-zap"></span> located in Boston, MA<span class="icons-home"></span></h2>
+          </div>
         </div>
       </div>
     </header>
-
+    
     <section class="container size-to-window event--close-hint">
       <div class="row flex flex-align--center fill-height pad-default">
         <div class="column two-thirds animate fade-in">
-          <!-- 1.1 - Intro Description  -->
-          <h2 class="section__title">Experience(d) Design</h2>
-
           <p class="text--large">
-            I am a Designer and Drupal Developer @Brunello, a Boston based
-            agency specializing in Drupal. I have 10 years of professional
-            experience and entrepreneurship in creating digital experiences. I
-            focus on designing easy to use interfaces and writing clean
-            human-readable code. I am passionate about learning new skills and
-            refining my processes. I have a positive attitude and enjoy bringing
-            ideas to life.
+            I am a Designer and Drupal Developer @Brunello, a Boston based agency specializing in
+            Drupal. I have 10 years of professional experience and entrepreneurship in creating digital 
+            experiences. I focus on designing easy to use interfaces and writing clean human-readable 
+            code. I am passionate about learning new skills and refining my processes. I have a positive attitude and enjoy bringing ideas to life.
           </p>
         </div>
-
+    
         <figure class="image">
           <img
             src="assets/img/svg/laptop.svg"
@@ -77,7 +62,7 @@
         </figure>
       </div>
     </section>
-
+    
     <section class="container size-to-window relative">
       <!-- 2.0 - User Interface Design  -->
       <header class="row pad-default">
@@ -118,21 +103,20 @@
             <li>Sketch</li>
           </ul>
         </div>
+    
       </div>
     </section>
-
+    
     <section class="container size-to-window relative">
       <!-- 4.0 - Frontend Development  -->
       <header class="row flex--inline  pad-default">
         <div class="column">
-          <div class="text--display">
-            <strong>Dev<span class="hide--for-mobile">elopment</span></strong>
-          </div>
+          <div class="text--display"><strong>Dev<span class="hide--for-mobile">elopment</span></strong></div>
           <!-- <p>Design systems, not pages.</p> -->
           <p>Plan. Implement. Iterate.</p>
         </div>
       </header>
-
+    
       <div class="row flex  pad-default">
         <!-- 4.1 - Capabilities -->
         <div class="column one-fourth animate fade-in">
@@ -144,7 +128,7 @@
             <li>Website Development</li>
           </ul>
         </div>
-
+    
         <!-- 4.2 - Foundation -->
         <div class="column one-fourth animate fade-in">
           <p class="list-title">Core</p>
@@ -156,7 +140,7 @@
             <li>PHP</li>
           </ul>
         </div>
-
+    
         <!-- 4.1 - Technologies -->
         <div class="column one-fourth animate fade-in">
           <p class="list-title">Technologies</p>
@@ -170,7 +154,7 @@
         </div>
       </div>
     </section>
-
+    
     <section class="container contact size-to-window relative">
       <!-- 5.0 - Contact -->
       <header class="row pad-default">
@@ -178,7 +162,7 @@
           <h2 class="section__title">Info</h2>
         </div>
       </header>
-
+    
       <div class="row flex pad-double">
         <!-- 5.1 - Get in Touch -->
         <div class="column one-fourth animate fade-in">
@@ -205,7 +189,11 @@
         <!-- 5.2 - Locations -->
         <div class="column one-fourth animate fade-in">
           <p class="list-title">Locations</p>
-          Boston, MA <br />
+          <ul class="pretty">
+            <li class="list__item">
+              Boston, MA
+            </li>
+          </ul>
         </div>
         <!-- 5.3 - Misc Links -->
         <div class="column one-fourth animate fade-in">
@@ -222,38 +210,39 @@
               >
             </li>
             <li class="list__item">
-              <a href="/assets/resume/klangford_resume.pdf"
+              <a href="/assets/resume/klangford_2020.pdf"
                 ><span class="icon-list icons-download-cloud"></span>Resume</a
               >
             </li>
           </ul>
         </div>
-
+    
         <figure class="image">
           <img
             src="assets/img/svg/sunglasses.svg"
             class="icon-image position-bottom-right"
           />
         </figure>
+    
       </div>
+    
     </section>
-
+    
     <!-- Scripts -->
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-15632291-6"
+    	async
+    	src="https://www.googletagmanager.com/gtag/js?id=UA-15632291-6"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
+    
     <!-- CDN -->
     <script>
-      window.jQuery ||
-        document.write(
-          '<script src="assets/js/jquery-2.1.0.min.js"><\/script>'
-        );
+    	window.jQuery ||
+    		document.write('<script src="assets/js/jquery-2.1.0.min.js"><\/script>');
     </script>
-
+    
     <!-- Fallback -->
     <script src="assets/js/main.js"></script>
+
   </body>
 </html>

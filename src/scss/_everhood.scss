@@ -52,32 +52,6 @@ body {
   }
 }
 
-// .mast-head {
-//   position: fixed;
-//   width: 100%;
-//   height: 6.5em;
-//   font-family: $sans-serif;
-//   z-index: 9999;
-
-//   h1 {
-//     display: inline;
-//     margin: 0;
-//     position: relative;
-//     left: -200px;
-//   }
-// }
-
-// .site-logo {
-//   position: absolute;
-//   top: 1.25em;
-//   left: 1.25em;
-//   color: #999;
-//   font-size: 1.6rem;
-//   z-index: 9999;
-//   padding-left: 1.2em;
-//   width: 300px;
-// }
-
 // Custom Colors
 .wisteria {
   color: #8e44ad;
@@ -101,21 +75,36 @@ body {
 
 // Custom Layout
 .container {
-  $height: 60vh;
+  $height: 70vh;
 
   &.intro {
     background-color: $twilight;
     background-color: #5e6bb8;
     color: $white;
-    height: $height;
+    height: 100vh;
 
     .page__title {
+      color: $white;
+      letter-spacing: 0.05rem;
+
+      font-size: 38px;
+
+      @include media($sm-breakpoint) {
+        font-size: 58px;
+      }
+    }
+
+    .page__sub-title {
       color: $cyber-green;
+      font-size: 38px;
+
+      @include media($sm-breakpoint) {
+        font-size: 58px;
+      }
     }
   }
 
   &.blog {
-    // background-color: $twilight;
     height: $height;
     text-align: left;
 
@@ -134,11 +123,11 @@ body {
     height: $height;
     text-align: left;
 
+    @include media($sm-breakpoint) {
+      height: 80vh;
+    }
     .page__title {
-      color: $cyber-green;
       color: #262d57;
-      font-size: 17vw;
-      opacity: 0.65;
     }
 
     .button--previous {
@@ -389,15 +378,19 @@ ul.blog {
   display: block;
 }
 
-.page__title {
-  font-size: 58px;
-  color: #50e3c2;
-  margin-bottom: 8px;
-  letter-spacing: 0.05rem;
-}
-
-.page__sub-title {
-  font-size: 24px;
+.intro-message {
+  h1,
+  h2 {
+    display: inline;
+  }
+  span {
+    padding: 12px;
+    font-size: 30px;
+    vertical-align: middle;
+    top: -3px;
+    color: white;
+    position: relative;
+  }
 }
 
 .section__title {
@@ -429,11 +422,15 @@ ul.blog {
 }
 
 .text--large {
-  font-size: em(16);
+  font-size: em(20);
 
   @include media($sm-breakpoint) {
     font-size: em(24);
   }
+}
+
+ul.pretty {
+  font-size: em(20);
 }
 
 .title-image {
@@ -454,7 +451,7 @@ ul.blog {
 }
 
 .kern-1 {
-  letter-spacing: 6px;
+  letter-spacing: 1px;
 }
 
 canvas {

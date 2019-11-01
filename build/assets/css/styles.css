@@ -2178,7 +2178,6 @@ content-teaser
 article {
   position: relative;
   width: 100%;
-  max-width: 700px;
   margin: 0px auto;
 }
 
@@ -2475,7 +2474,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 
 .icon-list {
   position: absolute;
-  left: -20px;
+  left: -24px;
   padding-top: 4px;
 }
 
@@ -3114,18 +3113,37 @@ body.page--bookmarks {
 }
 
 .container.intro {
-  height: 60vh;
+  height: 100vh;
   background-color: #273269;
   background-color: #5e6bb8;
   color: #ffffff;
 }
 
 .container.intro .page__title {
+  color: #ffffff;
+  font-size: 38px;
+  letter-spacing: 0.05rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .container.intro .page__title {
+    font-size: 58px;
+  }
+}
+
+.container.intro .page__sub-title {
   color: #52dfb4;
+  font-size: 38px;
+}
+
+@media only screen and (min-width: 800px) {
+  .container.intro .page__sub-title {
+    font-size: 58px;
+  }
 }
 
 .container.blog {
-  height: 60vh;
+  height: 70vh;
   text-align: left;
 }
 
@@ -3138,17 +3156,20 @@ body.page--bookmarks {
 }
 
 .container.portfolio {
-  height: 60vh;
+  height: 70vh;
   background-color: #5e6bb8;
   color: #52dfb4;
   text-align: left;
 }
 
+@media only screen and (min-width: 800px) {
+  .container.portfolio {
+    height: 80vh;
+  }
+}
+
 .container.portfolio .page__title {
-  color: #52dfb4;
   color: #262d57;
-  font-size: 17vw;
-  opacity: 0.65;
 }
 
 .container.portfolio .button--previous {
@@ -3156,7 +3177,7 @@ body.page--bookmarks {
 }
 
 .container.brm {
-  height: 60vh;
+  height: 70vh;
   background-color: #ffffff;
   color: #1d4d9c;
 }
@@ -3167,7 +3188,7 @@ body.page--bookmarks {
 }
 
 .container.mena {
-  height: 60vh;
+  height: 70vh;
   background-color: #ffffff;
   color: #7d4c92;
 }
@@ -3178,7 +3199,7 @@ body.page--bookmarks {
 }
 
 .container.cpl {
-  height: 60vh;
+  height: 70vh;
   background-color: #ffffff;
   color: #c21f2f;
 }
@@ -3189,7 +3210,7 @@ body.page--bookmarks {
 }
 
 .container.paw {
-  height: 60vh;
+  height: 70vh;
   background-color: #ffffff;
 }
 
@@ -3206,7 +3227,7 @@ body.page--bookmarks {
 }
 
 .container.fitnessapp {
-  height: 60vh;
+  height: 70vh;
   background-color: #f1bf9c;
   color: #ffffff;
 }
@@ -3242,7 +3263,7 @@ body.page--bookmarks {
 }
 
 .container.bookmarks {
-  height: 60vh;
+  height: 70vh;
   color: white;
 }
 
@@ -3387,15 +3408,18 @@ ul.blog .list__item a:hover {
   margin: 2em auto;
 }
 
-.page__title {
-  margin-bottom: 8px;
-  color: #50e3c2;
-  font-size: 58px;
-  letter-spacing: 0.05rem;
+.intro-message h1,
+.intro-message h2 {
+  display: inline;
 }
 
-.page__sub-title {
-  font-size: 24px;
+.intro-message span {
+  position: relative;
+  top: -3px;
+  padding: 12px;
+  color: white;
+  font-size: 30px;
+  vertical-align: middle;
 }
 
 .section__title {
@@ -3426,13 +3450,17 @@ ul.blog .list__item a:hover {
 }
 
 .text--large {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 @media only screen and (min-width: 800px) {
   .text--large {
     font-size: 1.5em;
   }
+}
+
+ul.pretty {
+  font-size: 1.25em;
 }
 
 .title-image {
@@ -3453,7 +3481,7 @@ ul.blog .list__item a:hover {
 }
 
 .kern-1 {
-  letter-spacing: 6px;
+  letter-spacing: 1px;
 }
 
 canvas {
