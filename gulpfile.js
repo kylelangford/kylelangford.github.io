@@ -179,8 +179,8 @@ function paniniPress() {
 
 // rebuild pages after updating html
 function resetPages(done) {
-  // panini.refresh();
   paniniPress();
+  panini.refresh();
   done();
 }
 
@@ -213,6 +213,6 @@ function watch() {
     .on('change', gulp.series(js, browser.reload));
 
   gulp
-    .watch(['./src/templates/**/*', './src/templates/**/**/*'])
+    .watch(['./src/templates/**/*.html', './src/templates/**/**/*.html'])
     .on('change', gulp.series(resetPages, browser.reload));
 }
