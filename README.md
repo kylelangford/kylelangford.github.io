@@ -1,4 +1,4 @@
-# Project Title
+# Portfolio Site
 
 Personal Site, shows how the sausage is made.
 
@@ -16,13 +16,16 @@ Run Local Server and build files
 gulp
 ```
 
+## Site uses:
+
+### Scss Mixin Livrary
+
+https://github.com/kylelangford/primer-scss
+
+### Primer Framework
+
+https://github.com/kylelangford/primer-framework
+
 ## License
 
-All content in /blog, /demo and /portfolio are mine. I own them. Everything else is MIT license. Have at it.
-
-## Upcomming Features
-
-- Add GA
-- Handlebar Templates
-
-https://www.npmjs.com/package/stylelint-config-standard
+All content in /assets and words are my own. I own them. Everything else is MIT license. Have at it.
