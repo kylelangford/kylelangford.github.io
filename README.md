@@ -28,4 +28,4 @@ https://github.com/kylelangford/primer-framework
 
 ## License
 
-All content in /assets and words are my own. I own them. Everything else is MIT license. Have at it.
+All content in /assets and words are my own. I own them. Everything else have at it.
