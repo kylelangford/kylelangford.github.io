@@ -119,19 +119,16 @@ body {
 
   &.portfolio {
     background-color: #5e6bb8;
-    color: $cyber-green;
+    color: $white;
     height: $height;
     text-align: left;
 
-    @include media($sm-breakpoint) {
-      height: 80vh;
-    }
     .page__title {
-      color: #262d57;
+      color: $future-yellow;
     }
 
     .button--previous {
-      color: $cyber-green;
+      color: $white;
     }
   }
 

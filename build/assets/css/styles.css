@@ -3158,22 +3158,16 @@ body.page--bookmarks {
 .container.portfolio {
   height: 70vh;
   background-color: #5e6bb8;
-  color: #52dfb4;
+  color: #ffffff;
   text-align: left;
 }
 
-@media only screen and (min-width: 800px) {
-  .container.portfolio {
-    height: 80vh;
-  }
-}
-
 .container.portfolio .page__title {
-  color: #262d57;
+  color: #fde803;
 }
 
 .container.portfolio .button--previous {
-  color: #52dfb4;
+  color: #ffffff;
 }
 
 .container.brm {
