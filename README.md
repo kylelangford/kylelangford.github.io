@@ -4,27 +4,31 @@ Personal Site, shows how the sausage is made.
 
 ## Getting Started
 
-Resolve Node Dependencies
+Resolve Node dependencies
 
 ```
 npm init
 ```
 
-Run Local Server and build files
+Run local server and build html files.
 
 ```
 gulp
 ```
 
-## Site uses:
+## This site uses:
 
-### Scss Mixin Livrary
+### Mixin Library
 
 https://github.com/kylelangford/primer-scss
 
 ### Primer Framework
 
 https://github.com/kylelangford/primer-framework
+
+### Panini (Zurb)
+
+https://github.com/foundation/panini
 
 ## License
 
