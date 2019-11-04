@@ -28,20 +28,19 @@ articles:
 <main class="container">
   <div class="row flex flex--justify pad-default">
     <div class="column two-thirds">
-
-      <!-- <h3 class="list-title animate fade-in">Blog</h3> -->
+      <h3 class="list-title animate fade-in">Blog</h3>
       <ul class="list portfolio">
         {{#each articles}}
-          <li class="list__item animate fade-in">
-            <article class="view--teaser">
-              <a href="{{ this.href }}">
-                <span class="label">{{ this.title }}</span>
-                <p>
-                  {{ this.description }}
-                </p>
-              </a>
-            </article>
-          </li>
+        <li class="list__item animate fade-in">
+          <article class="view--teaser">
+            <a href="{{ this.href }}">
+              <span class="label">{{ this.title }}</span>
+              <p>
+                {{ this.description }}
+              </p>
+            </a>
+          </article>
+        </li>
         {{/each}}
       </ul>
 
@@ -49,7 +48,6 @@ articles:
         <!-- Credits: Copyright -->
         <h2 class="last-edit">THANK YOU</h2>
       </div>
-      
     </div>
   </div>
 </main>
