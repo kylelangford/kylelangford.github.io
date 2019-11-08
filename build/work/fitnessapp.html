@@ -13,7 +13,7 @@
     <title>Elev8d Fitness Angular Video Component and Playlist | Kyle Langford</title>
 
     <!-- Load Resources -->
-    <link rel="icon" type="image/png" href="..//img/brand/favicon.png" />
+    <link rel="icon" type="image/png" href="../img/brand/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -48,7 +48,6 @@
       <div class="row flex flex--justify pad-default">
         <div class="column two-thirds">
           <article class="content">
-    
             <div class="specimen stretch">
               <img
                 src="../assets/img/projects/elev8d/device-mockup-feature.png"
@@ -60,12 +59,22 @@
             <h4>Angular Video Player</h4>
     
             <p>
-              Elev8d Fitness app provided users with guided workout playlists
-              as well as full-length video workouts. This was a
-              webview app so that presented a lot of challenges with video
-              playback. We were able to design a player that simplified the UI
-              and allowed seamless playing. I focused on transitions and
-              animation to give a more native app feel. 
+              <strong>Ask</strong> Elev8d Fitness was in trouble, they had a good
+              idea but a terribly implemented web app. Elev8d provided users with a
+              special type of guided yoga workout as well as full-length workout
+              content. They needed a major refresh but at the same time needed a
+              code rebuild. Many of the features they wanted to implemnt were deemed
+              "impossible" due to how the code was originally written.
+            </p>
+    
+            <p>
+              <strong>Outcome</strong> We were able to design a player that
+              simplified the UI and provided the seamless playback experience that
+              was expected. I provided technical leadership to design the
+              functionality and UI of the video component. Jay's focus was
+              intergrating branding elements and Christian was rebuilding the video
+              API service. I rebuilt the angular video components and created
+              transitions and animations to give a more native app feel.
             </p>
     
             <div class="specimen">
@@ -78,20 +87,19 @@
             <h5>Video Player Demo</h5>
     
             <div class="stretch">
+              <video controls width="100%" class="video-player">
+                <source
+                  src="../assets/video/video-player-workout.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="../assets/video/video-player-workout.mp4"
+                  type="video/mp4"
+                />
     
-            <video controls width="100%" class="video-player">
-              <source
-                src="../assets/video/video-player-workout.webm"
-                type="video/webm"
-              />
-              <source
-                src="../assets/video/video-player-workout.mp4"
-                type="video/mp4"
-              />
-    
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-          </div>
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
     
             <footer class="credits">
             
@@ -113,7 +121,6 @@
             
             </footer>
             
-    
           </article>
         </div>
       </div>
