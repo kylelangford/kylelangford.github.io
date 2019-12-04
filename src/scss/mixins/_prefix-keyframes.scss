@@ -1,10 +1,13 @@
 /*
- * Prefix Keyframes
+  Prefix Keyframes
+
+	Creates vendor prefixes.
+
 */
 
 // Prefix
 //
-// Creates vendor prefixes.
+
 //
 // Markup: prefix/keyframe-prefix.twig
 //
@@ -14,9 +17,9 @@
 
 @mixin keyframes($name) {
 	@-webkit-keyframes #{$name} {
-    @content;
+		@content;
 	}
 	@keyframes #{$name} {
-    @content;
+		@content;
 	}
 }

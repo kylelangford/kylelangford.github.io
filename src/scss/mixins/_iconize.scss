@@ -1,15 +1,11 @@
 /* 
- * Icons
- *
- * Status: Needs Work;
- *
- */
+  Icons
+ 
+  Status: Needs Work;
+  A container is an element with a max-width and equal left / right margins
 
-// Icons
-//
-// A container is an element with a max-width and equal left / right margins
-//
-// Style guide: Mixins.Icons
+ 
+ */
 
 @mixin iconize($icon-family, $icon-uni, $side: 'before') {
   speak: none;

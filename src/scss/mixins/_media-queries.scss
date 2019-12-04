@@ -1,27 +1,45 @@
 /*
- * Media Queries
+  Media Queries
+
+
 */
 
-// Media
-//
-// Media Queries
-//
-// Markup: media/media.twig
-//
-// Style guide: Mixins.media
-
 // map?
-$phone:        400px  !default;
-$phone-wide:   480px  !default;
-$phablet:      560px  !default;
-$tablet-small: 640px  !default;
-$tablet:       768px  !default;
-$tablet-wide:  1024px !default;
-$desktop:      1248px !default;
+$phone: 400px !default;
+$phone-wide: 480px !default;
+$phablet: 560px !default;
+$tablet-small: 640px !default;
+$tablet: 768px !default;
+$tablet-wide: 1024px !default;
+$desktop: 1248px !default;
 $desktop-wide: 1440px !default;
 
+$breakpoints: (
+	'phone': $phone,
+	'phone-wide': $phone-wide,
+	'phablet': $phablet,
+	'tablet-small': $tablet-small,
+	'tablet': $tablet,
+	'tablet-wide': $tablet-wide,
+	'desktop': $desktop,
+	'desktop-wide': $desktop-wide,
+);
+
 @mixin media($width) {
-  @media only screen and (min-width: $width) {
-    @content;
-  }
+	@media only screen and (min-width: $width) {
+		@content;
+	}
 }
+
+// New
+// @mixin media($width, $type: min) {
+// 	@if map_has_key($breakpoints, $width) {
+// 		$width: map_get($breakpoints, $width);
+// 		@if $type == max {
+// 			$width: $width - 1px;
+// 		}
+// 		@media only screen and (#{$type}-width: $width) {
+// 			@content;
+// 		}
+// 	}
+// }

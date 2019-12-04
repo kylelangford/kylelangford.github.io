@@ -57,29 +57,82 @@
 /* Block Element */
 /* Block Modifier */
 /*
- * Clearfix
+  Clearfix
+
+
+  
 */
 /*
- * Container
+  Buttonize
+
+*/
+/*
+  Container
+
+	A container is an element with a max-width and equal left / right margins
+  
+*/
+/*
+  Grid 
+  
+	8pt Grid
+
+	A container is an element with a max-width and equal left / right margins
+
+	Style guide: Mixins.Grid
+
+	https://material.io/design/layout/spacing-methods.html#spacing
+	https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
+
+	Padding refers to the space between UI elements.
+	Vertical spacing refers to the height of a standard element
+	The heights of these elements should align to the 8dp grid.
+
 */
 /* 
- * Icons
- *
- * Status: Needs Work;
- *
+  Icons
+ 
+  Status: Needs Work;
+  A container is an element with a max-width and equal left / right margins
+
+ 
  */
 /*
- * Media Queries
+  Media Queries
+
+
 */
 /*
- * Vendor Prefix
+  Vendor Prefix
+
+  Creates vendor prefixes.
+
 */
 /*
- * Prefix Keyframes
+  Prefix Keyframes
+
+	Creates vendor prefixes.
+
 */
 /*
- * Zebra Striping
- * Keep?
+  function em 
+	
+	1. Dont use this ?
+	2 em for media Queries?
+
+*/
+/*
+  Rem
+
+  Convert pixels to ems
+	pixel / base = ems
+
+*/
+/*
+ Zebra Striping
+ Keep?
+
+
 */
 /* Document */
 /* 
@@ -244,7 +297,7 @@ Offset: The space between the sides of the viewport.
 .clearfix:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 
 .fill-height {
@@ -2254,7 +2307,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2269,13 +2321,7 @@ button {
   user-select: none;
 }
 
-button:hover, button:focus, button:active {
-  box-shadow: none;
-  text-decoration: none;
-}
-
 button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:active {
-  box-shadow: none;
   cursor: not-allowed;
   opacity: 0.5;
 }
@@ -2284,7 +2330,6 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2305,13 +2350,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   user-select: none;
 }
 
-.button:hover, .button:focus, .button:active {
-  box-shadow: none;
-  text-decoration: none;
-}
-
 .button:disabled, .button:disabled:active, .button.is-disabled, .button.is-disabled:active {
-  box-shadow: none;
   cursor: not-allowed;
   opacity: 0.5;
 }
@@ -2412,12 +2451,12 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 }
 
 .line-behind-text.purple {
-  border-color: #262d57;
+  border-color: #fde803;
 }
 
 .line-behind-text.purple h2 {
   background: #5e6bb8;
-  color: #262d57;
+  color: #fde803;
 }
 
 .list {
@@ -3296,22 +3335,20 @@ ul.portfolio .list__item .label {
 
 ul.portfolio .list__item a {
   color: #52dfb4;
-  color: #262d57;
 }
 
 ul.portfolio .list__item a:hover {
-  color: #24c191;
+  color: #1c9671;
 }
 
 ul.portfolio .list__item a:hover p {
-  color: #24c191;
+  color: #1c9671;
 }
 
 ul.portfolio .list__item p,
 ul.portfolio .list__item small {
   margin: 0;
-  color: #ffffff;
-  color: #262d57;
+  color: #52dfb4;
   font-size: 1em;
   font-weight: 600;
   /* Output standard non-prefixed declaration */
@@ -3491,4 +3528,10 @@ canvas {
 
 .credits {
   text-align: center;
+}
+
+.container.cpl.intro {
+  background: url(../img/projects/cpl/map.jpg) no-repeat center center;
+  background-color: transparent;
+  background-size: cover;
 }

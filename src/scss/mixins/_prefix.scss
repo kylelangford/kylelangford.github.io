@@ -1,24 +1,18 @@
 /*
- * Vendor Prefix
-*/
+  Vendor Prefix
 
-// Prefix
-//
-// Creates vendor prefixes.
-//
-// Markup: prefix/prefix.twig
-//
-// Style guide: Mixins.prefix
+  Creates vendor prefixes.
+
+*/
 
 // Map
 $prefixes: 'webkit', 'moz', 'ms', 'o' !default;
 
 @mixin prefix($property, $value, $prefixes: $prefixes) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}: $value;
+	}
 
-  @each $prefix in $prefixes {
-    #{'-' + $prefix + '-' + $property}: $value;
-  }
- 
-  /* Output standard non-prefixed declaration */
-  #{$property}: $value;
+	/* Output standard non-prefixed declaration */
+	#{$property}: $value;
 }

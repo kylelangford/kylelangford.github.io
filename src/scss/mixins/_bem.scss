@@ -17,25 +17,16 @@
 
 */
 
-// BEM
-//
-// Your standard button suitable for clicking.
-//
-// Markup: bem/bem.twig
-//
-// Style guide: Mixins.bem
-
-
 /* Block Element */
 @mixin elem($element) {
-  &__#{$element} {
-    @content;
-  }
+	&__#{$element} {
+		@content;
+	}
 }
 
 /* Block Modifier */
 @mixin mod($modifier) {
-  &--#{$modifier} {
-    @content;
-  }
+	&--#{$modifier} {
+		@content;
+	}
 }

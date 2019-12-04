@@ -1,0 +1,28 @@
+/*
+
+  z-index management
+
+	.site-header {
+	    z-index: layer('site-header');
+	}
+
+*/
+
+$z-indexes: (
+	'outdated-browser',
+	'modal',
+	'site-header',
+	'page-wrapper',
+	'site-footer'
+);
+
+@function layer($name) {
+	@if index($z-indexes, $name) {
+		@return (length($z-indexes) - index($z-indexes, $name)) + 1;
+	} @else {
+		@warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+		@return null;
+	}
+}
+
+

@@ -1,23 +1,17 @@
 /*
- * Container
+  Container
+
+	A container is an element with a max-width and equal left / right margins
+  
 */
 
-// Container
-//
-// A container is an element with a max-width and equal left / right margins
-//
-// Markup: container/container.twig
-//
-// Style guide: Mixins.Container
-
 @mixin containerize($local-max-width: $max-width, $center: true) {
-	
 	// if true
 	margin-left: auto;
-  margin-right: auto;
-  //
+	margin-right: auto;
+	//
 
-  max-width: $local-max-width;
-  // overflow: hidden;
-  width: 100%;
+	max-width: $local-max-width;
+	// overflow: hidden;
+	width: 100%;
 }

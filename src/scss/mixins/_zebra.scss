@@ -1,22 +1,17 @@
 /*
- * Zebra Striping
- * Keep?
-*/
+ Zebra Striping
+ Keep?
 
-// Backgrounds
-//
-// Convert pixels to ems
-// pixel / base = ems
-//
-// Style guide: Mixins.Backgrounds
+
+*/
 
 $panel-even-color: white !default;
 $panel-odd-color: #f4f4f4 !default;
 
-@mixin zebra( $color1: $panel-even-color , $color2: $panel-odd-color) {
-  background-color: $color1;
+@mixin zebra($color1: $panel-even-color, $color2: $panel-odd-color) {
+	background-color: $color1;
 
-  &:nth-of-type(odd) {
-    background-color: $color2;
-  }
+	&:nth-of-type(odd) {
+		background-color: $color2;
+	}
 }

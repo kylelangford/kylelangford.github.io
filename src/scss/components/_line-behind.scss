@@ -19,11 +19,11 @@
   }
 
   &.purple {
-    border-color: #262d57;
+    border-color: $future-yellow;
 
     h2 {
       background: #5e6bb8;
-      color: #262d57;
+      color: $future-yellow;
     }
   }
 }

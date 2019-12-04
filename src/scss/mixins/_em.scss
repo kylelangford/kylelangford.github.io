@@ -1,13 +1,19 @@
-// Dont use this
-// em for media Queries?
+/*
+  function em 
+	
+	1. Dont use this ?
+	2 em for media Queries?
+
+*/
+
 @function em($pixels, $context: $base-font-size) {
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
 
-  @if (unitless($context)) {
-    $context: $context * 1px;
-  }
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
 
-  @return $pixels / $context * 1em;
+	@return $pixels / $context * 1em;
 }

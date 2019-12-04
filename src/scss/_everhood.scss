@@ -264,13 +264,12 @@ ul.portfolio {
 
     a {
       color: $cyber-green;
-      color: #262d57;
 
       &:hover {
-        color: darken($cyber-green, 15%);
+        color: darken($cyber-green, 25%);
 
         p {
-          color: darken($cyber-green, 15%);
+          color: darken($cyber-green, 25%);
         }
       }
     }
@@ -278,8 +277,7 @@ ul.portfolio {
     p,
     small {
       @include prefix(transition, color 0.15s linear, webkit ms);
-      color: $white;
-      color: #262d57;
+      color: $cyber-green;
       font-size: 1em;
       font-weight: 600;
       margin: 0;
@@ -464,4 +462,13 @@ canvas {
 
 .credits {
   text-align: center;
+}
+
+.container.cpl.intro {
+  background: url(../img/projects/cpl/map.jpg) no-repeat center center;
+  background-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
