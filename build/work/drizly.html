@@ -13,7 +13,7 @@
     <title>Drizly Email Building Application | Kyle Langford</title>
 
     <!-- Load Resources -->
-    <link rel="icon" type="image/png" href="../img/brand/favicon.png" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -21,21 +21,24 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-custom.js"></script> -->
+    <script src="../assets/js/modernizr-custom.js"></script>
 
     <noscript><style type="text/css">
         body { opacity: 1; }
     </style></noscript>
   </head>
 
-  <body class="page page--drizly">
+  <body class="page page--drizly" data-barba="wrapper">
 
     
+    <!-- rename to intro / impact -->
     <header class="container size-to-window intro masthead drizly">
       <div class="row flex flex-align--center flex--justify fill-height">
+        <!-- back button -->
         <nav class="position-top-left">
           <a href="/work/all" class="button--previous">$ cd ..</a>
         </nav>
+    
         <div class="column half text--center">
           <h1 class="page__title">Drizly</h1>
           <h2 class="page__sub-title"></h2>
@@ -52,6 +55,7 @@
               <img
                 src="../assets/img/projects/drizly/device-mockup-default.png"
                 alt="Elephant at sunset"
+                loading="eager"
               />
             </div>
     
@@ -79,8 +83,9 @@
     
             <div class="specimen stretch">
               <img
-                src="../assets/img/projects/drizly/device-mockup-project.png"
+                data-src="../assets/img/projects/drizly/device-mockup-project.png"
                 alt="Elephant at sunset"
+                loading="lazy"
               />
             </div>
     
@@ -88,10 +93,11 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/drizly/email-drizly-CincoDeMayo-v1.jpg"
+                data-src="../assets/img/projects/drizly/email-drizly-CincoDeMayo-v1.jpg"
                 alt="Elephant at sunset"
                 style="width: 80%;"
                 class="paper"
+                loading="lazy"
               />
             </div>
     
@@ -109,7 +115,7 @@
                 <h2 class="last-edit">Last Edit: 10.31.19</h2>
               </div>
             
-              <p class="copy"></span></p>
+              <p class="copy"></span>Kyle Langford 2019</p>
             
             </footer>
             
@@ -117,6 +123,77 @@
         </div>
       </div>
     </main>
+    
+    <section class="container">
+      <div class="row flex flex--justify pad-default">
+        <div class="column two-thirds">
+          <h3 class="list-title animate fade-in">Best Stuff</h3>
+    
+          <ul class="list portfolio">
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/brm">
+                  <span class="label">Bally Ribbon Mills</span>
+                  <p>
+                    Branding, Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/cpl">
+                  <span class="label">Cambridge Public Library</span>
+                  <p>
+                    Enviromental Signage and Wayfinding.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/drizly">
+                  <span class="label">Drizly</span>
+                  <p>
+                    Design, AngularJS Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/fitnessapp">
+                  <span class="label">Elev8d Fitness</span>
+                  <p>
+                    Experience Design, Angular Development.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/hle">
+                  <span class="label">Healthy Living Engine</span>
+                  <p>
+                    Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/paw">
+                  <span class="label">Princeton Alumni Magazine</span>
+                  <p>
+                    Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     
     <!-- Scripts -->
     <script

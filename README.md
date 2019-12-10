@@ -16,20 +16,10 @@ Run local server and build html files.
 gulp
 ```
 
-## This site uses:
-
-### Mixin Library
-
-https://github.com/kylelangford/primer-scss
-
-### Primer Framework
+## This site uses: Primer Framework
 
 https://github.com/kylelangford/primer-framework
 
-### Panini (Zurb)
-
-https://github.com/foundation/panini
-
 ## License
 
-All content in /assets and words are my own. I own them. Everything else have at it.
+All content and words are my own. I own them.

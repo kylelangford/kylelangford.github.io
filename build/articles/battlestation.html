@@ -13,7 +13,7 @@
     <title></title>
 
     <!-- Load Resources -->
-    <link rel="icon" type="image/png" href="../img/brand/favicon.png" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -21,44 +21,24 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-custom.js"></script> -->
+    <script src="../assets/js/modernizr-custom.js"></script>
 
     <noscript><style type="text/css">
         body { opacity: 1; }
     </style></noscript>
   </head>
 
-  <body class="page page--battlestation">
+  <body class="page page--battlestation" data-barba="wrapper">
 
     <article>
-      <div class="wrap">
-    <div class="code-example"><pre><code class="html">    #data-attr
-    
-        in pseudo elements,
-    
-        ```html
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon"</span> <span class="hljs-attribute">data-alt</span>=<span class="hljs-value">"Tooltip"</span>&gt;</span>Example<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        ```
-    
-        ```scss
-        .element {
-            &amp;:before {
-                content: attr(data-alt);
-            }
-        }
-        ```
-    
-        ```scss
-        .element:before {
-            content: attr(data-alt);
-        }
-        ```
-    
-        tooltips/alt text for none images, add some JS to enhance
-    
-        https://css-tricks.com/css-attr-function-got-nothin-custom-properties/</code></pre></div>  </div>
+    	<div class="wrap">
+    		<p> #data-attr in pseudo elements, <code>html
+            &lt;span class=&quot;icon&quot; data-alt=&quot;Tooltip&quot;&gt;Example&lt;/span&gt;</code> <code>scss .element { &amp;:before { content: attr(data-alt); } }</code> <code>scss
+            .element:before { content: attr(data-alt); }</code> tooltips/alt text for none
+            images, add some JS to enhance
+            <a href="https://css-tricks.com/css-attr-function-got-nothin-custom-properties/">https://css-tricks.com/css-attr-function-got-nothin-custom-properties/</a></p>
+    	</div>
     </article>
-    
     
     <!-- Scripts -->
     <script

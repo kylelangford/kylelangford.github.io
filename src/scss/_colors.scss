@@ -1,0 +1,53 @@
+/* COLOR SETTINGS
+ ----------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------- */
+$primary-color: #6da6a0;
+$primary-color-medium: darken($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 25%) !default;
+$secondary-color: #ffcc2f;
+$white: #ffffff !default;
+$black: #212121 !default;
+$off-white-color: #f4f4f4;
+$subtle-gray: #f6f6f6 !default;
+$light-gray: #f2f0f0 !default;
+$gray: #d9d9d9 !default;
+$medium-gray: #cacaca !default;
+$dark-gray: #aaaaaa !default;
+
+// Default Mobile Breakpoints
+// $tiny-screen: rem(360) !default;
+// $small-screen: rem(479) !default;
+// $small-plus-screen: rem(599) !default;
+// $medium-screen: rem(640) !default;
+// $medium-plus-screen: rem(768) !default;
+// $large-screen: rem(960) !default;
+// $large-plus-screen: rem(1080) !default;
+// $full-screen: rem(1200) !default;
+// $jumbo-screen: rem(1440) !default;
+// $site-max: rem(1536) !default;
+
+$scrap-green: #40a880;
+$cyber-green: #52dfb4;
+$twilight: #273269;
+$burnt-sunset: #e58b44;
+$red-eye: #e33c42;
+$robot-salmon: #e53b56;
+$concrete: #718078;
+$future-yellow: #fde803;
+$grease: #202020;
+$robo-sludge: #323e43;
+$shark-skin: #8aa8b8;
+$pink: #f27181;
+
+$paw: #f37021;
+
+// Secondary Colors
+$light-yellow: #fffbed !default;
+$red: #ff5050 !default;
+$charcoal: #333333 !default;
+$charcoal: #323e43;
+
+// Theme Colors
+$background-color: $subtle-gray !default;
+$text-color: $charcoal !default;
+$text-description-color: #555555 !default;

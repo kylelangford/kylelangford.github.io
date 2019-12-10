@@ -1,3 +1,32 @@
+// Hybrid Lazy Load
+// https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/
+(function() {
+  if ('loading' in HTMLImageElement.prototype) {
+    var lazyEls = document.querySelectorAll('[loading=lazy]');
+
+    lazyEls.forEach(function(lazyEl) {
+      lazyEl.setAttribute('src', lazyEl.getAttribute('data-src'));
+    });
+  } else {
+    // Dynamically include a lazy loading library of your choice
+    // Here including vanilla-lazyload
+    // var script = document.createElement('script');
+
+    // script.async = true;
+
+    // script.src =
+    //   'https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js';
+
+    window.lazyLoadOptions = {
+      elements_selector: '[loading=lazy]',
+      use_native: true,
+      //eventually more options here
+    };
+
+    document.body.appendChild(script);
+  }
+})();
+
 // GA
 $(function() {
   var _gaq = _gaq || [];
@@ -26,6 +55,13 @@ $('document').ready(function() {
     $(this).toggleClass('active');
     $('.mast-head').toggleClass('active');
     $('.site-logo').toggleClass('active');
+
+    e.preventDefault();
+  });
+
+  // Menu Trigger
+  $('.menu-button').on('click touchstart', function(e) {
+    $(this).toggleClass('open');
     e.preventDefault();
   });
 
@@ -57,74 +93,16 @@ $('document').ready(function() {
     nextArrow: '<a class="slick-next icons-log-in">Next</a>',
   });
 
-  var width = window.innerWidth,
-    height = window.innerHeight,
-    c = document.getElementById('c'),
-    ctx = c.getContext('2d');
-  c.width = width;
-  c.height = height;
+  // barba.init({
+  //   transitions: [{
+  //     name: 'svg-circle',
+  //     ...
+  //   }, {
+  //     name: 'svg-slide',
+  //     ...
+  //   }]
+  // });
 
-  var paintEffect = function() {
-    // var paint = [];
-    // var totalPaints = width / 50;
-    // var size = 20;
-    // function init() {
-    //   for (var i = 0; i < totalPaints; i++) {
-    //     addPaint();
-    //   }
-    //   setInterval(update, 40);
-    // }
-    // function drawPaint(x, y, size, colour) {
-    //   ctx.beginPath();
-    //   ctx.arc(x, y, size, 0, Math.PI * 2, true);
-    //   ctx.closePath();
-    //   ctx.fillStyle = colour;
-    //   ctx.fill();
-    // }
-    // function update() {
-    //   for (var i = 0; i < paint.length; i++) {
-    //     paint[i].y = paint[i].y + paint[i].v;
-    //     if (paint[i].y > height + 60) {
-    //       paint.splice(i, 1);
-    //       addPaint();
-    //     }
-    //     drawPaint(paint[i].x, paint[i].y, paint[i].s, paint[i].c);
-    //   }
-    // }
-    // function addPaint() {
-    //   //Try 50 times
-    //   var i = 50;
-    //   while (i > 0) {
-    //     size = Math.random() * size + 10;
-    //     x = Math.random() * width;
-    //     found = false;
-    //     //Dont Allow drips ontop of each other (Overtaking drops destroy the prettyness)
-    //     for (var j = 0; j < paint.length; j++) {
-    //       if (x + size > paint[j].x && x - size < paint[j].x + paint[j].s) {
-    //         found = true;
-    //         break;
-    //       }
-    //       if (x - size < paint[j].x && x + size > paint[j].x - paint[j].s) {
-    //         found = true;
-    //         break;
-    //       }
-    //     }
-    //     if (found === false) {
-    //       paint.push({
-    //         s: size,
-    //         x: x,
-    //         y: -60,
-    //         v: Math.random() * 2 + 2,
-    //         c: '#' + ((Math.random() * 0x313131 + 0xaaaaaa) | 0).toString(16),
-    //       });
-    //       i--;
-    //       return;
-    //     }
-    //   }
-    // }
-  };
-
-  paintEffect();
   init();
 
   // <!-- Global site tag (gtag.js) - Google Analytics -->

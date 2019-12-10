@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
@@ -14,6 +15,9 @@ const eslint = require('gulp-eslint');
 const panini = require('panini');
 const browser = require('browser-sync').create(); /* Create Server */
 const gulpStylelint = require('gulp-stylelint');
+const webp = require('gulp-webp');
+const iconfont = require('gulp-iconfont');
+const iconfontCss = require('gulp-iconfont-css');
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/pass-arguments-from-cli.md
 // https://stackoverflow.com/questions/23023650/is-it-possible-to-pass-a-flag-to-gulp-to-have-it-run-tasks-in-different-ways
@@ -21,13 +25,24 @@ const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
 
 // Settings
+// Create Settings File
+
 const cssOutPutStyle = 'expanded'; /* 'compressed' */
 // const cssOutPutStyle = 'compressed'; /* 'compressed' */
+var runTimestamp = Math.round(Date.now() / 1000);
+
+// https://www.npmjs.com/package/gulp-iconfont-css
+const fontName = 'icons';
 
 // Tasks
 gulp.task('css', gulp.series(scss, prefixer, sorter));
-gulp.task('build', gulp.series('css', js, paniniPress));
+gulp.task('js', gulp.series(js, customModernizr));
+gulp.task('build', gulp.series('css', 'js', paniniPress));
 gulp.task('default', gulp.series('build', server, watch));
+
+// gulp.task('assets', gulp.series(icons, images));
+gulp.task('icons', gulp.series(fonticon, copyFonts));
+gulp.task('images', gulp.series(images));
 
 /**
  * CSS
@@ -114,6 +129,8 @@ function js() {
   return (
     gulp
       .src([
+        './src/js/vendor/lazyload.js',
+        './node_modules/@dogstudio/highway/build/highway.js',
         './src/js/vendor/slick.js',
         './src/js/vendor/prism.js',
         './src/js/vendor/wow.js',
@@ -143,12 +160,12 @@ function js() {
   );
 }
 
-// function modernizr() {
-//   return gulp
-//     .src('./js/*.js')
-//     .pipe(modernizr('modernizr-custom.js'))
-//     .pipe(gulp.dest('build/'));
-// }
+function customModernizr() {
+  return gulp
+    .src('./build/assets/js/main.js')
+    .pipe(modernizr('modernizr-custom.js'))
+    .pipe(gulp.dest('build/assets/js/'));
+}
 
 // function eslint() {}
 
@@ -184,6 +201,60 @@ function resetPages(done) {
   done();
 }
 
+// https://www.npmjs.com/package/gulp-iconfont-css
+function fonticon() {
+  return gulp
+    .src(['src/icons/svg/*.svg'])
+    .pipe(
+      iconfontCss({
+        fontName: fontName,
+        path: 'scss',
+        targetPath: '../scss/_icons.scss',
+        fontPath: '../fonts/' + fontName + '/',
+      })
+    )
+    .pipe(
+      iconfont({
+        fontName: fontName,
+        prependUnicode: true, // recommended option
+        formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available
+        timestamp: runTimestamp, // recommended to get consistent builds when watching files
+        normalize: true,
+        fontHeight: 1001,
+      })
+    )
+    .pipe(gulp.dest('src/icons/fonts'));
+}
+
+function copyFonts() {
+  return gulp
+    .src(['src/icons/fonts/*'])
+    .pipe(gulp.dest('build/assets/fonts/' + fontName));
+}
+
+// https://www.npmjs.com/package/gulp-webp
+function images() {
+  return gulp
+    .src('src/images/**/*.{jpg,png}')
+    .pipe(
+      webp({
+        quality: 60,
+      })
+    )
+    .pipe(gulp.dest('build/assets/webp'));
+}
+
+// function fallBackImages() {
+//   return gulp
+//     .src('src/images/**/*.{jpg,png}')
+//     .pipe(
+//       webp({
+//         quality: 60,
+//       })
+//     )
+//     .pipe(gulp.dest('build/assets/webp'));
+// }
+
 /**
  * Server
  */
@@ -211,6 +282,10 @@ function watch() {
   gulp
     .watch(['./src/js/**/*.js', './src/js/*.js'])
     .on('change', gulp.series(js, browser.reload));
+
+  gulp
+    .watch(['./src/icons/*.svg'])
+    .on('change', gulp.series('icons', browser.reload));
 
   gulp
     .watch(['./src/templates/**/*.html', './src/templates/**/**/*.html'])

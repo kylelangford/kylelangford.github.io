@@ -13,7 +13,7 @@
     <title>Portfolio | Kyle Langford</title>
 
     <!-- Load Resources -->
-    <link rel="icon" type="image/png" href="../img/brand/favicon.png" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -21,21 +21,25 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-custom.js"></script> -->
+    <script src="../assets/js/modernizr-custom.js"></script>
 
     <noscript><style type="text/css">
         body { opacity: 1; }
     </style></noscript>
   </head>
 
-  <body class="page page--all">
+  <body class="page page--all" data-barba="wrapper">
 
     
     <header class="container size-to-window portfolio">
       <div class="row flex flex-align--center flex--justify fill-height">
         <nav class="position-top-left">
-          <a href="/" class="button--previous">$ cd ..</a>
+          <a href="/" class="button--previous"
+            >[<span>KL:<span>.../projects</span></span
+            >]$ cd ..</a
+          >
         </nav>
+    
         <div class="column two-thirds">
           <h1 class="page__title">Po<span class="kern-1">rtf</span>olio</h1>
           <p class="description">
@@ -49,6 +53,7 @@
       <div class="row flex flex--justify pad-default">
         <div class="column two-thirds">
           <h3 class="list-title animate fade-in">Best Stuff</h3>
+    
           <ul class="list portfolio">
             <li class="list__item animate fade-in">
               <article class="view--teaser">

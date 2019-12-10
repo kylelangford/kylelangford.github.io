@@ -4,7 +4,7 @@
 
 */
 
-// map?
+// map? / Vars
 $phone: 400px !default;
 $phone-wide: 480px !default;
 $phablet: 560px !default;
@@ -14,6 +14,14 @@ $tablet-wide: 1024px !default;
 $desktop: 1248px !default;
 $desktop-wide: 1440px !default;
 
+// Replace
+@mixin media($width) {
+	@media only screen and (min-width: $width) {
+		@content;
+	}
+}
+
+// New Map
 $breakpoints: (
 	'phone': $phone,
 	'phone-wide': $phone-wide,
@@ -24,12 +32,6 @@ $breakpoints: (
 	'desktop': $desktop,
 	'desktop-wide': $desktop-wide,
 );
-
-@mixin media($width) {
-	@media only screen and (min-width: $width) {
-		@content;
-	}
-}
 
 // New
 // @mixin media($width, $type: min) {

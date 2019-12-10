@@ -3,18 +3,12 @@
   z-index management
 
 	.site-header {
-	    z-index: layer('site-header');
+	  z-index: layer('header');
 	}
 
 */
 
-$z-indexes: (
-	'outdated-browser',
-	'modal',
-	'site-header',
-	'page-wrapper',
-	'site-footer'
-);
+$z-indexes: ('top', 'modal', 'overlay', 'header', 'page', 'bottom');
 
 @function layer($name) {
 	@if index($z-indexes, $name) {
@@ -24,5 +18,3 @@ $z-indexes: (
 		@return null;
 	}
 }
-
-

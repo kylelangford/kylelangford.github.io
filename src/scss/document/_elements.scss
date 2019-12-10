@@ -14,10 +14,6 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin: 0;
-
-  &.page--index {
-    color: $white;
-  }
 }
 
 h1,
@@ -62,6 +58,15 @@ p {
   &.collapse {
     margin: 0;
   }
+}
+
+::-moz-selection {
+  background-color: $robot-salmon;
+  color: $white;
+}
+::selection {
+  background-color: $robot-salmon;
+  color: $white;
 }
 
 a {

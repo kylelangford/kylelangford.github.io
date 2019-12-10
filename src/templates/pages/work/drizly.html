@@ -13,7 +13,7 @@ team:
     title: Designer
 ---
 
-{{> header}}
+{{> intro}}
 
 <main class="container">
   <div class="row flex flex--justify pad-default">
@@ -23,6 +23,7 @@ team:
           <img
             src="../assets/img/projects/drizly/device-mockup-default.png"
             alt="Elephant at sunset"
+            loading="eager"
           />
         </div>
 
@@ -50,8 +51,9 @@ team:
 
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/drizly/device-mockup-project.png"
+            data-src="../assets/img/projects/drizly/device-mockup-project.png"
             alt="Elephant at sunset"
+            loading="lazy"
           />
         </div>
 
@@ -59,10 +61,11 @@ team:
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/drizly/email-drizly-CincoDeMayo-v1.jpg"
+            data-src="../assets/img/projects/drizly/email-drizly-CincoDeMayo-v1.jpg"
             alt="Elephant at sunset"
             style="width: 80%;"
             class="paper"
+            loading="lazy"
           />
         </div>
 
@@ -71,3 +74,13 @@ team:
     </div>
   </div>
 </main>
+
+<section class="container">
+  <div class="row flex flex--justify pad-default">
+    <div class="column two-thirds">
+      <h3 class="list-title animate fade-in">Best Stuff</h3>
+
+      {{> project-list}}
+    </div>
+  </div>
+</section>

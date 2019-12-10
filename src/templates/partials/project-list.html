@@ -1,0 +1,14 @@
+<ul class="list portfolio">
+  {{#each portfolio}}
+  <li class="list__item animate fade-in">
+    <article class="view--teaser">
+      <a href="{{ this.href }}">
+        <span class="label">{{ this.title }}</span>
+        <p>
+          {{ this.description }}
+        </p>
+      </a>
+    </article>
+  </li>
+  {{/each}}
+</ul>

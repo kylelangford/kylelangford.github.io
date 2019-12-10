@@ -17,7 +17,7 @@ team:
     title: Drupal Developer
 ---
 
-{{> header}}
+{{> intro}}
 
 <main class="container">
   <div class="row flex flex--justify pad-default">
@@ -31,6 +31,7 @@ team:
           <img
             src="../assets/img/projects/hle/device-mockup-feature.png"
             alt="Elephant at sunset"
+            loading="eager"
           />
         </div>
 
@@ -57,14 +58,16 @@ team:
         <div class="split">
           <div class="specimen" style="text-align: center;">
             <img
-              src="../assets/img/projects/hle/device-mockup-recipe.png"
+              data-src="../assets/img/projects/hle/device-mockup-recipe.png"
               alt="Elephant at sunset"
+              loading="lazy"
             />
           </div>
           <div class="specimen">
             <img
-              src="../assets/img/projects/hle/device-mockup-shoppinglist.png"
+              data-src="../assets/img/projects/hle/device-mockup-shoppinglist.png"
               alt="Elephant at sunset"
+              loading="lazy"
             />
           </div>
         </div>
@@ -73,9 +76,10 @@ team:
 
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/hle/hle_diagram.jpg"
+            data-src="../assets/img/projects/hle/hle_diagram.jpg"
             alt="Elephant at sunset"
             class="paper"
+            loading="lazy"
           />
           <div class="caption">Infographic - Kyle Langford</div>
         </div>
@@ -84,8 +88,9 @@ team:
 
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/hle/device-mockup-content.png"
+            data-src="../assets/img/projects/hle/device-mockup-content.png"
             alt="Elephant at sunset"
+            loading="lazy"
           />
         </div>
 
@@ -93,8 +98,9 @@ team:
 
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/hle/device-mockup-idea.png"
+            data-src="../assets/img/projects/hle/device-mockup-idea.png"
             alt="Elephant at sunset"
+            loading="lazy"
           />
         </div>
 
@@ -104,8 +110,9 @@ team:
 
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/hle/device-mockup-reports.png"
+            data-src="../assets/img/projects/hle/device-mockup-reports.png"
             alt="Elephant at sunset"
+            loading="lazy"
           />
         </div>
 
@@ -114,3 +121,13 @@ team:
     </div>
   </div>
 </main>
+
+<section class="container">
+  <div class="row flex flex--justify pad-default">
+    <div class="column two-thirds">
+      <h3 class="list-title animate fade-in">Best Stuff</h3>
+
+      {{> project-list}}
+    </div>
+  </div>
+</section>

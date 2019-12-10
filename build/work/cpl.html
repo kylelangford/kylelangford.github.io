@@ -13,7 +13,7 @@
     <title>Cambridge Public Library wayfinding and signage | Kyle Langford</title>
 
     <!-- Load Resources -->
-    <link rel="icon" type="image/png" href="../img/brand/favicon.png" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto|Rubik"
       rel="stylesheet"
@@ -21,21 +21,24 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- Modernizr - Load after CSS -->
-    <!-- <script src="js/modernizr-custom.js"></script> -->
+    <script src="../assets/js/modernizr-custom.js"></script>
 
     <noscript><style type="text/css">
         body { opacity: 1; }
     </style></noscript>
   </head>
 
-  <body class="page page--cpl">
+  <body class="page page--cpl" data-barba="wrapper">
 
     
+    <!-- rename to intro / impact -->
     <header class="container size-to-window intro masthead cpl">
       <div class="row flex flex-align--center flex--justify fill-height">
+        <!-- back button -->
         <nav class="position-top-left">
           <a href="/work/all" class="button--previous">$ cd ..</a>
         </nav>
+    
         <div class="column half text--center">
           <h1 class="page__title">Cambridge Public Library</h1>
           <h2 class="page__sub-title"></h2>
@@ -82,7 +85,8 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/p-cpl-diagram.jpg"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E"
+                data-src="../assets/img/projects/cpl/p-cpl-diagram.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
@@ -92,7 +96,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/exterior-night.jpg"
+                data-src="../assets/img/projects/cpl/exterior-night.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
@@ -105,7 +109,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/156.jpg"
+                data-src="../assets/img/projects/cpl/156.jpg"
                 alt="Elephant at sunset"
                 class="paper"
                 loading="lazy"
@@ -118,7 +122,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/182.jpg"
+                data-src="../assets/img/projects/cpl/182.jpg"
                 alt="Elephant at sunset"
                 style="width: 100%;"
                 class="paper"
@@ -129,7 +133,7 @@
     
             <div class="specimen stretch">
               <img
-                src="../assets/img/projects/cpl/signs.jpg"
+                data-src="../assets/img/projects/cpl/signs.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
@@ -140,7 +144,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/180.jpg"
+                data-src="../assets/img/projects/cpl/180.jpg"
                 alt="Elephant at sunset"
                 class="paper"
                 loading="lazy"
@@ -151,7 +155,7 @@
             </div>
             <div class="specimen stretch">
               <img
-                src="../assets/img/projects/cpl/profile.jpg"
+                data-src="../assets/img/projects/cpl/profile.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
@@ -162,7 +166,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/190.jpg"
+                data-src="../assets/img/projects/cpl/190.jpg"
                 alt="Elephant at sunset"
                 class="paper"
                 loading="lazy"
@@ -172,7 +176,7 @@
     
             <div class="specimen">
               <img
-                src="../assets/img/projects/cpl/171.jpg"
+                data-src="../assets/img/projects/cpl/171.jpg"
                 alt="Elephant at sunset"
                 class="paper"
                 loading="lazy"
@@ -195,7 +199,7 @@
                   src="../assets/video/exterior-signs-spin.webm"
                   type="video/webm"
                 />
-                <!--             <source
+                <!-- <source
                   src="../assets/video/video-player-workout.mp4"
                   type="video/mp4"
                 /> -->
@@ -206,7 +210,7 @@
     
             <div class="specimen stretch">
               <img
-                src="../assets/img/projects/cpl/outside.jpg"
+                data-src="../assets/img/projects/cpl/outside.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
@@ -217,7 +221,7 @@
     
             <div class="specimen stretch">
               <img
-                src="../assets/img/projects/cpl/garage.jpg"
+                data-src="../assets/img/projects/cpl/garage.jpg"
                 alt="Elephant at sunset"
                 class="paper"
                 style="width: 100%;"
@@ -225,6 +229,8 @@
               />
               <div class="caption">Garage entrance</div>
             </div>
+    
+            <div class="" data-barba-namespace="next"></div>
     
             <footer class="credits">
             
@@ -240,7 +246,7 @@
                 <h2 class="last-edit">Last Edit: 10.31.19</h2>
               </div>
             
-              <p class="copy"></span></p>
+              <p class="copy"></span>Kyle Langford 2019</p>
             
             </footer>
             
@@ -248,6 +254,77 @@
         </div>
       </div>
     </main>
+    
+    <section class="container">
+      <div class="row flex flex--justify pad-default">
+        <div class="column two-thirds">
+          <h3 class="list-title animate fade-in">Best Stuff</h3>
+    
+          <ul class="list portfolio">
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/brm">
+                  <span class="label">Bally Ribbon Mills</span>
+                  <p>
+                    Branding, Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/cpl">
+                  <span class="label">Cambridge Public Library</span>
+                  <p>
+                    Enviromental Signage and Wayfinding.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/drizly">
+                  <span class="label">Drizly</span>
+                  <p>
+                    Design, AngularJS Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/fitnessapp">
+                  <span class="label">Elev8d Fitness</span>
+                  <p>
+                    Experience Design, Angular Development.
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/hle">
+                  <span class="label">Healthy Living Engine</span>
+                  <p>
+                    Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+            <li class="list__item animate fade-in">
+              <article class="view--teaser">
+                <a href="/work/paw">
+                  <span class="label">Princeton Alumni Magazine</span>
+                  <p>
+                    Design, Drupal Development
+                  </p>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     
     <!-- Scripts -->
     <script

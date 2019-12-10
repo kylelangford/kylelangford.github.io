@@ -17,7 +17,7 @@ team:
     title: Drupal Developer
 ---
 
-{{> header}}
+{{> intro}}
 
 <main class="container">
   <div class="row flex flex--justify pad-default">
@@ -27,6 +27,7 @@ team:
           <img
             src="../assets/img/projects/paw/device-mockup-article.png"
             alt="Elephant at sunset"
+            loading="eager"
           />
         </div>
 
@@ -56,9 +57,10 @@ team:
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/paw/way-back.jpg"
+            data-src="../assets/img/projects/paw/way-back.jpg"
             alt="Elephant at sunset"
             class="paper"
+            loading="lazy"
           />
           <div class="caption">
             Princeton Alumni Website, prior to redesign.
@@ -74,10 +76,11 @@ team:
 
         <div class="specimen text--center">
           <img
-            src="../assets/img/projects/paw/mag-cover.png"
+            data-src="../assets/img/projects/paw/mag-cover.png"
             alt="Elephant at sunset"
             class="paper"
             style="max-width: 60%;"
+            loading="lazy"
           />
         </div>
 
@@ -85,9 +88,10 @@ team:
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/paw/style-tile-1.png"
+            data-src="../assets/img/projects/paw/style-tile-1.png"
             alt="Elephant at sunset"
             class="paper"
+            loading="lazy"
           />
           <div class="caption">Inspiration Style Collage.</div>
         </div>
@@ -95,9 +99,10 @@ team:
         <h5>IA: Sitemap</h5>
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/paw/sitemap_v1.jpg"
+            data-src="../assets/img/projects/paw/sitemap_v1.jpg"
             alt="Elephant at sunset"
             class="paper"
+            loading="lazy"
           />
         </div>
 
@@ -105,12 +110,14 @@ team:
         <div class="specimen stretch">
           <div class="stack">
             <img
-              src="../assets/img/projects/paw/cpw-04.jpg"
+              data-src="../assets/img/projects/paw/cpw-04.jpg"
               alt="Elephant at sunset"
+              loading="lazy"
             />
             <img
-              src="../assets/img/projects/paw/cpw-05.jpg"
+              data-src="../assets/img/projects/paw/cpw-05.jpg"
               alt="Elephant at sunset"
+              loading="lazy"
             />
           </div>
           <div class="caption">
@@ -131,33 +138,37 @@ team:
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/paw/device-mockup-tablet.png"
+            data-src="../assets/img/projects/paw/device-mockup-tablet.png"
             alt="Elephant at sunset"
             style="width: 80%;"
+            loading="lazy"
           />
         </div>
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/paw/list-blocks.jpg"
+            data-src="../assets/img/projects/paw/list-blocks.jpg"
             alt="Elephant at sunset"
             class="paper"
+            loading="lazy"
           />
         </div>
 
         <h5>Wireframe Example</h5>
         <div class="specimen stretch">
           <img
-            src="../assets/img/projects/paw/cpw-11.jpg"
+            data-src="../assets/img/projects/paw/cpw-11.jpg"
             alt="Elephant at sunset"
+            loading="lazy"
           />
           <div class="caption"></div>
         </div>
 
         <div class="specimen">
           <img
-            src="../assets/img/projects/paw/wireframe-rwd-article-page.png"
+            data-src="../assets/img/projects/paw/wireframe-rwd-article-page.png"
             alt="A nice description"
+            loading="lazy"
           />
         </div>
 
@@ -180,3 +191,13 @@ team:
     </div>
   </div>
 </main>
+
+<section class="container">
+  <div class="row flex flex--justify pad-default">
+    <div class="column two-thirds">
+      <h3 class="list-title animate fade-in">Best Stuff</h3>
+
+      {{> project-list}}
+    </div>
+  </div>
+</section>
