@@ -36,7 +36,14 @@
       <div class="row flex flex-align--center flex--justify fill-height">
         <!-- back button -->
         <nav class="position-top-left">
-          <a href="/work/all" class="button--previous">$ cd ..</a>
+          <a
+            aria-label="return to homepage"
+            class="button--previous"
+            href="/work/all"
+          >
+            [<span>KL:<span>.../work</span></span
+            >]$ cd ..
+          </a>
         </nav>
     
         <div class="column half text--center">
@@ -52,13 +59,20 @@
         <div class="column two-thirds">
           <article class="content">
             <div class="specimen stretch">
-              <img
+              <!-- <img
                 src="../assets/img/projects/cpl/p-cpl.jpg"
                 style="width: 100%;"
                 alt="Elephant at sunset"
                 class="paper"
                 loading="eager"
-              />
+              /> -->
+    
+              <picture class="image paper">
+    <source srcset="../assets/webp/projects/cpl/p-cpl.webp" type="image/webp">
+    <source srcset="../assets/img/projects/cpl/p-cpl.jpg" type="image/jpeg">
+    <img src="../assets/img/projects/cpl/p-cpl.jpg" alt="Elephant at sunset">
+    </picture>
+    
               <div class="caption">Reverse channel letters on canopy.</div>
             </div>
     
@@ -103,7 +117,12 @@
                 loading="lazy"
               />
               <div class="caption">
-                Photocredit
+                Photocredit &mdash; Penny Camberville
+                <i
+                  ><small
+                    >https://www.flickr.com/photos/acidgalore/6102175824</small
+                  ></i
+                >
               </div>
             </div>
     
@@ -139,7 +158,7 @@
                 class="paper"
                 loading="lazy"
               />
-              <div class="caption">Elevation.</div>
+              <div class="caption">Drawing Elevation.</div>
             </div>
     
             <div class="specimen">
@@ -161,7 +180,7 @@
                 class="paper"
                 loading="lazy"
               />
-              <div class="caption">Lorem Ipsum</div>
+              <div class="caption">Drawing Elevation.</div>
             </div>
     
             <div class="specimen">

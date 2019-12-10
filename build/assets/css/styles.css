@@ -3435,6 +3435,7 @@ ul.bookmarks li {
 }
 
 ul.bookmarks li a {
+  position: relative;
   color: #273269;
 }
 
@@ -3444,6 +3445,7 @@ ul.bookmarks li a:focus {
 
 ul.bookmarks li a:hover {
   color: #52dfb4;
+  text-decoration: underline;
 }
 
 ul.portfolio .list__item {
@@ -3671,12 +3673,10 @@ ul.pretty {
   left: 50%;
   align-items: center;
   justify-content: space-between;
-  width: 1220px;
+  width: 100%;
   max-width: 100%;
   margin: 0px auto;
   padding-top: 20px;
-  padding-right: 20px;
   padding-bottom: 10px;
-  padding-left: 20px;
   transform: translateX(-50%);
 }

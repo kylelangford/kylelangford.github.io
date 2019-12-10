@@ -1,63 +1,47 @@
+var Handlebars = require('handlebars');
+
 /**
- * Returns a `<figure>` with a thumbnail linked to a full picture
+ * Returns a `<picture>` with webp image and fallback
  *
  * @param {Object} `context` Object with values/attributes to add to the generated elements:
- * @param {String} `context.alt`
- * @param {String} `context.src`
- * @param {Number} `context.width`
- * @param {Number} `context.height`
- * @return {String} HTML `<figure>` element with image and optional caption/link.
- * @contributor: Marie Hogebrandt <https://github.com/Melindrea>
- * @api public
+ * @param {String} `path`
+ * @param {String} `alt`
+ *
+ *
+ * Example
+ * {{picture  "project/creakyOldJPEG.jpg" "lorem ipsum"}}
+ *
+ * Outputs
+ * <picture class="image">
+ *   <source srcset="assets/webp/project/creakyOldJPEG.webp" type="image/webp">
+ *   <source srcset="assets/img/project/creakyOldJPEG.jpg" type="image/jpeg">
+ *   <img src="assets/img/project/creakyOldJPEG.jpg" alt="lorem ipsum">
+ * </picture>
+ *
  */
 
-// <picture>
-//   <source srcset="img/awesomeWebPImage.webp" type="image/webp">
-//   <source srcset="img/creakyOldJPEG.jpg" type="image/jpeg">
-//   <img src="img/creakyOldJPEG.jpg" alt="Alt Text!">
-// </picture>
+module.exports = function(path, alt, options) {
+  var picture = '';
 
-helpers.picture = function(context) {
-  var figure = '';
-  var image = '';
+  var imgPath = '../assets/img/' + path;
+  var webpPath = '../assets/webp/';
+  var removeExt = path;
+  removeExt = removeExt
+    .split('.')
+    .slice(0, -1)
+    .join('.');
+  removeExt += '.webp';
+  webpPath += removeExt;
 
-  var link = context.full || false;
+  // Lazy Loading
+  // Custom Class
+  // Data-src?
 
-  var imageAttributes = {
-    alt: context.alt,
-    src: context.thumbnail,
-    width: context.size.width,
-    height: context.size.height,
-  };
+  picture += '<picture class="image paper">\n';
+  picture += '<source srcset="' + webpPath + '" type="image/webp">\n';
+  picture += '<source srcset="' + imgPath + '" type="image/jpeg">\n';
+  picture += '<img src="' + imgPath + '" alt="' + alt + '">\n';
+  picture += '</picture>';
 
-  var figureAttributes = { id: 'image-' + context.id };
-  var linkAttributes = { href: link, rel: 'thumbnail' };
-
-  if (context.classes) {
-    if (context.classes.image) {
-      imageAttributes.class = context.classes.image.join(' ');
-    }
-    if (context.classes.figure) {
-      figureAttributes.class = context.classes.figure.join(' ');
-    }
-    if (context.classes.link) {
-      linkAttributes.class = context.classes.link.join(' ');
-    }
-  }
-
-  figure += '<figure ' + parseAttr(figureAttributes) + '>\n';
-  image += '<img ' + parseAttr(imageAttributes) + '>\n';
-
-  if (link) {
-    figure += '<a ' + parseAttr(linkAttributes) + '>\n' + image + '</a>\n';
-  } else {
-    figure += image;
-  }
-
-  if (context.caption) {
-    figure += '<figcaption>' + context.caption + '</figcaption>\n';
-  }
-
-  figure += '</figure>';
-  return figure;
+  return new Handlebars.SafeString(picture);
 };

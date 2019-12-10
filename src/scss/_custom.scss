@@ -222,6 +222,7 @@ ul.bookmarks {
 
     a {
       color: $twilight;
+      position: relative;
 
       &:focus {
         text-decoration: underline;
@@ -229,6 +230,7 @@ ul.bookmarks {
 
       &:hover {
         color: $cyber-green;
+        text-decoration: underline;
       }
     }
   }
@@ -455,10 +457,8 @@ ul.pretty {
 }
 
 .mast-head {
-  width: 1220px;
+  width: 100%;
   max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   position: absolute;
   top: 0px;
   padding-top: 20px;

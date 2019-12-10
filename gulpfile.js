@@ -42,7 +42,7 @@ gulp.task('default', gulp.series('build', server, watch));
 
 // gulp.task('assets', gulp.series(icons, images));
 gulp.task('icons', gulp.series(fonticon, copyFonts));
-gulp.task('images', gulp.series(images));
+gulp.task('images', gulp.series(webpImages, fallbackImages));
 
 /**
  * CSS
@@ -233,7 +233,7 @@ function copyFonts() {
 }
 
 // https://www.npmjs.com/package/gulp-webp
-function images() {
+function webpImages() {
   return gulp
     .src('src/images/**/*.{jpg,png}')
     .pipe(
@@ -244,16 +244,9 @@ function images() {
     .pipe(gulp.dest('build/assets/webp'));
 }
 
-// function fallBackImages() {
-//   return gulp
-//     .src('src/images/**/*.{jpg,png}')
-//     .pipe(
-//       webp({
-//         quality: 60,
-//       })
-//     )
-//     .pipe(gulp.dest('build/assets/webp'));
-// }
+function fallbackImages() {
+  return gulp.src(['src/images/**/*']).pipe(gulp.dest('build/assets/img/'));
+}
 
 /**
  * Server
