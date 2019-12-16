@@ -1062,7 +1062,7 @@ article h3 {
 
 article p {
   margin-bottom: 3em;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -3527,7 +3527,7 @@ ul.blog .list__item a:hover {
 
 .button--previous span span {
   padding: 0 2px;
-  color: #f27181;
+  color: #ffffff;
 }
 
 /* Custom Positioning Classes */
@@ -3611,7 +3611,7 @@ ul.blog .list__item a:hover {
 
 .text--display {
   color: #f27181;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 5.5em;
   line-height: 1.2;
 }
