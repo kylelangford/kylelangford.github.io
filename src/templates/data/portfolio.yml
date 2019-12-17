@@ -1,18 +1,24 @@
 - title: Bally Ribbon Mills
   description: Branding, Design, Drupal Development
   href: /work/brm
+  alias: brm
 - title: Cambridge Public Library
   description: Enviromental Signage and Wayfinding.
   href: /work/cpl
+  alias: cpl
 - title: Drizly
   description: Design, AngularJS Development
   href: /work/drizly
+  alias: drizly
 - title: Elev8d Fitness
   description: Experience Design, Angular Development.
   href: /work/fitnessapp
+  alias: elev8d
 - title: Healthy Living Engine
   description: Design, Drupal Development
   href: /work/hle
+  alias: hle
 - title: Princeton Alumni Magazine
   description: Design, Drupal Development
   href: /work/paw
+  aliad: paw

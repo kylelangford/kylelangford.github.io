@@ -1,0 +1,14 @@
+{{#each related}}
+<div
+	class="column one-half is-{{#if @first}}first{{/if}}{{#if @last}}last{{/if}} card--{{this.abbv}}"
+>
+	<article class="view--teaser square">
+		<a href="{{this.href}}">
+			<span class="label">Project</span>
+			<p>
+				{{this.title}}
+			</p>
+		</a>
+	</article>
+</div>
+{{/each}}

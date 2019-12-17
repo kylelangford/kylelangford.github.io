@@ -2,7 +2,7 @@
 meta_title: 'Drizly Email Building Application | Kyle Langford'
 meta_description: 'Portfolio example by Kyle Langford for Drizly Email Building Web App, work done at Raskyl.'
 title: Drizly
-description: Email Building Web App
+description: Application Design and Angular Development
 attribution: Work done at Raskyl
 last-edit: 10.31.19
 back-url: /work/all
@@ -11,6 +11,15 @@ team:
     title: Designer, Angular Developer
   - name: Rachel Sorkin
     title: Designer
+related:
+  - title: Cambridge Public Library
+    description: Enviromental Signage and Wayfinding.
+    href: /work/cpl
+    abbv: cpl
+  - title: Elev8d Fitness
+    description: Experience Design, Angular Development.
+    href: /work/fitnessapp
+    abbv: elev8d
 ---
 
 {{> intro}}
@@ -74,13 +83,9 @@ team:
     </div>
   </div>
 </main>
-
 <section class="container">
-  <div class="row flex flex--justify pad-default">
-    <div class="column two-thirds">
-      <h3 class="list-title animate fade-in">Best Stuff</h3>
-
-      {{> project-list}}
-    </div>
+  <div class="row flex is--collapsed is--full-width">
+    {{> projects-two}}
   </div>
 </section>
+

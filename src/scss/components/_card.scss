@@ -1,0 +1,53 @@
+[class^='card-'],
+[class*=' card-'] {
+  margin-bottom: 0;
+  &.is-first {
+    padding-left: $page-margin--mobile;
+
+    @include media($sm-breakpoint) {
+      padding-left: $page-margin--tablet;
+    }
+  }
+
+  &.is-last {
+    text-align: right;
+    padding-right: $page-margin--mobile;
+
+    @include media($sm-breakpoint) {
+      padding-right: $page-margin--tablet;
+    }
+  }
+
+  .label {
+    color: white;
+  }
+  p {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+  }
+}
+
+.card--brm {
+  background: $brm;
+}
+
+.card--paw {
+  background: $paw;
+}
+
+.card--cpl {
+  background: $cpl;
+}
+
+.card--drizly {
+  background: $drizly;
+}
+
+.card--elev8d {
+  background: $elev8d;
+}
+.card--hle {
+  background: $hle;
+}

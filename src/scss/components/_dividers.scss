@@ -1,15 +1,15 @@
 // Line Behind Text
 .line-behind-text {
-  border-bottom: 1px solid $paragraph-font-color;
+  // border-bottom: 1px solid $red-eye;
   text-align: center;
   width: 20%;
   min-width: 200px;
   margin: 8em auto 3em;
 
   h2 {
-    background: #f4f4f4;
+    background: $red-eye;
     margin-bottom: 0;
-    color: $paragraph-font-color;
+    color: $white;
     display: inline-block;
     font-size: 1rem;
     padding: 0 10px;

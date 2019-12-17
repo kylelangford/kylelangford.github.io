@@ -1,19 +1,11 @@
 <footer class="credits">
-
-  <p class="attribution">{{ attribution }}</p>
+  <p>{{ attribution }}</p>
 
   <ul class="team-list">
     {{#each team}}
     <li class="list__item">{{this.name}}: {{this.title}}</li>
     {{/each}}
+
+    <li></li>
   </ul>
-
-  <div class="line-behind-text">
-    <!-- Credits: Copyright -->
-    <h2 class="last-edit">Last Edit: {{last-edit}}</h2>
-  </div>
-
-  <p class="copy"></span>{{ site.copyright }}</p>
-
 </footer>
-

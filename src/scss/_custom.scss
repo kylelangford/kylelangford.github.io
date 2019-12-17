@@ -1,13 +1,13 @@
 html {
-  background-color: darken(#5e6bb8, 30%);
+  background-color: darken($twilight, 30%);
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: $white;
   opacity: 0;
 
   article {
-    transform: translateY(50vh);
+    transform: translateY(35vh);
   }
 
   &.tween {
@@ -21,38 +21,11 @@ body {
     }
   }
 
-  &.page--articles {
+  &.page--all {
     .container {
       background-color: $twilight;
     }
   }
-
-  &.page--work {
-    .container {
-      background-color: #8aa8b8;
-    }
-  }
-}
-
-// Custom Colors
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
 }
 
 // Custom Layout
@@ -98,111 +71,6 @@ body {
     }
   }
 
-  &.portfolio {
-    background-color: $twilight;
-    color: $white;
-    height: $height;
-    text-align: left;
-
-    .page__title {
-      color: $cyber-green;
-    }
-
-    .button--previous {
-      color: $white;
-    }
-  }
-
-  &.brm {
-    background-color: $white;
-    color: #1d4d9c;
-    height: $height;
-
-    .page__title,
-    .button--previous {
-      color: #1d4d9c;
-    }
-  }
-
-  &.mena {
-    background-color: $white;
-    color: #7d4c92;
-    height: $height;
-
-    .page__title,
-    .button--previous {
-      color: #7d4c92;
-    }
-  }
-
-  &.cpl {
-    background-color: $white;
-    color: #c21f2f;
-    height: $height;
-
-    .page__title,
-    .button--previous {
-      color: #c21f2f;
-    }
-  }
-
-  &.paw {
-    background-color: $white;
-    height: $height;
-
-    .page__title {
-      color: $paw;
-    }
-
-    .description {
-      color: $black;
-    }
-
-    .button--previous {
-      color: $paw;
-    }
-  }
-
-  &.fitnessapp {
-    background-color: #f1bf9c;
-    color: $white;
-    height: $height;
-
-    .page__title {
-      color: $white;
-    }
-
-    .button--previous {
-      color: $white;
-    }
-  }
-
-  &.hle {
-  }
-
-  &.blink {
-    background-color: $white;
-
-    color: #337ab7;
-
-    .page__title {
-      color: #337ab7;
-    }
-
-    .button--previous {
-      color: #337ab7;
-    }
-  }
-
-  &.drizly {
-    color: white;
-
-    background-color: #e02b2d;
-    .page__title {
-      color: $white;
-    }
-  }
-
   &.bookmarks {
     background-color: $twilight;
     color: white;
@@ -212,12 +80,90 @@ body {
       color: $cyber-green;
     }
   }
+
+  &.portfolio {
+    background-color: $twilight;
+    color: $white;
+    height: $height;
+    text-align: left;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.brm {
+    background-color: $brm;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.cpl {
+    background-color: $cpl;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.paw {
+    background-color: $paw;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.fitnessapp {
+    background-color: $elev8d;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.hle {
+    background-color: $hle;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.drizly {
+    background-color: $drizly;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
 }
 
 ul.bookmarks {
-  margin-bottom: $base-spacing * 2;
+  margin-bottom: g(2);
 
-  li {
+  .list__item {
     margin-bottom: $half-spacing;
 
     a {
@@ -237,6 +183,8 @@ ul.bookmarks {
 }
 
 ul.portfolio {
+  margin-bottom: g(2);
+
   .list__item {
     border: none;
     margin-bottom: 24px;
@@ -246,13 +194,13 @@ ul.portfolio {
     }
 
     a {
-      color: $twilight;
+      color: $cyber-green;
 
       &:hover {
-        color: $cyber-green;
+        color: $scrap-green;
 
         p {
-          color: $cyber-green;
+          color: $scrap-green;
         }
       }
     }
@@ -260,38 +208,10 @@ ul.portfolio {
     p,
     small {
       @include prefix(transition, color 0.15s linear, webkit ms);
-      color: $twilight;
+      color: $cyber-green;
       font-size: 1em;
       font-weight: 600;
       margin: 0;
-    }
-  }
-}
-
-ul.blog {
-  .list__item {
-    border: none;
-    margin-bottom: 24px;
-
-    article {
-      padding: 3em 2em;
-      background-color: #4d3b7e;
-      border-radius: 8px;
-    }
-
-    p,
-    small {
-      color: $white;
-      margin: 0;
-    }
-
-    a {
-      color: $cyber-green;
-      padding: 16px 0;
-
-      &:hover {
-        color: darken($cyber-green, 15%);
-      }
     }
   }
 }
@@ -473,3 +393,10 @@ ul.pretty {
   z-index: layer('header');
   margin: 0px auto;
 }
+
+.square {
+  @include responsive-ratio(2, 1);
+  width: 100%;
+  position: relative; /* If you want text inside of it */
+}
+
