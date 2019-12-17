@@ -12,12 +12,20 @@
   }
 }
 
+.full-width {
+  width: 100%;
+}
+
 .split {
   display: flex;
 
   & > div {
     padding: 0 g(2);
   }
+}
+
+picture {
+  display: block;
 }
 
 .media__caption,

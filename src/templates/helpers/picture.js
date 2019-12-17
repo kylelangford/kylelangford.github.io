@@ -37,10 +37,11 @@ module.exports = function(path, alt, options) {
   // Custom Class
   // Data-src?
 
-  picture += '<picture class="image paper">\n';
+  picture += '<picture class="image">\n';
   picture += '<source srcset="' + webpPath + '" type="image/webp">\n';
   picture += '<source srcset="' + imgPath + '" type="image/jpeg">\n';
-  picture += '<img src="' + imgPath + '" alt="' + alt + '">\n';
+  picture +=
+    '<img src="' + imgPath + '" alt="' + alt + '" class="paper full-width">\n';
   picture += '</picture>';
 
   return new Handlebars.SafeString(picture);

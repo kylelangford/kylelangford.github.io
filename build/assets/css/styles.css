@@ -1396,12 +1396,20 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   }
 }
 
+.full-width {
+  width: 100%;
+}
+
 .split {
   display: flex;
 }
 
 .split > div {
   padding: 0 16px;
+}
+
+picture {
+  display: block;
 }
 
 .media__caption,
