@@ -6,19 +6,19 @@ body {
   background-color: $white;
   opacity: 0;
 
-  article {
-    transform: translateY(35vh);
-  }
+  // article {
+  //   transform: translateY(35vh);
+  // }
 
   &.tween {
     // on load
     opacity: 1;
     transition: all 0.7s ease-in;
 
-    article {
-      transition: all 0.7s ease-in;
-      transform: translateY(0px);
-    }
+    // article {
+    //   transition: all 0.7s ease-in;
+    //   transform: translateY(0px);
+    // }
   }
 
   &.page--all {
@@ -245,8 +245,8 @@ ul.portfolio {
 /* Custom Positioning Classes */
 .position-bottom-right {
   position: absolute;
-  bottom: 2em;
-  right: 0;
+  bottom: 0;
+  right: 5vh;
   pointer-events: none;
 }
 
