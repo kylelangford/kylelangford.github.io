@@ -1414,6 +1414,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 /* Carousel Styling */
 .stack {
   padding: 16px;
+  border: 1px solid #eee;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
 }
@@ -1421,6 +1422,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 /* Image Styling */
 .paper {
   padding: 8px;
+  border: 1px solid #eee;
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
@@ -3132,17 +3134,8 @@ body {
   opacity: 0;
 }
 
-body article {
-  transform: translateY(35vh);
-}
-
 body.tween {
   opacity: 1;
-  transition: all 0.7s ease-in;
-}
-
-body.tween article {
-  transform: translateY(0px);
   transition: all 0.7s ease-in;
 }
 
@@ -3365,8 +3358,8 @@ ul.portfolio .list__item small {
 /* Custom Positioning Classes */
 .position-bottom-right {
   position: absolute;
-  right: 0;
-  bottom: 2em;
+  right: 5vh;
+  bottom: 0;
   pointer-events: none;
 }
 
