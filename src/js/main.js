@@ -47,7 +47,7 @@ $(function() {
 
 $('document').ready(function() {
   // Add Tween Class
-  $('body').addClass('tween');
+  // $('body').addClass('tween');
 
   // Menu Trigger
   $('.primary-menu-btn').on('click touchstart', function(e) {

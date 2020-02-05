@@ -3139,12 +3139,6 @@ html {
 
 body {
   background-color: #ffffff;
-  opacity: 0;
-}
-
-body.tween {
-  opacity: 1;
-  transition: all 0.7s ease-in;
 }
 
 body.page--all .container {
@@ -3519,4 +3513,65 @@ ul.pretty {
   width: 100%;
   padding-top: 50%;
   /* If you want text inside of it */
+}
+
+.specimen,
+.media {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+  .stretch {
+    margin-right: -10vw;
+    margin-left: -10vw;
+  }
+}
+
+/* Carousel Styling */
+.stack {
+  padding: 16px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.paper {
+  padding: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.fake-browser-ui {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0 0;
+  border-radius: 3px;
+  background: #ddd;
+  line-height: 0;
+}
+
+.fake-browser-ui .scroll-box {
+  height: 500px;
+  overflow: scroll;
+}
+
+.fake-browser-ui .frame {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  height: 15px;
+}
+
+.fake-browser-ui span {
+  width: 8px;
+  height: 8px;
+  margin: 0 0 0 4px;
+  float: left;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  background-color: #eee;
 }
