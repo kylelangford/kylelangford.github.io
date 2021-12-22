@@ -71,6 +71,7 @@ p {
 
 a {
   color: $base-link-color;
+  cursor: pointer;
   text-decoration: none;
   @include prefix(transition, color 0.15s linear, webkit ms);
 

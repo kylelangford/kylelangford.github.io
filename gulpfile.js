@@ -18,10 +18,11 @@ const gulpStylelint = require('gulp-stylelint');
 const webp = require('gulp-webp');
 const iconfont = require('gulp-iconfont');
 const iconfontCss = require('gulp-iconfont-css');
+const plumber = require('gulp-plumber');
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/pass-arguments-from-cli.md
 // https://stackoverflow.com/questions/23023650/is-it-possible-to-pass-a-flag-to-gulp-to-have-it-run-tasks-in-different-ways
-const argv = require('yargs').argv;
+// const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
 
 // Settings
@@ -129,24 +130,25 @@ function js() {
   return (
     gulp
       .src([
-        './src/js/vendor/lazyload.js',
+        // './src/js/vendor/lazyload.js',
         './node_modules/@dogstudio/highway/build/highway.js',
+        // './node_modules/@lottiefiles/lottie-player/dist/lottie-player.js',
         './src/js/vendor/slick.js',
         './src/js/vendor/prism.js',
         './src/js/vendor/wow.js',
         './src/js/*.js',
       ])
       .pipe(concat('main.js'))
-      .pipe(eslint())
-      .pipe(eslint.format())
-      .pipe(eslint.failAfterError())
+      // .pipe(eslint())
+      // .pipe(eslint.format())
+      // .pipe(eslint.failAfterError())
       // .pipe(
       //   babel({
       //     presets: ['@babel/env'],
       //   })
       // )
       .pipe(sourcemaps.init())
-      .pipe(uglify())
+      // .pipe(uglify())
       .on('error', createErrorHandler('uglify'))
       .pipe(sourcemaps.write('./maps'))
       .pipe(gulp.dest('./build/assets/js'))
@@ -236,11 +238,8 @@ function copyFonts() {
 function webpImages() {
   return gulp
     .src('src/images/**/*.{jpg,png}')
-    .pipe(
-      webp({
-        quality: 60,
-      })
-    )
+    .pipe(plumber())
+    .pipe(webp())
     .pipe(gulp.dest('build/assets/webp'));
 }
 

@@ -5,15 +5,10 @@ back_url: /
 back_text: cd ..
 ---
 
+{{> back}}
+
 <header class="container size-to-window portfolio">
   <div class="row flex flex-align--center flex--justify fill-height">
-    <nav class="position-top-left">
-      <a href="{{back_url}}" class="button--previous"
-        >[<span>KL:<span>.../projects</span></span
-        >]$ {{back_text}}</a
-      >
-    </nav>
-
     <div class="column two-thirds">
       <h1 class="page__title">Po<span class="kern-1">rtf</span>olio</h1>
       <p class="description animate fade-in">
@@ -27,7 +22,6 @@ back_text: cd ..
   <div class="row flex flex--justify pad-default">
     <div class="column two-thirds">
       <h3 class="list-title">Projects</h3>
-
       {{> projects-all }}
     </div>
   </div>

@@ -40,6 +40,7 @@ body {
     .page__title {
       color: $white;
       letter-spacing: 0.05rem;
+      display: block;
 
       font-size: 38px;
 
@@ -150,6 +151,28 @@ body {
 
   &.drizly {
     background-color: $drizly;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
+  &.wind-journey {
+    background-color: #008556;
+    color: $white;;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;;
+    }
+  }
+
+  &.calculator {
+    background-color: #461E7D;
     color: $white;
     height: $height;
 

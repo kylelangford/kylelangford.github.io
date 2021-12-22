@@ -1,37 +1,32 @@
 - title: Bally Ribbon Mills
-  description: Logo Design, UI Design, Drupal 7
+  description: Branding, Web Design, Drupal Development
   href: /work/brm
   alias: brm
 - title: Cambridge Public Library
   description: Enviromental Signage and Wayfinding
-  href: /work/cpl
+  href: /work/enviromental-design
   alias: cpl
-- title: Drizly Marketing
-  description: HTML Email, UI Design, AngularJS
+- title: Demand Response Calculator
+  description: PHP Development
+  href: /work/calculator
+  alias: calc  
+- title: Drizly Email Marketing
+  description: Email Design and Development, AngularJS
   href: /work/drizly
   alias: drizly
 - title: Elev8d Fitness
-  description: Angular
+  description: Angular Video Player
   href: /work/fitnessapp
   alias: elev8d
-- title: Wind Journey
-  description: JS, SVG Animation, Story Boarding
-  href: /work/wind-journey
-  alias: wind
-- title: Demand Response Calculator
-  description: PHP, MySQL, JS
-  href: /work/dr-calculator
-  alias: calc
-- title: Healthy Living Engine
-  description: Drupal Theming, Multi-site, Product Development
+- title: Linkwell Content Hub
+  description: Design and Development
   href: /work/hle
   alias: hle
-- title: PennStater Magazine
-  description: Drupal 8 Development
-  href: /work/pennstater
-  alias: penn
 - title: Princeton Alumni Magazine
-  description: UX Design, Drupal 7 Development
+  description: Design and Development
   href: /work/paw
   alias: paw
-
+- title: Enel Green Power
+  description: Design and Development
+  href: /work/wind-journey
+  alias: wind-journey

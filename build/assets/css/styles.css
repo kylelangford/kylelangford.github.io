@@ -410,6 +410,7 @@ p.collapse {
 a {
   color: #5689b2;
   text-decoration: none;
+  cursor: pointer;
   /* Output standard non-prefixed declaration */
   transition: color 0.15s linear;
 }
@@ -1107,7 +1108,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   display: inline-block;
@@ -1130,7 +1130,6 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   display: inline-block;
@@ -1474,19 +1473,15 @@ picture {
 
 /* Animation */
 .animated {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
 .animated.infinite {
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .animate {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   perspective: 1000;
 }
@@ -1508,37 +1503,6 @@ picture {
   Licensed under the MIT license - http://opensource.org/licenses/MIT
   Copyright (c) 2015 Daniel Eden
 */
-@-webkit-keyframes bounce {
-  0%,
-  20%,
-  53%,
-  80%,
-  100% {
-    transform: translate3d(0, 0, 0);
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-  40%,
-  43% {
-    transform: translate3d(0, -30px, 0);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  }
-  70% {
-    transform: translate3d(0, -15px, 0);
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  }
-  90% {
-    transform: translate3d(0, -4px, 0);
-  }
-}
 
 @keyframes bounce {
   0%,
@@ -1573,7 +1537,6 @@ picture {
 }
 
 .bounce {
-  -webkit-animation-name: bounce;
   transform-origin: center bottom;
   animation-name: bounce;
 }
@@ -2714,7 +2677,6 @@ picture {
 /* Slider */
 .slick-slider {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -2866,15 +2828,20 @@ picture {
 .slick-next:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #323e43;
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #e53b56;
   font-family: "slick";
-  font-size: 20px;
+  font-size: 32px;
   line-height: 1;
+  line-height: 30px;
+  text-align: center;
   opacity: 0.75;
 }
 
 .slick-prev {
-  left: -25px;
+  left: -35px;
 }
 
 [dir="rtl"] .slick-prev {
@@ -2909,13 +2876,13 @@ picture {
 
 /* Dots */
 .slick-dotted.slick-slider {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .slick-dots {
   display: block;
   position: absolute;
-  bottom: -25px;
+  bottom: -50px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -2928,7 +2895,7 @@ picture {
   position: relative;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 0;
   padding: 0;
   cursor: pointer;
 }
@@ -2965,7 +2932,7 @@ picture {
   height: 20px;
   color: #323e43;
   font-family: "slick";
-  font-size: 6px;
+  font-size: 24px;
   line-height: 20px;
   text-align: center;
   content: "•";
@@ -2990,7 +2957,6 @@ pre[class*='language-'] {
   word-wrap: normal;
   -moz-tab-size: 2;
   -o-tab-size: 2;
-  -webkit-hyphens: none;
   -ms-hyphens: none;
   background: none;
   color: #ccc;
@@ -3100,7 +3066,6 @@ pre[class*='language-'] {
 }
 
 .command-line-prompt {
-  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   display: block;
@@ -3152,6 +3117,7 @@ body.page--all .container {
 }
 
 .container.intro .page__title {
+  display: block;
   color: #ffffff;
   font-size: 38px;
   letter-spacing: 0.05rem;
@@ -3272,6 +3238,28 @@ body.page--all .container {
 
 .container.drizly .page__title,
 .container.drizly .button--previous {
+  color: #ffffff;
+}
+
+.container.wind-journey {
+  height: 70vh;
+  background-color: #008556;
+  color: #ffffff;
+}
+
+.container.wind-journey .page__title,
+.container.wind-journey .button--previous {
+  color: #ffffff;
+}
+
+.container.calculator {
+  height: 70vh;
+  background-color: #461E7D;
+  color: #ffffff;
+}
+
+.container.calculator .page__title,
+.container.calculator .button--previous {
   color: #ffffff;
 }
 
