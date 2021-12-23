@@ -1,11 +1,25 @@
 ---
 meta_title: 'Demand Response Calculator | Kyle Langford'
 meta_description: 'Portfolio example by Kyle Langford for Demand Response Calculator, work done at Brunello Inc.'
-title: Enelx Demand Response Calculator
-description: Lottie Animation and Javascript Development
+title: Enel X Demand Response Calculator
+description: PHP and MySQL Development
 attribution: Work done at Brunello, Inc.
-last-edit: 12.12.22
+last-edit: 12.23.21
 back-url: /work/all
+team:
+  - name: Adam Hoyle
+    title: Project Manager
+  - name: Kyle Langford
+    title: UX Developer
+related:
+  - title: Bally Ribbon Mills
+    description: Branding, Design, Drupal Development
+    href: /work/brm
+    abbv: brm
+  - title: Drizly Email Marketing
+    description: JS
+    href: /work/drizly
+    abbv: drizly
 ---
 
 {{> intro}}
@@ -16,20 +30,26 @@ back-url: /work/all
       <article class="content">
         
         <!-- Calc -->
-        <div class="specimen stretch paper">
-          <picture>
-            <source srcset="../assets/webp/projects/enelx/tool.webp" type="image/webp">
-            <source srcset="../assets/img/projects/enelx/tool.jpg" type="image/jpeg"> 
-            <img src="../assets/img/projects/enelx/tool.jpg" alt="Alt Text!" loading="eager">
-          </picture>
+        <div class="specimen stretch">
+          {{picture "projects/enelx/dr-calc.jpg" "" "eager"}}
         </div>
 
-        <div class="specimen stretch paper">
-          <picture>
-            <source srcset="../assets/webp/projects/enelx/results-debug.webp" type="image/webp">
-            <source srcset="../assets/img/projects/enelx/results-debug.jpg" type="image/jpeg"> 
-            <img src="../assets/img/projects/enelx/dresults-debug.jpg" alt="Alt Text!" loading="lazy">
-          </picture>
+        <h4>Savings Calculator</h4>
+
+        <p>
+          <strong>Ask </strong> Enel X wanted to develop a savings calculator. The form would feature a Zip Code Mapping, where zip codes (US and CA) are mapped to the DR programs available for that zip code, as well as the $/kW-year in DR earnings. The user would enter the Industry Average kW by choosing their industry, which will auto-populate the Curtailable kW amount, with an option to input their own curtailable kW value if they have an estimate.
+        </p>
+
+        <p>
+          <strong>Contribution</strong> Zipcode validates US and CA postal codes in realtime. Created database schema with over 400k entries. Designed form validation and debuging views. Page created using HTML/CSS/JS/PHP/MYSQL. Interesting detail is the form is hosted on a server I built to host similar tools and added to the page with an iframe. I was able to make the iframe responsive using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">post_message</a> api. 
+        </p>
+
+        <div class="specimen paper">
+          {{picture "projects/enelx/tool.jpg"}}
+        </div>
+
+        <div class="specimen paper">
+          {{picture "projects/enelx/results-debug.jpg"}}
         </div>
 
 

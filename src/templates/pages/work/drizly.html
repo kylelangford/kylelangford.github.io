@@ -2,24 +2,24 @@
 meta_title: 'Drizly Email Building Application | Kyle Langford'
 meta_description: 'Portfolio example by Kyle Langford for Drizly Email Building Web App, work done at Raskyl.'
 title: Drizly
-description: Email Marketing and Templating Solutions
+description: Application Design and Development
 attribution: Work done at Raskyl
 last-edit: 10.31.19
 back-url: /work/all
 team:
   - name: Kyle Langford
-    title: Designer, JS Developer
+    title: UX Developer
   - name: Rachel Sorkin
-    title: Designer
+    title: Partner, Designer
 related:
+  - title: Demand Response Calculator
+    description: Enviromental Signage and Wayfinding.
+    href: /work/calculator
+    abbv: calculator
   - title: Cambridge Public Library
     description: Enviromental Signage and Wayfinding.
-    href: /work/cpl
+    href: /work/environmental-design
     abbv: cpl
-  - title: Elev8d Fitness
-    description: Experience Design, Angular Development.
-    href: /work/fitnessapp
-    abbv: elev8d
 ---
 
 {{> intro}}
@@ -29,11 +29,7 @@ related:
     <div class="column two-thirds">
       <article class="content">
         <div class="specimen stretch">
-          <img
-            src="../assets/img/projects/drizly/device-mockup-default.png"
-            alt="Elephant at sunset"
-            loading="eager"
-          />
+          {{picture "projects/drizly/device-mockup-default.png" "" "eager"}}
         </div>
 
         <h4>Design and Generate HTML Emails</h4>
@@ -41,6 +37,10 @@ related:
         <p>
           <strong>Ask </strong> We had been coding emails for Drizly for several months. I designed a monthly calendar email and regularly built and designed HTML emails with the help of my partner Rachel Sorkin. We proposed a component based design system to help streamline their email production.
         </p>
+
+        <div class="specimen stretch">
+          {{picture "projects/drizly/email-spread.jpg"}}
+        </div>
 
         <p>
           <strong>Outcome</strong> There was a lot of commonalities in the
@@ -53,36 +53,18 @@ related:
           into ExactTarget.
         </p>
 
-
-        <div class="specimen stretch">
-          <img
-            data-src="../assets/img/projects/drizly/email-spread.jpg"
-            alt="Elephant at sunset"
-            loading="lazy"
-          />
-        </div>
-
-
         <h5>Drag and Drag, Updates in Real Time</h5>
 
         <div class="specimen stretch">
-          <img
-            data-src="../assets/img/projects/drizly/device-mockup-project.png"
-            alt="Elephant at sunset"
-            loading="lazy"
-          />
+          {{picture "projects/drizly/device-mockup-project.png"}}
         </div>
 
         <h5 style="text-align: center;">Example Email</h5>
 
         <div class="specimen">
-          <img
-            data-src="../assets/img/projects/drizly/email-drizly-CincoDeMayo-v1.jpg"
-            alt="Elephant at sunset"
-            style="width: 80%;"
-            class="paper"
-            loading="lazy"
-          />
+          <div class="paper" style="width: 80%; margin: 0 auto;">
+            {{picture "projects/drizly/email-drizly-CincoDeMayo-v1.jpg"}}
+          </div>
         </div>
 
         {{> credits}}

@@ -20,7 +20,7 @@ var Handlebars = require('handlebars');
  *
  */
 
-module.exports = function(path, alt, classList = '', loading = 'lazy') {
+module.exports = function(path, alt, loading = 'lazy', classList = '' ) {
   var picture = '';
   var classList = ' ' + classList;
   var loading = loading; // Lazy, Eager - attr only goes on img element

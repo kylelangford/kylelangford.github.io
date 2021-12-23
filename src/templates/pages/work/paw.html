@@ -2,7 +2,7 @@
 meta_title: 'PAW Design and Drupal Development | Kyle Langford'
 meta_description: 'Portfolio example by Kyle Langford on Princeton Alumni Weekly Magazine site design and development while at Brunello, inc'
 title: PAW
-description: Information Architecture and Frontend Development
+description: Layout Design and Frontend Development
 attribution: Work done at Brunello, Inc.
 last-edit: 10.31.19
 back-url: /work/all
@@ -10,9 +10,9 @@ team:
   - name: Nicole Baltzer
     title: Project Manager
   - name: Jason Fournier
-    title: Project Designer
+    title: Designer
   - name: Kyle Langford
-    title: UX Developer
+    title: Designer and Developer
   - name: Mike Calebrese
     title: Drupal Developer
 related:
@@ -20,10 +20,10 @@ related:
     description: Design, Drupal Development
     href: /work/hle
     abbv: hle
-  - title: Bally Ribbon Mills
+  - title: PennStater Magazine
     description: Branding, Design, Drupal Development
-    href: /work/brm
-    abbv: brm
+    href: /work/pennstater
+    abbv: pennstater
 ---
 
 {{> intro}}
@@ -33,11 +33,7 @@ related:
     <div class="column two-thirds">
       <article class="content">
         <div class="specimen stretch">
-          <img
-            src="../assets/img/projects/paw/device-mockup-article.png"
-            alt="Elephant at sunset"
-            loading="eager"
-          />
+          {{picture "projects/paw/device-mockup-article.png" "" "eager"}}
         </div>
 
         <h4>Digital Magazine Publishing</h4>
@@ -65,12 +61,8 @@ related:
         </p>
 
         <div class="specimen">
-          <img
-            data-src="../assets/img/projects/paw/way-back.jpg"
-            alt="Elephant at sunset"
-            class="paper"
-            loading="lazy"
-          />
+          {{picture "projects/paw/way-back.jpg"}}
+
           <div class="caption">
             Princeton Alumni Website, prior to redesign.
           </div>
@@ -84,6 +76,7 @@ related:
         </p>
 
         <div class="specimen text--center">
+          <!-- {{picture "projects/paw/mag-cover.png"}} -->
           <img
             data-src="../assets/img/projects/paw/mag-cover.png"
             alt="Elephant at sunset"
@@ -96,38 +89,20 @@ related:
         <h5>Research Phase</h5>
 
         <div class="specimen">
-          <img
-            data-src="../assets/img/projects/paw/style-tile-1.png"
-            alt="Elephant at sunset"
-            class="paper"
-            loading="lazy"
-          />
+          {{picture "projects/paw/style-tile-1.png"}}
           <div class="caption">Inspiration Style Collage.</div>
         </div>
 
         <h5>IA: Sitemap</h5>
         <div class="specimen stretch">
-          <img
-            data-src="../assets/img/projects/paw/sitemap_v1.jpg"
-            alt="Elephant at sunset"
-            class="paper"
-            loading="lazy"
-          />
+          {{picture "projects/paw/sitemap_v1.jpg"}}
         </div>
 
         <h5>IA: Content Priority</h5>
         <div class="specimen stretch">
           <div class="stack">
-            <img
-              data-src="../assets/img/projects/paw/cpw-04.jpg"
-              alt="Elephant at sunset"
-              loading="lazy"
-            />
-            <img
-              data-src="../assets/img/projects/paw/cpw-05.jpg"
-              alt="Elephant at sunset"
-              loading="lazy"
-            />
+            {{picture "projects/paw/cpw-04.jpg"}}
+            {{picture "projects/paw/cpw-05.jpg"}}
           </div>
           <div class="caption">
             I created this Content Inventory &mdash; to show at a block level
@@ -146,39 +121,21 @@ related:
         </p>
 
         <div class="specimen">
-          <img
-            data-src="../assets/img/projects/paw/device-mockup-tablet.png"
-            alt="Elephant at sunset"
-            style="width: 80%;"
-            loading="lazy"
-          />
+          {{picture "projects/paw/device-mockup-tablet.png"}}
         </div>
 
-        <div class="specimen">
-          <img
-            data-src="../assets/img/projects/paw/list-blocks.jpg"
-            alt="Elephant at sunset"
-            class="paper"
-            loading="lazy"
-          />
+        <div class="specimen paper">
+          {{picture "projects/paw/list-blocks.jpg"}}
         </div>
 
         <h5>Layout Design</h5>
         <div class="specimen stretch">
-          <img
-            data-src="../assets/img/projects/paw/cpw-11.jpg"
-            alt="Elephant at sunset"
-            loading="lazy"
-          />
+          {{picture "projects/paw/cpw-11.jpg"}}
           <div class="caption"></div>
         </div>
 
         <div class="specimen">
-          <img
-            data-src="../assets/img/projects/paw/wireframe-rwd-article-page.png"
-            alt="A nice description"
-            loading="lazy"
-          />
+          {{picture "projects/paw/wireframe-rwd-article-page.png"}}
         </div>
 
         <h5>HTML Prototype</h5>

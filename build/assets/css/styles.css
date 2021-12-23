@@ -1068,13 +1068,13 @@ article h3 {
 article p {
   margin-bottom: 3em;
   font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
 @media only screen and (min-width: 800px) {
   article p {
-    font-size: 1.5em;
+    font-size: 1.35em;
   }
 }
 
@@ -1267,6 +1267,18 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   background: #028bcc;
 }
 
+.card--wind {
+  background: #008556;
+}
+
+.card--calculator {
+  background: #461E7D;
+}
+
+.card--pennstater {
+  background: #006FBA;
+}
+
 /* Underlined Link */
 .link {
   -webkit-appearance: none;
@@ -1361,6 +1373,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 }
 
 .list-title {
+  margin-top: 5em;
   color: #e53b56;
   font-size: 80%;
   font-weight: bold;
@@ -1382,8 +1395,7 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
   color: #0678be;
 }
 
-.specimen,
-.media {
+.specimen {
   margin-bottom: 48px;
   text-align: center;
 }
@@ -1413,8 +1425,11 @@ picture {
 
 .media__caption,
 .caption {
-  margin: 8px 0;
-  font-size: 16px;
+  width: 100%;
+  max-width: 669px;
+  margin: 8px auto;
+  color: #718078;
+  font-size: 1em;
   text-align: left;
 }
 
@@ -3186,14 +3201,14 @@ body.page--all .container {
   color: #ffffff;
 }
 
-.container.cpl {
+.container.environmental-design {
   height: 70vh;
   background-color: #c21f2f;
   color: #ffffff;
 }
 
-.container.cpl .page__title,
-.container.cpl .button--previous {
+.container.environmental-design .page__title,
+.container.environmental-design .button--previous {
   color: #ffffff;
 }
 
@@ -3260,6 +3275,17 @@ body.page--all .container {
 
 .container.calculator .page__title,
 .container.calculator .button--previous {
+  color: #ffffff;
+}
+
+.container.pennstater {
+  height: 70vh;
+  background-color: #006FBA;
+  color: #ffffff;
+}
+
+.container.pennstater .page__title,
+.container.pennstater .button--previous {
   color: #ffffff;
 }
 
@@ -3476,10 +3502,6 @@ ul.pretty {
   letter-spacing: 1px;
 }
 
-.credits {
-  text-align: center;
-}
-
 .mast-head {
   display: flex;
   z-index: 3;
@@ -3503,8 +3525,7 @@ ul.pretty {
   /* If you want text inside of it */
 }
 
-.specimen,
-.media {
+.specimen {
   margin-bottom: 48px;
   text-align: center;
 }

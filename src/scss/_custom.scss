@@ -105,7 +105,7 @@ body {
     }
   }
 
-  &.cpl {
+  &.environmental-design {
     background-color: $cpl;
     color: $white;
     height: $height;
@@ -161,7 +161,7 @@ body {
   }
 
   &.wind-journey {
-    background-color: #008556;
+    background-color: $egp;
     color: $white;;
     height: $height;
 
@@ -172,7 +172,7 @@ body {
   }
 
   &.calculator {
-    background-color: #461E7D;
+    background-color: $enelx;
     color: $white;
     height: $height;
 
@@ -181,6 +181,17 @@ body {
       color: $white;
     }
   }
+  &.pennstater {
+    background-color: $penn;
+    color: $white;
+    height: $height;
+
+    .page__title,
+    .button--previous {
+      color: $white;
+    }
+  }
+
 }
 
 ul.bookmarks {
@@ -396,7 +407,7 @@ ul.pretty {
 }
 
 .credits {
-  text-align: center;
+  // text-align: center;
 }
 
 .mast-head {
@@ -423,13 +434,14 @@ ul.pretty {
   position: relative; /* If you want text inside of it */
 }
 
+.team-list {}
+
 // .blend--multiply {
 //   mix-blend-mode: multiply;
 // }
 
 // Media Content
-.specimen,
-.media {
+.specimen {
   margin-bottom: g(6);
   text-align: center;
 }

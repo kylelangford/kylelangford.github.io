@@ -1,6 +1,5 @@
 // Media Content
-.specimen,
-.media {
+.specimen {
   margin-bottom: g(6);
   text-align: center;
 }
@@ -31,8 +30,11 @@ picture {
 .media__caption,
 .caption {
   text-align: left;
-  font-size: 16px;
-  margin: 8px 0;
+  font-size: 1em;
+  margin: 8px auto;
+  max-width: 669px;
+  width: 100%;
+  color: $concrete;
 }
 
 /* Carousel Styling */

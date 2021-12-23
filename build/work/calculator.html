@@ -47,9 +47,9 @@
         </nav>
     
         <div class="column half text--center">
-          <h1 class="page__title">Enelx Demand Response Calculator</h1>
+          <h1 class="page__title">Enel X Demand Response Calculator</h1>
           <h2 class="page__sub-title"></h2>
-          <p class="description">Lottie Animation and Javascript Development</p>
+          <p class="description">PHP and MySQL Development</p>
         </div>
       </div>
     </header>
@@ -60,20 +60,38 @@
           <article class="content">
             
             <!-- Calc -->
-            <div class="specimen stretch paper">
-              <picture>
-                <source srcset="../assets/webp/projects/enelx/tool.webp" type="image/webp">
-                <source srcset="../assets/img/projects/enelx/tool.jpg" type="image/jpeg"> 
-                <img src="../assets/img/projects/enelx/tool.jpg" alt="Alt Text!" loading="eager">
-              </picture>
+            <div class="specimen stretch">
+              <picture class="media media--image [object Object]">
+    <source srcset="../assets/webp/projects/enelx/dr-calc.webp" type="image/webp">
+    <source srcset="../assets/img/projects/enelx/dr-calc.jpg" type="image/jpeg">
+    <img src="../assets/img/projects/enelx/dr-calc.jpg" alt=""  loading="eager" >
+    </picture>
             </div>
     
-            <div class="specimen stretch paper">
-              <picture>
-                <source srcset="../assets/webp/projects/enelx/results-debug.webp" type="image/webp">
-                <source srcset="../assets/img/projects/enelx/results-debug.jpg" type="image/jpeg"> 
-                <img src="../assets/img/projects/enelx/dresults-debug.jpg" alt="Alt Text!" loading="lazy">
-              </picture>
+            <h4>Savings Calculator</h4>
+    
+            <p>
+              <strong>Ask </strong> Enel X wanted to develop a savings calculator. The form would feature a Zip Code Mapping, where zip codes (US and CA) are mapped to the DR programs available for that zip code, as well as the $/kW-year in DR earnings. The user would enter the Industry Average kW by choosing their industry, which will auto-populate the Curtailable kW amount, with an option to input their own curtailable kW value if they have an estimate.
+            </p>
+    
+            <p>
+              <strong>Contribution</strong> Zipcode validates US and CA postal codes in realtime. Created database schema with over 400k entries. Designed form validation and debuging views. Page created using HTML/CSS/JS/PHP/MYSQL. Interesting detail is the form is hosted on a server I built to host similar tools and added to the page with an iframe. I was able to make the iframe responsive using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">post_message</a> api. 
+            </p>
+    
+            <div class="specimen paper">
+              <picture class="media media--image ">
+    <source srcset="../assets/webp/projects/enelx/tool.webp" type="image/webp">
+    <source srcset="../assets/img/projects/enelx/tool.jpg" type="image/jpeg">
+    <img src="../assets/img/projects/enelx/tool.jpg" alt="[object Object]"  loading="lazy" >
+    </picture>
+            </div>
+    
+            <div class="specimen paper">
+              <picture class="media media--image ">
+    <source srcset="../assets/webp/projects/enelx/results-debug.webp" type="image/webp">
+    <source srcset="../assets/img/projects/enelx/results-debug.jpg" type="image/jpeg">
+    <img src="../assets/img/projects/enelx/results-debug.jpg" alt="[object Object]"  loading="lazy" >
+    </picture>
             </div>
     
     
@@ -87,6 +105,8 @@
               <p>Work done at Brunello, Inc.</p>
             
               <ul class="team-list">
+                <li class="list__item">Adam Hoyle: Project Manager</li>
+                <li class="list__item">Kyle Langford: UX Developer</li>
             
                 <li></li>
               </ul>
@@ -97,6 +117,30 @@
     </main>
     <section class="container">
       <div class="row flex is--collapsed is--full-width">
+        <div
+        	class="column one-half is-first card--brm"
+        >
+        	<article class="view--teaser square">
+        		<a href="/work/brm">
+        			<span class="label">Project</span>
+        			<p>
+        				Bally Ribbon Mills
+        			</p>
+        		</a>
+        	</article>
+        </div>
+        <div
+        	class="column one-half is-last card--drizly"
+        >
+        	<article class="view--teaser square">
+        		<a href="/work/drizly">
+        			<span class="label">Project</span>
+        			<p>
+        				Drizly Email Marketing
+        			</p>
+        		</a>
+        	</article>
+        </div>
       </div>
     </section>
     

@@ -49,18 +49,13 @@ article {
   p {
     font-family: $sans-serif-2;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 3em;
 
     @include media($sm-breakpoint) {
-      font-size: 1.5em;
+      font-size: 1.35em;
     }
   }
-}
-
-.view-teaser {
-}
-.view-full {
 }
 
 // Max Line Length
