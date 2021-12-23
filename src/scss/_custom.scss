@@ -42,7 +42,7 @@ body {
       letter-spacing: 0.05rem;
       display: block;
 
-      font-size: 38px;
+      font-size: 32px;
 
       @include media($sm-breakpoint) {
         font-size: 58px;
@@ -51,7 +51,7 @@ body {
 
     .page__sub-title {
       color: $cyber-green;
-      font-size: 38px;
+      font-size: 24px;
 
       @include media($sm-breakpoint) {
         font-size: 58px;
@@ -358,9 +358,13 @@ ul.portfolio {
 
 .text--display {
   font-family: $sans-serif-2;
-  font-size: em(88);
+  font-size: em(48);
   color: $pink;
   line-height: 1.2;
+
+  @include media($md-breakpoint) {
+    font-size: em(48);
+  }
 
   strong {
     margin-left: -6px;

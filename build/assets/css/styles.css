@@ -3134,7 +3134,7 @@ body.page--all .container {
 .container.intro .page__title {
   display: block;
   color: #ffffff;
-  font-size: 38px;
+  font-size: 32px;
   letter-spacing: 0.05rem;
 }
 
@@ -3146,7 +3146,7 @@ body.page--all .container {
 
 .container.intro .page__sub-title {
   color: #52dfb4;
-  font-size: 38px;
+  font-size: 24px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -3453,8 +3453,14 @@ ul.portfolio .list__item small {
 .text--display {
   color: #f27181;
   font-family: "Rubik", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 5.5em;
+  font-size: 3em;
   line-height: 1.2;
+}
+
+@media only screen and (min-width: 1100px) {
+  .text--display {
+    font-size: 3em;
+  }
 }
 
 .text--display strong {
