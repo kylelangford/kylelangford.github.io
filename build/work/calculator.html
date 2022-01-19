@@ -49,7 +49,7 @@
         <div class="column half text--center">
           <h1 class="page__title">Enel X Demand Response Calculator</h1>
           <h2 class="page__sub-title"></h2>
-          <p class="description">PHP and MySQL Development</p>
+          <p class="description">Form Validation and PHP Development</p>
         </div>
       </div>
     </header>
@@ -71,12 +71,11 @@
             <h4>Savings Calculator</h4>
     
             <p>
-              <strong>Ask </strong> Enel X wanted to develop a savings calculator. The form would feature a Zip Code Mapping, where zip codes (US and CA) are mapped to the DR programs available for that zip code, as well as the $/kW-year in DR earnings. The user would enter the Industry Average kW by choosing their industry, which will auto-populate the Curtailable kW amount, with an option to input their own curtailable kW value if they have an estimate.
+              <strong>Ask </strong> Enel X wanted to develop a savings calculator as a lead generation tool. The form would feature a postal code field that mapped to the Demand Response programs available for those locations(US,CA), as well as the $/kW-year in Demand Response earnings. The user would enter the industry average kW by choosing their industry, which would auto-populate the curtailable kW amount, with an option to input their own curtailable kW value if they have an estimate.
             </p>
     
             <p>
-              <strong>Contribution</strong> Zipcode validates US and CA postal codes in realtime. Created database schema with over 400k entries. Designed form validation and debuging views. Page created using HTML/CSS/JS/PHP/MYSQL. Interesting detail is the form is hosted on a server I built to host similar tools and added to the page with an iframe. I was able to make the iframe responsive using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">post_message</a> api. 
-            </p>
+              <strong>Contribution</strong> Good forms help users recognize, diagnose, and recover from errors. A lot of time was spent creating real time validation for the postal code as well other input fields. Using a combination of HTML5 Validation and Javascript. We wanted this form to be engaging so time was spent on the look and feel of the slide input.<p/>
     
             <div class="specimen paper">
               <picture class="media media--image ">
@@ -86,6 +85,10 @@
     </picture>
             </div>
     
+            <h5>How do we test this?</h5>
+    
+            <p>Debugging was another important consideration because there were over 400k postal values. I designed and built a debug option that would display the dynamic data for easier quality assurance</p>
+    
             <div class="specimen paper">
               <picture class="media media--image ">
     <source srcset="../assets/webp/projects/enelx/results-debug.webp" type="image/webp">
@@ -94,6 +97,9 @@
     </picture>
             </div>
     
+            <h5>Additional Detail</h5>
+    
+             <p>The form is hosted on a seperate server and added to the page with an iframe. The reasons for this a not very interesting. But, I was able to make the iframe responsive using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">post_message</a> api. This works by sending height information from the client to the parent sit with an iframe. Cool!</p>
     
             <div class="text--center button-group">
               <a href="https://www.enelxnorthamerica.com/dr-calculator" class="button button--primary"
@@ -106,7 +112,8 @@
             
               <ul class="team-list">
                 <li class="list__item">Adam Hoyle: Project Manager</li>
-                <li class="list__item">Kyle Langford: UX Developer</li>
+                <li class="list__item">Kyle Langford: Designer and Developer</li>
+                <li class="list__item">Jason Fournier: Designer</li>
             
                 <li></li>
               </ul>

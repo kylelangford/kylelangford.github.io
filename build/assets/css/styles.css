@@ -3352,6 +3352,7 @@ ul.portfolio .list__item small {
   color: white;
   font-size: 17px;
   font-weight: 600;
+  letter-spacing: .025em;
 }
 
 .button--previous:focus {
@@ -3361,7 +3362,6 @@ ul.portfolio .list__item small {
 
 .button--previous span {
   padding: 0 4px;
-  color: #e33c42;
   font-size: 19px;
   font-weight: 800;
 }
