@@ -56,7 +56,12 @@
 
 .icons-list {
   position: absolute;
-  left: -24px;
+  left: 0;
+  
+  @include media($sm-breakpoint) {
+    left: -24px;
+  }
+
   padding-top: 4px;
   line-height: 1;
 }

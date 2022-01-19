@@ -338,6 +338,8 @@ ul.portfolio {
 }
 
 .intro-message {
+  margin-bottom: 15%;
+
   h1,
   h2 {
     display: inline;
@@ -395,6 +397,15 @@ ul.portfolio {
 
 ul.pretty {
   font-size: em(20);
+}
+
+.with-icons {  
+
+  margin-left: 27px;
+
+  @include media($sm-breakpoint) {
+    margin-left: 0;
+  }
 }
 
 .title-image {

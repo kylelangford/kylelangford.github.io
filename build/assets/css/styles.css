@@ -1382,9 +1382,15 @@ button:disabled, button:disabled:active, button.is-disabled, button.is-disabled:
 
 .icons-list {
   position: absolute;
-  left: -24px;
+  left: 0;
   padding-top: 4px;
   line-height: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  .icons-list {
+    left: -24px;
+  }
 }
 
 .gold-star {
@@ -3434,6 +3440,10 @@ ul.portfolio .list__item small {
   margin: 2em auto;
 }
 
+.intro-message {
+  margin-bottom: 15%;
+}
+
 .intro-message h1,
 .intro-message h2 {
   display: inline;
@@ -3494,6 +3504,16 @@ ul.portfolio .list__item small {
 
 ul.pretty {
   font-size: 1.25em;
+}
+
+.with-icons {
+  margin-left: 27px;
+}
+
+@media only screen and (min-width: 800px) {
+  .with-icons {
+    margin-left: 0;
+  }
 }
 
 .title-image {
