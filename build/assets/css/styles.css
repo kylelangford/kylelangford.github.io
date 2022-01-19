@@ -3146,12 +3146,21 @@ body.page--all .container {
 
 .container.intro .page__sub-title {
   color: #52dfb4;
-  font-size: 24px;
 }
 
 @media only screen and (min-width: 800px) {
   .container.intro .page__sub-title {
     font-size: 58px;
+  }
+}
+
+.container.intro .row {
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 800px) {
+  .container.intro .row {
+    align-items: center;
   }
 }
 

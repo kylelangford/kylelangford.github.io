@@ -51,10 +51,17 @@ body {
 
     .page__sub-title {
       color: $cyber-green;
-      font-size: 24px;
 
       @include media($sm-breakpoint) {
         font-size: 58px;
+      }
+    }
+
+    .row {
+      align-items: flex-start;
+
+      @include media($sm-breakpoint) {
+        align-items: center;
       }
     }
   }
