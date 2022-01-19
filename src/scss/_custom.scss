@@ -99,6 +99,14 @@ body {
     .button--previous {
       color: $white;
     }
+
+    .row {
+      align-items: flex-start;
+
+      @include media($sm-breakpoint) {
+        align-items: center;
+      }
+    }
   }
 
   &.brm {
